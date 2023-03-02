@@ -1,3 +1,5 @@
+# Full project: https://gitlab.com/pages/jupyterbook
+
 stages:
   - build
   - deploy
