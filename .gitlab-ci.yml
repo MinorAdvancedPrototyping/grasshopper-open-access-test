@@ -6,6 +6,8 @@ stages:
 
 jupyter-build:
   stage: build
+  tags:
+    - grasshopper
   image: python:slim
   script:
     - pip install -U jupyter-book
