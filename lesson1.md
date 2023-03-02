@@ -1,8 +1,10 @@
+
+
 # Lesson 1 - Basics
 
 Tags: Introduction
 
-# 1.1 Introduction (3 min)
+## 1.1 Introduction (3 min)
 
 [https://youtu.be/FrUdmVq8sko](https://youtu.be/FrUdmVq8sko)
 
@@ -23,7 +25,7 @@ Tags: Introduction
 
 ---
 
-# 1.2 Basic controls (30 min)
+## 1.2 Basic controls (30 min)
 
 <aside>
 📌 *What:*         Introduction to the controls of Rhino and Grasshopper (reading)
@@ -231,7 +233,7 @@ Now see if you can create the same cube in Grasshopper.
 
 ---
 
-# 1.3 Basic geometry (45 min)
+## 1.3 Basic geometry (45 min)
 
 <aside>
 📌 *What:*         Introduction to the basic geometries (Reading)
@@ -264,7 +266,7 @@ In this exercise, you will learn how to construct basic geometry in Grasshopper.
 
 ---
 
-# 1.4 Best practice (5 min)
+## 1.4 Best practice (5 min)
 
 ## 📑1.4.1 Troubleshooting in Rhino
 
@@ -300,7 +302,7 @@ As projects get more complex, it is important to keep your grasshopper script or
 
 ---
 
-# 1.5 Assignment 1 (max 2 hours)
+## 1.5 Assignment 1 (max 2 hours)
 
 ![Assignment 1.png](Lesson1/Assignment_1.png)
 
