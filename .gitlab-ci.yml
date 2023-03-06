@@ -8,7 +8,7 @@ jupyter-build:
   stage: build
   tags:
     - grasshopper
-  image: python
+  image: python:3.10.4-slim-buster
   script:
     - pip install -U jupyter-book
     - jupyter-book clean .
