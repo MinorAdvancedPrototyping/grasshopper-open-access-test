@@ -1,2 +1,2 @@
-# Knowledge Base
+# Lessons
 
