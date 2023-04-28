@@ -29,11 +29,11 @@ jobs:
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build grasshopper_open_access_test
+        jupyter-book build grasshopper-open-access-test
 
     # Deploy the book's HTML to gh-pages branch
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: grasshopper_open_access_test/_build/html
+        publish_dir: grasshopper-open-access-test/_build/html
