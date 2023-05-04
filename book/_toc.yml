@@ -13,4 +13,10 @@ chapters:
   - file: Lesson 5
   - file: Lesson 6
 - file: knowledgebase
+  sections:
+  - file: Tutorials
+    sections:
+    - file: 
+  - file: Plugins
+  - file: Graduation Projects
 - file: studentshowcase
