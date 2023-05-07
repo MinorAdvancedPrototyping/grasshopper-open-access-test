@@ -16,7 +16,7 @@ chapters:
   sections:
   - file: Tutorials
     sections:
-    - file: 
+    - file: Lesson A
   - file: Plugins
   - file: Graduation Projects
 - file: studentshowcase
