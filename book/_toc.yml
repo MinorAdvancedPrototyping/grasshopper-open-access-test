@@ -6,7 +6,7 @@ root: intro
 chapters:
 - file: lessons
   sections:
-  - file: Lesson 1 - Basics
+  - file: lesson1
   - file: Lesson 2
   - file: Lesson 3
   - file: Lesson 4
