@@ -395,21 +395,32 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="lesson-1-basics">
 <h1>Lesson 1 - Basics<a class="headerlink" href="#lesson-1-basics" title="Permalink to this heading">#</a></h1>
 <p>Tags: Introduction</p>
+<p><img alt="Alt text" src="Lesson1/Teapot_and_cups_wide%20(1).jpg" /></p>
 <section id="introduction-3-min">
 <h2>1.1 Introduction (3 min)<a class="headerlink" href="#introduction-3-min" title="Permalink to this heading">#</a></h2>
-<p><a class="reference external" href="https://youtu.be/FrUdmVq8sko">https://youtu.be/FrUdmVq8sko</a></p>
-<ul>
-<li><p>video transcript</p>
-<p>Welcome to this digital course on computational design with Grasshopper and Rhino. In this course you will learn how to use the software, with focus on creating designs with a personalized fit, suitable for digital fabrication.</p>
-<p>Computational design basically means that you use the calculating abilities of your computer to solve design problems. For example by building a parametric design or by using an algorithm to generate iterations of your design. In this course, you will learn how to model in Rhinoceros and how to set up a parametric workflow in Grasshopper. In the upcoming lessons we will be working towards modeling a made-to-measure design, based on a 3D scan. In this introduction lesson we will be looking at the basics of Rhino and Grasshopper. By the end of the lesson you will have built your first full workflow using these programs.</p>
-<p>Rhinoceros, or Rhino for short, is 3D modelling software that is often used for freeform surface modeling. The type of modeling in Rhino is called NURBs modeling. NURBs are mathematical representations of 3D geometry that can accurately describe any shape. From simple lines to complex organic surfaces. This makes Rhino very suitable for modeling projects that require curved surfaces, for example automotive or yacht design.</p>
-<p>Grasshopper is an application that started off as a plugin for Rhino, but is now a fully integrated tool in the Rhino software. Grasshopper uses a type of visual programming to help you automate your workflow. Grasshopper is an excellent tool when you are creating patterns and repetition. The software is often used in architecture and jewelry design.</p>
-<p>As a product designer, you might already have some experience with modeling software like Solidworks or Fusion. These programs are well suited for building mechanical products and solid shapes. If you have experience with coding in any programming language, you also have relevant knowledge to learn Grasshopper, as its design approach shows many similarities with programming, specifically with visual programming. When you are starting a design project, make sure you consider which program is best suited to create your design. Setting up a fully parametric workflow in Grasshopper takes some time, so make sure you consider if it is the right approach. In general, if a project requires patterns or repetition, using Grasshopper can speed up the process.</p>
-<p>Let’s get started by exploring the Rhino and Grasshopper interface. Make sure you have both programs installed on your computer before moving on to the next part of this lesson. After looking at the basic interface and learning about basic geometry, we are going to model a teapot in Rhino and build a set of cups in Grasshopper. At the end of the lesson, there is an open-ended assignment, for you to further practice with the lesson materials.</p>
-</li>
-</ul>
-</section>
-<hr class="docutils" />
+<iframe width="768" height="432" src="https://www.youtube.com/embed/P_-EHLcGvBs" title="Lesson 1 introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+video transcript<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Welcome to this digital course on computational design with Grasshopper and Rhino. In this course you will learn how to use the software, with focus on creating designs with a personalized fit, suitable for digital fabrication. 
+
+Computational design basically means that you use the calculating abilities of your computer to solve design problems. For example by building a parametric design or by using an algorithm to generate iterations of your design. In this course, you will learn how to model in Rhinoceros and how to set up a parametric workflow in Grasshopper. In the upcoming lessons we will be working towards modeling a made-to-measure design, based on a 3D scan. In this introduction lesson we will be looking at the basics of Rhino and Grasshopper. By the end of the lesson you will have built your first full workflow using these programs. 
+
+Rhinoceros, or Rhino for short, is 3D modelling software that is often used for freeform surface modeling. The type of modeling in Rhino is called NURBs modeling. NURBs are mathematical representations of 3D geometry that can accurately describe any shape. From simple lines to complex organic surfaces. This makes Rhino very suitable for modeling projects that require curved surfaces, for example automotive or yacht design. 
+
+Grasshopper is an application that started off as a plugin for Rhino, but is now a fully integrated tool in the Rhino software. Grasshopper uses a type of visual programming to help you automate your workflow. Grasshopper is an excellent tool when you are creating patterns and repetition. The software is often used in architecture and jewelry design.
+
+As a product designer, you might already have some experience with modeling software like Solidworks or Fusion. These programs are well suited for building mechanical products and solid shapes. If you have experience with coding in any programming language, you also have relevant knowledge to learn Grasshopper, as its design approach shows many similarities with programming, specifically with visual programming. When you are starting a design project, make sure you consider which program is best suited to create your design. Setting up a fully parametric workflow in Grasshopper takes some time, so make sure you consider if it is the right approach. In general, if a project requires patterns or repetition, using Grasshopper can speed up the process. 
+
+Let’s get started by exploring the Rhino and Grasshopper interface. Make sure you have both programs installed on your computer before moving on to the next part of this lesson. After looking at the basic interface and learning about basic geometry, we are going to model a teapot in Rhino and build a set of cups in Grasshopper. At the end of the lesson, there is an open-ended assignment, for you to further practice with the lesson materials.
+</pre></div>
+</div>
+</div>
+</details></section>
 <section id="basic-controls-30-min">
 <h2>1.2 Basic controls (30 min)<a class="headerlink" href="#basic-controls-30-min" title="Permalink to this heading">#</a></h2>
 <aside>

@@ -4,11 +4,13 @@
 
 Tags: Introduction
 
+![Alt text](Lesson1/Teapot_and_cups_wide%20(1).jpg)
+
 ## 1.1 Introduction (3 min)
 
-[https://youtu.be/FrUdmVq8sko](https://youtu.be/FrUdmVq8sko)
+<iframe width="768" height="432" src="https://www.youtube.com/embed/P_-EHLcGvBs" title="Lesson 1 introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-- video transcript
+```{dropdown} video transcript
     
     Welcome to this digital course on computational design with Grasshopper and Rhino. In this course you will learn how to use the software, with focus on creating designs with a personalized fit, suitable for digital fabrication. 
     
@@ -22,8 +24,7 @@ Tags: Introduction
     
     Let’s get started by exploring the Rhino and Grasshopper interface. Make sure you have both programs installed on your computer before moving on to the next part of this lesson. After looking at the basic interface and learning about basic geometry, we are going to model a teapot in Rhino and build a set of cups in Grasshopper. At the end of the lesson, there is an open-ended assignment, for you to further practice with the lesson materials.
     
-
----
+```
 
 ## 1.2 Basic controls (30 min)
 
