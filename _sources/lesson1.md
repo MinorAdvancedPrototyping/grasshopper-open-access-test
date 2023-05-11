@@ -2,7 +2,7 @@
 
 # Lesson 1 - Basics
 
-![Alt text](Lesson1/teapot.png)
+![Alt text](Lesson1/teapot3.png)
 
 ## 1.1 Introduction (3 min)
 

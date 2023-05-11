@@ -1,4 +1,4 @@
-# Lesson 3
+# Lesson 3 - Data Structures
 
 This is a small sample book to give you a feel for how book content is
 structured.
