@@ -1,4 +1,4 @@
-# Lesson 2
+# Lesson 2 - Curves and Lists
 
 This is a small sample book to give you a feel for how book content is
 structured.

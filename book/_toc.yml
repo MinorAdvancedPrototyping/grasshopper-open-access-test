@@ -14,9 +14,9 @@ chapters:
   - file: Lesson 6
 - file: knowledgebase
   sections:
-  - file: Tutorials
+  - file: tutorials
     sections:
-    - file: Lesson A
-  - file: Plugins
-  - file: Graduation Projects
+    - file: tutorial1
+  - file: gradprojects
+  - file: plugins
 - file: studentshowcase
