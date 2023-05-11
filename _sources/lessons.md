@@ -7,7 +7,7 @@
 :::{grid-item-card}
 :link: lesson1
 :link-type: doc
-:img-top: Lesson1/Teapot_and_cups_wide%20(1).jpg
+:img-top: Lesson1/teapot.png
 :class-header: bg-light
 
 Lesson 1 ✏️
