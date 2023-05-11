@@ -7,7 +7,7 @@
 :::{grid-item-card}
 :link: lesson1
 :link-type: doc
-:img-top: Lesson1/Assignment_1.png
+:img-top: Lesson1/teapot.png
 :class-header: bg-light
 
 Lesson 1 ✏️

@@ -2,9 +2,7 @@
 
 # Lesson 1 - Basics
 
-Tags: Introduction
-
-![Alt text](Lesson1/Teapot_and_cups_wide%20(1).jpg)
+![Alt text](Lesson1/teapot.png)
 
 ## 1.1 Introduction (3 min)
 
@@ -38,7 +36,7 @@ Tags: Introduction
 
 If you are new to 3D design software, using Rhino and Grasshopper for the first time can be a bit overwhelming. In the next section, you will first walk through the ins and outs of the user interface, then you will learn the basic controls. Finally ending with a small exercise to get you started with Rhino and Grasshopper.
 
-## 📑 1.2.1 Rhino: User Interface (Reading 10 min)
+### 📑 1.2.1 Rhino: User Interface (Reading 10 min)
 
 In this part you will explore Rhino’s User Interface.
 
@@ -81,7 +79,7 @@ Drag from left to right to select only objects completely inside box |
 | Repeat previous command | Right click |
 | Control points | F10 (on) / F11 (off) |
 
-## 📑 1.2.2 Grasshopper: User Interface (Reading 5 min)
+### 📑 1.2.2 Grasshopper: User Interface (Reading 5 min)
 
 In this part you will learn the basic controls and interface of Grasshopper
 
@@ -116,7 +114,7 @@ Every component has inputs and outputs. Inputs are on the left side of a block, 
 
 </aside>
 
-### **Placing Components**
+#### **Placing Components**
 
 To place a component, either 🖱️*drag from the toolbar* or 🖱️*double click the workspace.*
 
@@ -128,7 +126,7 @@ To connect components, simply 🖱️*drag from an output of one component, to t
 
 ![Dragging.gif](Lesson1/Dragging.gif)
 
-### **Inputting and Outputting Data**
+#### **Inputting and Outputting Data**
 
 When hovering your cursor over an input/output a tool-tip pops up. These tool-tips can help determine what needs to be connected where. Reading out the outputs can help verify the expected outcome and check for errors.
 
@@ -162,7 +160,7 @@ After selecting you curve, the curve component should turn green, indicating tha
 
 ![Rhino grasshopper lesson 1 intro input geometry.png](Lesson1/Rhino_grasshopper_lesson_1_intro_input_geometry.png)
 
-### Exporting shapes from Grasshopper to Rhino
+#### Exporting shapes from Grasshopper to Rhino
 
 Shapes built in Grasshopper show up as red translucent objects in Rhino. These red objects are placeholders, and can not be manipulated directly in Rhino.
 
@@ -186,7 +184,7 @@ If you make changes in Grasshopper, you will need to bake it again.
 
 </aside>
 
-## 🖱️ 1.2.3 Building shapes in Rhino and Grasshopper (Exercise 15 min)
+### 🖱️ 1.2.3 Building shapes in Rhino and Grasshopper (Exercise 15 min)
 
 <aside>
 🖱️  **Exercise - Building shapes in Rhino and Grasshopper**
@@ -248,13 +246,13 @@ In Rhino and Grasshopper you use basic geometry as building blocks to create com
 
 [1 Basic geometry.pdf](Lesson1/1_Basic_geometry.pdf)
 
-## 📺1.3.1 **Tutorial - Modelling a teapot in Rhino (20 min)**
+### 📺1.3.1 **Tutorial - Modelling a teapot in Rhino (20 min)**
 
 In this tutorial, you will learn how to construct basic geometry in Rhino. Watch the video below and follow along. 
 
 [https://youtu.be/0G5tS27SmNc](https://youtu.be/0G5tS27SmNc)
 
-## 📺1.3.2 **Tutorial - Modelling teacups in Grasshopper (20 min)**
+### 📺1.3.2 **Tutorial - Modelling teacups in Grasshopper (20 min)**
 
 In this exercise, you will learn how to construct basic geometry in Grasshopper. Watch the video below and follow along. 
 
@@ -269,7 +267,7 @@ In this exercise, you will learn how to construct basic geometry in Grasshopper.
 
 ## 1.4 Best practice (5 min)
 
-## 📑1.4.1 Troubleshooting in Rhino
+### 📑1.4.1 Troubleshooting in Rhino
 
 If you are using Rhino to design products that you plan on manufacturing, it is import to check if your geometry is valid. You can do this by selecting an object in Rhino and looking at the properties tab in the menu. You can also use the command [**what**] to get a detailed object description. The image below shows what the object description might look like for a box. As you can see, this box is a closed solid polysurface, which means it is an closed volume that consists of multiple surfaces joined together. 
 
@@ -279,7 +277,7 @@ A closed solid shape can be exported and used for digital fabrication, for examp
 
 ![Untitled](Lesson1/Untitled%206.png)
 
-## 📑1.4.2 Troubleshooting in Grasshopper
+### 📑1.4.2 Troubleshooting in Grasshopper
 
 If you run into issues in Grasshopper, take a closer look at your components to find out what is wrong. In general, if a component in Grasshopper is not colored grey, this means that it is not running correctly. An orange color indicates a warning, red indicates an error. 
 
@@ -291,7 +289,7 @@ Components can also turn red, which means there is an error. This might happen b
 
 ![Untitled](Lesson1/Untitled%208.png)
 
-## 📑1.4.3 How to keep you Grasshopper script organized
+### 📑1.4.3 How to keep you Grasshopper script organized
 
 As projects get more complex, it is important to keep your grasshopper script organized. Below are a few tips to keep your scrip readable (for yourself and others):
 
