@@ -64,15 +64,3 @@ Lesson 5 - Meshes ✏️
 Introduction into Rhino and Grasshopper
 :::
 
-:::{grid-item-card}
-:link: Lesson 1 - Basics
-:link-type: doc
-:img-top: Lesson1/Assignment_1.png
-:class-header: bg-light
-
-Lesson 1 ✏️
-^^^
-
-Introduction into Rhino and Grasshopper
-:::
-
