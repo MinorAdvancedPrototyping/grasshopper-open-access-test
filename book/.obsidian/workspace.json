@@ -1,0 +1,178 @@
+{
+  "main": {
+    "id": "b198826c3c021d46",
+    "type": "split",
+    "children": [
+      {
+        "id": "3da164833a4ad14a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5016906e43f2c50e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lessons.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a6d9e825a0bdc2b6",
+    "type": "split",
+    "children": [
+      {
+        "id": "731f7c0b73eb6161",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0eb025b0feb030b5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0b73ba895c1d71f7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7fdf9f1356525630",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "eba0d6683893ae37",
+    "type": "split",
+    "children": [
+      {
+        "id": "b87109955ff02f2c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cde1223bd2ae80c7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "lessons.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "79ead8c931d66fee",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "lessons.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1893d19cfc3a024e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ce6937efcab57ab0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "lessons.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "5016906e43f2c50e",
+  "lastOpenFiles": [
+    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.3a_RhinoBoxRender.png",
+    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.2j_SetCurve.png",
+    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.1d_RhinoTools.png",
+    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.4.2a_FailedToCollectData.png",
+    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.2k_BakeToRhino.png",
+    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/Rhino_grasshopper_lesson_1_intro_slider.png",
+    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.2i_SliderTip.gif",
+    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.3e_GrasshopperBoxHint.png",
+    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.3f_GrasshopperBoxSolution.gif",
+    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.3c_RhinoBoxSolution.gif",
+    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.3d_GrasshopperBoxRender.png",
+    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1_Basic_geometry.pdf",
+    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a.md",
+    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a",
+    "gradprojects.md",
+    "intro.md",
+    "knowledgebase.md",
+    "Lesson 2.md",
+    "Lesson 3.md",
+    "plugins.md",
+    "markdown-notebooks.md",
+    "markdown.md",
+    "lesson1.md",
+    "Lesson 5.md",
+    "Lesson 6.md",
+    "Lesson 4.md"
+  ]
+}
