@@ -13,7 +13,7 @@ Tags: Introduction
 
 # 👩‍🏫1.1 Introduction (4 min)
 
-[https://youtu.be/kxescnDWiwA](https://youtu.be/kxescnDWiwA)
+<iframe title="Lesson 1.1 - Introduction" src="https://www.youtube.com/embed/kxescnDWiwA?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
 
 ---
 
@@ -37,7 +37,7 @@ In this part you will explore Rhino’s User Interface.
 
 You will now see the following interface (left for 🪟windows, right for 🍎mac):
 
-![1.2.1a_RhinoInterface.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.1a_RhinoInterface.png)
+![1.2.1a_RhinoInterface](1.2.1a_RhinoInterface.png)
 
 The central part of the screen is called the viewport, here marked in red. By default Rhino shows 4 different views. The viewport is your workspace, here you can view your 3D model.
 
@@ -48,13 +48,13 @@ The central part of the screen is called the viewport, here marked in red. By de
 
 At the top there are different tabs for different workflows, for example **[Curve Tools]**. By clicking these tabs you gain access to more specialized tools, and the lay-out of bar on the left and top changes. We will mostly be using the **[Standard]** tab, which is selected by default.
 
-![1.2.1b_RhinoToolbars.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.1b_RhinoToolbars.png)
+![1.2.1b_RhinoToolbars](1.2.1b_RhinoToolbars.png)
 
 All of the different tools in Rhino can be accessed via the bar on the left. By clicking the triangle in the corner of some of the icons, you have access to even more options.
 
-![1.2.1c_ToolbarCloseup.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.1c_ToolbarCloseup.png)
+![1.2.1c_ToolbarCloseup](1.2.1c_ToolbarCloseup.png)
 
-![1.2.1d_RhinoTools.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.1d_RhinoTools.png)
+![1.2.1d_RhinoTools](1.2.1d_RhinoTools.png)
 
 1. This is the **[Command:]** line, another way of accessing all the tools in Rhino. The **[Command:]** line is an intelligent tool, and depending on the input can do many different things, more on that later.
 2. By clicking the 🔽 next to a viewport (or right click if you’re working on mac), you can adjust how your model looks. Most of the time you will use **[Shaded]**.
@@ -92,7 +92,7 @@ To open Grasshopper:
 
 ⌨️Type “Grasshopper” in the **[Command:]** line and press Enter
 
-![1.2.2a_LaunchGrasshopper.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.2a_LaunchGrasshopper.png)
+![1.2.2a_LaunchGrasshopper](1.2.2a_LaunchGrasshopper.png)
 
 The Grasshopper interface is quite straight forward. For now the most important parts are:
 
@@ -100,20 +100,20 @@ The Grasshopper interface is quite straight forward. For now the most important 
 2. The **canvas**, where you build your script.
 3. The **file-manager**, where you can switch between documents.
 
-![1.2.2b_GrasshopperInterface.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.2b_GrasshopperInterface.png)
+![1.2.2b_GrasshopperInterface](1.2.2b_GrasshopperInterface.png)
 
 Grasshopper is a visual coding tool. This means that you create a 3D model by connecting different functional blocks together called components.
 
 This way you can build a script which takes certain inputs to produce the desired output.
 
-![1.2.2c_GrasshopperWorkflow.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.2c_GrasshopperWorkflow.png)
+![1.2.2c_GrasshopperWorkflow](1.2.2c_GrasshopperWorkflow.png)
 
 Every component has inputs and outputs. Inputs are on the left side of a block, outputs on the right side.
 
 <aside>
 💡 **Tip**: you can switch between icons and text components in the **[Display]** menu at the top of the interface. You can also switch on **[Draw full names]** to make components easier to understand.
 
-![1.2.2d_GrasshopperDisplaysettings.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.2d_GrasshopperDisplaysettings.png)
+![1.2.2d_GrasshopperDisplaysettings](1.2.2d_GrasshopperDisplaysettings.png)
 
 </aside>
 
@@ -121,9 +121,9 @@ Every component has inputs and outputs. Inputs are on the left side of a block, 
 
 To place a component, either 🖱️drag from the toolbar **or 🖱️double click the workspace to search by name. 
 
-![1.2.2e_DragingComponents.gif](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.2e_DragingComponents.gif)
+![1.2.2e_DragingComponents](1.2.2e_DragingComponents.gif)
 
-![1.2.2f_SearchingComponents.gif](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.2f_SearchingComponents.gif)
+![1.2.2f_SearchingComponents](1.2.2f_SearchingComponents.gif)
 
 <aside>
 💡 ******Tip******: To display the speech bubbles with the names of the components as shown in these images, you need to install a plugin called “Bifocals”. More on this in lesson 2.
@@ -132,24 +132,24 @@ To place a component, either 🖱️drag from the toolbar **or 🖱️double cli
 
 To connect components, simply 🖱️drag from an output of one component, to the input of the next. **To undo a connection, 🖱️hold CTRL (or Command on Mac) and drag from the output to the input.
 
-![1.2.2g_ConnectingComponents.gif](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.2g_ConnectingComponents.gif)
+![1.2.2g_ConnectingComponents](1.2.2g_ConnectingComponents.gif)
 
 ### **Inputting and Outputting Data**
 
 When hovering your cursor over an input/output a tool-tip pops up. These tool-tips can help determine what needs to be connected where. Reading out the outputs can help verify the expected outcome and check for errors.
 
-![1.2.2h_Tooltips.gif](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.2h_Tooltips.gif)
+![1.2.2h_Tooltips](1.2.2h_Tooltips.gif)
 
 One of the basic components we will use often as an input in Grasshopper is a Number Slider. You can find them in the Input menu under params. 
 
 By double clicking the slider, a popup appears with settings. Here you can change the name of the slider, set the number of digits and change the minimum and maximum values.
 
-![Rhino grasshopper lesson 1 intro slider.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/Rhino_grasshopper_lesson_1_intro_slider.png)
+![Rhino grasshopper lesson 1 intro slider.png](Rhino_grasshopper_lesson_1_intro_slider.png)
 
 <aside>
 💡 **Tip:** For a faster way to create sliders, you type a number in the search bar to create a slider. You can also create a slider with a set range by typing the minimum followed by two dots (..) and the maximum number. The amount of digits you use to type the numbers will determine the accuracy of the slider.
 
-![1.2.2i_SliderTip.gif](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.2i_SliderTip.gif)
+![1.2.2i_SliderTip](1.2.2i_SliderTip.gif)
 
 </aside>
 
@@ -167,7 +167,7 @@ A prompt appears in Rhino, asking you which Curve or Edge to reference*.* On win
 
 After selecting you curve, the curve component should turn green, indicating that it now contains geometry. 
 
-![1.2.2j_SetCurve.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.2j_SetCurve.png)
+![1.2.2j_SetCurve](1.2.2j_SetCurve.png)
 
 ### Exporting shapes from Grasshopper to Rhino
 
@@ -185,7 +185,7 @@ To bake an object from Grasshopper to Rhino:
 
 You should now see your object in Rhino.
 
-![1.2.2k_BakeToRhino.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.2k_BakeToRhino.png)
+![1.2.2k_BakeToRhino](1.2.2k_BakeToRhino.png)
 
 <aside>
 💡 T**********ip:********** Once an object is baked from Grasshopper to Rhino, you can no longer change it using the Grasshopper script (you can’t unbake an egg!). If you make changes in Grasshopper, you will need to bake it again.
@@ -203,7 +203,7 @@ Try to create a cube in Rhino with the dimensions 10x10x10mm.
 
 **Note:** You do not need use Grasshopper yet.
 
-![1.2.3a_RhinoBoxRender.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.3a_RhinoBoxRender.png)
+![1.2.3a_RhinoBoxRender](1.2.3a_RhinoBoxRender.png)
 
 💡**Hint:** a cube is called “box” in Rhino.
 
@@ -211,20 +211,20 @@ Try to create a cube in Rhino with the dimensions 10x10x10mm.
     
     You can either select the **[Box]** tool on the left **OR** type in “Box” in the command line.
     
-    ![1.2.3b_RhinoBoxSolution.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.3b_RhinoBoxSolution.png)
+    ![1.2.3b_RhinoBoxSolution](1.2.3b_RhinoBoxSolution.png)
     
     Now you can select the first corner of the base in the viewport, then the second corner, and finally choose the height of your box. You can also type the exact dimensions into the command line.
     
-    ![1.2.3c_RhinoBoxSolution.gif](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.3c_RhinoBoxSolution.gif)
+    ![1.2.3c_RhinoBoxSolution](1.2.3c_RhinoBoxSolution.gif)
     
 
 Now see if you can create the same cube in Grasshopper. 
 
-![1.2.3d_GrasshopperBoxRender.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.3d_GrasshopperBoxRender.png)
+![1.2.3d_GrasshopperBoxRender](1.2.3d_GrasshopperBoxRender.png)
 
 💡**Hint:** Use the components called **[Box 2pt]** and **[Construct Point]**
 
-![1.2.3e_GrasshopperBoxHint.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.3e_GrasshopperBoxHint.png)
+![1.2.3e_GrasshopperBoxHint](1.2.3e_GrasshopperBoxHint.png)
 
 - Solution
     
@@ -232,7 +232,7 @@ Now see if you can create the same cube in Grasshopper.
     
     Here we will show one possible approach:
     
-    ![1.2.3f_GrasshopperBoxSolution.gif](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.2.3f_GrasshopperBoxSolution.gif)
+    ![1.2.3f_GrasshopperBoxSolution](1.2.3f_GrasshopperBoxSolution.gif)
     
 </aside>
 
@@ -254,7 +254,7 @@ Now see if you can create the same cube in Grasshopper.
 
 - Recap
     
-    [1 Basic geometry.pdf](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1_Basic_geometry.pdf)
+    [1 Basic geometry.pdf](1_Basic_geometry.pdf)
     
 
 ## 📺1.3.2 **Tutorial - Modelling a teapot in Rhino (20 min)**
@@ -281,7 +281,7 @@ In this exercise, you will learn how to construct basic geometry in Grasshopper.
 
 - Solution
     
-    ![1.3.3a_TeacupSolution.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.3.3a_TeacupSolution.png)
+    ![1.3.3a_TeacupSolution](1.3.3a_TeacupSolution.png)
     
 
 ---
@@ -303,7 +303,7 @@ To join surfaces together into a polysurface, select the surfaces and use the [*
 
 A closed solid shape can be exported and used for digital fabrication, for example 3D printing. In lesson 4 we will discuss surfaces and solids in more detail. 
 
-![1.4.1a_ObjectDescription.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.4.1a_ObjectDescription.png)
+![1.4.1a_ObjectDescription](1.4.1a_ObjectDescription.png)
 
 ## 📑1.4.2 Troubleshooting in Grasshopper
 
@@ -311,11 +311,11 @@ If you run into issues in Grasshopper, take a closer look at your components to 
 
 You can hover your mouse over the middle of any component to find out what it does and if it is running. If you see a small speech bubble on a component, you can click it or hover your mouse over it to read the warning and error messages. Often, when you drop a new component, it will show up orange with the warning “input parameter failed to collect data”, like the example below. This simply means that you still need to connect something to the inputs in order for the component to run.
 
-![1.4.2a_FailedToCollectData.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.4.2a_FailedToCollectData.png)
+![1.4.2a_FailedToCollectData](1.4.2a_FailedToCollectData.png)
 
 Components can also turn red, which means there is an error. This might happen because you connected an input that the component cannot use. In the example below, you see a text panel used as an input, while the component asks for a vector to use as the direction for the extrusion. Grasshopper will try to convert the text into a useful input, but in this case it is unable to, which results in the error “Data conversion failed from Text to Vector”.
 
-![1.4.2b_DataConversionFailed.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.4.2b_DataConversionFailed.png)
+![1.4.2b_DataConversionFailed](1.4.2b_DataConversionFailed.png)
 
 ## 📑1.4.3 How to keep you Grasshopper script organized
 
@@ -331,19 +331,19 @@ As projects get more complex, it is important to keep your Grasshopper script or
 
 # 💻1.5 Assignment 1 (max 2 hours)
 
-![1.5a_Assignment1.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.5a_Assignment1.png)
+![1.5a_Assignment1](1.5a_Assignment1.png)
 
 <aside>
 💻 Create a creature using Rhino curves, which you import into Grasshopper. It does not have to be an insect, you can create any animal you like. Take a few hours to see what you can create, but do not spend to much time on this assignment. 
 
-Check out the [Student showcase](Grasshopper_Rhino_course/Student%20showcase/Assignment_1/!index.md) to see what other students made for this assignment.
+Check out the [Student showcase](../../Student%20showcase/Assignment_1/!index.md) to see what other students made for this assignment.
 
 </aside>
 
 <aside>
 💡 **Tip**: Use the [Export Hi-Res Image] option in the file menu to create a detailed screenshot of your entire script.
 
-![1.5b_ExportImageTip.png](Grasshopper_Rhino_course/Lessons/1️⃣%20Lesson_1-Basics/1.5b_ExportImageTip.png)
+![1.5b_ExportImageTip](1.5b_ExportImageTip.png)
 
 </aside>
 

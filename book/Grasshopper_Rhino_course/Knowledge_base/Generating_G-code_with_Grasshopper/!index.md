@@ -202,7 +202,7 @@ Now that we understand the basics of G-code, we are able to use an alternative w
 
 Grasshopper G-code workflow
 
-The main concept here is to convert our solid/surface into contour curves, divide these curves into smaller segments, and obtain the X Y Z coordinates from the collection of sequential points. Using this collection of points, we can write the G-code to instruct the printer to move to these locations while extruding in sequential order. As the order of operations is critical for the G-code, it is important to keep the geometry data organized. For resource on working with data structures in Grasshopper, see [Lesson 3 - Data structures](Grasshopper_Rhino_course/Lessons/3️⃣%20Lesson_3-Data_structures/!index.md) 
+The main concept here is to convert our solid/surface into contour curves, divide these curves into smaller segments, and obtain the X Y Z coordinates from the collection of sequential points. Using this collection of points, we can write the G-code to instruct the printer to move to these locations while extruding in sequential order. As the order of operations is critical for the G-code, it is important to keep the geometry data organized. For resource on working with data structures in Grasshopper, see [Lesson 3 - Data structures](../../Lessons/3%EF%B8%8F%E2%83%A3%20Lesson_3-Data_structures/!index.md) 
 
 Let’s take the example of creating the G-code for a simple cylinder as shown above. Once we have the collection of points, how exactly do we translate these points into G-code operations and ensure to add all other necessary G-code calculations? First, let’s look at some basic concepts which will be key in creating this script. To follow along, feel free to download the exercise file here:
 
@@ -284,4 +284,4 @@ There is much to explore when it comes to generating G-code with Grasshopper. By
 
 # Relevant Projects
 
-[Untitled Database](Grasshopper_Rhino_course/Knowledge_base/Generating_G-code_with_Grasshopper/Untitled%20Database.csv)
+[Untitled Database](Untitled%20Database.csv)

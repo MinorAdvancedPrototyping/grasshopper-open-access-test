@@ -53,6 +53,6 @@ Review: Currently working on
 
 Box morph assignment 
 
-![Untitled](Grasshopper_Rhino_course/Lessons/5️⃣%20Lesson_5-Meshes/Untitled.png)
+![Untitled](Untitled.png)
 
 [https://indify.co/widgets/live/button/j4bBpzgOr1zZTHtIBpBE](https://indify.co/widgets/live/button/j4bBpzgOr1zZTHtIBpBE)

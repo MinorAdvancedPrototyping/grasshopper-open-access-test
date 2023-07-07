@@ -7,7 +7,7 @@ Supervisors: https://repository.tudelft.nl/islandora/search/contributor%3A%22Bou
 Tags: data-driven
 URL: https://repository.tudelft.nl/islandora/object/uuid%3A204a945a-17d6-4ed0-af40-6d6959953dba?collection=education
 
-![Animation-with-the-video.png](Grasshopper_Rhino_course/Graduation_Projects/The_making_of_a_smart_pillow/Animation-with-the-video.png)
+![Animation-with-the-video](Animation-with-the-video.png)
 
 # Abstract
 

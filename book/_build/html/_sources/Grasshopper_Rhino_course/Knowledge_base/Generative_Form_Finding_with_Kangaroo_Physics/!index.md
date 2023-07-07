@@ -64,9 +64,9 @@ This section demonstrates several examples, including:
 
 # Creating an Organic Cross Structure
 
-[GenerativeMesh.gh](Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/GenerativeMesh.gh)
+[GenerativeMesh](GenerativeMesh.gh)
 
-![Untitled](Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/Untitled.gif)
+![Untitled](Untitled.gif)
 
 To create a an Organic Cross Structure using Grasshopper Kangaroo physics simulations, the following steps should be followed.
 
@@ -84,39 +84,39 @@ The next step is to load the mesh onto the Kangaroo solver. This is done by conn
 
 It is important to note that these steps provide a general overview of how to set up a Kangaroo simulation in Grasshopper. Additionally, the simulation parameters can be adjusted to achieve different results. For example, the strength of the forces, the number of iterations, or other simulation parameters can be adjusted to achieve the desired outcome.
 
-![Untitled](Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/Untitled.png)
+![Untitled](Untitled.png)
 
 # Creating a Textile 3D tent
 
-[Generative Tent.gh](Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/Generative_Tent.gh)
+[Generative Tent.gh](Generative_Tent.gh)
 
-![Screen-Recording-2023-06-02-at-16.44.21.gif](Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/Screen-Recording-2023-06-02-at-16.44.21.gif)
+![Screen-Recording-2023-06-02-at-16.44.21](Screen-Recording-2023-06-02-at-16.44.21.gif)
 
-![Screenshot 2023-06-02 at 16.35.00.png](Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/Screenshot_2023-06-02_at_16.35.00.png)
+![Screenshot 2023-06-02 at 16.35.00.png](Screenshot_2023-06-02_at_16.35.00.png)
 
 # Creating a 4D-printed Shape Changing Textile
 
-[Programmable Textile.gh](Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/Programmable_Textile.gh)
+[Programmable Textile.gh](Programmable_Textile.gh)
 
-![textile1374-1480.gif](Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/textile1374-1480.gif)
+![textile1374-1480](textile1374-1480.gif)
 
-![ezgif.com-optimize.gif](Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/ezgif.com-optimize.gif)
+![ezgif.com-optimize](ezgif.com-optimize.gif)
 
-![Screenshot 2023-06-02 at 17.22.59.png](Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/Screenshot_2023-06-02_at_17.22.59.png)
+![Screenshot 2023-06-02 at 17.22.59.png](Screenshot_2023-06-02_at_17.22.59.png)
 
-![Screenshot 2023-06-02 at 17.18.57.png](Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/Screenshot_2023-06-02_at_17.18.57.png)
+![Screenshot 2023-06-02 at 17.18.57.png](Screenshot_2023-06-02_at_17.18.57.png)
 
 # Creating a growing pattern on a vase
 
-[Generative Grow on Vase.gh](Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/Generative_Grow_on_Vase.gh)
+[Generative Grow on Vase.gh](Generative_Grow_on_Vase.gh)
 
-![Screen Recording 2023-06-02 at 17.51.50 (4).gif](Screen_Recording_2023-06-02_at_17.51.50_%284).gif)
+![Screen Recording 2023-06-02 at 17.51.50 (4).gif](4).gif).gif).gif)
 
-![Screenshot 2023-06-02 at 17.43.46.png](Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/Screenshot_2023-06-02_at_17.43.46.png)
+![Screenshot 2023-06-02 at 17.43.46.png](Screenshot_2023-06-02_at_17.43.46.png)
 
 # Case Study: Personalized Design from 3D Scan using Kangaroo Physics
 
-[Generating a Mesh from Ear Canal Cavity (Kangaroo Physics).gh](Generating_a_Mesh_from_Ear_Canal_Cavity_%28Kangaroo_Physics).gh)
+[Generating a Mesh from Ear Canal Cavity (Kangaroo Physics).gh](Kangaroo%20Physics).gh).gh).gh)
 
 For more complicated 3D scan geometry, the approached mentioned above might not be sufficient to generate good results. In this cases, a more creative approach is necessary. Let's take for example, the geometry of an ear canal. in this scenario, we would like to create an earbud that is personalized for the user's 3D scan and perfectly fits the cavity of the ear canal.
 
@@ -151,8 +151,8 @@ If you are new to Grasshopper Kangaroo physics simulation, it is recommended to 
 
 ![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2024.png)
 
-For more details on this implementation, refer to the example file provided: [Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](https://www.notion.so/Generating-a-Mesh-from-Ear-Canal-Cavity-Kangaroo-Physics-1de999d9cccc4b1796ea0c9507b4cba2?pvs=21). In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!
+For more details on this implementation, refer to the example file provided: [Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](Kangaroo%20Physics))). In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!
 
 # Related Works
 
-[Untitled Database](Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/Untitled%20Database.csv)
+[Untitled Database](Untitled%20Database.csv)

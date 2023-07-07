@@ -12,7 +12,7 @@ Review: Ready for review
 
 # 👩‍🏫 3.1 Introduction (2 min)
 
-[https://youtu.be/n-PLSo47Ay4](https://youtu.be/n-PLSo47Ay4)
+<iframe title="Lesson 3.1 - Introduction" src="https://www.youtube.com/embed/n-PLSo47Ay4?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
 
 ---
 
@@ -29,7 +29,7 @@ Review: Ready for review
 
 You can download the final file of this tutorial here:
 
-[Lesson 3 - Rainbow stacking rings.gh](Grasshopper_Rhino_course/Lessons/3️⃣%20Lesson_3-Data_structures/Lesson_3_-_Rainbow_stacking_rings.gh)
+[Lesson 3 - Rainbow stacking rings.gh](Lesson_3_-_Rainbow_stacking_rings.gh)
 
 ---
 
@@ -46,13 +46,13 @@ You can download the final file of this tutorial here:
 
 In tutorial 3.2 we looked at combining two lists in a circle component. Lists in Grasshopper can also be combined into a single list using the **[Merge]** component. In the combined list, the items of List 1 are followed by the items of List 2. In the example below, this means that the item at index 0 in List 2 is now accessible under index 6 in the combined list, and so on. Now that you understand how to manipulate and combine lists, it is time to learn how to work with more complex data structures, called **Data Trees**.
 
-![Untitled](Grasshopper_Rhino_course/Lessons/3️⃣%20Lesson_3-Data_structures/Untitled.png)
+![Untitled](Untitled.png)
 
 ## 📑 3.3.2 Data Trees
 
 Data Trees are an important concept in Grasshopper that allows you to manage, sort, and manipulate large amounts of data. At its most basic level, a Data Tree is a hierarchical organization of data in Grasshopper. A Data Tree is made up of branches, lists, and items. Each branch is a subset of data that may contain a list, an item, or even another branch. A data tree is defined by a numerical structure, such as {0,0,0}, where the amount of numbers within the brackets indicates the amount of depth of the data tree.
 
-![data tree structure rhino grasshopper.png](Grasshopper_Rhino_course/Lessons/3️⃣%20Lesson_3-Data_structures/data_tree_structure_rhino_grasshopper.png)
+![data tree structure rhino grasshopper.png](data_tree_structure_rhino_grasshopper.png)
 
 Using the two lists from the previous example, we can create a data tree by combining the lists with a **[Entwine]** component. As can be seen in the **[Panel]** component, a data tree with 2 branches has been created with each branch containing 1 list. 
 
@@ -60,7 +60,7 @@ The data tree can also be visualized using the **[Param Viewer]** to retrieve mo
 
 Additionally, You can notice that the new connection wires between components are displayed as a dashed line to represent a data tree is being connected (if the “Draw Fancy Wires” option is checked under “Display” in the top toolbar). 
 
-![Untitled](Grasshopper_Rhino_course/Lessons/3️⃣%20Lesson_3-Data_structures/Untitled%201.png)
+![Untitled](Untitled%201.png)
 
 ## 📑 3.3.3 Manipulating Data Trees
 
@@ -70,25 +70,25 @@ To handle large amounts of data in Grasshopper, you will need to know how to man
 
 The **[Flatten Tree]** component is used to remove the branch information or hierarchy from the data tree. Using this component converts the data tree into a list with all its items located within 1 branch. Since the branch information is deleted after a flatten operation, this component should only be used when the original data structure is not relevant for further operations in the script.
 
-![Untitled](Grasshopper_Rhino_course/Lessons/3️⃣%20Lesson_3-Data_structures/Untitled%202.png)
+![Untitled](Untitled%202.png)
 
 ### Graft
 
 The **[Graft Tree]** component adds extra depth to the data tree thus increasing its complexity. A new branch is created for every data tree item in an existing branch. In the example below, every item in the original data tree is converted into its own individual branch.
 
-![Untitled](Grasshopper_Rhino_course/Lessons/3️⃣%20Lesson_3-Data_structures/Untitled%203.png)
+![Untitled](Untitled%203.png)
 
 ### Simplify
 
 The **[Simplify Tree]** component simplifies the data tree by reducing the depth of the data tree to its minimal data structure while maintaining the branch information. In the example below, the data tree structure is reduced from a depth of 2 to a depth of 1.
 
-![Untitled](Grasshopper_Rhino_course/Lessons/3️⃣%20Lesson_3-Data_structures/Untitled%204.png)
+![Untitled](Untitled%204.png)
 
 ### Manipulating Data Trees (Alternative Method)
 
 The data tree operations shown in the examples above using the Flatten, Graft, and Simplify components can also be performed by right-clicking on the input or output of a node and selecting the Flatten, Graft, or Simplify options. The corresponding icon will also be displayed on the component to represent the data tree operation performed at the input or output.
 
-![Untitled](Grasshopper_Rhino_course/Lessons/3️⃣%20Lesson_3-Data_structures/Untitled%205.png)
+![Untitled](Untitled%205.png)
 
 ## 🖱️ 3.3.4 Exercise: Build a grid
 
@@ -96,10 +96,10 @@ Build a grid of points in the XY plane. There are multiple ways to achieve this 
 
 - Possible solution
     
-    ![Lesson 3 - Grid.png](Grasshopper_Rhino_course/Lessons/3️⃣%20Lesson_3-Data_structures/Lesson_3_-_Grid.png)
+    ![Lesson 3 - Grid.png](Lesson_3_-_Grid.png)
     
 
-![Untitled](Grasshopper_Rhino_course/Lessons/3️⃣%20Lesson_3-Data_structures/Untitled%206.png)
+![Untitled](Untitled%206.png)
 
 ---
 
@@ -116,17 +116,17 @@ Build a grid of points in the XY plane. There are multiple ways to achieve this 
 
 **Download the final file here:**
 
-[Lesson 3 - Brick wall.gh](Grasshopper_Rhino_course/Lessons/3️⃣%20Lesson_3-Data_structures/Lesson_3_-_Brick_wall.gh)
+[Lesson 3 - Brick wall.gh](Lesson_3_-_Brick_wall.gh)
 
 ---
 
 # 💻 3.5 Assignment (max 3 hours)
 
-![Untitled](Grasshopper_Rhino_course/Lessons/3️⃣%20Lesson_3-Data_structures/Untitled%207.png)
+![Untitled](Untitled%207.png)
 
 <aside>
 💻 Create an attractor scene. The attractor should be a curve in Rhino, that in some way influences the landscape. Use a culling pattern and add some colour. 
-Check out the [Student showcase](../../Student%20showcase/Assignment%203/%21index.md) to see what other students made for this assignment.
+Check out the [Student showcase](../../Student%20showcase/Assignment%203/!index.md) to see what other students made for this assignment.
 
 Try to keep your script concise and organized.
 

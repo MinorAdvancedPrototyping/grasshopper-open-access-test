@@ -29,27 +29,27 @@ These lessons were developed as part of the Industrial Design Engineering curric
 These lessons were created using Rhino 7, Grasshopper build 1.0.0007*.*
 
 **Creation & contact info
-*Created by***: [Anne van den Dool](https://www.tudelft.nl/io/over-io/personen/dool-ac-van-den), [Jose Martinez Castro](https://www.tudelft.nl/io/over-io/personen/martinez-castro-j-f) and [Niels van Silfhout](../mailto%3AN.vanSilfhout%40student.tudelft.nl)
+*Created by***: [Anne van den Dool](https://www.tudelft.nl/io/over-io/personen/dool-ac-van-den), [Jose Martinez Castro](https://www.tudelft.nl/io/over-io/personen/martinez-castro-j-f) and [Niels van Silfhout](../mailto%253AN.vanSilfhout%2540student.tudelft.nl)
 ***Supervisory and advisory team***: [Sander Minnoye](https://www.tudelft.nl/io/over-io/personen/minnoye-alm), [Willemijn Elkhuizen](https://www.tudelft.nl/io/over-io/personen/elkhuizen-ws) and [Wolf Song](https://www.tudelft.nl/io/over-io/personen/song-y)
-***Feedback/errors/bugs***: please mail to [prototyping@tudelft.nl](../mailto%3Aprototyping%40tudelft.nl)
+***Feedback/errors/bugs***: please mail to [prototyping@tudelft.nl](../mailto%253Aprototyping%2540tudelft.nl)
 
 Add explanation of computational, parametric and generative design. Algorithm.
 
 Explanation of computational thinking (lecture Wolf)
 
-[Lessons](Grasshopper_Rhino_course/Lessons.csv)
+[Lessons](Lessons.csv)
 
 ## Knowledge Base
 
 ### Lessons
 
-[Knowledge base](Grasshopper_Rhino_course/Knowledge%20base.csv)
+[Knowledge base](Knowledge%20base.csv)
 
 ### Graduation Projects
 
-[Graduation Projects](Grasshopper_Rhino_course/Graduation%20Projects.csv)
+[Graduation Projects](Graduation%20Projects.csv)
 
-[Student showcase](Grasshopper_Rhino_course/Student%20showcase.csv)
+[Student showcase](Student%20showcase.csv)
 
 🔗 **External resources:**
 

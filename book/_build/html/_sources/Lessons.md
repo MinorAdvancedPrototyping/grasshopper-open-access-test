@@ -5,7 +5,7 @@
 :gutter: 3
 
 :::{grid-item-card}
-:link: "Grasshopper%20Rhino%20course/Lessons%20(1)/1️⃣%20Lesson%201%20-%20Basics/!index"
+:link: lesson1
 :link-type: doc
 :img-top: Lesson1/teapot3.png
 :class-header: bg-light
@@ -17,7 +17,7 @@ Introduction into Rhino and Grasshopper
 :::
 
 :::{grid-item-card}
-:link: lesson1
+:link: "Grasshopper_Rhino_course/Lessons/2️⃣ Lesson_2-Curves_and_lists/!index.md"
 :link-type: doc
 :img-top: lesson2pic.png
 :class-header: bg-light

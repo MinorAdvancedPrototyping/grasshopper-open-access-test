@@ -36,3 +36,7 @@ html:
 #sphinx:
 #  config:
  #   html_theme: pydata_sphinx_theme
+
+html:
+  comments:
+    hypothesis: true

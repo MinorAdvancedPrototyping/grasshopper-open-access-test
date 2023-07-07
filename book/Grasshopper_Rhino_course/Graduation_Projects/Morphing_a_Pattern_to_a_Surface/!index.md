@@ -5,7 +5,7 @@ Created: April 28, 2023 4:05 PM
 Review: WIP - For Later
 Tags: 3d scans, personalized
 
-![Screen_Shot_2023-03-07_at_17.39.13_copy.png](Grasshopper_Rhino_course/Graduation_Projects/Morphing_a_Pattern_to_a_Surface/Screen_Shot_2023-03-07_at_17.39.13_copy.png)
+![Screen_Shot_2023-03-07_at_17.39.13_copy](Screen_Shot_2023-03-07_at_17.39.13_copy.png)
 
 # 📑A.4 Generating Custom Pattern
 
