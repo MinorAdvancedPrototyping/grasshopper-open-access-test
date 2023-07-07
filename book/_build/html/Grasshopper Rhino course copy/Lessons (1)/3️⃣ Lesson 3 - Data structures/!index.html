@@ -1,0 +1,632 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3 - Data structures &#8212; Rhino Grasshopper Open Access Education</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Grasshopper Rhino course copy/Lessons (1)/3️⃣ Lesson 3 - Data structures/!index';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/TUDelft_logo_cmyk.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../_static/TUDelft_logo_cmyk.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../intro.html">
+                    Home
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../lessons.html">Lessons</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Grasshopper_Rhino_course/Lessons/1%EF%B8%8F%E2%83%A3%20Lesson_1-Basics/%21index.html">Lesson 1 - Basics</a></li>
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../../Lesson%202.html">Lesson 2 - Curves and Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Lesson%203.html">Lesson 3 - Data Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Lesson%204.html">Lesson 4 - Surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Lesson%205.html">Lesson 5 - Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../knowledgebase.html">Knowledge Base</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../tutorials.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorial1.html">Tutorial 1</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../gradprojects.html">Graduation Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../plugins.html">Plugins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../studentshowcase.html">Student Showcase</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FGrasshopper Rhino course copy/Lessons (1)/3️⃣ Lesson 3 - Data structures/!index.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/Grasshopper Rhino course copy/Lessons (1)/3️⃣ Lesson 3 - Data structures/!index.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Lesson 3 - Data structures</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lesson 3 - Data structures</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-2-min">👩‍🏫 3.1 Introduction (2 min)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-lists-20-min">📺 3.2 Combining lists (20 min)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#datatrees-and-grids-20-min">📑 3.3 Datatrees and Grids (20 min)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#merging-lists">📑 3.3.1 Merging Lists</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-trees">📑 3.3.2 Data Trees</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manipulating-data-trees">📑 3.3.3 Manipulating Data Trees</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flatten-tree">Flatten Tree</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graft">Graft</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simplify">Simplify</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manipulating-data-trees-alternative-method">Manipulating Data Trees (Alternative Method)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-build-a-grid">🖱️ 3.3.4 Exercise: Build a grid</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#designing-with-grids-25-min">📺 3.4 Designing with grids (25 min)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-max-3-hours">💻 3.5 Assignment (max 3 hours)</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="lesson-3-data-structures">
+<h1>Lesson 3 - Data structures<a class="headerlink" href="#lesson-3-data-structures" title="Permalink to this headline">#</a></h1>
+<p>Review: Ready for review</p>
+<p>📌 <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Outlines:</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> A short description of what you can expect in the upcoming section.
+📑 <strong>Explanation text:</strong> Written explanations with supporting images.
+👩‍🏫 <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Explanation videos:</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> Explaining the course material in short lecture videos.
+📺 <strong>Tutorial videos:</strong> Follow-along tutorials.
+💡 T<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>ips:</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> Tips and tricks to make working in Rhino/Grasshopper easier.
+🖱️ <strong>Exercises:</strong> Small practice questions. The solution is provided.
+💻 <strong>Assignments:</strong> Open-ended assignments, to practice further with the course materials.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="introduction-2-min">
+<h1>👩‍🏫 3.1 Introduction (2 min)<a class="headerlink" href="#introduction-2-min" title="Permalink to this headline">#</a></h1>
+<p><a class="reference external" href="https://youtu.be/n-PLSo47Ay4">https://youtu.be/n-PLSo47Ay4</a></p>
+</div>
+<hr class="docutils" />
+<div class="tex2jax_ignore mathjax_ignore section" id="combining-lists-20-min">
+<h1>📺 3.2 Combining lists (20 min)<a class="headerlink" href="#combining-lists-20-min" title="Permalink to this headline">#</a></h1>
+<aside>
+📌 *What:*         Working with lists (tutorial)
+*For Whom:* Beginner level
+*Time:*          20 minutes
+</aside>
+<p><a class="reference external" href="https://youtu.be/5yriSQdJFyo">https://youtu.be/5yriSQdJFyo</a></p>
+<p>You can download the final file of this tutorial here:</p>
+<p><span class="xref myst">Lesson 3 - Rainbow stacking rings.gh</span></p>
+</div>
+<hr class="docutils" />
+<div class="tex2jax_ignore mathjax_ignore section" id="datatrees-and-grids-20-min">
+<h1>📑 3.3 Datatrees and Grids (20 min)<a class="headerlink" href="#datatrees-and-grids-20-min" title="Permalink to this headline">#</a></h1>
+<aside>
+📌 *What:*         Working with lists (reading)
+*For Whom:* Intermediate level
+*Time:*          15 minutes
+</aside>
+<div class="section" id="merging-lists">
+<h2>📑 3.3.1 Merging Lists<a class="headerlink" href="#merging-lists" title="Permalink to this headline">#</a></h2>
+<p>In tutorial 3.2 we looked at combining two lists in a circle component. Lists in Grasshopper can also be combined into a single list using the <strong>[Merge]</strong> component. In the combined list, the items of List 1 are followed by the items of List 2. In the example below, this means that the item at index 0 in List 2 is now accessible under index 6 in the combined list, and so on. Now that you understand how to manipulate and combine lists, it is time to learn how to work with more complex data structures, called <strong>Data Trees</strong>.</p>
+<p><img alt="Untitled" src="Grasshopper Rhino course copy/Lessons (1)/3️⃣ Lesson 3 - Data structures/Grasshopper_Rhino_course/Lessons/3%EF%B8%8F%E2%83%A3%20Lesson_3-Data_structures/Untitled.png" /></p>
+</div>
+<div class="section" id="data-trees">
+<h2>📑 3.3.2 Data Trees<a class="headerlink" href="#data-trees" title="Permalink to this headline">#</a></h2>
+<p>Data Trees are an important concept in Grasshopper that allows you to manage, sort, and manipulate large amounts of data. At its most basic level, a Data Tree is a hierarchical organization of data in Grasshopper. A Data Tree is made up of branches, lists, and items. Each branch is a subset of data that may contain a list, an item, or even another branch. A data tree is defined by a numerical structure, such as {0,0,0}, where the amount of numbers within the brackets indicates the amount of depth of the data tree.</p>
+<p><img alt="data tree structure rhino grasshopper.png" src="Grasshopper Rhino course copy/Lessons (1)/3️⃣ Lesson 3 - Data structures/Grasshopper_Rhino_course/Lessons/3%EF%B8%8F%E2%83%A3%20Lesson_3-Data_structures/data_tree_structure_rhino_grasshopper.png" /></p>
+<p>Using the two lists from the previous example, we can create a data tree by combining the lists with a <strong>[Entwine]</strong> component. As can be seen in the <strong>[Panel]</strong> component, a data tree with 2 branches has been created with each branch containing 1 list.</p>
+<p>The data tree can also be visualized using the <strong>[Param Viewer]</strong> to retrieve more detail on the data structure (Right-click on the component and select “Draw Tree” from the options). The gray circular outlines represent the depth of the data tree. In the example below, the data tree has a depth of 2.</p>
+<p>Additionally, You can notice that the new connection wires between components are displayed as a dashed line to represent a data tree is being connected (if the “Draw Fancy Wires” option is checked under “Display” in the top toolbar).</p>
+<p><img alt="Untitled" src="Grasshopper Rhino course copy/Lessons (1)/3️⃣ Lesson 3 - Data structures/Grasshopper_Rhino_course/Lessons/3%EF%B8%8F%E2%83%A3%20Lesson_3-Data_structures/Untitled%201.png" /></p>
+</div>
+<div class="section" id="manipulating-data-trees">
+<h2>📑 3.3.3 Manipulating Data Trees<a class="headerlink" href="#manipulating-data-trees" title="Permalink to this headline">#</a></h2>
+<p>To handle large amounts of data in Grasshopper, you will need to know how to manipulate data trees with basic functions such as flatten, graft, and simplify. First, let’s take a look using the [<strong>Flatten Tree]</strong> component on a data tree.</p>
+<div class="section" id="flatten-tree">
+<h3>Flatten Tree<a class="headerlink" href="#flatten-tree" title="Permalink to this headline">#</a></h3>
+<p>The <strong>[Flatten Tree]</strong> component is used to remove the branch information or hierarchy from the data tree. Using this component converts the data tree into a list with all its items located within 1 branch. Since the branch information is deleted after a flatten operation, this component should only be used when the original data structure is not relevant for further operations in the script.</p>
+<p><img alt="Untitled" src="Grasshopper Rhino course copy/Lessons (1)/3️⃣ Lesson 3 - Data structures/Grasshopper_Rhino_course/Lessons/3%EF%B8%8F%E2%83%A3%20Lesson_3-Data_structures/Untitled%202.png" /></p>
+</div>
+<div class="section" id="graft">
+<h3>Graft<a class="headerlink" href="#graft" title="Permalink to this headline">#</a></h3>
+<p>The <strong>[Graft Tree]</strong> component adds extra depth to the data tree thus increasing its complexity. A new branch is created for every data tree item in an existing branch. In the example below, every item in the original data tree is converted into its own individual branch.</p>
+<p><img alt="Untitled" src="Grasshopper Rhino course copy/Lessons (1)/3️⃣ Lesson 3 - Data structures/Grasshopper_Rhino_course/Lessons/3%EF%B8%8F%E2%83%A3%20Lesson_3-Data_structures/Untitled%203.png" /></p>
+</div>
+<div class="section" id="simplify">
+<h3>Simplify<a class="headerlink" href="#simplify" title="Permalink to this headline">#</a></h3>
+<p>The <strong>[Simplify Tree]</strong> component simplifies the data tree by reducing the depth of the data tree to its minimal data structure while maintaining the branch information. In the example below, the data tree structure is reduced from a depth of 2 to a depth of 1.</p>
+<p><img alt="Untitled" src="Grasshopper Rhino course copy/Lessons (1)/3️⃣ Lesson 3 - Data structures/Grasshopper_Rhino_course/Lessons/3%EF%B8%8F%E2%83%A3%20Lesson_3-Data_structures/Untitled%204.png" /></p>
+</div>
+<div class="section" id="manipulating-data-trees-alternative-method">
+<h3>Manipulating Data Trees (Alternative Method)<a class="headerlink" href="#manipulating-data-trees-alternative-method" title="Permalink to this headline">#</a></h3>
+<p>The data tree operations shown in the examples above using the Flatten, Graft, and Simplify components can also be performed by right-clicking on the input or output of a node and selecting the Flatten, Graft, or Simplify options. The corresponding icon will also be displayed on the component to represent the data tree operation performed at the input or output.</p>
+<p><img alt="Untitled" src="Grasshopper Rhino course copy/Lessons (1)/3️⃣ Lesson 3 - Data structures/Grasshopper_Rhino_course/Lessons/3%EF%B8%8F%E2%83%A3%20Lesson_3-Data_structures/Untitled%205.png" /></p>
+</div>
+</div>
+<div class="section" id="exercise-build-a-grid">
+<h2>🖱️ 3.3.4 Exercise: Build a grid<a class="headerlink" href="#exercise-build-a-grid" title="Permalink to this headline">#</a></h2>
+<p>Build a grid of points in the XY plane. There are multiple ways to achieve this result, but try to use a <strong>[Construct point]</strong> component and work with lists. If you get stuck, you can check the solution below.</p>
+<ul>
+<li><p>Possible solution</p>
+<p><img alt="Lesson 3 - Grid.png" src="Grasshopper Rhino course copy/Lessons (1)/3️⃣ Lesson 3 - Data structures/Grasshopper_Rhino_course/Lessons/3%EF%B8%8F%E2%83%A3%20Lesson_3-Data_structures/Lesson_3_-_Grid.png" /></p>
+</li>
+</ul>
+<p><img alt="Untitled" src="Grasshopper Rhino course copy/Lessons (1)/3️⃣ Lesson 3 - Data structures/Grasshopper_Rhino_course/Lessons/3%EF%B8%8F%E2%83%A3%20Lesson_3-Data_structures/Untitled%206.png" /></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="tex2jax_ignore mathjax_ignore section" id="designing-with-grids-25-min">
+<h1>📺 3.4 Designing with grids (25 min)<a class="headerlink" href="#designing-with-grids-25-min" title="Permalink to this headline">#</a></h1>
+<aside>
+📌 *What:*         Creating a brickwall pattern by using lists and grids (tutorial)
+*For Whom:* Intermediate level
+*Time:*          25 minutes
+</aside>
+<p><a class="reference external" href="https://youtu.be/LlXmjHG7LXk">https://youtu.be/LlXmjHG7LXk</a></p>
+<p><strong>Download the final file here:</strong></p>
+<p><span class="xref myst">Lesson 3 - Brick wall.gh</span></p>
+</div>
+<hr class="docutils" />
+<div class="tex2jax_ignore mathjax_ignore section" id="assignment-max-3-hours">
+<h1>💻 3.5 Assignment (max 3 hours)<a class="headerlink" href="#assignment-max-3-hours" title="Permalink to this headline">#</a></h1>
+<p><img alt="Untitled" src="Grasshopper Rhino course copy/Lessons (1)/3️⃣ Lesson 3 - Data structures/Grasshopper_Rhino_course/Lessons/3%EF%B8%8F%E2%83%A3%20Lesson_3-Data_structures/Untitled%207.png" /></p>
+<aside>
+💻 Create an attractor scene. The attractor should be a curve in Rhino, that in some way influences the landscape. Use a culling pattern and add some colour. 
+Check out the [Student showcase](../../Student%20showcase/Assignment%203/%21index.md) to see what other students made for this assignment.
+<p>Try to keep your script concise and organized.</p>
+</aside>
+<hr class="docutils" />
+<p><a class="reference external" href="https://indify.co/widgets/live/button/tPmHA1XPTD4Mcl516uma">https://indify.co/widgets/live/button/tPmHA1XPTD4Mcl516uma</a></p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Grasshopper Rhino course copy/Lessons (1)/3️⃣ Lesson 3 - Data structures"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Lesson 3 - Data structures</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-2-min">👩‍🏫 3.1 Introduction (2 min)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-lists-20-min">📺 3.2 Combining lists (20 min)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#datatrees-and-grids-20-min">📑 3.3 Datatrees and Grids (20 min)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#merging-lists">📑 3.3.1 Merging Lists</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-trees">📑 3.3.2 Data Trees</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manipulating-data-trees">📑 3.3.3 Manipulating Data Trees</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flatten-tree">Flatten Tree</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graft">Graft</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simplify">Simplify</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manipulating-data-trees-alternative-method">Manipulating Data Trees (Alternative Method)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-build-a-grid">🖱️ 3.3.4 Exercise: Build a grid</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#designing-with-grids-25-min">📺 3.4 Designing with grids (25 min)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-max-3-hours">💻 3.5 Assignment (max 3 hours)</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Faculty of Industrial Design Engineering
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lessons.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Data-Driven_Personalized_Design/!index.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 405.5
   },
   "right": {
     "id": "eba0d6683893ae37",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lessons.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Data-Driven_Personalized_Design/!index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "lessons.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Data-Driven_Personalized_Design/!index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "lessons.md"
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Data-Driven_Personalized_Design/!index.md"
               }
             }
           }
@@ -143,36 +143,57 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "5016906e43f2c50e",
   "lastOpenFiles": [
-    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.3a_RhinoBoxRender.png",
-    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.2j_SetCurve.png",
-    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.1d_RhinoTools.png",
-    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.4.2a_FailedToCollectData.png",
-    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.2k_BakeToRhino.png",
-    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/Rhino_grasshopper_lesson_1_intro_slider.png",
-    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.2i_SliderTip.gif",
-    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.3e_GrasshopperBoxHint.png",
-    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.3f_GrasshopperBoxSolution.gif",
-    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.3c_RhinoBoxSolution.gif",
-    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1.2.3d_GrasshopperBoxRender.png",
-    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a/1_Basic_geometry.pdf",
-    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a.md",
-    "Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a",
-    "gradprojects.md",
-    "intro.md",
-    "knowledgebase.md",
-    "Lesson 2.md",
-    "Lesson 3.md",
-    "plugins.md",
-    "markdown-notebooks.md",
-    "markdown.md",
-    "lesson1.md",
-    "Lesson 5.md",
-    "Lesson 6.md",
-    "Lesson 4.md"
+    "_build/html/index.html",
+    "_build/html/_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css",
+    "_build/html/objects.inv",
+    "_build/html/searchindex.js",
+    "_build/html/searchindex.js.tmp",
+    "_build/html/_static/TUDelft_logo_cmyk.png",
+    "_build/html/_static/design-tabs.js",
+    "_build/html/_static/design-style.4045f2051d55cab465a707391d5b2007.min.css",
+    "_build/html/_static/sphinx-thebe.css",
+    "_build/html/_static/sphinx-thebe.js",
+    "_build/html/_static/copybutton.css",
+    "_build/html/_static/copybutton.js",
+    "_build/html/_static/copy-button.svg",
+    "_build/html/_static/check-solid.svg",
+    "_build/html/_static/images/logo_jupyterhub.svg",
+    "_build/html/_static/images/logo_binder.svg",
+    "_build/html/_static/images/logo_colab.png",
+    "_build/html/_static/images/logo_deepnote.svg",
+    "_build/html/_static/minus.png",
+    "_build/html/_static/plus.png",
+    "_build/html/_static/file.png",
+    "_build/html/_sources/tutorials.md",
+    "_build/html/_sources/tutorial1.md",
+    "_build/html/_sources/testnote.md",
+    "_build/html/_sources/studentshowcase.md",
+    "_build/html/_sources/plugins.md",
+    "_build/html/_sources/markdown-notebooks.md",
+    "_build/html/_sources/markdown.md",
+    "_build/html/_sources/lessons.md",
+    "_build/html/_sources/lesson1.md",
+    "_build/html/_sources/knowledgebase.md",
+    "_build/html/_sources/intro.md",
+    "_build/html/_sources/gradprojects.md",
+    "_build/html/_sources/Untitled_1/grasshopper_test.md",
+    "_build/html/_sources/README.md",
+    "_build/html/_sources/Lesson 6.md",
+    "_build/html/_sources/Lesson 5.md",
+    "_build/html/_sources/Lesson 4.md",
+    "_build/html/_sources/Lesson 3.md",
+    "_build/html/_sources/Lesson 2.md",
+    "_build/html/_sources/Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a.md",
+    "_build/html/_sources/Grasshopper_Rhino_course/Student showcase/Assignment_4/!index.md",
+    "_build/html/_sources/Grasshopper_Rhino_course/Student showcase/Assignment_3/!index.md",
+    "_build/html/_sources/Grasshopper_Rhino_course/Student showcase/Assignment_2/!index.md",
+    "_build/html/_sources/Grasshopper_Rhino_course/Student showcase/Assignment_1/!index.md",
+    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/5️⃣ Lesson_5-Meshes/!index.md"
   ]
 }

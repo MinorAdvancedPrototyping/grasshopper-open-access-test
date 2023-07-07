@@ -1,0 +1,603 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design for Digital Fabrication (Laser Cutting) &#8212; Rhino Grasshopper Open Access Education</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Grasshopper Rhino course copy/Knowledge base (1)/Design for Digital Fabrication (Laser Cutting)/!index';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/TUDelft_logo_cmyk.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../_static/TUDelft_logo_cmyk.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../intro.html">
+                    Home
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../lessons.html">Lessons</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Grasshopper_Rhino_course/Lessons/1%EF%B8%8F%E2%83%A3%20Lesson_1-Basics/%21index.html">Lesson 1 - Basics</a></li>
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../../Lesson%202.html">Lesson 2 - Curves and Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Lesson%203.html">Lesson 3 - Data Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Lesson%204.html">Lesson 4 - Surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Lesson%205.html">Lesson 5 - Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../knowledgebase.html">Knowledge Base</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../tutorials.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../tutorial1.html">Tutorial 1</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../gradprojects.html">Graduation Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../plugins.html">Plugins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../studentshowcase.html">Student Showcase</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FGrasshopper Rhino course copy/Knowledge base (1)/Design for Digital Fabrication (Laser Cutting)/!index.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/Grasshopper Rhino course copy/Knowledge base (1)/Design for Digital Fabrication (Laser Cutting)/!index.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Design for Digital Fabrication (Laser Cutting)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Design for Digital Fabrication (Laser Cutting)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-the-geometry">Preparing the Geometry</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-surface-contours">Finding Surface Contours</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#find-intersections-and-cut-the-panels">Find Intersections and Cut the Panels</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#orient-the-panels-flat">Orient the Panels Flat</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#optimally-pack-the-panels-into-the-cutting-piece">Optimally Pack the Panels into the Cutting Piece</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-the-cutting-file">Generate the Cutting File</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="design-for-digital-fabrication-laser-cutting">
+<h1>Design for Digital Fabrication (Laser Cutting)<a class="headerlink" href="#design-for-digital-fabrication-laser-cutting" title="Permalink to this headline">#</a></h1>
+<p>Categories: Lesson
+Created: April 20, 2023 11:58 PM
+Review: Ready for Review
+Tags: 3D Printing, Advanced Manufacturing</p>
+<p>📌 <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Outlines:</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> A short description of what you can expect in the upcoming section.
+📑 <strong>Explanation text:</strong> Written explanations with supporting images.
+👩‍🏫 <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Explanation videos:</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> Explaining the course material in short lecture videos.
+📺 <strong>Tutorial videos:</strong> Follow-along tutorials.
+💡 T<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>ips:</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> Tips and tricks to make working in Rhino/Grasshopper easier.
+🖱️ <strong>Exercises:</strong> Small practice questions. The solution is provided.
+💻 <strong>Assignments:</strong> Open-ended assignments, to practice further with the course materials.</p>
+<p>This tutorial will teach you the workflow on how to prepare your Rhino geometry for digital fabrication, specifically laser cutting. The workflow includes techniques such as creating contour slices of the geometry, creating intersecting joints between the slices, orienting the slices onto the cutting plane, optimizing the packing layout with OpenNest plugin, and exporting the curves for laser cutting.</p>
+<p>First, we will start with the process of creating contours from a 3D geometry. This step will involve dissecting a 3D model into a series of 2D sections or ‘slices’ using intersecting planes in Grasshopper. Next, we’ll move to finding the intersections between slices and cut joints between the slices. This step is important to ensure the slices can be joined and assembled together. Once we have our finished slices, the third stage will involve orienting these slices flat onto the cutting plane.</p>
+<p>In the fourth step, we will concentrate on how to efficiently pack these slices inside the cutting plate. We’ll use the OpenNest plugin, a powerful tool for layout optimization, to help you minimize waste and maximize the usage of your material sheet. Finally, we will wrap up by showing you how to export these curves for laser cutting. This will prepare you to take your designs from the virtual space of Grasshopper into the real-world process of laser cutting.</p>
+<p>By the end of this tutorial, you will have a solid understanding of these essential laser cutting preparation techniques in Rhino Grasshopper.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="preparing-the-geometry">
+<h1>Preparing the Geometry<a class="headerlink" href="#preparing-the-geometry" title="Permalink to this headline">#</a></h1>
+<p>Welcome to the first section of our laser cutting preparation tutorial. Here, we will introduce the geometry we’ll be using for this lesson: a bench. This bench will serve as a practical example throughout our tutorial, allowing us to delve deep into the techniques required for preparing a 3D model for laser cutting.</p>
+<p>To create our bench, we’ll be using the sweep function in Rhino Grasshopper. The sweep function allows us to create a surface by ‘sweeping’ a curve (or multiple curves) along a path, defined by another curve. In the case of our bench, we will be drawing our curves in Rhino and then importing them into Grasshopper. The curves will consist of the outline of the backrest and the top and bottom path to use for the sweep. These profiles should be drawn to scale, reflecting the actual dimensions you want for your bench.</p>
+<p><img alt="Screenshot 2023-06-28 at 17.37.47.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_17.37.47.png)</p>
+<p>Once we’ve drawn these curves, we will import them into Grasshopper using the “Geometry” component to apply the sweep function. This function takes two main inputs: the curve(s) to be swept (sections) and the path along which they should be swept (rails). By using the sweep function, we’ll transform our two-dimensional curves into a three-dimensional bench model. This model will then serve as the starting point for our contour slicing and plate packing processes in the later sections of this tutorial.</p>
+<p><img alt="Screenshot 2023-06-28 at 23.37.41.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_23.37.41.png)</p>
+<p><img alt="Screenshot 2023-06-28 at 17.38.40.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_17.38.40.png)</p>
+<p>Finally we will mirror the surface to obtain a symmetric bench for use in the next section. For this exercise, we only need the main surface of the bench as the back and bottom will be generated in the next section when we find the contours of the surface. The image on the right shows how the bench looks with the inside volume filled.</p>
+<p><img alt="Screenshot 2023-06-28 at 17.39.36.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_17.39.36.png)</p>
+<p><img alt="Untitled" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Untitled.png)</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="finding-surface-contours">
+<h1>Finding Surface Contours<a class="headerlink" href="#finding-surface-contours" title="Permalink to this headline">#</a></h1>
+<p>Now that we’ve created our 3D bench model, it’s time to start preparing it for laser cutting. In this section, we’ll slice our surface into both vertical and horizontal sections using intersecting planes and generate the back and bottom of the bench by projecting to the respective planes. If your starting geometry is a closed Brep, you can generate the surface contours without finding the back and bottom projections.</p>
+<p><img alt="Screenshot 2023-06-28 at 23.36.11.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_23.36.11.png)</p>
+<p>We will use the ‘Perp Frames’ component to define a series of 2D planes within the bounding box of the geometry. We’ll use these planes as ‘cutting boards’ to slice through our 3D bench model. We’ll create two sets of planes: one set that’s horizontal (parallel to the ground plane) and one set that’s vertical (perpendicular to the ground plane). We can define the count of the “Perp Frames” to define the number of slices in the horizontal and vertical direction.</p>
+<p><img alt="Screenshot 2023-06-28 at 17.49.37.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_17.49.37.png)</p>
+<p>Then, we’ll use the ‘Brep | Plane’ component to create the intersection curves between these planes and the bench model. Now that we have the intersection curve, we can find the projection of the curves to the vertical plane needed to complete the surface. Using the “Edge Surface” component, we can create the slice surfaces between the bench intersection curves and the projecting curves.</p>
+<p><img alt="Screenshot 2023-06-28 at 22.44.24.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_22.44.24.png)</p>
+<p><img alt="Screenshot 2023-06-28 at 22.44.52.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_22.44.52.png)</p>
+<p>We can repeat the same process to create the horizontal slices.</p>
+<p><img alt="Screenshot 2023-06-28 at 22.42.33.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_22.42.33.png)</p>
+<p>Next, we need to consider our manufacturing process of laser cutting. As we will be adding intersecting joint notches to connect the horizontal and vertical pieces, we will not be able to connect the slices at the boundaries of the bench. Therefore, we will remove the boundary slices for the horizontal and vertical slices using the “Cull Index” component by inputting the first and last index of the slices list.</p>
+<p><img alt="Screenshot 2023-06-28 at 23.34.05.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_23.34.05.png)</p>
+<p><img alt="Screenshot 2023-06-28 at 22.42.33.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_22.42.33.png)</p>
+<p><img alt="Screenshot 2023-06-28 at 22.46.18.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_22.46.18.png)</p>
+<p>The final step is to add the thickness of the material to the slice surfaces we created. Based on the thickness of the material we will use for laser cutting, we can adjust the thickness of the extrusion in the components shown below. Inputting the correct thickness is critical to ensuring the intersecting joints are created correctly in the next section.</p>
+<p><img alt="Screenshot 2023-06-28 at 23.28.11.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_23.28.11.png)</p>
+<p><img alt="Untitled" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Untitled%201.png)</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="find-intersections-and-cut-the-panels">
+<h1>Find Intersections and Cut the Panels<a class="headerlink" href="#find-intersections-and-cut-the-panels" title="Permalink to this headline">#</a></h1>
+<p>Now that we have both our horizontal and vertical slices, it’s time to determine where they intersect. This information will allow us to create notches at the intersections, facilitating the assembly of our laser-cut pieces into a 3D form.</p>
+<p>In order to find the intersection between multiple slices, we need to use the “Cross Reference” and “Brep | Brep” component to ensure that <strong>each</strong> horizontal slice is intersected by <strong>all</strong> vertical slices and vice versa. We input our series of horizontal and vertical slice brep into the component, and it will output the curves where these slices intersect. The “Bounding Box” component then generates a box representing the intersections between the slices.</p>
+<p><img alt="Screenshot 2023-06-28 at 23.26.01.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_23.26.01.png)</p>
+<p><img alt="Screenshot 2023-06-28 at 23.09.41.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_23.09.41.png)</p>
+<p>These intersection boxes will serve as the starting point for our notches. We can then move the intersection geometry by the depth of the cut. In this example, we will make the cut half the length of the intersection box. The “Solid | Difference” component is then used to cut the intersection joints into the slices which will subtract the notch geometry from the slices, leaving us with slices that have notches cut out at the intersections.</p>
+<p><img alt="Screenshot 2023-06-28 at 23.29.03.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_23.29.03.png)</p>
+<p><img alt="Screenshot 2023-06-28 at 23.10.43.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_23.10.43.png)</p>
+<p><img alt="Screenshot 2023-06-28 at 23.11.38.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_23.11.38.png)</p>
+<p><img alt="Untitled" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Untitled%202.png)</p>
+<p>By the end of this section, your slices will be ready for laser cutting, with notches cut out at the intersections. In the next part, we will proceed to orient these slices onto our cutting plane. This will put us one step closer to our final goal of laser cutting and assembling our 3D bench model.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="orient-the-panels-flat">
+<h1>Orient the Panels Flat<a class="headerlink" href="#orient-the-panels-flat" title="Permalink to this headline">#</a></h1>
+<p>In this section, we’ll introduce the use of a powerful Grasshopper plugin, OpenNest, to orient our slices flat onto the cutting plane. OpenNest is a freely available open-source plugin designed to optimize part arrangement and nesting, making it a great tool for digital fabrication processes. You can download the plugin from this link: <strong><a class="reference external" href="https://www.food4rhino.com/en/app/opennest">OpenNest Plugin</a></strong>.</p>
+<p>After you’ve downloaded and installed the OpenNest plugin in Grasshopper, we’ll start setting up our primary inputs using the ‘Pack Objects’ component:</p>
+<p><img alt="Screenshot 2023-06-28 at 23.24.27.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_23.24.27.png)</p>
+<ol class="arabic simple">
+<li><p><strong>Geometries:</strong> This input takes the slices we’ve prepared as its data. Ensure these curves are flattened before connecting them to the ‘Geometries’ parameter of the ‘Pack Objects’ component.</p></li>
+<li><p><strong>Plane:</strong> This input takes the individual planes of each slice to inform the component how to orient each individual geometry.</p></li>
+</ol>
+<p>Once you’ve set these inputs, OpenNest automatically processes the data, returning an configuration that arranges our slices in a line onto the cutting plane, viewable in the Rhino viewport.</p>
+<p><img alt="Untitled" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Untitled%203.png)</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="optimally-pack-the-panels-into-the-cutting-piece">
+<h1>Optimally Pack the Panels into the Cutting Piece<a class="headerlink" href="#optimally-pack-the-panels-into-the-cutting-piece" title="Permalink to this headline">#</a></h1>
+<p>Now we will leverage the power of the OpenNest plugin to pack our slices optimally onto the cutting plane. This is an important step in the preparation process, aimed at maximizing material usage and minimizing waste.</p>
+<p>Once you have your slices oriented flat on the cutting plane with the ‘Pack Objects’ component, it’s time to initiate the nesting process using the main ‘OpenNest’ component.</p>
+<p><img alt="Screenshot 2023-06-28 at 23.23.40.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_23.23.40.png)</p>
+<p>The ‘OpenNest’ component takes several inputs, but we will primarily focus on four of them:</p>
+<ol class="arabic simple">
+<li><p><strong><strong><strong><strong><strong><strong><strong>Sheets:</strong></strong></strong></strong></strong></strong></strong> The surface of the cutting plane with the correct dimensions for the desired laser cutter.</p></li>
+<li><p><strong>Geometries:</strong> This will be the slices from our previous step.</p></li>
+<li><p><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Placement:</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> This will change the configuration of the placement of the slices.</p></li>
+<li><p><strong>Rotations:</strong> The number of discreet rotations in between 360 degrees the algorithm will use to optimize the packing.</p></li>
+</ol>
+<p>Upon setting these inputs, OpenNest will process the data and generate an optimized configuration that packs our slices onto the cutting plane as efficiently as possible. It’s important to note that each run may yield a slightly different result due to the algorithm’s nature. If you are not satisfied with the initial result, feel free to adjust the parameters or rerun the process until you achieve a desirable output.</p>
+<p>By the end of this section, you’ll have a nested configuration of your slices on the cutting plane. The optimization provided by OpenNest should ensure that you are maximizing the use of your material and reducing waste. Next, in the final part of our tutorial, we will export these nested slices, preparing them for the laser cutting process.</p>
+<p><img alt="Untitled" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Untitled%204.png)</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="generate-the-cutting-file">
+<h1>Generate the Cutting File<a class="headerlink" href="#generate-the-cutting-file" title="Permalink to this headline">#</a></h1>
+<p>Having optimally packed our slices onto the cutting plane using OpenNest, the next step is to bake these curves in Rhino and export them as a DXF file. DXF (Drawing Exchange Format) is a widely accepted format for CNC operations, including laser cutting.</p>
+<p><img alt="Screenshot 2023-06-28 at 23.21.43.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_23.21.43.png)</p>
+<p>To begin, we will find the projection curves of the Brep on the cutting plane for the slices. Next, we’ll ‘bake’ our curves from Grasshopper into Rhino. In Grasshopper, ‘baking’ refers to the process of transforming the generated geometry into actual geometry in the Rhino workspace. To do this, simply right-click on the ‘Geometries’ output from the ‘OpenNest’ component and select ‘Bake’. This will transfer the nested slices into Rhino.</p>
+<p>Once your geometries are baked into the Rhino environment, select the curves and proceed to exporting as a DXF. To do this, go to ‘File’ &gt; ‘Export Selected’. In the dialog box that appears, choose ‘DXF’ from the ‘Save as type’ dropdown list.</p>
+<p>Before finalizing the export, a ‘DXF Export Options’ window will appear. Here, you’ll need to select the appropriate settings for your laser cutter. The options vary, but you usually need to specify the DXF version (usually the latest, or as specified by your laser cutter’s requirements), the units (typically the same as your Rhino document’s units), and whether you want to export as curves, polylines, or other entities.</p>
+<p>Congratulations! You’ve successfully navigated the process of preparing a geometry for laser cutting and are now ready to digitally manufacture your prototype.</p>
+<p><img alt="Screenshot 2023-06-28 at 23.16.28.png" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Screenshot_2023-06-28_at_23.16.28.png)</p>
+<p><img alt="Untitled" src="Grasshopper Rhino course copy/Knowledge base (1)/Design%20for%20Digital%20Fabrication%20%28Laser%20Cutting" />%20e399b98cdfd640dcbb2dfbac89358d45/Untitled%205.png)</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Grasshopper Rhino course copy/Knowledge base (1)/Design for Digital Fabrication (Laser Cutting)"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Design for Digital Fabrication (Laser Cutting)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-the-geometry">Preparing the Geometry</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-surface-contours">Finding Surface Contours</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#find-intersections-and-cut-the-panels">Find Intersections and Cut the Panels</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#orient-the-panels-flat">Orient the Panels Flat</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#optimally-pack-the-panels-into-the-cutting-piece">Optimally Pack the Panels into the Cutting Piece</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-the-cutting-file">Generate the Cutting File</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Faculty of Industrial Design Engineering
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

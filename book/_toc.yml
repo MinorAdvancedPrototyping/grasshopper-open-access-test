@@ -6,13 +6,11 @@ root: intro
 chapters:
 - file: lessons
   sections:
-  - file: lesson1
+  - file: Grasshopper_Rhino_course/Lessons/1️⃣ Lesson_1-Basics/!index.md
   - file: Lesson 2
   - file: Lesson 3
   - file: Lesson 4
   - file: Lesson 5
-  - file: Lesson 6
-  - file: Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a
 - file: knowledgebase
   sections:
   - file: tutorials

@@ -5,7 +5,7 @@
 :gutter: 3
 
 :::{grid-item-card}
-:link: lesson1
+:link: "Grasshopper%20Rhino%20course/Lessons%20(1)/1️⃣%20Lesson%201%20-%20Basics/!index"
 :link-type: doc
 :img-top: Lesson1/teapot3.png
 :class-header: bg-light
@@ -59,18 +59,6 @@ Introduction into Rhino and Grasshopper
 :class-header: bg-light
 
 Lesson 5 - Meshes ✏️
-^^^
-
-Introduction into Rhino and Grasshopper
-:::
-
-:::{grid-item-card}
-:link: Lesson 1 - Basics
-:link-type: doc
-:img-top: Lesson1/Assignment_1.png
-:class-header: bg-light
-
-Lesson 1 ✏️
 ^^^
 
 Introduction into Rhino and Grasshopper
