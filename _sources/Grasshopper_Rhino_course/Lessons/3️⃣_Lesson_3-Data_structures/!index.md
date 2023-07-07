@@ -25,7 +25,7 @@ Review: Ready for review
 
 </aside>
 
-[https://youtu.be/5yriSQdJFyo](https://youtu.be/5yriSQdJFyo)
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/5yriSQdJFyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/5yriSQdJFyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 You can download the final file of this tutorial here:
 
@@ -112,7 +112,7 @@ Build a grid of points in the XY plane. There are multiple ways to achieve this 
 
 </aside>
 
-[https://youtu.be/LlXmjHG7LXk](https://youtu.be/LlXmjHG7LXk)
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/LlXmjHG7LXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/LlXmjHG7LXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 **Download the final file here:**
 

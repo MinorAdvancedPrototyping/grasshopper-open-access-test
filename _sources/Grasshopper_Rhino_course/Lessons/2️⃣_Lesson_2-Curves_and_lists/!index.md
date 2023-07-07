@@ -123,7 +123,7 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 </aside>
 
-[https://youtu.be/xEMRruaWmng](https://youtu.be/xEMRruaWmng)
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/xEMRruaWmng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/xEMRruaWmng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 - **Download the final file here:**
     
@@ -149,7 +149,7 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 ## 👩‍🏫2.4.1 Lists (10 min)
 
-[https://youtu.be/0Upvg2w25qI](https://youtu.be/0Upvg2w25qI)
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/0Upvg2w25qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/0Upvg2w25qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 **Download the example file here:**
 

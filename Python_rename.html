@@ -156,7 +156,13 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="lessons.html">Lessons</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="lessons.html">Lessons</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Grasshopper_Rhino_course/Lessons/1%EF%B8%8F%E2%83%A3_Lesson_1_-_Basics/%21index.html">Lesson 1 - Basics</a></li>
+
+
+
+
+
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="knowledgebase.html">Knowledge Base</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -458,6 +464,32 @@ needs to be run multiple times and open up the folders multiple times too</p>
 
 <span class="n">root_dir</span> <span class="o">=</span> <span class="nd">@vault_path</span>
 <span class="n">rename_files_and_folders</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>youtube iframes</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="k">def</span> <span class="nf">replace_youtube_links</span><span class="p">(</span><span class="n">root_dir</span><span class="p">):</span>
+    <span class="c1"># Regex pattern to match YouTube URLs</span>
+    <span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;(https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtu\.be/)([A-Za-z0-9_-]</span><span class="si">{10}</span><span class="s1">[A-Za-z0-9_-]</span><span class="si">{1}</span><span class="s1">))&#39;</span>
+
+    <span class="k">for</span> <span class="n">dirpath</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">filenames</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">root_dir</span><span class="p">):</span>
+        <span class="c1"># Check only markdown files</span>
+        <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">filenames</span> <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.md&quot;</span><span class="p">)]:</span>
+            <span class="n">file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dirpath</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r+&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">content</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+                <span class="c1"># Find YouTube URLs and replace with iframe embed link</span>
+                <span class="n">content_new</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/\2&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+                <span class="c1"># If content has changed, write it back to the file</span>
+                <span class="k">if</span> <span class="n">content</span> <span class="o">!=</span> <span class="n">content_new</span><span class="p">:</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">content_new</span><span class="p">)</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">truncate</span><span class="p">()</span>
+
+<span class="n">root_dir</span> <span class="o">=</span> <span class="nd">@vault_path</span>
+<span class="n">replace_youtube_links</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)</span>
 </pre></div>
 </div>
 
