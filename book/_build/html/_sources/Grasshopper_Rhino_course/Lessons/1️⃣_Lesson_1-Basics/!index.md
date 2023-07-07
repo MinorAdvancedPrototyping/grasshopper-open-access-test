@@ -250,7 +250,7 @@ Now see if you can create the same cube in Grasshopper.
 
 ## 👩‍🏫1.3.1 Theory - Basic geometry (5 min)
 
-[https://youtu.be/TOz-LE0H104](https://youtu.be/TOz-LE0H104)
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/TOz-LE0H104" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/TOz-LE0H104" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 - Recap
     
@@ -266,7 +266,7 @@ In this tutorial, you will learn how to construct basic geometry in Rhino. Watch
 
 </aside>
 
-[https://youtu.be/38Xfl50o2A8](https://youtu.be/38Xfl50o2A8)
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/38Xfl50o2A8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/38Xfl50o2A8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 ## 📺1.3.3 **Tutorial - Modelling teacups in Grasshopper (20 min)**
 
@@ -277,7 +277,7 @@ In this exercise, you will learn how to construct basic geometry in Grasshopper.
 
 </aside>
 
-[https://youtu.be/svhn73Yvww0](https://youtu.be/svhn73Yvww0)
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/svhn73Yvww0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/svhn73Yvww0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 - Solution
     

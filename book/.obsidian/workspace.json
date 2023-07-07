@@ -13,8 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python_rename.md",
+                "file": "Grasshopper_Rhino_course/Lessons/3️⃣_Lesson_3_-_Data_structures/!index.md",
                 "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e99739bf7e6d3d0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python_rename.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python_rename.md",
+                "file": "Grasshopper_Rhino_course/Lessons/3️⃣_Lesson_3_-_Data_structures/!index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python_rename.md",
+                "file": "Grasshopper_Rhino_course/Lessons/3️⃣_Lesson_3_-_Data_structures/!index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python_rename.md"
+                "file": "Grasshopper_Rhino_course/Lessons/3️⃣_Lesson_3_-_Data_structures/!index.md"
               }
             }
           }
@@ -146,11 +158,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0eb025b0feb030b5",
+  "active": "5016906e43f2c50e",
   "lastOpenFiles": [
+    "Grasshopper_Rhino_course/Lessons/2️⃣_Lesson_2_-_Curves_and_lists/!index.md",
     "Grasshopper_Rhino_course/Lessons/1️⃣_Lesson_1_-_Basics/!index.md",
-    "Grasshopper_Rhino_course/Graduation_Projects/Design_for_Personalized_Fit/!index.md",
     "Python_rename.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Generating_G-code_with_Grasshopper/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Design_for_Digital_Fabrication_(Laser_Cutting)/!index.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/Design_for_Personalized_Fit/!index.md",
     "Grasshopper_Rhino_course/Graduation_Projects/Generating_G-code_with_Grasshopper/Untitled_Database.csv",
     "Grasshopper_Rhino_course/Graduation_Projects/Generating_G-code_with_Grasshopper/Untitled_4.png",
     "Grasshopper_Rhino_course/Graduation_Projects/Generating_G-code_with_Grasshopper/Untitled_2.png",
@@ -190,9 +205,6 @@
     "Grasshopper_Rhino_course/Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric,_3D_printed_ankle_foot_orthosis__.md",
     "Grasshopper_Rhino_course/Graduation_Projects/Generating_G-code_with_Grasshopper/!index.md",
     "Grasshopper_Rhino_course/Graduation_Projects/Morphing_a_Pattern_to_a_Surface/!index.md",
-    "Grasshopper_Rhino_course/Graduation_Projects/Ergonomic_Data_Driven_Personalized_Design/!index.md",
-    "Grasshopper_Rhino_course/Graduation_Projects/The_making_of_a_smart_pillow/!index.md",
-    "Grasshopper_Rhino_course/Lessons/5️⃣_Lesson_5_-_Meshes/!index.md",
-    "Grasshopper_Rhino_course/Lessons/4️⃣_Lesson_4_-_Surfaces/!index.md"
+    "Grasshopper_Rhino_course/Graduation_Projects/Ergonomic_Data_Driven_Personalized_Design/!index.md"
   ]
 }

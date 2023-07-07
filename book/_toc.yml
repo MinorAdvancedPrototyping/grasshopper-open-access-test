@@ -6,7 +6,7 @@ root: intro
 chapters:
 - file: lessons
   sections:
-  - file: Grasshopper_Rhino_course/Lessons/1️⃣ Lesson_1-Basics/!index.md
+  - file: Grasshopper_Rhino_course/Lessons/1️⃣_Lesson_1_-_Basics/!index.md
   - file: Grasshopper_Rhino_course/Lessons/2️⃣ Lesson_2-Curves_and_lists/!index.md
   - file: Grasshopper_Rhino_course/Lessons/3️⃣ Lesson_3-Data_structures/!index.md
   - file: Grasshopper_Rhino_course/Lessons/4️⃣ Lesson_4-Surfaces/!index.md

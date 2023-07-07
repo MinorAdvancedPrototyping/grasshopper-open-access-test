@@ -257,13 +257,13 @@ In Rhino and Grasshopper you use basic geometry as building blocks to create com
 
 In this tutorial, you will learn how to construct basic geometry in Rhino. Watch the video below and follow along. 
 
-[https://youtu.be/0G5tS27SmNc](https://youtu.be/0G5tS27SmNc)
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/0G5tS27SmNc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/0G5tS27SmNc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 ### 📺1.3.2 **Tutorial - Modelling teacups in Grasshopper (20 min)**
 
 In this exercise, you will learn how to construct basic geometry in Grasshopper. Watch the video below and follow along. 
 
-[https://youtu.be/wuiGTLouPMI](https://youtu.be/wuiGTLouPMI)
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/wuiGTLouPMI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/wuiGTLouPMI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 - Solution
     

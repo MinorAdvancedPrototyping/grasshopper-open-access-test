@@ -102,11 +102,11 @@ Download the starting file here:
 
 [Lesson 4 - Soapbottle starting file.3dm](../../../../_downloads/26ef87da9530b8ff86a67c90769ad990/Lesson_4_-_Soapbottle_starting_file.3dm)
 
-[https://youtu.be/8Rl-SYeyvSM](https://youtu.be/8Rl-SYeyvSM)
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/8Rl-SYeyvSM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/8Rl-SYeyvSM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 📺Video Tutorial (20 min): surface pattern
 
-[https://youtu.be/N-ACXptKQMA](https://youtu.be/N-ACXptKQMA)
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/N-ACXptKQMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/N-ACXptKQMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 # 📺 4.4 Creating an arm brace (30 min)
 
@@ -125,7 +125,7 @@ Download the loft script here:
 
 [Lesson 4 - Loft troubleshooting.gh](../../../../_downloads/644cdaaabf1878f15cfb28cb41446e66/Lesson_4_-_Loft_troubleshooting.gh)
 
-[https://youtu.be/53fszj3rYBs](https://youtu.be/53fszj3rYBs)
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/53fszj3rYBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/53fszj3rYBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 # 💻 4.5 Assignment (max 2 hours)
 
