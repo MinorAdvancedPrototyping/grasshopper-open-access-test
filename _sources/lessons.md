@@ -17,7 +17,7 @@ Introduction into Rhino and Grasshopper
 :::
 
 :::{grid-item-card}
-:link: lesson1
+:link: "Grasshopper_Rhino_course/Lessons/2️⃣ Lesson_2-Curves_and_lists/!index.md"
 :link-type: doc
 :img-top: lesson2pic.png
 :class-header: bg-light

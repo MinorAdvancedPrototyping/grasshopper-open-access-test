@@ -6,9 +6,9 @@
 
 ![Alt text](lesson3pic.png)
 
-[label](<Digital Fabrication Laser Cutting V2.gh>)
+[label](%3CDigital%20Fabrication%20Laser%20Cutting%20V2.gh%3E)
 
-[Digital Fabrication Grasshopper](<Digital Fabrication Laser Cutting V2.gh>)
+[Digital Fabrication Grasshopper](%3CDigital%20Fabrication%20Laser%20Cutting%20V2.gh%3E)
 
 
 ## 1.1 Introduction (3 min)
@@ -51,7 +51,7 @@ In this part you will explore Rhino’s User Interface.
 
 You will now see the following interface.
 
-![Rhino grasshopper lesson 1 intro viewport (2).png](Lesson1/Rhino_grasshopper_lesson_1_intro_viewport_(2).png)
+![Rhino grasshopper lesson 1 intro viewport (2).png](2).png).png).png)
 
 The central part of the screen is called the viewport, here marked in red. By default Rhino shows 4 different views. The viewport is your workspace, here you can view your 3D model.
 
@@ -63,9 +63,9 @@ All of the different tools in Rhino can be accessed via the bar on the left. By 
 
 ![Rhino grasshopper lesson 1 intro toolbar closeup.png](Lesson1/Rhino_grasshopper_lesson_1_intro_toolbar_closeup.png)
 
-![Rhino grasshopper lesson 1 intro toolbars (2).png](Lesson1/Rhino_grasshopper_lesson_1_intro_toolbars_(2).png)
+![Rhino grasshopper lesson 1 intro toolbars (2).png](2).png).png).png)
 
-![Rhino grasshopper lesson 1 intro commandline (2).png](Lesson1/Rhino_grasshopper_lesson_1_intro_commandline_(2).png)
+![Rhino grasshopper lesson 1 intro commandline (2).png](2).png).png).png)
 
 1. This is the **[Command:]** line, another way of accessing all the tools in Rhino. The **[Command:]** line is an intelligent tool, and depending on the input can do many different things, more on that later.
 2. By clicking the 🔽 next to a viewport, you can adjust how your model looks. Most of the time you will use **[Shaded]**.
@@ -98,9 +98,9 @@ Now open Grasshopper:
 
 ⌨️*Type “Grasshopper” in the* **[Command:]** *line and press Enter*
 
-![Rhino grasshopper lesson 1 intro gh interface (2).png](Lesson1/Rhino_grasshopper_lesson_1_intro_gh_interface_(2).png)
+![Rhino grasshopper lesson 1 intro gh interface (2).png](2).png).png).png)
 
-![Rhino grasshopper lesson 1 intro launch gh (2).png](Lesson1/Rhino_grasshopper_lesson_1_intro_launch_gh_(2).png)
+![Rhino grasshopper lesson 1 intro launch gh (2).png](2).png).png).png)
 
 The Grasshopper interface is quite straight forward. For now the most important parts are:
 

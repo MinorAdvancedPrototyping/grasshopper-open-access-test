@@ -17,7 +17,7 @@ Introduction into Rhino and Grasshopper
 :::
 
 :::{grid-item-card}
-:link: lesson1
+:link: "Grasshopper_Rhino_course/Lessons/2️⃣ Lesson_2-Curves_and_lists/!index.md"
 :link-type: doc
 :img-top: lesson2pic.png
 :class-header: bg-light
@@ -59,18 +59,6 @@ Introduction into Rhino and Grasshopper
 :class-header: bg-light
 
 Lesson 5 - Meshes ✏️
-^^^
-
-Introduction into Rhino and Grasshopper
-:::
-
-:::{grid-item-card}
-:link: Lesson 1 - Basics
-:link-type: doc
-:img-top: Lesson1/Assignment_1.png
-:class-header: bg-light
-
-Lesson 1 ✏️
 ^^^
 
 Introduction into Rhino and Grasshopper
