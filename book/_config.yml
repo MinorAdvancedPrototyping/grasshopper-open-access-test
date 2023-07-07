@@ -40,3 +40,4 @@ html:
 html:
   comments:
     hypothesis: true
+      groups: "Grasshopper Online Course" | "$rpc:requestGroups"
