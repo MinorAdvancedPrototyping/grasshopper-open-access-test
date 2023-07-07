@@ -26,19 +26,19 @@ Special thanks to Dr. Wolf Song and Dr. Toon Huysmans for developing part of the
 
 ## Personalized Design
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled.png)
 
 Personalized design is an innovative approach to creating unique and customized products that are tailored to meet individual needs ranging from functional requirements to aesthetics. There are three main types of personalized products:
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%201.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_1.png)
 
 **Personalization in Identity:** focuses on enhancing the perception of the product by giving the customer freedom of customization through unique form, texture, colour, print, smell, taste, sound, feel, etc.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%202.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_2.png)
 
 **Personalization in Capabilities:** focuses on enhancing the functions of the product to increase performance through extra augmentations (electrical, mechanical, fluidic, and thermal components) to create added value to the product.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%203.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_3.png)
 
 **Personalization in Fit:** focuses on the interaction between the product, consumer, and its environment. Characteristics of the product such as shape, size, mass, colour palette, and personalized interactions (e.g. comfort) are adjusted to meet the individual’s needs.
 
@@ -72,23 +72,23 @@ The input methods we will discuss include:
 
 Obtaining physical measurements is the simplest and quickest method to acquire data on human body parts, yet it might not be as accurate as other methods. To obtain physical measurements, the designer can use simple tools such as a caliper, or a custom rig to measure specific points along the body. You might already be familiar with some measurement rigs such as the foot measuring device to find your shoe size.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%204.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_4.png)
 
-In the Master's graduation project [**Development of a low-cost 3D foot scanner**](../Development%20of%20a%20low-cost%203D%20foot%20scanner.md) , graduation student [Hoeksema, J.](https://repository.tudelft.nl/islandora/search/author%3A%22Hoeksema%2C%20J.%22) developed a rig to digitally measure specific points along a person's foot as seen in the figure below.
+In the Master's graduation project [**Development of a low-cost 3D foot scanner**](../Development_of_a_low-cost_3D_foot_scanner.md) , graduation student [Hoeksema, J.](https://repository.tudelft.nl/islandora/search/author%3A%22Hoeksema%2C_J.%22) developed a rig to digitally measure specific points along a person's foot as seen in the figure below.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%205.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_5.png)
 
 ## 3D Scanning
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%206.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_6.png)
 
 Non-contact 3D scanning is the process of collecting data on a real world object through cameras, lasers, and other types of sensors. The outcome of this process is usually a 3D mesh model as seen in the figure below.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%207.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_7.png)
 
 Depending on the accuracy of the 3D scanned used, the 3D mesh may require some post-processing to reduce the noise, artefacts, and missing data in the scanning process before it is ready for use inside of Grasshopper. The post-processing cleaning of the mesh can be done in a polygon modeling software such as Blender or Zbrush. In some cases, mesh correspondence can also be an option to improve the quality of the 3D scan. In mesh correspondence, a high quality 3D template is overlayed and deformed to match the geometry of the 3D scan as can be seen in the figure below. Mesh correspondence can be done using the software [R3DS Wrap 3](https://www.russian3dscanner.com/download_and_buy/) .
 
-![Credits: Dr. Toon Huysmans](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%208.png)
+![Credits: Dr. Toon Huysmans](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_8.png)
 
 Credits: Dr. Toon Huysmans
 
@@ -96,7 +96,7 @@ Credits: Dr. Toon Huysmans
 
 Statistical Shape Modeling are used to describe a collection of similar 3D data in a simplified way. SSMs represent an average of the geometry of the 3D data including any variation. For example, if you have collected various 3D scanned data of ear geometry from a certain population, using SSM you could create an average 3D mesh model of your collected data. This approach can be useful when the goal of your design is for Personalized Fit of an individual, but Personalized Fit for a particular population. To explore the creation of SSM, refer to the software [Paraview](https://www.paraview.org/) for more information.
 
-![Credits: Dr. Toon Huysmans](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Screenshot_2023-04-20_at_22.51.09.png)
+![Credits: Dr. Toon Huysmans](../../Graduation_Projects/Design_for_Personalized_Fit/Screenshot_2023-04-20_at_22.51.09.png)
 
 Credits: Dr. Toon Huysmans
 
@@ -104,11 +104,11 @@ Credits: Dr. Toon Huysmans
 
 If your design project requires Personalization in Fit for a specific human population, online databases such as [DINED](https://dined.io.tudelft.nl/en) are useful to quickly collect data and obtain quality 3D meshes for the human body. DINED is an anthropomorphic database with various data, including 3D data, of various human populations. With DINED, you are able to select from a variety of populations and measures, and download the 3D SSM mesh file as an STL to be used in Grasshopper.
 
-![Credits: Dr. Toon Huysmans](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%209.png)
+![Credits: Dr. Toon Huysmans](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_9.png)
 
 Credits: Dr. Toon Huysmans
 
-Additionally, there is a Grasshopper plugin for DINED developed at TU Delft - Industrial Design Engineering by Dr. Toon Huysmans. This plugin allows the user to directly select the population and import the 3D STL model directly from Grasshopper. More information on the DINED Grasshopper plugin can be found in the following resource: [DINED Plugin](../DINED%20Plugin.md) 
+Additionally, there is a Grasshopper plugin for DINED developed at TU Delft - Industrial Design Engineering by Dr. Toon Huysmans. This plugin allows the user to directly select the population and import the 3D STL model directly from Grasshopper. More information on the DINED Grasshopper plugin can be found in the following resource: [DINED Plugin](../DINED_Plugin.md) 
 
 # Generating Personalized Designs from Anthropomorphic Data
 
@@ -120,7 +120,7 @@ Depending on your data collection method and the requirements of your design, yo
 
 In this scenario, the designer generates a surface from physical measurements taken of users’ anthropomorphic data, whether measured with simple tools like a caliper or a custom rig. For this, the designer creates a Grasshopper script with a template surface. The template surface is created from curves, from which the control points represent the locations at which the measurements are taken.
 
-An example of this scenario can be seen in [**Development of a low-cost 3D foot scanner**](../Development%20of%20a%20low-cost%203D%20foot%20scanner.md). In this graduation project, the student developed a custom contact 3D scanning rig to measure the feet of users. The measured location points are then inputted into a Grasshopper script that modifies the surface template to match the measured values.
+An example of this scenario can be seen in [**Development of a low-cost 3D foot scanner**](../Development_of_a_low-cost_3D_foot_scanner.md). In this graduation project, the student developed a custom contact 3D scanning rig to measure the feet of users. The measured location points are then inputted into a Grasshopper script that modifies the surface template to match the measured values.
 
 ![[https://repository.tudelft.nl/islandora/object/uuid%3A0ee880fb-7063-42cd-aa82-b67f7c84d1e9](https://repository.tudelft.nl/islandora/object/uuid%3A0ee880fb-7063-42cd-aa82-b67f7c84d1e9)](../Graduation%20Projects%202829e75846d64b028c305b3b4ce84bc4/Design%20for%20Personalized%20Fit%201c2469e866924f6eb4adb908398e9992/Untitled%2010.png)
 
@@ -130,13 +130,13 @@ An example of this scenario can be seen in [**Development of a low-cost 3D foot 
 
 [https://repository.tudelft.nl/islandora/object/uuid%3A0ee880fb-7063-42cd-aa82-b67f7c84d1e9](https://repository.tudelft.nl/islandora/object/uuid%3A0ee880fb-7063-42cd-aa82-b67f7c84d1e9)
 
-Let's consider how we can set up a Grasshopper script using a similar scenario to generate a surface of foot based on foot measurements. You can refer to the Grasshopper script [Shoe Physical Measurements.gh](.md) to see the detailed implementation in Grasshopper. In our case, we do not have access to a custom measuring rig, but we can rely on simple tools such as a caliper or a ruler to obtain similar measurements around the foot. We can take the following steps to create a script for this purpose:
+Let's consider how we can set up a Grasshopper script using a similar scenario to generate a surface of foot based on foot measurements. You can refer to the Grasshopper script [Shoe Physical Measurements.gh](%21index.md) to see the detailed implementation in Grasshopper. In our case, we do not have access to a custom measuring rig, but we can rely on simple tools such as a caliper or a ruler to obtain similar measurements around the foot. We can take the following steps to create a script for this purpose:
 
-1. Decide on the key measurement locations around the foot that properly define the general geometry. You can refer to the paper [](https://www.sciencedirect.com/science/article/pii/S0003687021001095#fig2)* for an example of an approach to identify key dimensions of the hand.
+1. Decide on the key measurement locations around the foot that properly define the general geometry. You can refer to the paper [“*Identify dominant dimensions of 3D hand shapes using statistical shape model and deep neural network”](https://www.sciencedirect.com/science/article/pii/S0003687021001095#fig2)* for an example of an approach to identify key dimensions of the hand.
 
-![](https://www.sciencedirect.com/science/article/pii/S0003687021001095#fig2)* ](Design%20for%20Personalized%20Fit%204302b2ad49e44388a794c0f6d7218b53/Untitled.png)
+![*[Identify dominant dimensions of 3D hand shapes using statistical shape model and deep neural network”](https://www.sciencedirect.com/science/article/pii/S0003687021001095#fig2)* ](Design%20for%20Personalized%20Fit%204302b2ad49e44388a794c0f6d7218b53/Untitled.png)
 
-*[](https://www.sciencedirect.com/science/article/pii/S0003687021001095#fig2)* 
+*[Identify dominant dimensions of 3D hand shapes using statistical shape model and deep neural network”](https://www.sciencedirect.com/science/article/pii/S0003687021001095#fig2)* 
 
 1. Create a set of contour curves with defined control points based on the key measurement locations. The curves can be manually created in Rhino or generated based on a template 3D scan of an average foot. In our example, we used the **“Contour**” component to generate the contour curves and the original control points as the key measurement locations. The key measurement locations should be adapted in the script according to your findings from step 1.
     
@@ -144,7 +144,7 @@ Let's consider how we can set up a Grasshopper script using a similar scenario t
     
 2. Define how the physical measurements will affect the location of the control points of the curves. Depending on the physical measurement taken, the distance between 2 or more control points is adjusted on the Grasshopper script based on these measurements. In this example, we show how we can adapt the bottom width of the shoe by adjusting the distance between two sets of control points.
     
-    ![Screen-Recording-2023-06-04-at-17.14.37](Screen-Recording-2023-06-04-at-17.14.37.gif)
+    ![Screen-Recording-2023-06-04-at-17.14.37.gif](Screen-Recording-2023-06-04-at-17.14.37.gif)
     
 
 1. Reconstruct the contour curve data tree and generate a surface loft based on the changes. 
@@ -166,9 +166,9 @@ An example of this method is the [**Design of customizable sunglasses based on a
 
 [https://repository.tudelft.nl/islandora/object/uuid%3A33a65390-41bb-4fb2-b2ac-7166fca7e87a](https://repository.tudelft.nl/islandora/object/uuid%3A33a65390-41bb-4fb2-b2ac-7166fca7e87a)
 
-To implement this approach in a Grasshopper script, let's consider the example mentioned above. Here we will show the workflow of a script that adjusts the frame of the glasses based on certain landmarks from a 3D scan. Some advanced 3D scanners come with built-in functionality to automatically detect certain landmarks based on body parts, which can be used in such design cases. In our example script [ParametricSunglasses.gh](.md), the user is prompted to manually select 2 landmarks from the desired 3D head scan to generate the parametric glasses: The top of the ear and the bridge of the nose. 
+To implement this approach in a Grasshopper script, let's consider the example mentioned above. Here we will show the workflow of a script that adjusts the frame of the glasses based on certain landmarks from a 3D scan. Some advanced 3D scanners come with built-in functionality to automatically detect certain landmarks based on body parts, which can be used in such design cases. In our example script [ParametricSunglasses.gh](%21index.md), the user is prompted to manually select 2 landmarks from the desired 3D head scan to generate the parametric glasses: The top of the ear and the bridge of the nose. 
 
-![ezgif.com-video-to-gif](ezgif.com-video-to-gif.gif)
+![ezgif.com-video-to-gif.gif](ezgif.com-video-to-gif.gif)
 
 The workflow for this script is as follows:
 
@@ -183,39 +183,39 @@ The workflow for this script is as follows:
 
 ## Generating a Surface from 3D Scan (Mesh Slicing)
 
-[Personalized Design From 3D Scan - Hand Splint Exercise.gh](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Personalized_Design_From_3D_Scan_-_Hand_Splint_Exercise.gh)
+[Personalized Design From 3D Scan - Hand Splint Exercise.gh](../../Graduation_Projects/Design_for_Personalized_Fit/Personalized_Design_From_3D_Scan_-_Hand_Splint_Exercise.gh)
 
 In this scenario, the goal is to create a surface from a 3D scan of a body part with relatively simple geometry e.g. an arm or leg. Imagine that you would like to create a design for an arm brace using the 3D scan mesh of your user's arm. We can approach this problem in Grasshopper with the following steps;
 
 1. Create a series of planes across the arm
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2012.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_12.png)
 
 1. Find the intersection curve between the plane and the mesh
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2013.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_13.png)
 
 1. Create a loft between the curves to generate a surface
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2014.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_14.png)
 
-For further instructions on how to set up the Grasshopper script, refer to [Lesson 4 - Surfaces](../../Lessons/4%EF%B8%8F%E2%83%A3%20Lesson_4-Surfaces/!index.md) 
+For further instructions on how to set up the Grasshopper script, refer to [Lesson 4 - Surfaces](../../Lessons/4%EF%B8%8F%E2%83%A3_Lesson_4_-_Surfaces/%21index.md) 
 
 Additionally, it is important to mention that this method is not only intended for 3d scan anthropomorphic data. In fact, we can apply this method to any 3D scan mesh data we collect. One common use case as a designer is to develop rapid physical prototypes out of a mouldable materials such as clay using the body part of the user as a guide. We can then 3D scan the prototype and generate the surface in Rhino Grasshopper with this approach. The figure below showcases how this method can be applied to create an ergonomic mouse going from a clay prototype to 3D scan mesh to Rhino surface.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2015.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_15.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2016.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_16.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2017.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_17.png)
 
 ## Generating a Surface from Complex 3D Scan (Mesh Cavity + Slicing)
 
-[Generating a Mesh from Ear Canal Cavity (Simple).gh](Simple).gh).gh).gh)
+[Generating a Mesh from Ear Canal Cavity (Simple).gh](Generating_a_Mesh_from_Ear_Canal_Cavity_%28Simple).gh)
 
 For complex 3D scans, such as that of the ear, it can be more complicated to generate a surface geometry. Imagine that we would like to create an ear bud that perfectly matches the inner cavity of the ear. If we try to apply the Mesh Slicing method to an ear 3D scan, we soon run into issues with multiple curve slices on the same planes and other complications.
 
-For this case, one approach can be to first isolate the geometry of the ear cavity and then generate the surface using mesh slicing. Take a look at the example Grasshopper script to see the full workflow [Generating a Mesh from Ear Canal Cavity (Simple).gh](Simple).gh).gh). We can use the following steps to generate the surface of the ear cavity:
+For this case, one approach can be to first isolate the geometry of the ear cavity and then generate the surface using mesh slicing. Take a look at the example Grasshopper script to see the full workflow [Generating a Mesh from Ear Canal Cavity (Simple).gh](%21index.md). We can use the following steps to generate the surface of the ear cavity:
 
 1. Generate a “Cutting” mesh to isolate the cavity of the ear. In this case, a sphere mesh was created. As the ear 3D scans used in this example contained a naked edge on the ear cavity, the center point of this naked edge was used as the center position of the sphere.
     
@@ -231,18 +231,18 @@ For this case, one approach can be to first isolate the geometry of the ear cavi
     
     ![Screenshot 2023-06-04 at 18.12.35.png](Screenshot_2023-06-04_at_18.12.35.png)
     
-4. Generate the surface loft and troubleshoot the loft curves as learned in [Lesson 4 - Surfaces](../../Lessons/4%EF%B8%8F%E2%83%A3%20Lesson_4-Surfaces/!index.md)  to generate a clean surface geometry.
+4. Generate the surface loft and troubleshoot the loft curves as learned in [Lesson 4 - Surfaces](../../Lessons/4%EF%B8%8F%E2%83%A3_Lesson_4_-_Surfaces/%21index.md)  to generate a clean surface geometry.
     
     ![Screenshot 2023-06-04 at 18.06.12.png](Screenshot_2023-06-04_at_18.06.12.png)
     
     ![Screenshot 2023-06-04 at 18.08.45.png](Screenshot_2023-06-04_at_18.08.45.png)
     
 
-This solution is only one of many to obtain the inner cavity of the ear as a surface. For a different type of a approach, refer to the tutorial [Generative Form Finding with Kangaroo Physics](../Generative_Form_Finding_with_Kangaroo_Physics/!index.md) to learn how you can use Kangaroo physics to generate a similar geometry of the inner cavity.
+This solution is only one of many to obtain the inner cavity of the ear as a surface. For a different type of a approach, refer to the tutorial [Generative Form Finding with Kangaroo Physics](../Generative_Form_Finding_with_Kangaroo_Physics/%21index.md) to learn how you can use Kangaroo physics to generate a similar geometry of the inner cavity.
 
 # Relevant Projects
 
-[Untitled Database](Untitled%20Database.csv)
+[Untitled Database](Untitled_Database.csv)
 
 Drafts
 
@@ -285,13 +285,13 @@ Drafts
 
 ## Personalized Design
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2028.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_28.png)
 
 Personalized design is an innovative approach to creating unique and customized products that are tailored to meet individual needs ranging from functional requirements to aesthetics. There are three main types of personalized products:
 
 1. **Personalization in Identity:** focuses on enhancing the perception of the product by giving the customer freedom of customization through unique form, texture, colour, print, smell, taste, sound, feel, etc. 
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2029.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_29.png)
 
 1. **Personalization in Capabilities:** focuses on enhancing the functions of the product to increase performance through extra augmentations (electrical, mechanical, fluidic, and thermal components) to create added value to the product.
 
@@ -301,7 +301,7 @@ Personalized design is an innovative approach to creating unique and customized 
 
 1. **Personalization in Fit:** focuses on the interaction between the product, consumer, and its environment. Characteristics of the product such as shape, size, mass, colour palette, and personalized interactions (e.g. comfort) are adjusted to meet the individual’s needs.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2031.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_31.png)
 
 ## Personalization in Fit
 
@@ -324,20 +324,20 @@ Source: [https://nl.pinterest.com/pin/377106168771535985/](https://nl.pinterest.
 
 First, we begin by dissecting the problem/system into manageable parts in a step called **************Decomposition.************** The divided parts are functional elements that collectively comprise the whole system/problem. In this exercise, we will focus on the ******Splint****** component.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2033.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_33.png)
 
 The design method involves using algorithms to create a Rhino surface from the 3D scanned mesh, creating custom patterns and shapes to be applied to the splint, and morphing the custom pattern onto the Rhino surface. Let's get started!
 
 ## Design Workflow
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2034.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_34.png)
 
 - Show overview of the algorithmic process - can be applied to other geometry as well
     - Here include illustration showing the process with the 3d files as well
 
 # 📑A.3 Creating a Surface from a 3D Scan Mesh
 
-The first step in the design method is to create a surface from the imported 3D scan mesh. To learn more on this procedure, refer to [Lesson 4 - Surfaces](../../Lessons/4%EF%B8%8F%E2%83%A3%20Lesson_4-Surfaces/!index.md).
+The first step in the design method is to create a surface from the imported 3D scan mesh. To learn more on this procedure, refer to [Lesson 4 - Surfaces](../../Lessons/4%EF%B8%8F%E2%83%A3_Lesson_4_-_Surfaces/%21index.md).
 
 # 📑A.4 Generating Custom Pattern
 
@@ -354,13 +354,13 @@ In this section, we will show you how to create a custom pattern to apply on the
 
 In the figure below, the general approach for generating a custom pattern for aesthetics is shown. Here, we will utilize a commonly used pattern in computation design called “voronoi”.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2035.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_35.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2036.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_36.png)
 
 ## Voronoi Pattern
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2037.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_37.png)
 
 A Voronoi pattern is a type of pattern that is created by dividing a space into cells based on the proximity of points. In the context of design, Voronoi patterns are often used to create organic and intricate designs that are visually interesting. In the process of creating a Voronoi pattern for a personalized design project, the surface is divided into a network of cells based on the proximity of points on the surface. The shape and size of the cells can be adjusted to create different effects based on the needs of the personalized design.
 
@@ -368,41 +368,41 @@ A Voronoi pattern is a type of pattern that is created by dividing a space into 
 
 The first step is to generate the boundary curve where the custom pattern will be created. In this example, a rectangle is created to match the general dimensions of the arm scan. It is important to note that the pattern will deform when it is morph to the 3D surface, therefore, the general proportions of the initial boundary curve should match with the proportions of the morphing surface to avoid unwanted results.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2038.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_38.png)
 
 ## Populating Random Points
 
 Before generating the voronoi pattern, a distribution of points on the surface is needed to create the network of cells. As we do not want the points to be located on the edge of the boundary curve, we first offset the boundary curve inward using the “Offset Curve” component. The offset curve can then be used as the “Region” input in the “Populate 2D” component. Here you can choose the number of points to be generated with the “Count” input, which will created more cells in the voronoi pattern with a higher number of points. 
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2039.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_39.png)
 
 ## Creating the Voronoi Pattern
 
 The generated points are then connected as the points in the “Voronoi” components. Based on the proximity of the generated points, the voronoi pattern generates a cell at each of the points’ location. To ensure the pattern extends the all the way to edge of the boundary curve, we connect the original boundary curve, not the offset curve, as the boundary of the voronoi pattern.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2040.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_40.png)
 
 ## Offsetting the Pattern Curve
 
 To give the voronoi pattern width to be able to generate a surface in the next step, we use the “Offset Curve” component once more. In this step, we must be careful of the constraints in the “Distance” input. Here we choose a low negative value to avoid intersecting curves. Feel free to experiment with setting different “Distance” values and see what the available range is.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2041.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_41.png)
 
 ## Generating Boundary Surface and Extruding
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2042.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_42.png)
 
 # 📑A.5 Applying Pattern on Surface
 
 ## Morphing Approach
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2043.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_43.png)
 
 ### Setting up UV Mapping
 
 # 📑A.6 Beyond This Lesson
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2044.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_44.png)
 
 # 📑A.7 Further Reading
 
@@ -427,13 +427,13 @@ Here include links to other projects that are already including
 
 ## Personalized Design
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2028.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_28.png)
 
 Personalized design is an innovative approach to creating unique and customized products that are tailored to meet individual needs ranging from functional requirements to aesthetics. There are three main types of personalized products:
 
 1. **Personalization in Identity:** focuses on enhancing the perception of the product by giving the customer freedom of customization through unique form, texture, colour, print, smell, taste, sound, feel, etc. 
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2029.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_29.png)
 
 1. **Personalization in Capabilities:** focuses on enhancing the functions of the product to increase performance through extra augmentations (electrical, mechanical, fluidic, and thermal components) to create added value to the product.
 
@@ -443,7 +443,7 @@ Personalized design is an innovative approach to creating unique and customized 
 
 1. **Personalization in Fit:** focuses on the interaction between the product, consumer, and its environment. Characteristics of the product such as shape, size, mass, colour palette, and personalized interactions (e.g. comfort) are adjusted to meet the individual’s needs.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2031.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_31.png)
 
 ## Personalization in Fit
 
@@ -469,7 +469,7 @@ The following lesson will focus on *******************Personalization in Fit.***
 ## Outline
 
 - There are many methods possible when creating personalized products for fit
-    1. Turning a 3D scan mesh into a surface (covered in  [Lesson 4 - Surfaces](../../Lessons/4%EF%B8%8F%E2%83%A3%20Lesson_4-Surfaces/!index.md))
+    1. Turning a 3D scan mesh into a surface (covered in  [Lesson 4 - Surfaces](../../Lessons/4%EF%B8%8F%E2%83%A3_Lesson_4_-_Surfaces/%21index.md))
         1. Create intersecting planes
         2. Find intersecting contour curves
         3. Loft the curves to create surface
@@ -486,33 +486,33 @@ The following lesson will focus on *******************Personalization in Fit.***
         5. Curves are created around these points to form the contours
         6. A loft is created between these curves to form the foot shape
 
-## Turning a 3D scan mesh into a surface (covered in  [Lesson 4 - Surfaces](../../Lessons/4%EF%B8%8F%E2%83%A3%20Lesson_4-Surfaces/!index.md))
+## Turning a 3D scan mesh into a surface (covered in  [Lesson 4 - Surfaces](../../Lessons/4%EF%B8%8F%E2%83%A3_Lesson_4_-_Surfaces/%21index.md))
 
 The first step in the design method is to create a surface from the imported 3D scan mesh. To learn more on this procedure, refer to Lesson 4 section creating surface
 
 ## Input 3D Scan Mesh
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2045.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_45.png)
 
 ## Find Bounding Box
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2046.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_46.png)
 
 ## Create Slicing Planes
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2047.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_47.png)
 
 ## Find Intersection Curves
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2048.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_48.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2049.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_49.png)
 
 - Curve needs to be rebuilt using “Rebuild Curve” component afterwards
 
 ## Create Loft from Curves
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2050.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_50.png)
 
 - Make sure Loft is Open
 
@@ -522,23 +522,23 @@ To create a loft from curves in Grasshopper, first find the intersection curves 
 
 Refer to [personalized glasses graduation project](https://repository.tudelft.nl/islandora/object/uuid%3A33a65390-41bb-4fb2-b2ac-7166fca7e87a?collection=education)
 
-[Poster_VAN-WIJNGAARDEN_1528904.pdf.pdf](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Poster_VAN-WIJNGAARDEN_1528904.pdf.pdf)
+[Poster_VAN-WIJNGAARDEN_1528904.pdf.pdf](../../Graduation_Projects/Design_for_Personalized_Fit/Poster_VAN-WIJNGAARDEN_1528904.pdf.pdf)
 
-![Screenshot 2023-04-03 at 10.38.09.png](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Screenshot_2023-04-03_at_10.38.09.png)
+![Screenshot 2023-04-03 at 10.38.09.png](../../Graduation_Projects/Design_for_Personalized_Fit/Screenshot_2023-04-03_at_10.38.09.png)
 
-![Screenshot 2023-04-03 at 10.35.49.png](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Screenshot_2023-04-03_at_10.35.49.png)
+![Screenshot 2023-04-03 at 10.35.49.png](../../Graduation_Projects/Design_for_Personalized_Fit/Screenshot_2023-04-03_at_10.35.49.png)
 
-![picture2_VAN-WIJNGAARDEN_1528904.jpg](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/picture2_VAN-WIJNGAARDEN_1528904.jpg)
+![picture2_VAN-WIJNGAARDEN_1528904.jpg](../../Graduation_Projects/Design_for_Personalized_Fit/picture2_VAN-WIJNGAARDEN_1528904.jpg)
 
 ## Taking Measurements to create custom shape
 
 Refer to the following graduation project: [https://repository.tudelft.nl/islandora/object/uuid%3A0ee880fb-7063-42cd-aa82-b67f7c84d1e9?collection=education](https://repository.tudelft.nl/islandora/object/uuid%3A0ee880fb-7063-42cd-aa82-b67f7c84d1e9?collection=education)
 
-![Screenshot 2023-03-31 at 12.09.08.png](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Screenshot_2023-03-31_at_12.09.08.png)
+![Screenshot 2023-03-31 at 12.09.08.png](../../Graduation_Projects/Design_for_Personalized_Fit/Screenshot_2023-03-31_at_12.09.08.png)
 
-![Screenshot 2023-03-31 at 11.51.52.png](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Screenshot_2023-03-31_at_11.51.52.png)
+![Screenshot 2023-03-31 at 11.51.52.png](../../Graduation_Projects/Design_for_Personalized_Fit/Screenshot_2023-03-31_at_11.51.52.png)
 
-![Screenshot 2023-03-31 at 11.51.04.png](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Screenshot_2023-03-31_at_11.51.04.png)
+![Screenshot 2023-03-31 at 11.51.04.png](../../Graduation_Projects/Design_for_Personalized_Fit/Screenshot_2023-03-31_at_11.51.04.png)
 
 # Personalized Product Development - beyond the surface
 
@@ -549,7 +549,7 @@ Refer to the following graduation project: [https://repository.tudelft.nl/island
     - The most basic computational method
     - Adding patterns to the design that serve simply for aesthetic value
     - Example with the arm cast
-- Personalization based on data (see [Topic B - Data Driven Personalized Design](../Data-Driven_Personalized_Design/!index.md))
+- Personalization based on data (see [Topic B - Data Driven Personalized Design](../Data-Driven_Personalized_Design/%21index.md))
     - Collect ergonomic data around the body part for used in the design
     - Examples of this include:
         - heat map data of the arm to improve heat comfort
@@ -565,7 +565,7 @@ Depending on your data collection method and the requirements of your design, th
 
 In this scenario, the designer generates a surface from physical measurements taken of users anthropomorphic data whether it is measured with simple tools like a caliper or a custom rig. For this, the designer creates a Grasshopper script with a template surface. The template surface is created from curves, from which the control points represent the locations at which the measurements are taken.
 
-An example of this scenario can be seen in [**Development of a low-cost 3D foot scanner**](../Development%20of%20a%20low-cost%203D%20foot%20scanner.md) . In this graduation project, the student developed a custom contact 3D scanning rig to measure the feet of users. The measured location points are then inputted into a Grasshopper script that modifies the surface template to match the measured values.
+An example of this scenario can be seen in [**Development of a low-cost 3D foot scanner**](../Development_of_a_low-cost_3D_foot_scanner.md) . In this graduation project, the student developed a custom contact 3D scanning rig to measure the feet of users. The measured location points are then inputted into a Grasshopper script that modifies the surface template to match the measured values.
 
 Let's consider how we can set up a Grasshopper script using a similar scenario to generate a surface of foot based on foot measurements. in our case, we do not have access to a custom measuring rig, but we will rely on simple tools such as a caliper or ruler. We can take the following steps to create our script:
 
@@ -576,41 +576,41 @@ Let's consider how we can set up a Grasshopper script using a similar scenario t
 - Define how the physical measurements will affect the location of the points
     - Adjust the distance between points based on the physical measurements
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2010.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_10.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2011.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_11.png)
 
 ## Generating a Surface from 3D Scan (Mesh Slicing)
 
-[Personalized Design From 3D Scan - Hand Splint Exercise.gh](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Personalized_Design_From_3D_Scan_-_Hand_Splint_Exercise.gh)
+[Personalized Design From 3D Scan - Hand Splint Exercise.gh](../../Graduation_Projects/Design_for_Personalized_Fit/Personalized_Design_From_3D_Scan_-_Hand_Splint_Exercise.gh)
 
 In this scenario, the goal is to create a surface from a 3D scan of a body part with relatively simple geometry e.g. an arm or leg. Imagine that you would like to create a design for an arm brace using the 3D scan mesh of your user's arm. We can approach this problem in Grasshopper with the following steps;
 
 1. Create a series of planes across the arm
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2012.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_12.png)
 
 1. Find the intersection curve between the plane and the mesh
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2013.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_13.png)
 
 1. Create a loft between the curves to generate a surface
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2014.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_14.png)
 
-For further instructions on how to set up the Grasshopper script, refer to [Lesson 4 - Surfaces](../../Lessons/4%EF%B8%8F%E2%83%A3%20Lesson_4-Surfaces/!index.md) 
+For further instructions on how to set up the Grasshopper script, refer to [Lesson 4 - Surfaces](../../Lessons/4%EF%B8%8F%E2%83%A3_Lesson_4_-_Surfaces/%21index.md) 
 
 Additionally, it is important to mention that this method is not only intended for 3d scan anthropomorphic data. In fact, we can apply this method to any 3D scan mesh data we collect. One common use case as a designer is to develop rapid physical prototypes out of a mouldable materials such as clay using the body part of the user as a guide. We can then 3D scan the prototype and generate the surface in Rhino Grasshopper with this approach. The figure below showcases how this method can be applied to create an ergonomic mouse going from a clay prototype to 3D scan mesh to Rhino surface.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2015.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_15.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2016.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_16.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2017.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_17.png)
 
 ## Generating a Mesh from a Cavity using a 3D Scan (Physics Simulation)
 
-[Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](Kangaroo%20Physics)))
+[Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](../../Graduation_Projects/Design_for_Personalized_Fit/2023_A2_example.gh)
 
 For more complicated 3D scan geometry, the approached mentioned above might not be sufficient to generate good results. In this cases, a more creative approach is necessary. Let's take for example, the geometry of an ear canal. in this scenario, we would like to create an earbud that is personalized for the user's 3D scan and perfectly fits the cavity of the ear canal.
 
@@ -625,27 +625,27 @@ If you are new to Grasshopper Kangaroo physics simulation, it is recommended to 
 
 1. Simplify the geometry of the ear to speed up the simulation
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2018.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_18.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2019.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_19.png)
 
 1. Prepare a distribution of small spheres to collide with the ear canal and set up the simulation with Kangaroo
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2020.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_20.png)
 
 1. Run the simulation allowing the spheres to collide with the ear and fill up the ear canal cavity
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2021.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_21.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2022.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_22.png)
 
 1. Create a volume from the collection of spheres and convert into mesh
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2023.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_23.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2024.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_24.png)
 
-For more details on this implementation, refer to the example file provided: [Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](Kangaroo%20Physics))). In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!
+For more details on this implementation, refer to the example file provided: [Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](%21index.md). In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!
 
 ## Deforming Parametric Model to 3D Scan
 
@@ -657,7 +657,7 @@ In this scenario, the designer creates a product in Rhino or in Grasshopper to m
 
 A great example of this method is the [**Design of customizable sunglasses based on additive manufacturing techniques**](../__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__.md) . In this project, the student created a main design template of sunglasses with some features of the sunglasses being parametrized e.g. parametric temple (side piece) length and bridge (nose piece) length to accommodate various head and nose sizes. By collecting and analyzing data from user's 3D scans, the parametric glasses are automatically adjusted to fit the user's size requirements. A visual example of these results can be seen in the figure below.
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2025.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_25.png)
 
 To implement this approach in a Grasshopper script, let's consider the above mentioned example. Here we will create a script that adjust the length of the temple of the glasses based on the mean head circumference of the 3D scan with the following steps:
 
@@ -681,10 +681,10 @@ To implement this approach in a Grasshopper script, let's consider the above men
 
 Once we have a basic Rhino geometry to work with, we can start modifying the geometry to add value to our user. We can add value to the user in two ways: aesthetics and functionality.
 
-In aesthetics, we can add value by detailing to the surface to make the product more appealing. One simple way to achieve this is to add patterns to surfaces to add unique aesthetic. More detailing on Morphing a Pattern to a Surface can be found in the Mini-Lesson [Morphing a Pattern to a Surface](../Morphing%20a%20Pattern%20to%20a%20Surface.md).
+In aesthetics, we can add value by detailing to the surface to make the product more appealing. One simple way to achieve this is to add patterns to surfaces to add unique aesthetic. More detailing on Morphing a Pattern to a Surface can be found in the Mini-Lesson [Morphing a Pattern to a Surface](../Morphing_a_Pattern_to_a_Surface.md).
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2026.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_26.png)
 
-In functionality, we can add value by making the product more comfortable to wear or to support certain areas of the bodies. For this, we will need to collect more data on the user's use case, such as how heat is distributed throughout the body or how the pressure is distributed on the body when wearing the product. This is further discussed in the next lesson [Data-Driven Personalized Design](../Data-Driven_Personalized_Design/!index.md).
+In functionality, we can add value by making the product more comfortable to wear or to support certain areas of the bodies. For this, we will need to collect more data on the user's use case, such as how heat is distributed throughout the body or how the pressure is distributed on the body when wearing the product. This is further discussed in the next lesson [Data-Driven Personalized Design](../Data-Driven_Personalized_Design/%21index.md).
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2027.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_27.png)

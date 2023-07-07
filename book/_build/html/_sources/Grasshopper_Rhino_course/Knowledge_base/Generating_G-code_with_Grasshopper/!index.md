@@ -17,14 +17,14 @@ Original content developed by Mehmet Ozdemir and Zjenja Doubrovski
 
 - Exercise Files:
     
-    [Grasshopper G-code Geneartion Template.gh](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/template2.gh)
+    [Grasshopper G-code Geneartion Template.gh](../../Graduation_Projects/Generating_G-code_with_Grasshopper/template2.gh)
     
 
 # Basics of G-code
 
 G-code is a common language for CNC (Computer Numerical Control) machine that includes a list of operations. In the case of 3D FDM printers, this includes operations on how to move, how much filament to extrude, what temperature to set, and more. G-code comes in different "flavors" which indicates what commands are accepted and how they are interpreted by the printer. In this lesson, we will focus on the Marlin flavor, although other flavors only have small differences. For a full list of G-code commands, please refer to the resources here: [marlinfw.org/meta/gcode](http://marlinfw.org/meta/gcode) and [reprap.org/wiki/G-code](http://reprap.org/wiki/G-code)
 
-![Example of a G-code script](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Untitled.png)
+![Example of a G-code script](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Untitled.png)
 
 Example of a G-code script
 
@@ -41,7 +41,7 @@ Example of a G-code script
 
 Some common commands can be found on the table above. For many commands in G-code, we add a number next to the command to indicate a value e.g. F600 represents a feed rate of 600 mm/min. When writing G-code, a line in our code might look something like this:
 
-![Screenshot 2023-04-19 at 22.25.53.png](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-19_at_22.25.53.png)
+![Screenshot 2023-04-19 at 22.25.53.png](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-19_at_22.25.53.png)
 
 Other common commands include:
 
@@ -68,9 +68,9 @@ Other common commands include:
 
 For these commands, the value of the temperature or the fan speed can be set by adding the letter “S” followed by a number value. Some examples of how these commands can be used can be seen in the figure below: 
 
-![Screenshot 2023-04-19 at 22.39.17.png](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-19_at_22.39.17.png)
+![Screenshot 2023-04-19 at 22.39.17.png](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-19_at_22.39.17.png)
 
-![Screenshot 2023-04-19 at 22.40.02.png](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-19_at_22.40.02.png)
+![Screenshot 2023-04-19 at 22.40.02.png](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-19_at_22.40.02.png)
 
 To test your comprehension of the commands showcase in this section, try for yourself if you can write down the G-code for the following operations: 
 • set the fan off
@@ -98,7 +98,7 @@ Refer to [marlinfw.org/meta/gcode](http://marlinfw.org/meta/gcode) for additiona
 
 When writing a G-code script, the general structure is as follows:
 
-![Screenshot 2023-04-19 at 22.42.13.png](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-19_at_22.42.13.png)
+![Screenshot 2023-04-19 at 22.42.13.png](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-19_at_22.42.13.png)
 
 For many cases, the Start and End protocol will stay consistent throughout your design for the same printer. The main part that will change is the Core Instructions where we can tell the printer the movements and extrusions to make. In most cases, we can use the following Start and End Protocols when using Ultimaker 2+ (Marlin flavor). Some adjustment might be needed for different printers.
 
@@ -158,7 +158,7 @@ G0 F600 X62.715 Y62.597 Z0.42
 
 The G-code above would generate the following results:
 
-![Screenshot 2023-04-19 at 23.00.30.png](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-19_at_23.00.30.png)
+![Screenshot 2023-04-19 at 23.00.30.png](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-19_at_23.00.30.png)
 
 As another example, let’s consider the following G-code:
 
@@ -185,28 +185,28 @@ What shape would the printer create? Feel free to sketch out the shape on a piec
 
 - Solution
     
-    ![Screenshot 2023-04-19 at 23.03.41.png](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-19_at_23.03.41.png)
+    ![Screenshot 2023-04-19 at 23.03.41.png](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-19_at_23.03.41.png)
     
 
 # Developing a Grasshopper Script to Write G-code
 
 In a traditional 3D printing process, designers often use what is called slicer software to create the G-code given to the printer. The job of the slicer software is to convert your 3D model into the extruder path and G-code operations for the printer to perform. The traditional 3D printing process looks something like this:
 
-![Traditional 3D printing process. As an alternative, G-code can be generated straight from Grasshopper](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-20_at_21.05.58.png)
+![Traditional 3D printing process. As an alternative, G-code can be generated straight from Grasshopper](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-20_at_21.05.58.png)
 
 Traditional 3D printing process. As an alternative, G-code can be generated straight from Grasshopper
 
 Now that we understand the basics of G-code, we are able to use an alternative workflow where we generate the G-code within our Grasshopper script. By generating the G-code within Grasshopper, we can have more control over the 3D printing parameters and start to experiment with creative 3D printing processes. The simple workflow to generate G-code in Grasshopper looks something like this:
 
-![Grasshopper G-code workflow](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-20_at_21.06.13.png)
+![Grasshopper G-code workflow](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-20_at_21.06.13.png)
 
 Grasshopper G-code workflow
 
-The main concept here is to convert our solid/surface into contour curves, divide these curves into smaller segments, and obtain the X Y Z coordinates from the collection of sequential points. Using this collection of points, we can write the G-code to instruct the printer to move to these locations while extruding in sequential order. As the order of operations is critical for the G-code, it is important to keep the geometry data organized. For resource on working with data structures in Grasshopper, see [Lesson 3 - Data structures](../../Lessons/3%EF%B8%8F%E2%83%A3%20Lesson_3-Data_structures/!index.md) 
+The main concept here is to convert our solid/surface into contour curves, divide these curves into smaller segments, and obtain the X Y Z coordinates from the collection of sequential points. Using this collection of points, we can write the G-code to instruct the printer to move to these locations while extruding in sequential order. As the order of operations is critical for the G-code, it is important to keep the geometry data organized. For resource on working with data structures in Grasshopper, see [Lesson 3 - Data structures](../../Lessons/3%EF%B8%8F%E2%83%A3_Lesson_3-Data_structures/!index.md) 
 
 Let’s take the example of creating the G-code for a simple cylinder as shown above. Once we have the collection of points, how exactly do we translate these points into G-code operations and ensure to add all other necessary G-code calculations? First, let’s look at some basic concepts which will be key in creating this script. To follow along, feel free to download the exercise file here:
 
-[Grasshopper G-code Generation Template.gh](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/template2.gh)
+[Grasshopper G-code Generation Template.gh](../../Graduation_Projects/Generating_G-code_with_Grasshopper/template2.gh)
 
 ## Extrusion Amount
 
@@ -218,34 +218,34 @@ In order to deposit material onto the print bed, we need to specify how much mat
 | M83 | relative extrusion |
 | G92 E0 | set extruded length to zero |
 
-![Screenshot 2023-04-20 at 21.47.43.png](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-20_at_21.47.43.png)
+![Screenshot 2023-04-20 at 21.47.43.png](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-20_at_21.47.43.png)
 
 Secondly, we need:
 
 - The ratio between filament and line cross section (the filament diameter and nozzle diameter will most likely not be the same)
 - The length of each line segment (this is dependent on the distance the extruder will travel between points)
 
-![Screenshot 2023-04-20 at 21.57.42.png](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-20_at_21.57.42.png)
+![Screenshot 2023-04-20 at 21.57.42.png](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-20_at_21.57.42.png)
 
 By inputting this values into the Grasshopper script, we can calculate the extrusion amount (in mm) using the following set-up;
 
-![Screenshot 2023-04-20 at 22.04.29.png](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-20_at_22.04.29.png)
+![Screenshot 2023-04-20 at 22.04.29.png](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-20_at_22.04.29.png)
 
 ## Combining Data
 
 To manage all the data and generate the correct G-code text, we will need to combine certain streams of data together. There are two Grasshopper components that will help use with this:
 
-![Untitled](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Untitled%201.png)
+![Untitled](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Untitled_1.png)
 
 Concatenate takes in multiple streams of data and adds them to one element. This will be important to combine the G-code instructions into a single line of text. As can be seen in the template file, for each line of the G-code, we use the Concatenate component to combine multiple streams of data both text and numbers.
 
-![Screenshot 2023-04-20 at 21.38.17.png](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-20_at_21.38.17.png)
+![Screenshot 2023-04-20 at 21.38.17.png](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-20_at_21.38.17.png)
 
-![Untitled](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Untitled%202.png)
+![Untitled](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Untitled_2.png)
 
 The merge component takes multiple lists and adds them after each other. This will be important to combine multiple parts of the G-code process one after the other. As seen in the template file, the Start Protocol, Core Instructions, and End Protocol are merged together into one final G-code. 
 
-![Screenshot 2023-04-20 at 21.42.27.png](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-20_at_21.42.27.png)
+![Screenshot 2023-04-20 at 21.42.27.png](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-20_at_21.42.27.png)
 
 ## Finalizing the G-code Script
 
@@ -254,11 +254,11 @@ Now that we have brought all the elements together into the final G-code, it is 
 - Right-click on the Panel and select Stream Contents followed by Stream Destination. Save your file as .gcode.
 - Copy and Paste the contents of the Panel into a text file. Save and then change the file extension to .gcode
 
-![Screenshot 2023-04-20 at 22.09.36.png](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-20_at_22.09.36.png)
+![Screenshot 2023-04-20 at 22.09.36.png](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-20_at_22.09.36.png)
 
 Now that you know how to make a simple G-code of a reference geometry, experiment with the given template and see what possibilities you can create by changing up the G-code.
 
-![Screenshot 2023-04-20 at 22.14.25.png](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-20_at_22.14.25.png)
+![Screenshot 2023-04-20 at 22.14.25.png](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-20_at_22.14.25.png)
 
 ## Further Explorations with G-code
 
@@ -270,7 +270,7 @@ In this lesson, we learned how to create a simple G-code that divides a surface 
 - Retraction
 - Support
 
-![Screenshot 2023-04-20 at 22.19.43.png](../../Graduation%20Projects/Generating%20G-code%20with%20Grasshopper/Screenshot_2023-04-20_at_22.19.43.png)
+![Screenshot 2023-04-20 at 22.19.43.png](../../Graduation_Projects/Generating_G-code_with_Grasshopper/Screenshot_2023-04-20_at_22.19.43.png)
 
 There is much to explore when it comes to generating G-code with Grasshopper. By having full, precise control over the geometry generation and the manufacturing process, we can create very unique designs not possible with traditional 3D printing. If you wish to dive deeper into the world of G-code generation with Grasshopper, be sure to read [Advanced 3D Printing with Grasshopper](https://www.food4rhino.com/en/resource/advanced-3d-printing-grasshopper-clay-and-fdm) by Diego Garcia Cuevas & Gianluca Pugliese.
 
@@ -284,4 +284,4 @@ There is much to explore when it comes to generating G-code with Grasshopper. By
 
 # Relevant Projects
 
-[Untitled Database](Untitled%20Database.csv)
+[Untitled Database](../../../../../../Grasshopper_Rhino_course/Knowledge_base_(1)/Design%20for%20Personalized%20Fit/Untitled%20Database.csv)

@@ -64,9 +64,9 @@ This section demonstrates several examples, including:
 
 # Creating an Organic Cross Structure
 
-[GenerativeMesh](GenerativeMesh.gh)
+[GenerativeMesh](../../../../_downloads/94060ec3d8c32909ee11d15e0661e958/GenerativeMesh.gh)
 
-![Untitled](Untitled.gif)
+![Untitled](../../../../_images/Untitled.gif)
 
 To create a an Organic Cross Structure using Grasshopper Kangaroo physics simulations, the following steps should be followed.
 
@@ -84,39 +84,39 @@ The next step is to load the mesh onto the Kangaroo solver. This is done by conn
 
 It is important to note that these steps provide a general overview of how to set up a Kangaroo simulation in Grasshopper. Additionally, the simulation parameters can be adjusted to achieve different results. For example, the strength of the forces, the number of iterations, or other simulation parameters can be adjusted to achieve the desired outcome.
 
-![Untitled](Untitled.png)
+![Untitled](../../../../../../Lesson1/Untitled.png)
 
 # Creating a Textile 3D tent
 
-[Generative Tent.gh](Generative_Tent.gh)
+[Generative Tent.gh](../../../../_downloads/a129f27a0dee7a835c24335f33776f25/Generative_Tent.gh)
 
-![Screen-Recording-2023-06-02-at-16.44.21](Screen-Recording-2023-06-02-at-16.44.21.gif)
+![Screen-Recording-2023-06-02-at-16.44.21](../../../../_images/Screen-Recording-2023-06-02-at-16.44.21.gif)
 
-![Screenshot 2023-06-02 at 16.35.00.png](Screenshot_2023-06-02_at_16.35.00.png)
+![Screenshot 2023-06-02 at 16.35.00.png](../../../../_images/Screenshot_2023-06-02_at_16.35.00.png)
 
 # Creating a 4D-printed Shape Changing Textile
 
-[Programmable Textile.gh](Programmable_Textile.gh)
+[Programmable Textile.gh](../../../../_downloads/763b0d18da42231b625f548936d0a44c/Programmable_Textile.gh)
 
-![textile1374-1480](textile1374-1480.gif)
+![textile1374-1480](../../../../_images/textile1374-1480.gif)
 
-![ezgif.com-optimize](ezgif.com-optimize.gif)
+![ezgif.com-optimize](../../../../_images/ezgif.com-optimize.gif)
 
-![Screenshot 2023-06-02 at 17.22.59.png](Screenshot_2023-06-02_at_17.22.59.png)
+![Screenshot 2023-06-02 at 17.22.59.png](../../../../_images/Screenshot_2023-06-02_at_17.22.59.png)
 
-![Screenshot 2023-06-02 at 17.18.57.png](Screenshot_2023-06-02_at_17.18.57.png)
+![Screenshot 2023-06-02 at 17.18.57.png](../../../../_images/Screenshot_2023-06-02_at_17.18.57.png)
 
 # Creating a growing pattern on a vase
 
-[Generative Grow on Vase.gh](Generative_Grow_on_Vase.gh)
+[Generative Grow on Vase.gh](../../../../_downloads/10e1912f1902f42a6072fc3932bc0504/Generative_Grow_on_Vase.gh)
 
 ![Screen Recording 2023-06-02 at 17.51.50 (4).gif](4).gif).gif).gif)
 
-![Screenshot 2023-06-02 at 17.43.46.png](Screenshot_2023-06-02_at_17.43.46.png)
+![Screenshot 2023-06-02 at 17.43.46.png](../../../../_images/Screenshot_2023-06-02_at_17.43.46.png)
 
 # Case Study: Personalized Design from 3D Scan using Kangaroo Physics
 
-[Generating a Mesh from Ear Canal Cavity (Kangaroo Physics).gh](Kangaroo%20Physics).gh).gh).gh)
+[Generating a Mesh from Ear Canal Cavity (Kangaroo Physics).gh](Kangaroo_Physics).gh).gh).gh)
 
 For more complicated 3D scan geometry, the approached mentioned above might not be sufficient to generate good results. In this cases, a more creative approach is necessary. Let's take for example, the geometry of an ear canal. in this scenario, we would like to create an earbud that is personalized for the user's 3D scan and perfectly fits the cavity of the ear canal.
 
@@ -131,28 +131,28 @@ If you are new to Grasshopper Kangaroo physics simulation, it is recommended to 
 
 1. Simplify the geometry of the ear to speed up the simulation
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2018.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_18.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2019.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_19.png)
 
 1. Prepare a distribution of small spheres to collide with the ear canal and set up the simulation with Kangaroo
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2020.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_20.png)
 
 1. Run the simulation allowing the spheres to collide with the ear and fill up the ear canal cavity
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2021.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_21.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2022.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_22.png)
 
 1. Create a volume from the collection of spheres and convert into mesh
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2023.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_23.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2024.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_24.png)
 
-For more details on this implementation, refer to the example file provided: [Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](Kangaroo%20Physics))). In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!
+For more details on this implementation, refer to the example file provided: [Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](Kangaroo_Physics))). In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!
 
 # Related Works
 
-[Untitled Database](Untitled%20Database.csv)
+[Untitled Database](../../../../../../Grasshopper_Rhino_course/Knowledge_base_(1)/Design%20for%20Personalized%20Fit/Untitled%20Database.csv)

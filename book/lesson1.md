@@ -6,9 +6,9 @@
 
 ![Alt text](lesson3pic.png)
 
-[label](%3CDigital%20Fabrication%20Laser%20Cutting%20V2.gh%3E)
+[label](%3CDigital_Fabrication_Laser_Cutting_V2.gh%3E)
 
-[Digital Fabrication Grasshopper](%3CDigital%20Fabrication%20Laser%20Cutting%20V2.gh%3E)
+[Digital Fabrication Grasshopper](%3CDigital_Fabrication_Laser_Cutting_V2.gh%3E)
 
 
 ## 1.1 Introduction (3 min)
@@ -202,7 +202,7 @@ Try to create a cube in Rhino with the dimensions 10x10x10mm.
 
 **Note:** do not use Grasshopper yet.
 
-![Untitled](Lesson1/Untitled%201.png)
+![Untitled](Lesson1/Untitled_1.png)
 
 💡**Hint:** a cube is called “box” in Rhino.
 
@@ -210,9 +210,9 @@ Try to create a cube in Rhino with the dimensions 10x10x10mm.
     
     You can either select the Box tool on the left **OR** type in “Box” in the command prompt.
     
-    ![Untitled](Lesson1/Untitled%202.png)
+    ![Untitled](Lesson1/Untitled_2.png)
     
-    ![Untitled](Lesson1/Untitled%203.png)
+    ![Untitled](Lesson1/Untitled_3.png)
     
     Now you can select the first corner of the base in the viewport, then the second corner, and finally choose the height of your box. You can also type the exact dimensions into the command line.
     
@@ -221,11 +221,11 @@ Try to create a cube in Rhino with the dimensions 10x10x10mm.
 
 Now see if you can create the same cube in Grasshopper. 
 
-![Untitled](Lesson1/Untitled%204.png)
+![Untitled](Lesson1/Untitled_4.png)
 
 💡**Hint:** Use the components called “Box 2pt” and “Construct Point”
 
-![Untitled](Lesson1/Untitled%205.png)
+![Untitled](Lesson1/Untitled_5.png)
 
 - Solution
     
@@ -282,7 +282,7 @@ To join surfaces together into a polysurface, select the surfaces and use the [*
 
 A closed solid shape can be exported and used for digital fabrication, for example 3D printing. In lesson 4 we will discuss surfaces and solids in more detail. 
 
-![Untitled](Lesson1/Untitled%206.png)
+![Untitled](Lesson1/Untitled_6.png)
 
 ### 📑1.4.2 Troubleshooting in Grasshopper
 
@@ -290,11 +290,11 @@ If you run into issues in Grasshopper, take a closer look at your components to 
 
 You can hover your mouse over the middle of any component to find out what it does and if it is running. If you see a small speech bubble on a component, you can click it or hover your mouse over it to read the warning and error messages. Often, when you drop a new component, it will show up orange with the warning “input parameter failed to collect data”, like the example below. This simply means that you still need to connect something to the inputs in order for the component to run.
 
-![Untitled](Lesson1/Untitled%207.png)
+![Untitled](Lesson1/Untitled_7.png)
 
 Components can also turn red, which means there is an error. This might happen because you connected an input that the component cannot use. In the example below, you see a text panel used as an input, while the component asks for a vector to use as the direction for the extrusion. Grasshopper will try to convert the text into a useful input, but in this case it is unable to, which results in the error “Data conversion failed from Text to Vector”.
 
-![Untitled](Lesson1/Untitled%208.png)
+![Untitled](Lesson1/Untitled_8.png)
 
 ### 📑1.4.3 How to keep you Grasshopper script organized
 

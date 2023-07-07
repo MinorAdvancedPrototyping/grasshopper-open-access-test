@@ -202,7 +202,7 @@ Now that we understand the basics of G-code, we are able to use an alternative w
 
 Grasshopper G-code workflow
 
-The main concept here is to convert our solid/surface into contour curves, divide these curves into smaller segments, and obtain the X Y Z coordinates from the collection of sequential points. Using this collection of points, we can write the G-code to instruct the printer to move to these locations while extruding in sequential order. As the order of operations is critical for the G-code, it is important to keep the geometry data organized. For resource on working with data structures in Grasshopper, see [Lesson 3 - Data structures](../../Lessons/3%EF%B8%8F%E2%83%A3%20Lesson_3-Data_structures/!index.md) 
+The main concept here is to convert our solid/surface into contour curves, divide these curves into smaller segments, and obtain the X Y Z coordinates from the collection of sequential points. Using this collection of points, we can write the G-code to instruct the printer to move to these locations while extruding in sequential order. As the order of operations is critical for the G-code, it is important to keep the geometry data organized. For resource on working with data structures in Grasshopper, see [Lesson 3 - Data structures](../../Lessons/3%EF%B8%8F%E2%83%A3_Lesson_3_-_Data_structures/%21index.md) 
 
 Let’s take the example of creating the G-code for a simple cylinder as shown above. Once we have the collection of points, how exactly do we translate these points into G-code operations and ensure to add all other necessary G-code calculations? First, let’s look at some basic concepts which will be key in creating this script. To follow along, feel free to download the exercise file here:
 
@@ -235,13 +235,13 @@ By inputting this values into the Grasshopper script, we can calculate the extru
 
 To manage all the data and generate the correct G-code text, we will need to combine certain streams of data together. There are two Grasshopper components that will help use with this:
 
-![Untitled](Untitled%201.png)
+![Untitled](Untitled_1.png)
 
 Concatenate takes in multiple streams of data and adds them to one element. This will be important to combine the G-code instructions into a single line of text. As can be seen in the template file, for each line of the G-code, we use the Concatenate component to combine multiple streams of data both text and numbers.
 
 ![Screenshot 2023-04-20 at 21.38.17.png](Screenshot_2023-04-20_at_21.38.17.png)
 
-![Untitled](Untitled%202.png)
+![Untitled](Untitled_2.png)
 
 The merge component takes multiple lists and adds them after each other. This will be important to combine multiple parts of the G-code process one after the other. As seen in the template file, the Start Protocol, Core Instructions, and End Protocol are merged together into one final G-code. 
 
@@ -284,4 +284,4 @@ There is much to explore when it comes to generating G-code with Grasshopper. By
 
 # Relevant Projects
 
-[Untitled Database](Untitled%20Database.csv)
+[Untitled Database](Untitled_Database.csv)

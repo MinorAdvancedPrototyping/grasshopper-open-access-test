@@ -11,8 +11,12 @@
             "id": "5016906e43f2c50e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Python_rename.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Python_rename.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Python_rename.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Python_rename.md"
+              }
             }
           }
         ]
@@ -138,53 +146,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5016906e43f2c50e",
+  "active": "0eb025b0feb030b5",
   "lastOpenFiles": [
-    "_build/html/_sources/Untitled_1/grasshopper_test.md",
-    "_build/html/_sources/Untitled_1",
-    "_build/html/_sources/Lesson 1 - Basics e423306a4eb5426f88668e118632fc3a.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Student showcase/Assignment_4/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Student showcase/Assignment_3/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Student showcase/Assignment_2/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Student showcase/Assignment_1/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Student showcase/Assignment_4",
-    "_build/html/_sources/Grasshopper_Rhino_course/Student showcase/Assignment_3",
-    "_build/html/_sources/Grasshopper_Rhino_course/Student showcase/Assignment_2",
-    "_build/html/_sources/Grasshopper_Rhino_course/Student showcase/Assignment_1",
-    "_build/html/_sources/Grasshopper_Rhino_course/Student showcase",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/5️⃣ Lesson_5-Meshes/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/4️⃣ Lesson_4-Surfaces/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/3️⃣ Lesson_3-Data_structures/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/2️⃣ Lesson_2-Curves_and_lists/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/1️⃣ Lesson_1-Basics/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/5️⃣ Lesson_5-Meshes",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/4️⃣ Lesson_4-Surfaces",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/3️⃣ Lesson_3-Data_structures",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/2️⃣ Lesson_2-Curves_and_lists",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Generating_G-code_with_Grasshopper/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Design_for_Personalized_Fit/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Design_for_Digital_Fabrication_(Laser_Cutting)/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Data-Driven_Personalized_Design/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/__Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/__Application_of_mechanical_metamaterials_in_a_parametric,_3D_printed_ankle_foot_orthosis__.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Morphing a Pattern to a Surface.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Development of a low-cost 3D foot scanner.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Designing a multi-sports helmet based on 3D ergonomic data.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Design for FDM 3D Printing.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/DINED Plugin.md",
-    "_build/html/_images/where_to_find_the_profiler.png",
-    "_build/html/_images/textile1374-1480.gif",
-    "_build/html/_images/tea_cup_polysurface_with_text.png",
-    "_build/html/_images/shapeoffootsole.png",
-    "_build/html/_images/set_up_rectangualr_grid.png",
-    "_build/html/_images/rectangulargrid2.png",
-    "_build/html/_images/readcsv.png",
-    "_build/html/_images/picture2_VAN-WIJNGAARDEN_1528904.jpg",
-    "_build/html/_images/normalizedata.png",
-    "_build/html/_images/loft_surface.png"
+    "Grasshopper_Rhino_course/Lessons/1️⃣_Lesson_1_-_Basics/!index.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/Design_for_Personalized_Fit/!index.md",
+    "Python_rename.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/Generating_G-code_with_Grasshopper/Untitled_Database.csv",
+    "Grasshopper_Rhino_course/Graduation_Projects/Generating_G-code_with_Grasshopper/Untitled_4.png",
+    "Grasshopper_Rhino_course/Graduation_Projects/Generating_G-code_with_Grasshopper/Untitled_2.png",
+    "Grasshopper_Rhino_course/Graduation_Projects/Generating_G-code_with_Grasshopper/Untitled_3.png",
+    "Grasshopper_Rhino_course/Graduation_Projects/Generating_G-code_with_Grasshopper/Untitled_1.png",
+    "Grasshopper_Rhino_course/Graduation_Projects/Design_for_Personalized_Fit/Untitled_26.png",
+    "Grasshopper_Rhino_course/Graduation_Projects/Design_for_Personalized_Fit/Untitled_32.png",
+    "Grasshopper_Rhino_course/Graduation_Projects/Design_for_Personalized_Fit/Untitled_33.png",
+    "Grasshopper_Rhino_course/Graduation_Projects/Design_for_Personalized_Fit/Untitled_27.png",
+    "Grasshopper_Rhino_course/Graduation_Projects/Design_for_Personalized_Fit/Untitled_19.png",
+    "Grasshopper_Rhino_course/Graduation_Projects/Design_for_Personalized_Fit/Untitled_31.png",
+    "Grasshopper_Rhino_course/Graduation_Projects/Design_for_Personalized_Fit/Untitled_Database.csv",
+    "Grasshopper_Rhino_course/Knowledge_base/Generating_G-code_with_Grasshopper/Untitled_Database.csv",
+    "Grasshopper_Rhino_course/Knowledge_base/Data-Driven_Personalized_Design/Untitled_Database.csv",
+    "Grasshopper_Rhino_course/Knowledge_base/Design_for_Personalized_Fit/Untitled_Database.csv",
+    "Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/Untitled_Database.csv",
+    "Grasshopper_Rhino_course/Student_showcase/Assignment_2/!index.md",
+    "Grasshopper_Rhino_course/Student_showcase/Assignment_2",
+    "Grasshopper_Rhino_course/Student_showcase/Assignment_3/!index.md",
+    "Grasshopper_Rhino_course/Student_showcase/Assignment_3",
+    "Grasshopper_Rhino_course/Student_showcase/Assignment_4/!index.md",
+    "Grasshopper_Rhino_course/Student_showcase/Assignment_4",
+    "Grasshopper_Rhino_course/Student_showcase/Assignment_1/!index.md",
+    "Grasshopper_Rhino_course/Student_showcase/Assignment_1",
+    "Grasshopper_Rhino_course/Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/3D_Structures_and_Lattices.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/Development_of_a_low-cost_3D_foot_scanner.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/__Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/DINED_Plugin.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/Form_Finding_with_Physics.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/A_medical_jewel,_the_hand_splint.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/Design_for_Digital_Fabrication_(Laser_Cutting_+_More).md",
+    "Grasshopper_Rhino_course/Graduation_Projects/Designing_a_multi-sports_helmet_based_on_3D_ergonomic_data.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/Design_for_FDM_3D_Printing.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric,_3D_printed_ankle_foot_orthosis__.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/Generating_G-code_with_Grasshopper/!index.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/Morphing_a_Pattern_to_a_Surface/!index.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/Ergonomic_Data_Driven_Personalized_Design/!index.md",
+    "Grasshopper_Rhino_course/Graduation_Projects/The_making_of_a_smart_pillow/!index.md",
+    "Grasshopper_Rhino_course/Lessons/5️⃣_Lesson_5_-_Meshes/!index.md",
+    "Grasshopper_Rhino_course/Lessons/4️⃣_Lesson_4_-_Surfaces/!index.md"
   ]
 }

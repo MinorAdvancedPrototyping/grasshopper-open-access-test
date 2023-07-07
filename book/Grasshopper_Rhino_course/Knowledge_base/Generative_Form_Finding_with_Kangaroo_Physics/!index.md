@@ -64,7 +64,7 @@ This section demonstrates several examples, including:
 
 # Creating an Organic Cross Structure
 
-[GenerativeMesh](GenerativeMesh.gh)
+[GenerativeMesh.gh](GenerativeMesh.gh)
 
 ![Untitled](Untitled.gif)
 
@@ -90,7 +90,7 @@ It is important to note that these steps provide a general overview of how to se
 
 [Generative Tent.gh](Generative_Tent.gh)
 
-![Screen-Recording-2023-06-02-at-16.44.21](Screen-Recording-2023-06-02-at-16.44.21.gif)
+![Screen-Recording-2023-06-02-at-16.44.21.gif](Screen-Recording-2023-06-02-at-16.44.21.gif)
 
 ![Screenshot 2023-06-02 at 16.35.00.png](Screenshot_2023-06-02_at_16.35.00.png)
 
@@ -98,9 +98,9 @@ It is important to note that these steps provide a general overview of how to se
 
 [Programmable Textile.gh](Programmable_Textile.gh)
 
-![textile1374-1480](textile1374-1480.gif)
+![textile1374-1480.gif](textile1374-1480.gif)
 
-![ezgif.com-optimize](ezgif.com-optimize.gif)
+![ezgif.com-optimize.gif](ezgif.com-optimize.gif)
 
 ![Screenshot 2023-06-02 at 17.22.59.png](Screenshot_2023-06-02_at_17.22.59.png)
 
@@ -110,13 +110,13 @@ It is important to note that these steps provide a general overview of how to se
 
 [Generative Grow on Vase.gh](Generative_Grow_on_Vase.gh)
 
-![Screen Recording 2023-06-02 at 17.51.50 (4).gif](4).gif).gif).gif)
+![Screen Recording 2023-06-02 at 17.51.50 (4).gif](Screen_Recording_2023-06-02_at_17.51.50_%284).gif)
 
 ![Screenshot 2023-06-02 at 17.43.46.png](Screenshot_2023-06-02_at_17.43.46.png)
 
 # Case Study: Personalized Design from 3D Scan using Kangaroo Physics
 
-[Generating a Mesh from Ear Canal Cavity (Kangaroo Physics).gh](Kangaroo%20Physics).gh).gh).gh)
+[Generating a Mesh from Ear Canal Cavity (Kangaroo Physics).gh](Generating_a_Mesh_from_Ear_Canal_Cavity_%28Kangaroo_Physics).gh)
 
 For more complicated 3D scan geometry, the approached mentioned above might not be sufficient to generate good results. In this cases, a more creative approach is necessary. Let's take for example, the geometry of an ear canal. in this scenario, we would like to create an earbud that is personalized for the user's 3D scan and perfectly fits the cavity of the ear canal.
 
@@ -131,28 +131,28 @@ If you are new to Grasshopper Kangaroo physics simulation, it is recommended to 
 
 1. Simplify the geometry of the ear to speed up the simulation
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2018.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_18.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2019.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_19.png)
 
 1. Prepare a distribution of small spheres to collide with the ear canal and set up the simulation with Kangaroo
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2020.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_20.png)
 
 1. Run the simulation allowing the spheres to collide with the ear and fill up the ear canal cavity
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2021.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_21.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2022.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_22.png)
 
 1. Create a volume from the collection of spheres and convert into mesh
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2023.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_23.png)
 
-![Untitled](../../Graduation%20Projects/Design%20for%20Personalized%20Fit/Untitled%2024.png)
+![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_24.png)
 
-For more details on this implementation, refer to the example file provided: [Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](Kangaroo%20Physics))). In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!
+For more details on this implementation, refer to the example file provided: [Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](https://www.notion.so/Generating-a-Mesh-from-Ear-Canal-Cavity-Kangaroo-Physics-1de999d9cccc4b1796ea0c9507b4cba2?pvs=21). In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!
 
 # Related Works
 
-[Untitled Database](Untitled%20Database.csv)
+[Untitled Database](Untitled_Database.csv)

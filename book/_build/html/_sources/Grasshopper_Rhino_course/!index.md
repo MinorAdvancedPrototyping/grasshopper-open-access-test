@@ -37,25 +37,25 @@ Add explanation of computational, parametric and generative design. Algorithm.
 
 Explanation of computational thinking (lecture Wolf)
 
-[Lessons](Lessons.csv)
+[Lessons](../../../../Grasshopper_Rhino_course/Lessons.csv)
 
 ## Knowledge Base
 
 ### Lessons
 
-[Knowledge base](Knowledge%20base.csv)
+[Knowledge base](../../../../Grasshopper_Rhino_course/Knowledge_base.csv)
 
 ### Graduation Projects
 
-[Graduation Projects](Graduation%20Projects.csv)
+[Graduation Projects](../../../../Grasshopper_Rhino_course/Graduation_Projects.csv)
 
-[Student showcase](Student%20showcase.csv)
+[Student showcase](../../../../Grasshopper_Rhino_course/Student_showcase.csv)
 
 🔗 **External resources:**
 
 [Link to Jupyter Book Test Setup](https://josemartinez18.github.io/grasshopper-open-access-test/intro.html#)
 
-[Rhino tutorial page](https://www.rhino3d.com/learn/?query=kind:%20jump_start&modal=null)
+[Rhino tutorial page](https://www.rhino3d.com/learn/?query=kind:_jump_start&modal=null)
 
 [Medium: intro to Grasshopper](https://medium.com/intro-to-grasshopper)
 
