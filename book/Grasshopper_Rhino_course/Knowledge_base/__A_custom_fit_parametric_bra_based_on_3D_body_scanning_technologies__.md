@@ -1,10 +1,10 @@
 # A custom fit parametric bra based on 3D body scanning technologies
 
+Created: April 3, 2023 2:58 PM
+Tags: 3d scans, personalized
 Authors: https://repository.tudelft.nl/islandora/search/author%3A%22Van%20Twillert%2C%20L.V.A.%22?collection=education
 Categories: Graduation Project
-Created: April 3, 2023 2:58 PM
 Supervisors: https://repository.tudelft.nl/islandora/search/contributor%3A%22Molenbroek%2C%20J.F.M.%20%28mentor%29%22?collection=educationhttps://repository.tudelft.nl/islandora/search/contributor%3A%22Goto%2C%20L.%20%28mentor%29%22?collection=education
-Tags: 3d scans, personalized
 URL: https://repository.tudelft.nl/islandora/object/uuid%3Ad7528f9a-1c24-45d9-bbac-d9dff4e080b9?collection=education
 
 # **Abstract**

@@ -1,9 +1,9 @@
 # Generative Form Finding with Kangaroo Physics
 
-Categories: Lesson
 Created: April 20, 2023 11:57 PM
-Review: Currently Working On
 Tags: Form Finding, Generative, Simulation
+Categories: Lesson
+Review: Currently Working On
 
 📌 ********************Outlines:******************** A short description of what you can expect in the upcoming section.
 📑 **Explanation text:** Written explanations with supporting images.
@@ -131,28 +131,28 @@ If you are new to Grasshopper Kangaroo physics simulation, it is recommended to 
 
 1. Simplify the geometry of the ear to speed up the simulation
 
-![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_18.png)
+![Untitled](Untitled%201.png)
 
-![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_19.png)
+![Untitled](Untitled%202.png)
 
 1. Prepare a distribution of small spheres to collide with the ear canal and set up the simulation with Kangaroo
 
-![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_20.png)
+![Untitled](Untitled%203.png)
 
 1. Run the simulation allowing the spheres to collide with the ear and fill up the ear canal cavity
 
-![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_21.png)
+![Untitled](Untitled%204.png)
 
-![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_22.png)
+![Untitled](Untitled%205.png)
 
 1. Create a volume from the collection of spheres and convert into mesh
 
-![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_23.png)
+![Untitled](Untitled%206.png)
 
-![Untitled](../../Graduation_Projects/Design_for_Personalized_Fit/Untitled_24.png)
+![Untitled](Untitled%207.png)
 
 For more details on this implementation, refer to the example file provided: [Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](https://www.notion.so/Generating-a-Mesh-from-Ear-Canal-Cavity-Kangaroo-Physics-1de999d9cccc4b1796ea0c9507b4cba2?pvs=21). In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!
 
 # Related Works
 
-[Untitled Database](Untitled_Database.csv)
+[Untitled Database](Untitled%20Database.csv)

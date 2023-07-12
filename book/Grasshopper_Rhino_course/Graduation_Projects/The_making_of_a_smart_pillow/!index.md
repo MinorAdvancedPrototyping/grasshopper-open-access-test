@@ -1,13 +1,13 @@
 # The making of a smart pillow
 
-Authors: https://repository.tudelft.nl/islandora/search/author%3A%22Vermeulen%2C%20Tjapko%22?collection=education
-Categories: Graduation Project
 Created: May 1, 2023 10:32 AM
-Supervisors: https://repository.tudelft.nl/islandora/search/contributor%3A%22Bourgeois%2C%20Jacky%20%28graduation%20committee%29%22?collection=education, https://repository.tudelft.nl/islandora/search/contributor%3A%22Rozendaal%2C%20Marco%20%28mentor%29%22?collection=education
 Tags: data-driven
+Authors: Vermeulen, Tjapko
+Categories: Graduation Project
+Supervisors: Bourgeois, Jacky (graduation committee), Rozendaal, Marco (mentor)
 URL: https://repository.tudelft.nl/islandora/object/uuid%3A204a945a-17d6-4ed0-af40-6d6959953dba?collection=education
 
-![Animation-with-the-video.png](Animation-with-the-video.png)
+![smart_pillow.png](smart_pillow.png)
 
 # Abstract
 

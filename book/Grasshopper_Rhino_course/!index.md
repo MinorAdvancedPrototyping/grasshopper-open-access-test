@@ -43,19 +43,19 @@ Explanation of computational thinking (lecture Wolf)
 
 ### Lessons
 
-[Knowledge base](Knowledge_base.csv)
+[Knowledge base](Knowledge%20base.csv)
 
 ### Graduation Projects
 
-[Graduation Projects](Graduation_Projects.csv)
+[Graduation Projects](Graduation%20Projects.csv)
 
-[Student showcase](Student_showcase.csv)
+[Student showcase](Student%20showcase.csv)
 
 🔗 **External resources:**
 
 [Link to Jupyter Book Test Setup](https://josemartinez18.github.io/grasshopper-open-access-test/intro.html#)
 
-[Rhino tutorial page](https://www.rhino3d.com/learn/?query=kind:_jump_start&modal=null)
+[Rhino tutorial page](https://www.rhino3d.com/learn/?query=kind:%20jump_start&modal=null)
 
 [Medium: intro to Grasshopper](https://medium.com/intro-to-grasshopper)
 
@@ -64,9 +64,3 @@ Explanation of computational thinking (lecture Wolf)
 [http://wiki.bk.tudelft.nl/toi-pedia/Grasshopper](http://wiki.bk.tudelft.nl/toi-pedia/Grasshopper)
 
 [https://parametricbydesign.com/](https://parametricbydesign.com/)
-
-FAQ
-
-- working on mac
-- internalise data in Grasshopper
-    - 6.642 video lesson 2 → link to this FAQ

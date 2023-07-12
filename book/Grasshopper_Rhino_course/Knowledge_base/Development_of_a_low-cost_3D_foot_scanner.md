@@ -1,10 +1,10 @@
 # Development of a low-cost 3D foot scanner
 
+Created: April 3, 2023 10:46 AM
+Tags: 3d scans, personalized
 Authors: https://repository.tudelft.nl/islandora/search/author%3A%22Hoeksema%2C%20J.%22
 Categories: Graduation Project
-Created: April 3, 2023 10:46 AM
 Supervisors: https://repository.tudelft.nl/islandora/search/contributor%3A%22Molenbroek%2C%20J.F.M.%20%28mentor%29%22https://repository.tudelft.nl/islandora/search/contributor%3A%22Song%2C%20Y.%20%28mentor%29%22
-Tags: 3d scans, personalized
 URL: https://repository.tudelft.nl/islandora/object/uuid%3A0ee880fb-7063-42cd-aa82-b67f7c84d1e9
 
 # Abstract

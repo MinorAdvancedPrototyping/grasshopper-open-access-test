@@ -235,13 +235,13 @@ By inputting this values into the Grasshopper script, we can calculate the extru
 
 To manage all the data and generate the correct G-code text, we will need to combine certain streams of data together. There are two Grasshopper components that will help use with this:
 
-![Untitled](../../../../../../Grasshopper_Rhino_course/Lessons/3️⃣_Lesson_3-Data_structures/Untitled_1.png)
+![Untitled](../../../../../../Grasshopper_Rhino_course/Lessons/3_Lesson_3-Data_structures/Untitled_1.png)
 
 Concatenate takes in multiple streams of data and adds them to one element. This will be important to combine the G-code instructions into a single line of text. As can be seen in the template file, for each line of the G-code, we use the Concatenate component to combine multiple streams of data both text and numbers.
 
 ![Screenshot 2023-04-20 at 21.38.17.png](../../../../_images/Screenshot_2023-04-20_at_21.38.17.png)
 
-![Untitled](../../../../../../Grasshopper_Rhino_course/Lessons/3️⃣_Lesson_3-Data_structures/Untitled_2.png)
+![Untitled](../../../../../../Grasshopper_Rhino_course/Lessons/3_Lesson_3-Data_structures/Untitled_2.png)
 
 The merge component takes multiple lists and adds them after each other. This will be important to combine multiple parts of the G-code process one after the other. As seen in the template file, the Start Protocol, Core Instructions, and End Protocol are merged together into one final G-code. 
 
@@ -284,4 +284,4 @@ There is much to explore when it comes to generating G-code with Grasshopper. By
 
 # Relevant Projects
 
-[Untitled Database](../../../../../../Grasshopper_Rhino_course/Knowledge_base_(1)/Design%20for%20Personalized%20Fit/Untitled%20Database.csv)
+[Untitled Database](../../../../../../Grasshopper_Rhino_course/Knowledge_base__1)/Design%20for%20Personalized%20Fit/Untitled%20Database.csv)

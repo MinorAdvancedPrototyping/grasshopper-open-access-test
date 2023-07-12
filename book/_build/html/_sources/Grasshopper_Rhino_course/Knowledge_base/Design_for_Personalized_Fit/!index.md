@@ -242,7 +242,7 @@ This solution is only one of many to obtain the inner cavity of the ear as a sur
 
 # Relevant Projects
 
-[Untitled Database](../../../../../../Grasshopper_Rhino_course/Knowledge_base_(1)/Design%20for%20Personalized%20Fit/Untitled%20Database.csv)
+[Untitled Database](../../../../../../Grasshopper_Rhino_course/Knowledge_base__1)/Design%20for%20Personalized%20Fit/Untitled%20Database.csv)
 
 Drafts
 

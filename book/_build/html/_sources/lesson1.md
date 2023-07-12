@@ -257,13 +257,13 @@ In Rhino and Grasshopper you use basic geometry as building blocks to create com
 
 In this tutorial, you will learn how to construct basic geometry in Rhino. Watch the video below and follow along. 
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/0G5tS27SmNc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/0G5tS27SmNc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+[<iframe_width="560"_height="315"_src="https://www.youtube.com/embed/0G5tS27SmNc"_frameborder="0"_allow="accelerometer;_autoplay;_clipboard-write;_encrypted-media;_gyroscope;_picture-in-picture"_allowfullscreen></iframe>](<iframe_width="560"_height="315"_src="https://www.youtube.com/embed/0G5tS27SmNc"_frameborder="0"_allow="accelerometer;_autoplay;_clipboard-write;_encrypted-media;_gyroscope;_picture-in-picture"_allowfullscreen></iframe>)
 
 ### 📺1.3.2 **Tutorial - Modelling teacups in Grasshopper (20 min)**
 
 In this exercise, you will learn how to construct basic geometry in Grasshopper. Watch the video below and follow along. 
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/wuiGTLouPMI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/wuiGTLouPMI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+[<iframe_width="560"_height="315"_src="https://www.youtube.com/embed/wuiGTLouPMI"_frameborder="0"_allow="accelerometer;_autoplay;_clipboard-write;_encrypted-media;_gyroscope;_picture-in-picture"_allowfullscreen></iframe>](<iframe_width="560"_height="315"_src="https://www.youtube.com/embed/wuiGTLouPMI"_frameborder="0"_allow="accelerometer;_autoplay;_clipboard-write;_encrypted-media;_gyroscope;_picture-in-picture"_allowfullscreen></iframe>)
 
 - Solution
     

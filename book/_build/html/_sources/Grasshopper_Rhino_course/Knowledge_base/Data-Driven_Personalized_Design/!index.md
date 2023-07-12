@@ -33,7 +33,7 @@ Collecting user data is a crucial step in the data-driven design process. Gather
 
 Pressure data is a common type of data collected in ergonomic design. Pressure sensors can be used to measure the distribution of pressure on a surface, such as a seat or a shoe sole. This data can be used to create products that distribute pressure more evenly, reducing discomfort and pain for the user.
 
-![[dis)comfort reducing pressure distribution and increasing contact area at the interface, Iolanda Fiorilloa, Yu Song, Peter Vink, Alessandro Naddeo](dis|Designing_a_shaped_seat-pan_cushion_to_improve_postural_(dis)comfort reducing pressure distribution and increasing contact area at the interface, Iolanda Fiorilloa, Yu Song, Peter Vink, Alessandro Naddeo]]comfort%20reducing%20pressure%20distribution%20and%20increasing%20contact%20area%20at%20the%20interface,%20Iolanda%20Fiorilloa,%20Yu%20Song,%20Peter%20Vink,%20Alessandro%20Naddeo)
+![[dis)comfort reducing pressure distribution and increasing contact area at the interface, Iolanda Fiorilloa, Yu Song, Peter Vink, Alessandro Naddeo](dis|Designing_a_shaped_seat-pan_cushion_to_improve_postural__dis)comfort reducing pressure distribution and increasing contact area at the interface, Iolanda Fiorilloa, Yu Song, Peter Vink, Alessandro Naddeo]]comfort%20reducing%20pressure%20distribution%20and%20increasing%20contact%20area%20at%20the%20interface,%20Iolanda%20Fiorilloa,%20Yu%20Song,%20Peter%20Vink,%20Alessandro%20Naddeo)
 
 Designing a shaped seat-pan cushion to improve postural (dis)comfort reducing pressure distribution and increasing contact area at the interface, Iolanda Fiorilloa, Yu Song, Peter Vink, Alessandro Naddeo
 
@@ -185,7 +185,7 @@ In Rhino Grasshopper, we can use plugins such as Crystallon to create lattice st
 
 Meta-materials and auxetic structures are another area of interest in data-driven design. These materials have unique properties, such as negative Poisson's ratios or tunable stiffness, that can be useful in ergonomic product design. By using data to inform the design of these materials, we can create products that are not only comfortable but also more durable and efficient. There is a lot of potential for innovation in this area, and it will be exciting to see how data-driven design continues to shape the future of ergonomic product design.
 
-![[SCF '19). Association for Computing Machinery, New York, NY, USA, Article 2, 1–8. https://doi.org/10.1145/3328939.3329001*](SCF_'19|*Davide_Jose_Nogueira_Amorim,_Troy_Nachtigall,_and_Miguel_Bruns_Alonso._2019._Exploring_mechanical_meta-material_structures_through_personalised_shoe_sole_design._In_Proceedings_of_the_3rd_Annual_ACM_Symposium_on_Computational_Fabrication_(SCF_'19). Association for Computing Machinery, New York, NY, USA, Article 2, 1–8. https://doi.org/10.1145/3328939.3329001*]].%20Association%20for%20Computing%20Machinery,%20New%20York,%20NY,%20USA,%20Article%202,%201%E2%80%938.%20https://doi.org/10.1145/3328939.3329001*)
+![[SCF '19). Association for Computing Machinery, New York, NY, USA, Article 2, 18. https://doi.org/10.1145/3328939.3329001*](SCF_'19|*Davide_Jose_Nogueira_Amorim,_Troy_Nachtigall,_and_Miguel_Bruns_Alonso._2019._Exploring_mechanical_meta-material_structures_through_personalised_shoe_sole_design._In_Proceedings_of_the_3rd_Annual_ACM_Symposium_on_Computational_Fabrication__SCF_'19). Association for Computing Machinery, New York, NY, USA, Article 2, 1–8. https://doi.org/10.1145/3328939.3329001*]].%20Association%20for%20Computing%20Machinery,%20New%20York,%20NY,%20USA,%20Article%202,%201%E2%80%938.%20https://doi.org/10.1145/3328939.3329001*)
 
 *Davide Jose Nogueira Amorim, Troy Nachtigall, and Miguel Bruns Alonso. 2019. Exploring mechanical meta-material structures through personalised shoe sole design. In Proceedings of the 3rd Annual ACM Symposium on Computational Fabrication (SCF '19). Association for Computing Machinery, New York, NY, USA, Article 2, 1–8. https://doi.org/10.1145/3328939.3329001*
 
@@ -201,7 +201,7 @@ Additionally, you can take a look at the following graduation projects which exp
 
 # Relevant Projects
 
-[[../../../../../../Grasshopper Rhino course/Knowledge base (1)/Design for Personalized Fit/Untitled Database.csv]]
+[[../../../../../../Grasshopper Rhino course/Knowledge base/Design for Personalized Fit/Untitled Database.csv]]
 
 # Draft
 

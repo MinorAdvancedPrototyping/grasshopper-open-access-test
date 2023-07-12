@@ -1,10 +1,10 @@
 # Application of mechanical metamaterials in a parametric, 3D printed ankle foot orthosis
 
+Created: April 3, 2023 2:22 PM
+Tags: 3d scans, Advanced Manufacturing, personalized
 Authors: https://repository.tudelft.nl/islandora/search/author%3A%22van%20Leijsen%2C%20P.M.%22
 Categories: Graduation Project
-Created: April 3, 2023 2:22 PM
 Supervisors: https://repository.tudelft.nl/islandora/search/contributor%3A%22Doubrovski%2C%20E.L.%20%28mentor%29%22https://repository.tudelft.nl/islandora/search/contributor%3A%22Wu%2C%20J.%20%28graduation%20committee%29%22
-Tags: 3d scans, Advanced Manufacturing, personalized
 URL: https://repository.tudelft.nl/islandora/object/uuid%3A656fd81e-98fd-460f-8a14-e90483c78b1c
 
 # **Abstract**

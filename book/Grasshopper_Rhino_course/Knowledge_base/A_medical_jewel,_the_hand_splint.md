@@ -1,10 +1,10 @@
 # A medical jewel, the hand splint
 
+Created: April 3, 2023 1:47 PM
+Tags: 3d scans, personalized
 Authors: https://repository.tudelft.nl/islandora/search/author%3A%22Keijser%2C%20Lies%22?collection=education
 Categories: Graduation Project
-Created: April 3, 2023 1:47 PM
 Supervisors: https://repository.tudelft.nl/islandora/search/contributor%3A%22Huysmans%2C%20T.%20%28mentor%29%22?collection=educationhttps://repository.tudelft.nl/islandora/search/contributor%3A%22Minnoye%2C%20A.L.M.%20%28mentor%29%22?collection=education
-Tags: 3d scans, personalized
 URL: https://repository.tudelft.nl/islandora/object/uuid%3A8689a874-2460-4a80-b39a-70010d6562c9?collection=education
 
 # Abstract

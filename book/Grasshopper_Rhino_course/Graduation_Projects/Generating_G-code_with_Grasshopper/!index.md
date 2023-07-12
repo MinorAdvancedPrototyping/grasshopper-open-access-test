@@ -1,9 +1,9 @@
 # Generating G-code with Grasshopper
 
-Categories: Lesson
 Created: April 28, 2023 4:05 PM
-Review: Ready for Review
 Tags: Advanced Manufacturing
+Categories: Lesson
+Review: Ready for Review
 
 📌 ********************Outlines:******************** A short description of what you can expect in the upcoming section.
 📑 **Explanation text:** Written explanations with supporting images.
@@ -17,7 +17,7 @@ Original content developed by Mehmet Ozdemir and Zjenja Doubrovski
 
 - Exercise Files:
     
-    [Grasshopper G-code Geneartion Template.gh](template2.gh)
+    [Grasshopper G-code Geneartion Template.gh](../../Knowledge%20base/Generating%20G-code%20with%20Grasshopper/template2.gh)
     
 
 # Basics of G-code
@@ -202,11 +202,11 @@ Now that we understand the basics of G-code, we are able to use an alternative w
 
 Grasshopper G-code workflow
 
-The main concept here is to convert our solid/surface into contour curves, divide these curves into smaller segments, and obtain the X Y Z coordinates from the collection of sequential points. Using this collection of points, we can write the G-code to instruct the printer to move to these locations while extruding in sequential order. As the order of operations is critical for the G-code, it is important to keep the geometry data organized. For resource on working with data structures in Grasshopper, see [Lesson 3 - Data structures](../../Lessons/3%EF%B8%8F%E2%83%A3_Lesson_3_-_Data_structures/%21index.md) 
+The main concept here is to convert our solid/surface into contour curves, divide these curves into smaller segments, and obtain the X Y Z coordinates from the collection of sequential points. Using this collection of points, we can write the G-code to instruct the printer to move to these locations while extruding in sequential order. As the order of operations is critical for the G-code, it is important to keep the geometry data organized. For resource on working with data structures in Grasshopper, see [Lesson 3 - Data structures](../../Lessons/3%EF%B8%8F%E2%83%A3%20Lesson%203%20-%20Data%20structures/%21index.md) 
 
 Let’s take the example of creating the G-code for a simple cylinder as shown above. Once we have the collection of points, how exactly do we translate these points into G-code operations and ensure to add all other necessary G-code calculations? First, let’s look at some basic concepts which will be key in creating this script. To follow along, feel free to download the exercise file here:
 
-[Grasshopper G-code Generation Template.gh](template2.gh)
+[Grasshopper G-code Generation Template.gh](../../Knowledge%20base/Generating%20G-code%20with%20Grasshopper/template2.gh)
 
 ## Extrusion Amount
 
@@ -235,13 +235,13 @@ By inputting this values into the Grasshopper script, we can calculate the extru
 
 To manage all the data and generate the correct G-code text, we will need to combine certain streams of data together. There are two Grasshopper components that will help use with this:
 
-![Untitled](Untitled_1.png)
+![Untitled](Untitled%201.png)
 
 Concatenate takes in multiple streams of data and adds them to one element. This will be important to combine the G-code instructions into a single line of text. As can be seen in the template file, for each line of the G-code, we use the Concatenate component to combine multiple streams of data both text and numbers.
 
 ![Screenshot 2023-04-20 at 21.38.17.png](Screenshot_2023-04-20_at_21.38.17.png)
 
-![Untitled](Untitled_2.png)
+![Untitled](Untitled%202.png)
 
 The merge component takes multiple lists and adds them after each other. This will be important to combine multiple parts of the G-code process one after the other. As seen in the template file, the Start Protocol, Core Instructions, and End Protocol are merged together into one final G-code. 
 
@@ -284,4 +284,4 @@ There is much to explore when it comes to generating G-code with Grasshopper. By
 
 # Relevant Projects
 
-[Untitled Database](Untitled_Database.csv)
+[Untitled Database](Untitled%20Database.csv)
