@@ -2,37 +2,39 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: Grasshopper_Rhino_course/intro.md
+
 chapters:
-- file: lessons
+- file: Grasshopper_Rhino_course/Lessons/!index.md
   sections:
-  - file: Grasshopper_Rhino_course/Lessons/1️⃣_Lesson_1_-_Basics/!index.md
-  - file: Grasshopper_Rhino_course/Lessons/2️⃣ Lesson_2-Curves_and_lists/!index.md
-  - file: Grasshopper_Rhino_course/Lessons/3️⃣ Lesson_3-Data_structures/!index.md
-  - file: Grasshopper_Rhino_course/Lessons/4️⃣ Lesson_4-Surfaces/!index.md
-  - file: Grasshopper_Rhino_course/Lessons/5️⃣ Lesson_5-Meshes/!index.md
-- file: knowledgebase
+    - file: Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md
+    - file: Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md
+    - file: Grasshopper_Rhino_course/Lessons/3_Lesson_3_-_Data_structures/!index.md
+    - file: Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md
+    - file: Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/!index.md
+    - file: Grasshopper_Rhino_course/Lessons/Student_showcase/!index.md
+      sections:
+      - file: Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_1/!index.md
+      - file: Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_2/!index.md
+      - file: Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_3/!index.md
+      - file: Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_4/!index.md
+- file: Grasshopper_Rhino_course/Knowledge_base/!index.md
   sections:
-  - file: tutorials
+  - file: Grasshopper_Rhino_course/Knowledge_base/Tutorials/!index.md
     sections:
-    - file: Grasshopper_Rhino_course/Graduation_Projects/Design_for_Personalized_Fit/!index.md
-    - file: Grasshopper_Rhino_course/Knowledge_base/Data-Driven_Personalized_Design/!index.md
-    - file: Grasshopper_Rhino_course/Graduation_Projects/Generating_G-code_with_Grasshopper/!index.md
-    - file: Grasshopper_Rhino_course/Knowledge_base/Design_for_Digital_Fabrication_(Laser_Cutting)/!index.md
-    - file: Grasshopper_Rhino_course/Knowledge_base/Generative_Form_Finding_with_Kangaroo_Physics/!index.md
-  - file: gradprojects
+    - file: Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md
+    - file: Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/!index.md
+    - file: Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Digital_Fabrication__Laser_Cutting_/!index.md
+    - file: Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index.md
+    - file: Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/!index.md
+  - file: Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/!index.md
     sections:
-    - file: Grasshopper_Rhino_course/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__.md
-    - file: Grasshopper_Rhino_course/Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric,_3D_printed_ankle_foot_orthosis__.md
-    - file: Grasshopper_Rhino_course/Graduation_Projects/__Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__.md
-    - file: Grasshopper_Rhino_course/Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__.md
-    - file: Grasshopper_Rhino_course/Graduation_Projects/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__.md
-    - file: Grasshopper_Rhino_course/Graduation_Projects/3D Structures and Lattices.md
-    - file: Grasshopper_Rhino_course/Graduation_Projects/A medical jewel, the hand splint.md
-  - file: plugins
-- file: studentshowcase
-  sections:
-  - file: Grasshopper_Rhino_course/Student showcase/Assignment_1/!index.md
-  - file: Grasshopper_Rhino_course/Student showcase/Assignment_2/!index.md
-  - file: Grasshopper_Rhino_course/Student showcase/Assignment_3/!index.md
-  - file: Grasshopper_Rhino_course/Student showcase/Assignment_4/!index.md
+    - file: Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric,_3D_printed_ankle_foot_orthosis__/!index.md
+    - file: Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__/!index.md
+    - file: Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/!index.md
+    - file: Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__/!index.md
+    - file: Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/A_medical_jewel,_the_hand_splint/!index.md
+    - file: Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/Designing_a_multi-sports_helmet_based_on_3D_ergonomic_dat/!index.md
+    - file: Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/!index.md
+    - file: Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/Development_of_a_low-cost_3D_foot_scanner/!index.md
+    - file: Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/The_making_of_a_smart_pillow/!index.md
