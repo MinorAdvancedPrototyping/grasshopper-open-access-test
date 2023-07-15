@@ -14,6 +14,18 @@
               "type": "markdown",
               "state": {
                 "file": "Python_rename.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "741e32ba9295a949",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
                 "mode": "source",
                 "source": false
               }
@@ -172,11 +184,10 @@
   },
   "active": "a7660a247c53e340",
   "lastOpenFiles": [
-    "Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md",
-    "Grasshopper_Rhino_course/Lessons/3_Lesson_3_-_Data_structures/!index.md",
-    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/!index.md",
     "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
-    "Grasshopper_Rhino_course/intro.md",
+    "test/test.md",
     "_build/html/index.html",
     "_build/html/_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css",
     "_build/html/objects.inv",
@@ -197,6 +208,7 @@
     "_build/html/_static/minus.png",
     "_build/html/_static/plus.png",
     "_build/html/_static/file.png",
+    "_build/html/_sources/test/test.md",
     "_build/html/_sources/plugins.md",
     "_build/html/_sources/_tags/tagsindex.md",
     "_build/html/_sources/_tags/personalized.md",
@@ -205,11 +217,11 @@
     "_build/html/_sources/_tags/Simulation.md",
     "_build/html/_sources/_tags/Lists.md",
     "_build/html/_sources/_tags/Generative.md",
-    "_build/html/_sources/_tags/Form Finding.md",
+    "_build/html/_sources/_tags/Form-Finding.md",
     "_build/html/_sources/_tags/Curves.md",
-    "_build/html/_sources/_tags/Advanced Manufacturing.md",
-    "_build/html/_sources/_tags/3d scans.md",
-    "_build/html/_sources/_tags/3D Printing.md",
+    "_build/html/_sources/_tags/Advanced-Manufacturing.md",
+    "_build/html/_sources/_tags/3d-scans.md",
+    "_build/html/_sources/_tags/3D-Printing.md",
     "_build/html/_sources/README.md",
     "_build/html/_sources/Python_rename.md",
     "_build/html/_sources/Grasshopper_Rhino_course/intro.md",

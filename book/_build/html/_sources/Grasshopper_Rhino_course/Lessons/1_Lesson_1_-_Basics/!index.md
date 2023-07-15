@@ -1,6 +1,6 @@
 # Lesson 1 - Basics
 
-```{tags}  basics
+```{tags} basics
 ```
 
 :::{card}

@@ -1,4 +1,4 @@
-# My tags: Generative
+# Categories: Generative
 
 ```{toctree}
 ---

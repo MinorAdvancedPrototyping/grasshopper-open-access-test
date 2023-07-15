@@ -4,28 +4,31 @@
 import os
 import re
 
-def replace_tags_in_file(md_file):
-    with open(md_file, 'r') as file:
+def process_file(file_path):
+    with open(file_path, 'r') as file:
         lines = file.readlines()
 
-    with open(md_file, 'w') as file:
-        for i in range(len(lines)):
-            if lines[i].strip().startswith("Tags:"):
-                tags = lines[i].strip().lstrip("Tags:")
-                lines[i] = f"```{{tags}} {tags}\n```\n"
-
-        file.write(''.join(lines))
+    with open(file_path, 'w') as file:
+        for line in lines:
+            tag_line = re.match(r'Tags: (.*)', line)
+            if tag_line:
+                tags = tag_line.group(1).split(', ')
+                tags = [tag.replace(' ', '-') for tag in tags]
+                new_tag_line = ', '.join(tags)
+                line = f"```{{tags}} {new_tag_line}\n```\n"
+            file.write(line)
 
 def process_directory(root_dir):
     for root, dirs, files in os.walk(root_dir):
         for file in files:
             if file.endswith('.md'):
-                md_file = os.path.join(root, file)
-                replace_tags_in_file(md_file)
+                file_path = os.path.join(root, file)
+                process_file(file_path)
         dirs.sort()  # process directories in sorted order
 
-root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/'
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/test'
 process_directory(root_dir)
+
 ```
 
 

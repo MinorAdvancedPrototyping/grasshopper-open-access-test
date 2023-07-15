@@ -1,27 +1,8 @@
 # Design for Personalized Fit
 
-Created: February 24, 2023 12:14 PM
-
-```{tags}  3d scans, personalized
+```{tags} 3d-scans, personalized
 ```
 
-Categories: Lesson
-
-Review: Ready for Review
-
-📌 **Outlines:** A short description of what you can expect in the upcoming section.
-
-📑 **Explanation text:** Written explanations with supporting images.
-
-👩‍🏫 **Explanation videos:** Explaining the course material in short lecture videos.
-
-📺 **Tutorial videos:** Follow-along tutorials.
-
-💡 T**ips:** Tips and tricks to make working in Rhino/Grasshopper easier.
-
-🖱️ **Exercises:** Small practice questions. The solution is provided.
-
-💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
 
 Special thanks to Dr. Wolf Song and Dr. Toon Huysmans for their contribution in this lesson.
 

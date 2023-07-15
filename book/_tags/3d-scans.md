@@ -1,4 +1,4 @@
-# My tags: 3d scans
+# Categories: 3d-scans
 
 ```{toctree}
 ---

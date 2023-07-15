@@ -1,4 +1,4 @@
-# My tags: Lists
+# Categories: Lists
 
 ```{toctree}
 ---

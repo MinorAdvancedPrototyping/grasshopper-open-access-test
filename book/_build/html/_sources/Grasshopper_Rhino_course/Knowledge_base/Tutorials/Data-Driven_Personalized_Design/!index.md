@@ -2,7 +2,7 @@
 
 Created: February 24, 2023 12:14 PM
 
-```{tags}  3d scans, data-driven, personalized
+```{tags} 3d-scans, data-driven, personalized
 ```
 
 Categories: Lesson

@@ -1,4 +1,4 @@
-# My tags: data-driven
+# Categories: data-driven
 
 ```{toctree}
 ---

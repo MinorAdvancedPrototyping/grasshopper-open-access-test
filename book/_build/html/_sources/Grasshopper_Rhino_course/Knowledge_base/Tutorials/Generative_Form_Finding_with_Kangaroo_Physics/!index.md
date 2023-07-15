@@ -2,7 +2,7 @@
 
 Created: April 20, 2023 11:57 PM
 
-```{tags}  Form Finding, Generative, Simulation
+```{tags} Form-Finding, Generative, Simulation
 ```
 
 Categories: Lesson

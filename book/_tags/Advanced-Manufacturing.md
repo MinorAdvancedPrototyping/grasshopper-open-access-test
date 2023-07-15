@@ -1,4 +1,4 @@
-# My tags: Advanced Manufacturing
+# Categories: Advanced-Manufacturing
 
 ```{toctree}
 ---

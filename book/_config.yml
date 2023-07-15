@@ -46,6 +46,7 @@ sphinx:
     tags_create_tags: true
     tags_extension: ["md"]
     tags_create_badges: true
+    tags_page_title: "Categories"
 
 # html:
 #   comments:

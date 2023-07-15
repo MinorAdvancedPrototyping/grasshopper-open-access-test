@@ -2,7 +2,7 @@
 
 Created: February 24, 2023 12:14 PM
 
-```{tags}  Advanced Manufacturing
+```{tags} Advanced-Manufacturing
 ```
 
 Categories: Lesson

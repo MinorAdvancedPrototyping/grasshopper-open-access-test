@@ -1,4 +1,4 @@
-# My tags: Curves
+# Categories: Curves
 
 ```{toctree}
 ---

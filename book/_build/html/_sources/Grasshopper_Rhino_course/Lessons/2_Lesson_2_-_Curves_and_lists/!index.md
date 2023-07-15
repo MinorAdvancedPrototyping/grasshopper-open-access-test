@@ -1,6 +1,6 @@
 # Lesson 2 - Curves and lists
 
-```{tags}  Curves, Lists
+```{tags} Curves, Lists
 ```
 
 📌 **Outlines:** A short description of what you can expect in the upcoming section.

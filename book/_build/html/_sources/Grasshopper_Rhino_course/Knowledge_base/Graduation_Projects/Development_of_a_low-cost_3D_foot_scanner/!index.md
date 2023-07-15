@@ -2,7 +2,7 @@
 
 Created: April 28, 2023 4:05 PM
 
-```{tags}  3d scans, personalized
+```{tags} 3d-scans, personalized
 ```
 
 Authors: Hoeksema, J.

@@ -1,4 +1,4 @@
-# My tags: 3D Printing
+# Categories: 3D-Printing
 
 ```{toctree}
 ---

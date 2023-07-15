@@ -2,7 +2,7 @@
 
 Created: April 28, 2023 4:05 PM
 
-```{tags}  3d scans, Advanced Manufacturing, data-driven, personalized
+```{tags} 3d-scans, Advanced-Manufacturing, data-driven, personalized
 ```
 
 Authors: van Leijsen, P.M.
