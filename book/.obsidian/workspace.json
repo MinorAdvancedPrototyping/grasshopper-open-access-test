@@ -13,9 +13,21 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Grasshopper_Rhino_course/intro.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "284a707687a3c9f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Python_rename.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           },
@@ -29,7 +41,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -158,8 +171,20 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0eb025b0feb030b5",
+  "active": "284a707687a3c9f1",
   "lastOpenFiles": [
+    "Grasshopper_Rhino_course/intro.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
+    "_build/html/_downloads/ca31afcb9e4bf0b72a37148742268157/customizable_sunglasses.png",
+    "_build/html/_downloads/ca31afcb9e4bf0b72a37148742268157",
+    "_build/html/_downloads/f5dfd8afcd44bf5460fd3f151f024c72/key_hand_measurements.png",
+    "_build/html/_downloads/f5dfd8afcd44bf5460fd3f151f024c72",
+    "_build/html/_downloads/44f512bc03049e1f94967b07e7cb7969/3d_foot_scanner_rhino.png",
+    "_build/html/_downloads/44f512bc03049e1f94967b07e7cb7969",
+    "_build/html/_downloads/27e0997a2ccd45f87876cfc028f2e279/3d_foot_scanner_diagram.png",
+    "_build/html/_downloads/27e0997a2ccd45f87876cfc028f2e279",
+    "_build/html/searchindex.js.tmp",
+    "Python_rename.md",
     "_tags/tagsindex.md",
     "_tags/tag2.md",
     "_tags/tag1.md",
@@ -171,17 +196,12 @@
     "_build/html/_sources/_tags/tagsindex.md",
     "_build/html/_sources/_tags/tag2.md",
     "_build/html/_sources/_tags/tag1.md",
-    "_build/html/_sources/_tags",
     "_build/html/_sources/Python_rename.md",
     "_build/html/_sources/Grasshopper_Rhino_course/intro.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_4/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_3/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_2/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_1/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_4",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_3",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_2",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_1",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md",
@@ -193,18 +213,11 @@
     "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Digital_Fabrication__Laser_Cutting_/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__/!index.md",
     "_build/html/_images/workflow_overview_grasshopper.png",
     "_build/html/_images/vertical_panels.png",
     "_build/html/_images/texalive_overview.webp",
     "_build/html/_images/texalive_grasshopper.png",
     "_build/html/_images/surface_from_3d_scan.png",
-    "_build/html/_images/stream_contents.png",
-    "_build/html/_images/statistical_shape_modeling.png",
-    "_build/html/_images/sole_loft.png",
-    "_build/html/_images/sole_heatmap.png",
-    "_build/html/_images/sole_closeup_data_numbers.png"
+    "_build/html/_images/stream_contents.png"
   ]
 }

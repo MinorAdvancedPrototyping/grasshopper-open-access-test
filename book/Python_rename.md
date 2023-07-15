@@ -11,7 +11,7 @@ def increase_header_depth_in_file(md_file):
 	with open(md_file, 'w') as file:
 		first_header = True
 		for line in lines:
-			if re.match("^# ", line):
+			if re.match("^#+ ", line):
 				if first_header:
 					first_header = False
 				else:
@@ -26,7 +26,7 @@ def process_directory(root_dir):
 				increase_header_depth_in_file(md_file)
 		dirs.sort()  # process directories in sorted order
 
-root_dir = '/path/to/your/directory'
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course'
 process_directory(root_dir)
 
 ```
