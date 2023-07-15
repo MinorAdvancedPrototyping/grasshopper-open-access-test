@@ -8,8 +8,13 @@ def add_metadata(file_path, author, date_edited):
     with open(file_path, 'r') as file:
         lines = file.readlines()
 
+    # Find the first heading (starts with '# ') and insert metadata after it
+    for i, line in enumerate(lines):
+        if line.startswith('# '):
+            lines.insert(i+1, f"\n:::{'{card}'}\n**Authors:** {author}\n\n**Last Edited:** {date_edited}\n:::\n\n")
+            break
+
     with open(file_path, 'w') as file:
-        file.write(f":::{{card}}\nAuthors: {author}\nLast Edited: {date_edited}\n:::\n\n")
         file.write(''.join(lines))
 
 def process_directory(root_dir, author, date_edited):
@@ -20,10 +25,11 @@ def process_directory(root_dir, author, date_edited):
                 add_metadata(file_path, author, date_edited)
         dirs.sort()  # process directories in sorted order
 
-root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists'
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/'
 author = 'Your Name'
 date_edited = date.today().isoformat()
 process_directory(root_dir, author, date_edited)
+
 ```
 
 

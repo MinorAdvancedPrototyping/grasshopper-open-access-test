@@ -1,5 +1,12 @@
 # Lesson 5 - Meshes
 
+:::{card}
+**Authors:** Your Name
+
+**Last Edited:** 2023-07-15
+:::
+
+
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
 
 📑 **Explanation text:** Written explanations with supporting images.

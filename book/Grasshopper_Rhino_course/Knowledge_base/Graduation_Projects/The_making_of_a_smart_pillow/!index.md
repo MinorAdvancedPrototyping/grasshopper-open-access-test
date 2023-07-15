@@ -1,17 +1,18 @@
 # The making of a smart pillow
 
-Created: May 1, 2023 10:32 AM
+:::{card}
+**Authors:** Vermeulen, Tjapko
+
+**Supervisors:** Bourgeois, Jacky (graduation committee), Rozendaal, Marco (mentor)
+
+**Last Edited:** 2023-07-15
+
+**URL:** https://repository.tudelft.nl/islandora/object/uuid%3A204a945a-17d6-4ed0-af40-6d6959953dba?collection=education
+:::
+
 
 ```{tags} data-driven
 ```
-
-Authors: Vermeulen, Tjapko
-
-Categories: Graduation Project
-
-Supervisors: Bourgeois, Jacky (graduation committee), Rozendaal, Marco (mentor)
-
-URL: https://repository.tudelft.nl/islandora/object/uuid%3A204a945a-17d6-4ed0-af40-6d6959953dba?collection=education
 
 ![smart_pillow.png](smart_pillow.png)
 

@@ -1,5 +1,12 @@
 # Open Access Rhino Grasshopper Course for Industrial Design Students
 
+:::{card}
+**Authors:** Your Name
+
+**Last Edited:** 2023-07-15
+:::
+
+
 ### Introduction
 
 Welcome to this course about Computational design using Rhino and Grasshopper. This program is geared towards product design for personalized fit products and design for digital fabrication.

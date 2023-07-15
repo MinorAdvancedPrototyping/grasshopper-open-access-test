@@ -1,5 +1,12 @@
 # Design for Personalized Fit
 
+:::{card}
+**Authors:** Your Name
+
+**Last Edited:** 2023-07-15
+:::
+
+
 ```{tags} 3d-scans, personalized
 ```
 

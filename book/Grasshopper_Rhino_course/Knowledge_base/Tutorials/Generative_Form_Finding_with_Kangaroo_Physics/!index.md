@@ -1,5 +1,12 @@
 # Generative Form Finding with Kangaroo Physics
 
+:::{card}
+**Authors:** Your Name
+
+**Last Edited:** 2023-07-15
+:::
+
+
 Created: April 20, 2023 11:57 PM
 
 ```{tags} Form-Finding, Generative, Simulation

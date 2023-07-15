@@ -1,5 +1,12 @@
 # Assignment 3
 
+:::{card}
+**Authors:** Your Name
+
+**Last Edited:** 2023-07-15
+:::
+
+
 Created: February 10, 2023 2:22 PM
 
 ![Assignment 3 - 1.png](Assignment_3_-_1.png)

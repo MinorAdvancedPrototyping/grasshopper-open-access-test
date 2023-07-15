@@ -1,5 +1,12 @@
 # Generating G-code with Grasshopper
 
+:::{card}
+**Authors:** Your Name
+
+**Last Edited:** 2023-07-15
+:::
+
+
 Created: February 24, 2023 12:14 PM
 
 ```{tags} Advanced-Manufacturing

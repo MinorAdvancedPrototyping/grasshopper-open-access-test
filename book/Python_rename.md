@@ -11,7 +11,7 @@ def add_metadata(file_path, author, date_edited):
     # Find the first heading (starts with '# ') and insert metadata after it
     for i, line in enumerate(lines):
         if line.startswith('# '):
-            lines.insert(i+1, f"\n:::{'card'}\n**Authors:** {author}\n\n**Last Edited:** {date_edited}\n:::\n\n")
+            lines.insert(i+1, f"\n:::{'{card}'}\n**Authors:** {author}\n\n**Last Edited:** {date_edited}\n:::\n\n")
             break
 
     with open(file_path, 'w') as file:
@@ -25,7 +25,7 @@ def process_directory(root_dir, author, date_edited):
                 add_metadata(file_path, author, date_edited)
         dirs.sort()  # process directories in sorted order
 
-root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/test'
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/'
 author = 'Your Name'
 date_edited = date.today().isoformat()
 process_directory(root_dir, author, date_edited)

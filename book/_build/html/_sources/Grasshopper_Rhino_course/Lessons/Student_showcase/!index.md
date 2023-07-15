@@ -1,5 +1,12 @@
 # Student Showcase
 
+:::{card}
+**Authors:** Your Name
+
+**Last Edited:** 2023-07-15
+:::
+
+
 :::::{grid} 1 1 2 3
 :class-container: text-center
 :gutter: 3
