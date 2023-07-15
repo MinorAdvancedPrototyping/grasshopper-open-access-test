@@ -1,9 +1,8 @@
 [
   "convert-url-to-iframe",
-  "obsidian-bulk-rename-plugin",
-  "obsidian-link-converter",
   "execute-code",
   "obsidian-code-block-enhancer",
   "cmenu-plugin",
-  "obsidian-show-file-path"
+  "obsidian-show-file-path",
+  "table-editor-obsidian"
 ]

@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>removes icons, parenthesis, and spaces also renames the markdown links &#8212; Rhino Grasshopper Open Access Education</title>
+    <title>testing sphinx cards &#8212; Rhino Grasshopper Open Access Education</title>
   
   
   
@@ -275,6 +275,27 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="_tags/tagsindex.html">Tags overview</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="_tags/tag1.html">tag1 (1)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/%21index.html">Lesson 1 - Basics</a></li>
+
+
+
+
+
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="_tags/tag2.html">tag2 (1)</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/%21index.html">Lesson 1 - Basics</a></li>
+
+
+
+
+
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -411,7 +432,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>removes icons, parenthesis, and spaces also renames the markdown links</h1>
+    <h1>testing sphinx cards</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -421,10 +442,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">removes icons, parenthesis, and spaces also renames the markdown links</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">testing sphinx cards</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-4">testing 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-3">testing 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-2">testing 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-1">testing 1</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#removes-icons-parenthesis-and-spaces-also-renames-the-markdown-links">removes icons, parenthesis, and spaces also renames the markdown links</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#youtube-iframes">youtube iframes</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#turn-single-linebreaks-into-double-line-breaks">Turn single linebreaks into double line breaks</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#remove">Remove [********************]</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#make-sphinx-cards">Make sphinx cards</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#made-with-chatgpt">made with chatgpt</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">youtube iframes</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#trying-to-remove-emojis">trying to remove emojis</a></li>
@@ -440,7 +469,189 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="removes-icons-parenthesis-and-spaces-also-renames-the-markdown-links">
+  <div class="tex2jax_ignore mathjax_ignore section" id="testing-sphinx-cards">
+<h1>testing sphinx cards<a class="headerlink" href="#testing-sphinx-cards" title="Permalink to this headline">#</a></h1>
+<div class="section" id="testing-4">
+<h2>testing 4<a class="headerlink" href="#testing-4" title="Permalink to this headline">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="k">def</span> <span class="nf">create_sphinx_card</span><span class="p">(</span><span class="n">root_dir</span><span class="p">):</span>
+	<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="s1">&#39;!index.md&#39;</span><span class="p">),</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">index_file</span><span class="p">:</span>
+		<span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;# </span><span class="si">{</span><span class="n">root_dir</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+		<span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::::</span><span class="si">{grid}</span><span class="s2"> 1 1 2 3</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+		<span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:class-container: text-center</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+		<span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:gutter: 3</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+		<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)):</span>
+			<span class="n">item_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+			<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">item_path</span><span class="p">):</span>
+				<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing directory: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+				<span class="c1"># find the image for the card</span>
+				<span class="n">image</span> <span class="o">=</span> <span class="kc">None</span>
+				<span class="k">for</span> <span class="n">sub_item</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">item_path</span><span class="p">)):</span>
+					<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Checking sub-item: </span><span class="si">{</span><span class="n">sub_item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+					<span class="k">if</span> <span class="n">sub_item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpeg&#39;</span><span class="p">)):</span>
+						<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found image: </span><span class="si">{</span><span class="n">sub_item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+						<span class="n">image</span> <span class="o">=</span> <span class="n">sub_item</span>
+						<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">item_path</span><span class="p">,</span> <span class="n">image</span><span class="p">))</span>
+						<span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
+						<span class="n">new_size</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+						<span class="n">left</span> <span class="o">=</span> <span class="p">(</span><span class="n">width</span> <span class="o">-</span> <span class="n">new_size</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+						<span class="n">top</span> <span class="o">=</span> <span class="p">(</span><span class="n">height</span> <span class="o">-</span> <span class="n">new_size</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+						<span class="n">right</span> <span class="o">=</span> <span class="p">(</span><span class="n">width</span> <span class="o">+</span> <span class="n">new_size</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+						<span class="n">bottom</span> <span class="o">=</span> <span class="p">(</span><span class="n">height</span> <span class="o">+</span> <span class="n">new_size</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+						<span class="n">img</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="n">left</span><span class="p">,</span> <span class="n">top</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">bottom</span><span class="p">))</span>
+						<span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">item_path</span><span class="p">,</span> <span class="s2">&quot;cover&quot;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">image</span><span class="p">)[</span><span class="mi">1</span><span class="p">]))</span>
+						<span class="k">break</span>
+
+				<span class="k">if</span> <span class="n">image</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+					<span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::{grid-item-card}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+					<span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;:link: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">/!index</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+					<span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:link-type: doc</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+					<span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;:img-top: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">/cover</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">image</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Change the image filename here</span>
+					<span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:class-header: bg-light</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+					<span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">^^^</span><span class="se">\n</span><span class="s2">insert summary here</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+					<span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">root_dir</span> <span class="o">=</span> <span class="s1">&#39;/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects&#39;</span>
+<span class="n">create_sphinx_card</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="testing-3">
+<h2>testing 3<a class="headerlink" href="#testing-3" title="Permalink to this headline">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="k">def</span> <span class="nf">create_sphinx_card</span><span class="p">(</span><span class="n">root_dir</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="s1">&#39;!index.md&#39;</span><span class="p">),</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">index_file</span><span class="p">:</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;# </span><span class="si">{</span><span class="n">root_dir</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::::</span><span class="si">{grid}</span><span class="s2"> 1 1 2 3</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:class-container: text-center</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:gutter: 3</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)):</span>
+            <span class="n">item_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">item_path</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing directory: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="c1"># find the image for the card</span>
+                <span class="n">image</span> <span class="o">=</span> <span class="s2">&quot;default_image.png&quot;</span>
+                <span class="k">for</span> <span class="n">sub_item</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">item_path</span><span class="p">)):</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Checking sub-item: </span><span class="si">{</span><span class="n">sub_item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">sub_item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpeg&#39;</span><span class="p">)):</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found image: </span><span class="si">{</span><span class="n">sub_item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                        <span class="n">image</span> <span class="o">=</span> <span class="n">sub_item</span>
+                        <span class="k">if</span> <span class="n">image</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">!=</span> <span class="s2">&quot;cover.png&quot;</span> <span class="ow">and</span> <span class="n">image</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">!=</span> <span class="s2">&quot;cover.jpg&quot;</span> <span class="ow">and</span> <span class="n">image</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">!=</span> <span class="s2">&quot;cover.jpeg&quot;</span><span class="p">:</span>
+                            <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">item_path</span><span class="p">,</span> <span class="n">image</span><span class="p">),</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">item_path</span><span class="p">,</span> <span class="s2">&quot;cover&quot;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">image</span><span class="p">)[</span><span class="mi">1</span><span class="p">]))</span>
+                        <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">item_path</span><span class="p">,</span> <span class="s2">&quot;cover&quot;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">image</span><span class="p">)[</span><span class="mi">1</span><span class="p">]))</span>
+                        <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">size</span>
+                        <span class="n">new_size</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+                        <span class="n">left</span> <span class="o">=</span> <span class="p">(</span><span class="n">width</span> <span class="o">-</span> <span class="n">new_size</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+                        <span class="n">top</span> <span class="o">=</span> <span class="p">(</span><span class="n">height</span> <span class="o">-</span> <span class="n">new_size</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+                        <span class="n">right</span> <span class="o">=</span> <span class="p">(</span><span class="n">width</span> <span class="o">+</span> <span class="n">new_size</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+                        <span class="n">bottom</span> <span class="o">=</span> <span class="p">(</span><span class="n">height</span> <span class="o">+</span> <span class="n">new_size</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+                        <span class="n">img</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="n">left</span><span class="p">,</span> <span class="n">top</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">bottom</span><span class="p">))</span>
+                        <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">item_path</span><span class="p">,</span> <span class="s2">&quot;cover&quot;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">image</span><span class="p">)[</span><span class="mi">1</span><span class="p">]))</span>
+                        <span class="k">break</span>
+
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::{grid-item-card}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;:link: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">/!index</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:link-type: doc</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;:img-top: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">/cover</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">image</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Change the image filename here</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:class-header: bg-light</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">^^^</span><span class="se">\n</span><span class="s2">insert summary here</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">root_dir</span> <span class="o">=</span> <span class="s1">&#39;/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects&#39;</span>
+<span class="n">create_sphinx_card</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="testing-2">
+<h2>testing 2<a class="headerlink" href="#testing-2" title="Permalink to this headline">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">def</span> <span class="nf">create_sphinx_card</span><span class="p">(</span><span class="n">root_dir</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="s1">&#39;!index.md&#39;</span><span class="p">),</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">index_file</span><span class="p">:</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;# </span><span class="si">{</span><span class="n">root_dir</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::::</span><span class="si">{grid}</span><span class="s2"> 1 1 2 3</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:class-container: text-center</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:gutter: 3</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)):</span>
+            <span class="n">item_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">item_path</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing directory: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="c1"># find the image for the card</span>
+                <span class="n">image</span> <span class="o">=</span> <span class="s2">&quot;default_image.png&quot;</span>
+                <span class="k">for</span> <span class="n">sub_item</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">item_path</span><span class="p">)):</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Checking sub-item: </span><span class="si">{</span><span class="n">sub_item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">sub_item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpeg&#39;</span><span class="p">)):</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found image: </span><span class="si">{</span><span class="n">sub_item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                        <span class="n">image</span> <span class="o">=</span> <span class="n">sub_item</span>
+                        <span class="k">if</span> <span class="n">sub_item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;cover.png&#39;</span> <span class="ow">or</span> <span class="n">sub_item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;cover.jpg&#39;</span><span class="p">:</span>
+                            <span class="k">break</span>
+
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::{grid-item-card}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;:link: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">/!index</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:link-type: doc</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;:img-top: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">image</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:class-header: bg-light</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">^^^</span><span class="se">\n</span><span class="s2">insert summary here</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">root_dir</span> <span class="o">=</span> <span class="s1">&#39;/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects&#39;</span>
+<span class="n">create_sphinx_card</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="testing-1">
+<h2>testing 1<a class="headerlink" href="#testing-1" title="Permalink to this headline">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">def</span> <span class="nf">create_sphinx_card</span><span class="p">(</span><span class="n">root_dir</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="s1">&#39;!index.md&#39;</span><span class="p">),</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">index_file</span><span class="p">:</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;# </span><span class="si">{</span><span class="n">root_dir</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::::</span><span class="si">{grid}</span><span class="s2"> 1 1 2 3</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:class-container: text-center</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:gutter: 3</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)):</span> <span class="c1"># Here we&#39;re sorting the list</span>
+            <span class="n">item_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">item_path</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing directory: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="c1"># find the image for the card</span>
+                <span class="n">image</span> <span class="o">=</span> <span class="s2">&quot;default_image.png&quot;</span>
+                <span class="k">for</span> <span class="n">sub_item</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">item_path</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="n">sub_item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpg&#39;</span><span class="p">)):</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found image: </span><span class="si">{</span><span class="n">sub_item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                        <span class="n">image</span> <span class="o">=</span> <span class="n">sub_item</span>
+                        <span class="k">if</span> <span class="n">sub_item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;cover.png&#39;</span> <span class="ow">or</span> <span class="n">sub_item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;cover.jpg&#39;</span><span class="p">:</span>
+                            <span class="k">break</span>
+
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::{grid-item-card}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;:link: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">/!index</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:link-type: doc</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;:img-top: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">image</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:class-header: bg-light</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">^^^</span><span class="se">\n</span><span class="s2">insert summary here</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">root_dir</span> <span class="o">=</span> <span class="s1">&#39;/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects&#39;</span>
+<span class="n">create_sphinx_card</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="removes-icons-parenthesis-and-spaces-also-renames-the-markdown-links">
 <h1>removes icons, parenthesis, and spaces also renames the markdown links<a class="headerlink" href="#removes-icons-parenthesis-and-spaces-also-renames-the-markdown-links" title="Permalink to this headline">#</a></h1>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
 <span class="kn">import</span> <span class="nn">os</span>
@@ -587,6 +798,45 @@ document.write(`
 <span class="n">root_dir</span> <span class="o">=</span> <span class="s2">&quot;/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course&quot;</span>
 
 <span class="n">boldify_text</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="make-sphinx-cards">
+<h1>Make sphinx cards<a class="headerlink" href="#make-sphinx-cards" title="Permalink to this headline">#</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">def</span> <span class="nf">create_sphinx_card</span><span class="p">(</span><span class="n">root_dir</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="s1">&#39;!index.md&#39;</span><span class="p">),</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">index_file</span><span class="p">:</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;# </span><span class="si">{</span><span class="n">root_dir</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::::</span><span class="si">{grid}</span><span class="s2"> 1 1 2 3</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:class-container: text-center</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:gutter: 3</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                
+
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">root_dir</span><span class="p">):</span>
+            <span class="n">item_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">item_path</span><span class="p">):</span>
+                <span class="c1"># find the image for the card</span>
+                <span class="n">image</span> <span class="o">=</span> <span class="kc">None</span>
+                <span class="k">for</span> <span class="n">sub_item</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">item_path</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="n">sub_item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpg&#39;</span><span class="p">)):</span>
+                        <span class="n">image</span> <span class="o">=</span> <span class="n">sub_item</span>
+                        <span class="k">if</span> <span class="n">sub_item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;cover.png&#39;</span> <span class="ow">or</span> <span class="n">sub_item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;cover.jpg&#39;</span><span class="p">:</span>
+                            <span class="k">break</span>
+                <span class="k">if</span> <span class="n">image</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="k">continue</span>
+
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::{grid-item-card}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;:link: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">/!index</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:link-type: doc</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;:img-top: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">image</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:class-header: bg-light</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">^^^</span><span class="se">\n</span><span class="s2">insert summary here</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">index_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;:::</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">root_dir</span> <span class="o">=</span> <span class="s1">&#39;/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects&#39;</span>
+<span class="n">create_sphinx_card</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -852,10 +1102,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">removes icons, parenthesis, and spaces also renames the markdown links</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">testing sphinx cards</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-4">testing 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-3">testing 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-2">testing 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-1">testing 1</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#removes-icons-parenthesis-and-spaces-also-renames-the-markdown-links">removes icons, parenthesis, and spaces also renames the markdown links</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#youtube-iframes">youtube iframes</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#turn-single-linebreaks-into-double-line-breaks">Turn single linebreaks into double line breaks</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#remove">Remove [********************]</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#make-sphinx-cards">Make sphinx cards</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#made-with-chatgpt">made with chatgpt</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">youtube iframes</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#trying-to-remove-emojis">trying to remove emojis</a></li>

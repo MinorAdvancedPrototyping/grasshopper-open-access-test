@@ -5,61 +5,110 @@
 :gutter: 3
 
 :::{grid-item-card}
-:link: 1_Lesson_1_-_Basics/!index
+:link: A_medical_jewel,_the_hand_splint/!index
 :link-type: doc
-:img-top: 1_Lesson_1_-_Basics/1.0b_LessonCoverTeapotWide.jpg
+:img-top: A_medical_jewel,_the_hand_splint/cover.jpeg
 :class-header: bg-light
 
-Lesson 1 - Basics 
-^^^
+A medical jewel, the hand splint
 
-Introduction into Rhino and Grasshopper
+^^^
+insert summary here
+
 :::
-
 :::{grid-item-card}
-:link: 2_Lesson_2_-_Curves_and_lists/!index
+:link: Designing_a_multi-sports_helmet_based_on_3D_ergonomic_dat/!index
 :link-type: doc
-:img-top: 2_Lesson_2_-_Curves_and_lists/2.0b_LessonCoverTrainWide.jpg
+:img-top: Designing_a_multi-sports_helmet_based_on_3D_ergonomic_dat/cover.png
 :class-header: bg-light
 
-Lesson 2 - Curves and Lists
-^^^
+Designing a multi-sports helmet based on 3D ergonomic dat
 
-Include Summary here
+^^^
+insert summary here
+
 :::
-
 :::{grid-item-card}
-:link: 3_Lesson_3_-_Data_structures/!index
+:link: Development_of_a_low-cost_3D_foot_scanner/!index
 :link-type: doc
-:img-top: 3_Lesson_3_-_Data_structures/Brick_wall_attractor_wide.jpeg
+:img-top: Development_of_a_low-cost_3D_foot_scanner/cover.jpg
 :class-header: bg-light
 
-Lesson 3 - Data Structures
-^^^
+Development of a low-cost 3D foot scanner
 
-Include Summary here
+^^^
+insert summary here
+
 :::
-
 :::{grid-item-card}
-:link: 4_Lesson_4_-_Surfaces/!index
+:link: The_making_of_a_smart_pillow/!index
 :link-type: doc
-:img-top: 4_Lesson_4_-_Surfaces/Armbrace_wide.jpg
+:img-top: The_making_of_a_smart_pillow/cover.png
 :class-header: bg-light
 
-Lesson 4 - Surfaces 
-^^^
+The making of a smart pillow
 
-Include Summary here
+^^^
+insert summary here
+
 :::
-
 :::{grid-item-card}
-:link: 5_Lesson_5_-_Meshes/!index
+:link: __A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/!index
 :link-type: doc
-:img-top: Lesson1/Assignment_1.png
+:img-top: __A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/cover.png
 :class-header: bg-light
 
-Lesson 5 - Meshes
-^^^
+  A custom fit parametric bra based on 3D body scanning technologies  
 
-Include Summary here
+^^^
+insert summary here
+
+:::
+:::{grid-item-card}
+:link: __Application_of_mechanical_metamaterials_in_a_parametric,_3D_printed_ankle_foot_orthosis__/!index
+:link-type: doc
+:img-top: __Application_of_mechanical_metamaterials_in_a_parametric,_3D_printed_ankle_foot_orthosis__/cover.png
+:class-header: bg-light
+
+  Application of mechanical metamaterials in a parametric, 3D printed ankle foot orthosis  
+
+^^^
+insert summary here
+
+:::
+:::{grid-item-card}
+:link: __Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__/!index
+:link-type: doc
+:img-top: __Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__/cover.jpeg
+:class-header: bg-light
+
+  Design of a 3D printed prosthetic socket that accommodates pediatric growth  
+
+^^^
+insert summary here
+
+:::
+:::{grid-item-card}
+:link: __Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/!index
+:link-type: doc
+:img-top: __Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/cover.jpeg
+:class-header: bg-light
+
+  Design of customizable sunglasses based on additive manufacturing techniques  
+
+^^^
+insert summary here
+
+:::
+:::{grid-item-card}
+:link: __Exploring_Animated_Textiles_Using_Pneumatic_Actuators__/!index
+:link-type: doc
+:img-top: __Exploring_Animated_Textiles_Using_Pneumatic_Actuators__/cover.png
+:class-header: bg-light
+
+  Exploring Animated Textiles Using Pneumatic Actuators  
+
+^^^
+insert summary here
+
 :::

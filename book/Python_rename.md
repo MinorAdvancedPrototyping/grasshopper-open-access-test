@@ -1,3 +1,88 @@
+# Fix headers depth
+
+```python
+import os
+import re
+
+def increase_header_depth_in_file(md_file):
+	with open(md_file, 'r') as file:
+		lines = file.readlines()
+
+	with open(md_file, 'w') as file:
+		first_header = True
+		for line in lines:
+			if re.match("^# ", line):
+				if first_header:
+					first_header = False
+				else:
+					line = "#" + line
+			file.write(line)
+
+def process_directory(root_dir):
+	for root, dirs, files in os.walk(root_dir):
+		for file in files:
+			if file.endswith('.md'):
+				md_file = os.path.join(root, file)
+				increase_header_depth_in_file(md_file)
+		dirs.sort()  # process directories in sorted order
+
+root_dir = '/path/to/your/directory'
+process_directory(root_dir)
+
+```
+
+
+# Making sphinx cards overview pages
+
+```python
+import os
+from PIL import Image
+
+def create_sphinx_card(root_dir):
+	with open(os.path.join(root_dir, '!index.md'), 'w') as index_file:
+		index_file.write(f"# {root_dir.split('/')[-1].replace('_', ' ')}\n\n")
+		index_file.write(":::::{grid} 1 1 2 3\n")
+		index_file.write(":class-container: text-center\n")
+		index_file.write(":gutter: 3\n\n")
+
+		for item in sorted(os.listdir(root_dir)):
+			item_path = os.path.join(root_dir, item)
+			if os.path.isdir(item_path):
+				print(f"Processing directory: {item}")
+				# find the image for the card
+				image = None
+				for sub_item in sorted(os.listdir(item_path)):
+					print(f"Checking sub-item: {sub_item}")
+					if sub_item.lower().endswith(('.png', '.jpg', '.jpeg')):
+						print(f"Found image: {sub_item}")
+						image = sub_item
+						img = Image.open(os.path.join(item_path, image))
+						width, height = img.size
+						new_size = min(width, height)
+						left = (width - new_size)/2
+						top = (height - new_size)/2
+						right = (width + new_size)/2
+						bottom = (height + new_size)/2
+						img = img.crop((left, top, right, bottom))
+						img.save(os.path.join(item_path, "cover" + os.path.splitext(image)[1]))
+						break
+
+				if image is not None:
+					index_file.write(":::{grid-item-card}\n")
+					index_file.write(f":link: {item}/!index\n")
+					index_file.write(":link-type: doc\n")
+					index_file.write(f":img-top: {item}/cover{os.path.splitext(image)[1]}\n")  # Change the image filename here
+					index_file.write(":class-header: bg-light\n\n")
+
+					index_file.write(f"{item.replace('_', ' ')}\n\n^^^\ninsert summary here\n\n")
+
+					index_file.write(":::\n")
+
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects'
+create_sphinx_card(root_dir)
+```
+
+
 # removes icons, parenthesis, and spaces also renames the markdown links
 
 ```python
@@ -153,7 +238,44 @@ boldify_text(root_dir)
 ```
 
 
+# Make sphinx cards
 
+```python
+import os
+
+def create_sphinx_card(root_dir):
+    with open(os.path.join(root_dir, '!index.md'), 'w') as index_file:
+        index_file.write(f"# {root_dir.split('/')[-1].replace('_', ' ')}\n\n")
+        index_file.write(":::::{grid} 1 1 2 3\n")
+        index_file.write(":class-container: text-center\n")
+        index_file.write(":gutter: 3\n\n")
+                
+
+        for item in os.listdir(root_dir):
+            item_path = os.path.join(root_dir, item)
+            if os.path.isdir(item_path):
+                # find the image for the card
+                image = None
+                for sub_item in os.listdir(item_path):
+                    if sub_item.lower().endswith(('.png', '.jpg')):
+                        image = sub_item
+                        if sub_item.lower() == 'cover.png' or sub_item.lower() == 'cover.jpg':
+                            break
+                if image is None:
+                    continue
+
+                index_file.write(":::{grid-item-card}\n")
+                index_file.write(f":link: {item}/!index\n")
+                index_file.write(":link-type: doc\n")
+                index_file.write(f":img-top: {item}/{image}\n")
+                index_file.write(":class-header: bg-light\n\n")
+
+                index_file.write(f"{item.replace('_', ' ')}\n\n^^^\ninsert summary here\n\n")
+                index_file.write(":::\n")
+
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects'
+create_sphinx_card(root_dir)
+```
 
 
 # made with chatgpt

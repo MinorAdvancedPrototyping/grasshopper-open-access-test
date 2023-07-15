@@ -158,17 +158,13 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 # 👩‍🏫🖱️ 2.4 Lists (30 min)
 
-<aside>
-
-📌 *What:*         Introduction to list data structures (video)
-
-                  Building a list (exercise)
+:::{card} 
+📌 *What:*         Introduction to list data structures (video) + Building a list (exercise)
 
 *For Whom:* Beginner to intermediate level
 
 *Time:*          30 min (10 min video + 20 min exercise)
-
-</aside>
+:::
 
 ## 👩‍🏫2.4.1 Lists (10 min)
 

@@ -1,5 +1,8 @@
 # Lesson 1 - Basics
 
+```{tags} tag1, tag2
+```
+
 Tags: basics
 
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
@@ -79,21 +82,11 @@ All of the different tools in Rhino can be accessed via the bar on the left. By 
 **Navigation**
 
 | Rotate | Hold right mouse button |
-
 | --- | --- |
-
 | Pan | Right mouse button + shift |
-
 | Zoom | Scroll |
-
 | Select | Left click |
-
-| Box select | Hold left mouse button and drag
-
-Drag from right to left to select everything the box touches
-
-Drag from left to right to select only objects completely inside box |
-
+| Box select | Hold left mouse button and drag (1. Drag from right to left to select everything the box touches) (2. Drag from left to right to select only objects completely inside box) 
 | Repeat previous command | Right click |
 
 For more shortcuts check out these webpages:

@@ -2,9 +2,9 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 # Book settings
-title                       : Rhino Grasshopper Open Access Education  # The title of the book. Will be placed in the left navbar.
-author                      : Faculty of Industrial Design Engineering  # The author of the book
-copyright                   : "2023"  # Copyright year to be placed in the footer
+title: Rhino Grasshopper Open Access Education  # The title of the book. Will be placed in the left navbar.
+author: Faculty of Industrial Design Engineering  # The author of the book
+copyright: "2023"  # Copyright year to be placed in the footer
 logo: TUDelft_logo_cmyk.png
 
 # Force re-execution of notebooks on each build.
@@ -34,8 +34,16 @@ html:
   use_repository_button: true
 
 #sphinx:
-#  config:
+  #config:
  #   html_theme: pydata_sphinx_theme
+
+sphinx:
+  extra_extensions:
+   - sphinx_tags
+  config:
+    tags_create_tags: true
+    tags_extension: ["md"]
+    tags_create_badges: true
 
 html:
   comments:
