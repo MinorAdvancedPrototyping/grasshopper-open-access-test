@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python_rename.md",
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
                 "mode": "source",
                 "source": false
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python_rename.md",
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python_rename.md",
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python_rename.md"
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md"
               }
             }
           }
@@ -173,26 +173,27 @@
   },
   "active": "284a707687a3c9f1",
   "lastOpenFiles": [
+    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/git",
+    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/index.json",
+    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/link.json",
+    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/about.json",
+    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/files",
+    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/hash_input.json",
+    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/paths.json",
+    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/recipe/meta.yaml.template",
+    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/recipe/meta.yaml",
+    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/recipe/conda_build_config.yaml",
+    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/recipe/recipe-scripts-license.txt",
+    "Python_rename.md",
     "Grasshopper_Rhino_course/intro.md",
     "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
     "_build/html/_downloads/ca31afcb9e4bf0b72a37148742268157/customizable_sunglasses.png",
-    "_build/html/_downloads/ca31afcb9e4bf0b72a37148742268157",
     "_build/html/_downloads/f5dfd8afcd44bf5460fd3f151f024c72/key_hand_measurements.png",
-    "_build/html/_downloads/f5dfd8afcd44bf5460fd3f151f024c72",
     "_build/html/_downloads/44f512bc03049e1f94967b07e7cb7969/3d_foot_scanner_rhino.png",
-    "_build/html/_downloads/44f512bc03049e1f94967b07e7cb7969",
     "_build/html/_downloads/27e0997a2ccd45f87876cfc028f2e279/3d_foot_scanner_diagram.png",
-    "_build/html/_downloads/27e0997a2ccd45f87876cfc028f2e279",
-    "_build/html/searchindex.js.tmp",
-    "Python_rename.md",
     "_tags/tagsindex.md",
     "_tags/tag2.md",
     "_tags/tag1.md",
-    "_tags",
-    "_build/html/_tags/tagsindex.html",
-    "_build/html/_tags/tag2.html",
-    "_build/html/_tags/tag1.html",
-    "_build/html/_tags",
     "_build/html/_sources/_tags/tagsindex.md",
     "_build/html/_sources/_tags/tag2.md",
     "_build/html/_sources/_tags/tag1.md",
@@ -212,7 +213,6 @@
     "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Digital_Fabrication__Laser_Cutting_/!index.md",
     "_build/html/_images/workflow_overview_grasshopper.png",
     "_build/html/_images/vertical_panels.png",
     "_build/html/_images/texalive_overview.webp",

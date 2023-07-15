@@ -1,0 +1,26 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "pre-commit",
+    "python >=3.6",
+    "sphinx >4"
+  ],
+  "features": "",
+  "fn": "sphinx-tags-0.2.1-pyhd8ed1ab_0.conda",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "690eb6bc03d9154ac1e679d7c861b845",
+  "name": "sphinx-tags",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "16848eedb611ed28abffc1d8594d07df08659a8135c100c1131a8223b99b556d",
+  "size": 12422,
+  "subdir": "noarch",
+  "timestamp": 1687963919453,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/sphinx-tags-0.2.1-pyhd8ed1ab_0.conda",
+  "version": "0.2.1"
+}

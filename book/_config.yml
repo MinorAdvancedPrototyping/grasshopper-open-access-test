@@ -38,8 +38,10 @@ html:
  #   html_theme: pydata_sphinx_theme
 
 sphinx:
-  extra_extensions:
-   - sphinx_tags
+  # extra_extensions:
+  #  - sphinx_tags
+  local_extensions:
+    sphinx_tags: sphinx-tags-0.2.1-pyhd8ed1ab_0
   config:
     tags_create_tags: true
     tags_extension: ["md"]

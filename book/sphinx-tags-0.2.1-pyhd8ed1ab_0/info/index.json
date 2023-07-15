@@ -1,0 +1,17 @@
+{
+  "arch": null,
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "pre-commit",
+    "python >=3.6",
+    "sphinx >4"
+  ],
+  "license": "MIT",
+  "name": "sphinx-tags",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1687963919453,
+  "version": "0.2.1"
+}

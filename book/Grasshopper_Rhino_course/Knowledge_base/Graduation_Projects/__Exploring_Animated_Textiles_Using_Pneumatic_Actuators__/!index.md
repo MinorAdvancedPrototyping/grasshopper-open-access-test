@@ -18,7 +18,7 @@ URL: https://repository.tudelft.nl/islandora/object/uuid:de1fe683-02fd-4482-a554
 
 ![texalive_grasshopper.png](texalive_grasshopper.png)
 
-# Abstract
+## Abstract
 
 This project explores how 3D printed pneumatic soft actuators can be used to enhance the expressiveness of textiles with alive-like movement. The research begins by studying current literature on shape changing materials and interfaces in order to select the best candidate material to explore during the project. The project then uses a material driven approach to characterize the 3D printed pneumatic textiles for enhancing their performance and ease of fabrication. Based on the characterization, a material concept is created to showcase the material qualities found during the research and to help study the material experience of shape changing interfaces in future research.
 

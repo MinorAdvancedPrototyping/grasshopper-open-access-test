@@ -26,7 +26,7 @@ def process_directory(root_dir):
 				increase_header_depth_in_file(md_file)
 		dirs.sort()  # process directories in sorted order
 
-root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit'
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course'
 process_directory(root_dir)
 
 ```

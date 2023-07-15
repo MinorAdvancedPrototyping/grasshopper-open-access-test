@@ -19,13 +19,13 @@ Tags: basics
 
 💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
 
-# 👩‍🏫1.1 Introduction (4 min)
+## 👩‍🏫1.1 Introduction (4 min)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kxescnDWiwA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
-# 📑1.2 Basic controls (30 min)
+## 📑1.2 Basic controls (30 min)
 
 <aside>
 
@@ -41,7 +41,7 @@ Tags: basics
 
 If you are new to 3D design software, using Rhino and Grasshopper for the first time can be a bit overwhelming. In the next section, you will first walk through the ins and outs of the user interface, then you will learn the basic controls. Finally ending with a small exercise to get you started with Rhino and Grasshopper.
 
-## 📑 1.2.1 Rhino: User Interface (Reading 10 min)
+### 📑 1.2.1 Rhino: User Interface (Reading 10 min)
 
 In this part you will explore Rhino’s User Interface.
 
@@ -95,7 +95,7 @@ For 🍎mac: [https://docs.mcneel.com/rhino/mac/help/en-us/user_interface/shortc
 
 For 🪟windows: [https://docs.mcneel.com/rhino/7/help/en-us/user_interface/shortcuts.htm](https://docs.mcneel.com/rhino/7/help/en-us/user_interface/shortcuts.htm)
 
-## 📑 1.2.2 Grasshopper: User Interface (Reading 5 min)
+### 📑 1.2.2 Grasshopper: User Interface (Reading 5 min)
 
 In this part we will look at the basic controls and interface of Grasshopper. The Grasshopper interface looks the same on each operating system. 
 
@@ -135,7 +135,7 @@ Every component has inputs and outputs. Inputs are on the left side of a block, 
 
 </aside>
 
-### **Placing and connecting components**
+#### **Placing and connecting components**
 
 To place a component, either 🖱️drag from the toolbar **or 🖱️double click the workspace to search by name. 
 
@@ -153,7 +153,7 @@ To connect components, simply 🖱️drag from an output of one component, to th
 
 ![1.2.2g_ConnectingComponents.gif](1.2.2g_ConnectingComponents.gif)
 
-### **Inputting and Outputting Data**
+#### **Inputting and Outputting Data**
 
 When hovering your cursor over an input/output a tool-tip pops up. These tool-tips can help determine what needs to be connected where. Reading out the outputs can help verify the expected outcome and check for errors.
 
@@ -189,7 +189,7 @@ After selecting you curve, the curve component should turn green, indicating tha
 
 ![1.2.2j_SetCurve.png](1.2.2j_SetCurve.png)
 
-### Exporting shapes from Grasshopper to Rhino
+#### Exporting shapes from Grasshopper to Rhino
 
 Shapes built in Grasshopper show up as red translucent objects in Rhino. These red objects are placeholders, and can not be manipulated directly in Rhino.
 
@@ -213,7 +213,7 @@ You should now see your object in Rhino.
 
 </aside>
 
-## 🖱️ 1.2.3 Building shapes in Rhino and Grasshopper (Exercise 15 min)
+### 🖱️ 1.2.3 Building shapes in Rhino and Grasshopper (Exercise 15 min)
 
 🖱️  **Exercise - Building shapes in Rhino and Grasshopper**
 
@@ -273,7 +273,7 @@ Now see if you can create the same cube in Grasshopper.
 
 ---
 
-# 👩‍🏫1.3 Basic geometry (45 min)
+## 👩‍🏫1.3 Basic geometry (45 min)
 
 <aside>
 
@@ -287,7 +287,7 @@ Now see if you can create the same cube in Grasshopper.
 
 </aside>
 
-## 👩‍🏫1.3.1 Theory - Basic geometry (5 min)
+### 👩‍🏫1.3.1 Theory - Basic geometry (5 min)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TOz-LE0H104" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -299,7 +299,7 @@ Now see if you can create the same cube in Grasshopper.
 
     
 
-## 📺1.3.2 **Tutorial - Modelling a teapot in Rhino (20 min)**
+### 📺1.3.2 **Tutorial - Modelling a teapot in Rhino (20 min)**
 
 In this tutorial, you will learn how to construct basic geometry in Rhino. Watch the video below and follow along. 
 
@@ -311,7 +311,7 @@ In this tutorial, you will learn how to construct basic geometry in Rhino. Watch
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/38Xfl50o2A8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 📺1.3.3 **Tutorial - Modelling teacups in Grasshopper (20 min)**
+### 📺1.3.3 **Tutorial - Modelling teacups in Grasshopper (20 min)**
 
 In this exercise, you will learn how to construct basic geometry in Grasshopper. Watch the video below and follow along. If you get stuck, you can check out the full solution below. 
 
@@ -333,7 +333,7 @@ In this exercise, you will learn how to construct basic geometry in Grasshopper.
 
 ---
 
-# 📑1.4 Best practice (5 min)
+## 📑1.4 Best practice (5 min)
 
 <aside>
 
@@ -345,7 +345,7 @@ In this exercise, you will learn how to construct basic geometry in Grasshopper.
 
 </aside>
 
-## 📑1.4.1 Troubleshooting in Rhino
+### 📑1.4.1 Troubleshooting in Rhino
 
 If you are using Rhino to design products that you plan on manufacturing, it is useful to check if your geometry is valid. You can do this by selecting an object in Rhino and looking at the properties tab in the menu. You can also use the command [**what**] to get a detailed object description. The image below shows what the object description might look like for a box. As you can see, this box is a closed solid polysurface, which means it is an closed volume that consists of multiple surfaces joined together. 
 
@@ -355,7 +355,7 @@ A closed solid shape can be exported and used for digital fabrication, for examp
 
 ![1.4.1a_ObjectDescription.png](1.4.1a_ObjectDescription.png)
 
-## 📑1.4.2 Troubleshooting in Grasshopper
+### 📑1.4.2 Troubleshooting in Grasshopper
 
 If you run into issues in Grasshopper, take a closer look at your components to find out what is wrong. In general, if a component in Grasshopper is not colored grey, this means that it is not running correctly. An orange color indicates a warning, red indicates an error. 
 
@@ -367,7 +367,7 @@ Components can also turn red, which means there is an error. This might happen b
 
 ![1.4.2b_DataConversionFailed.png](1.4.2b_DataConversionFailed.png)
 
-## 📑1.4.3 How to keep you Grasshopper script organized
+### 📑1.4.3 How to keep you Grasshopper script organized
 
 As projects get more complex, it is important to keep your Grasshopper script organized. Below are a few tips to keep your scrip readable (for yourself and others):
 
@@ -383,7 +383,7 @@ As projects get more complex, it is important to keep your Grasshopper script or
 
 ---
 
-# 💻1.5 Assignment 1 (max 2 hours)
+## 💻1.5 Assignment 1 (max 2 hours)
 
 ![1.5a_Assignment1.png](1.5a_Assignment1.png)
 

@@ -1,6 +1,6 @@
 # Open Access Rhino Grasshopper Course for Industrial Design Students
 
-## Introduction
+### Introduction
 
 Welcome to this course about Computational design using Rhino and Grasshopper. This program is geared towards product design for personalized fit products and design for digital fabrication.
 
@@ -20,13 +20,13 @@ The lessons are built up with the following components:
 
 💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
 
-## Use instructions
+### Use instructions
 
 ***As part of a course*:** If you use this course material as part of a Delft University of Technology course, the course might require that the homework assignments are handed in. Details on the procedure and location for submission will be provided in the course. Please consult the course coordinator or learning environment (e.g. Brightspace), for more information on Grasshopper support and assignment feedback. 
 
 **Self-paced, autonomous learning**: The course materials are designed with the intent that you can also follow them by yourself. However, no formal support is provided with this course material. For question regarding your personal design, please consult Grasshopper knowledge bases, forums, or a Grasshopper expert. If you have comments or questions about these course materials, feel free to contact us. Note, that we might not have the capacity to help you out with your personal design questions.
 
-## Background Info
+### Background Info
 
 These lessons were developed as part of the Industrial Design Engineering curriculum, at the TU Delft, for the following courses:
 
@@ -36,7 +36,7 @@ These lessons were developed as part of the Industrial Design Engineering curric
 
 These lessons were created using Rhino 7, Grasshopper build 1.0.0007*.*
 
-## Creation & contact info
+### Creation & contact info
 
 **Created by**: [Anne van den Dool](https://www.tudelft.nl/io/over-io/personen/dool-ac-van-den), [Jose Martinez Castro](https://www.tudelft.nl/io/over-io/personen/martinez-castro-j-f) and [Niels van Silfhout](../mailto%3AN.vanSilfhout%40student.tudelft.nl)
 
@@ -44,7 +44,7 @@ These lessons were created using Rhino 7, Grasshopper build 1.0.0007*.*
 
 **Feedback/errors/bugs**: please mail to [prototyping@tudelft.nl](../mailto%3Aprototyping%40tudelft.nl)
 
-## 🔗 External resources
+### 🔗 External resources
 
 [Link to Jupyter Book Test Setup](https://josemartinez18.github.io/grasshopper-open-access-test/intro.html#)
 

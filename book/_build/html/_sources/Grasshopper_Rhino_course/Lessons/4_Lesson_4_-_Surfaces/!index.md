@@ -14,7 +14,7 @@
 
 💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
 
-# 👩‍🏫 4.1 Introduction (x min)
+## 👩‍🏫 4.1 Introduction (x min)
 
 [https://www.notion.so](https://www.notion.so)
 
@@ -24,7 +24,7 @@
 
     
 
-# 📑 4.2 Surface geometry (10 min)
+## 📑 4.2 Surface geometry (10 min)
 
 <aside>
 
@@ -36,7 +36,7 @@
 
 </aside>
 
-## 4.2.1 BReps and solid operations
+### 4.2.1 BReps and solid operations
 
 Remember the tea cup you made in [Lesson 1 - Basics](../1%EF%B8%8F%E2%83%A3%20Lesson%201%20-%20Basics/%21index.md)? Although it might look quite simple, the tea cup is made up of many different surfaces.
 
@@ -66,7 +66,7 @@ Long computations like this are acceptable for finishing touches on an almost co
 
 ![where to find the profiler.png](where_to_find_the_profiler.png)
 
-## 4.2.2 Single surfaces
+### 4.2.2 Single surfaces
 
 In order to create complex patterns and geometries, it is important to understand the basic building block of BReps: a single surface. Single surfaces are not like anything you can encounter in the real world. Surfaces have an area, but no thickness; they are infinitely thin. The shape of a surface is defined by the curvature degree and the number of control points in two directions. The two directions are a type of coordinate system on the surface. The directions on a surface are called the U- and V-directions. Any point on a surface can be described with a (U,V) coordinate. The curves you see on a surface in the U- and V-directions are called Isocurves. 
 
@@ -88,7 +88,7 @@ A single surface usually looks like a rectangle, but you can also transform it i
 
 The control points and UV-structure make single surfaces quite easy to work with. You can map complex patterns to a surface by using the (U,V) coordinates and normal direction of the surface. Single surface operations are not as computationally difficult as working with BReps. Therefore it is advisable to try and work with single surfaces for as long as possible. 
 
-## 4.2.3 Polysurfaces
+### 4.2.3 Polysurfaces
 
 If you create two surfaces with edges that align, you can join them together to create a polysurface. The egdes of a surface that are not connected to anything are called open or naked edges. The edges that are connected are called interior edges. If a surface does not have any open edges, it is considered a closed shape and we call it a BRep. You can use the **ShowEdges** command in Rhino or the **BRepEdges** component in Grasshopper to visualize the edges of any polysurface. 
 
@@ -96,7 +96,7 @@ If you create two surfaces with edges that align, you can join them together to 
 
 Since a polysurface consists of a collection of joined surfaces, it is no longer possible to use control points to manipulate the UV-grid. You can use the **Explode** command in Rhino to separate the polysurface back into single surfaces that you can manipulate. 
 
-# 📺 4.3 Designing with surfaces and patterns (50 min)
+## 📺 4.3 Designing with surfaces and patterns (50 min)
 
 <aside>
 
@@ -120,7 +120,7 @@ Download the starting file here:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N-ACXptKQMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# 📺 4.4 Creating an arm brace (30 min)
+## 📺 4.4 Creating an arm brace (30 min)
 
 <aside>
 
@@ -142,7 +142,7 @@ Download the loft script here:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/53fszj3rYBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# 💻 4.5 Assignment (max 2 hours)
+## 💻 4.5 Assignment (max 2 hours)
 
 ![Assignment 4.png](Assignment_4.png)
 

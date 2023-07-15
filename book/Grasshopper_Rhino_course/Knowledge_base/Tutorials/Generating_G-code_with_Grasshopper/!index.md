@@ -32,7 +32,7 @@ Original content developed by Mehmet Ozdemir and Zjenja Doubrovski
 
     
 
-# Basics of G-code
+## Basics of G-code
 
 G-code is a common language for CNC (Computer Numerical Control) machine that includes a list of operations. In the case of 3D FDM printers, this includes operations on how to move, how much filament to extrude, what temperature to set, and more. G-code comes in different "flavors" which indicates what commands are accepted and how they are interpreted by the printer. In this lesson, we will focus on the Marlin flavor, although other flavors only have small differences. For a full list of G-code commands, please refer to the resources here: [marlinfw.org/meta/gcode](http://marlinfw.org/meta/gcode) and [reprap.org/wiki/G-code](http://reprap.org/wiki/G-code)
 
@@ -40,7 +40,7 @@ G-code is a common language for CNC (Computer Numerical Control) machine that in
 
 Example of a G-code script
 
-## Common Commands
+### Common Commands
 
 | Command | Description |
 
@@ -138,7 +138,7 @@ Refer to [marlinfw.org/meta/gcode](http://marlinfw.org/meta/gcode) for additiona
 
     
 
-## G-code Structure
+### G-code Structure
 
 When writing a G-code script, the general structure is as follows:
 
@@ -146,7 +146,7 @@ When writing a G-code script, the general structure is as follows:
 
 For many cases, the Start and End protocol will stay consistent throughout your design for the same printer. The main part that will change is the Core Instructions where we can tell the printer the movements and extrusions to make. In most cases, we can use the following Start and End Protocols when using Ultimaker 2+ (Marlin flavor). Some adjustment might be needed for different printers.
 
-### Start Protocol
+#### Start Protocol
 
 ```nasm
 
@@ -178,7 +178,7 @@ M117 Printing...
 
 ```
 
-### End Protocol
+#### End Protocol
 
 ```nasm
 
@@ -210,7 +210,7 @@ G90 ;absolute positioning
 
 ```
 
-### Core Instructions
+#### Core Instructions
 
 In the core instructions, we can instruct the printer on where to move and extrude filament. For example, if we wanted to draw a square of filament on the printer bed, the G-code might look something like this:
 
@@ -292,7 +292,7 @@ What shape would the printer create? Feel free to sketch out the shape on a piec
 
     
 
-# Developing a Grasshopper Script to Write G-code
+## Developing a Grasshopper Script to Write G-code
 
 In a traditional 3D printing process, designers often use what is called slicer software to create the G-code given to the printer. The job of the slicer software is to convert your 3D model into the extruder path and G-code operations for the printer to perform. The traditional 3D printing process looks something like this:
 
@@ -312,7 +312,7 @@ Let’s take the example of creating the G-code for a simple cylinder as shown a
 
 [Grasshopper G-code Generation Template.gh](template2.gh)
 
-## Extrusion Amount
+### Extrusion Amount
 
 In order to deposit material onto the print bed, we need to specify how much material to deposit on each movement in the Core Instructions. First, we must consider what type of extrusion we will use, Absolute vs Relative, as seen in the figure below. The type of extrusion can be set at the Start Protocol in the G-code.
 
@@ -340,7 +340,7 @@ By inputting this values into the Grasshopper script, we can calculate the extru
 
 ![flow_rate_in_grasshopper.png](flow_rate_in_grasshopper.png)
 
-## Combining Data
+### Combining Data
 
 To manage all the data and generate the correct G-code text, we will need to combine certain streams of data together. There are two Grasshopper components that will help use with this:
 
@@ -356,7 +356,7 @@ The merge component takes multiple lists and adds them after each other. This wi
 
 ![combining_all_gcode.png](combining_all_gcode.png)
 
-## Finalizing the G-code Script
+### Finalizing the G-code Script
 
 Now that we have brought all the elements together into the final G-code, it is time to save your work and start printing. Here you have two options:
 
@@ -370,7 +370,7 @@ Now that you know how to make a simple G-code of a reference geometry, experimen
 
 ![gcode_possibilities.png](gcode_possibilities.png)
 
-## Further Explorations with G-code
+### Further Explorations with G-code
 
 In this lesson, we learned how to create a simple G-code that divides a surface into curves and prints filament along these defined curves. Aside from simple contours of geometry, there are many more 3D printing features you can create by manipulating the G-code which some can be found in your traditional slicers such as:
 
@@ -396,6 +396,6 @@ There is much to explore when it comes to generating G-code with Grasshopper. By
 
  [Advanced 3D Printing with Grasshopper](https://www.food4rhino.com/en/resource/advanced-3d-printing-grasshopper-clay-and-fdm) by Diego Garcia Cuevas & Gianluca Pugliese
 
-# Relevant Projects
+## Relevant Projects
 
 [Untitled Database](Untitled%20Database.csv)

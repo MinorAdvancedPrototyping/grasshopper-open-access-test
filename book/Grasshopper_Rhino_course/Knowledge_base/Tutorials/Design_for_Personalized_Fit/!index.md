@@ -24,7 +24,7 @@ Review: Ready for Review
 
 Special thanks to Dr. Wolf Song and Dr. Toon Huysmans for their contribution in this lesson.
 
-## Introduction
+### Introduction
 
 <aside>
 
@@ -36,7 +36,7 @@ Special thanks to Dr. Wolf Song and Dr. Toon Huysmans for their contribution in 
 
 </aside>
 
-### Personalized Design
+#### Personalized Design
 
 ![overview_personalized_design.png](overview_personalized_design.png)
 
@@ -54,13 +54,13 @@ Personalized design is an innovative approach to creating unique and customized 
 
 **Personalization in Fit:** focuses on the interaction between the product, consumer, and its environment. Characteristics of the product such as shape, size, mass, colour palette, and personalized interactions (e.g. comfort) are adjusted to meet the individual’s needs.
 
-### Personalization in Fit
+#### Personalization in Fit
 
 The following lesson will focus on Personalization in Fit. This design method relies on physical measurements of an object or body part to generate a custom fitted product to meet the users need. The Personalization in Fit can benefit the users by providing increased comfort and improved performance.
 
 When developing a design for Personalized Fit in Rhino Grasshopper, the goal is to create a Rhino Surface that matches the geometry and dimensions of the body part/object. For more on information on Rhino Surfaces, please refer to Lesson 4 (Reference here). Once the Rhino Surface has been created, the surface can be modified depending on the needs of the user e.g. applying a data-driven algorithmic pattern on the surface to reduce pressure applied on the body. There are various approaches to developing a personalized fit using Rhino Grasshopper depending on the body part and the data input method used.
 
-## Collecting Anthropomorphic Data
+### Collecting Anthropomorphic Data
 
 <aside>
 
@@ -72,7 +72,7 @@ When developing a design for Personalized Fit in Rhino Grasshopper, the goal is 
 
 </aside>
 
-### Overview of Collection Methods
+#### Overview of Collection Methods
 
 To begin designing a product personalized for fit, we first need to collect anthropomorphic data (data of the human body geometry) before we create the Grasshopper script to generate the Rhino geometry. Depending on the requirements of the design, there are various collection methods varying in accuracy and complexity. The decision on the collection method will also influence how the Grasshopper script will be set up as we will see in the following section.
 
@@ -86,7 +86,7 @@ The input methods we will discuss include:
 
 - 3D scan database (DINED)
 
-### Physical Measurements
+#### Physical Measurements
 
 Obtaining physical measurements is the simplest and quickest method to acquire data on human body parts, yet it might not be as accurate as other methods. To obtain physical measurements, the designer can use simple tools such as a caliper, or a custom rig to measure specific points along the body. You might already be familiar with some measurement rigs such as the foot measuring device to find your shoe size.
 
@@ -96,7 +96,7 @@ In the Master's graduation project [**Development of a low-cost 3D foot scanner*
 
 ![3d_foot_scanner.png](3d_foot_scanner.png)
 
-### 3D Scanning
+#### 3D Scanning
 
 ![3d_scanning.png](3d_scanning.png)
 
@@ -110,7 +110,7 @@ Depending on the accuracy of the 3D scanned used, the 3D mesh may require some p
 
 Credits: Dr. Toon Huysmans
 
-### Statistical Shape Modeling
+#### Statistical Shape Modeling
 
 Statistical Shape Modeling are used to describe a collection of similar 3D data in a simplified way. SSMs represent an average of the geometry of the 3D data including any variation. For example, if you have collected various 3D scanned data of ear geometry from a certain population, using SSM you could create an average 3D mesh model of your collected data. This approach can be useful when the goal of your design is for Personalized Fit of an individual, but Personalized Fit for a particular population. To explore the creation of SSM, refer to the software [Paraview](https://www.paraview.org/) for more information.
 
@@ -118,7 +118,7 @@ Statistical Shape Modeling are used to describe a collection of similar 3D data 
 
 Credits: Dr. Toon Huysmans
 
-### 3D Scan Database (DINED)
+#### 3D Scan Database (DINED)
 
 If your design project requires Personalization in Fit for a specific human population, online databases such as [DINED](https://dined.io.tudelft.nl/en) are useful to quickly collect data and obtain quality 3D meshes for the human body. DINED is an anthropomorphic database with various data, including 3D data, of various human populations. With DINED, you are able to select from a variety of populations and measures, and download the 3D SSM mesh file as an STL to be used in Grasshopper.
 
@@ -128,11 +128,11 @@ Credits: Dr. Toon Huysmans
 
 Additionally, there is a Grasshopper plugin for DINED developed at TU Delft - Industrial Design Engineering by Dr. Toon Huysmans. This plugin allows the user to directly select the population and import the 3D STL model directly from Grasshopper. More information on the DINED Grasshopper plugin can be found in the following resource: [DINED Plugin](../DINED%20Plugin.md) 
 
-## Generating Personalized Designs from Anthropomorphic Data
+### Generating Personalized Designs from Anthropomorphic Data
 
 Depending on your data collection method and the requirements of your design, you can use various methods to generate a Rhino Surface using Grasshopper. The first few methods presented to showcase how to generate a Rhino Surface using different input data and approaches. A Rhino Surface is often the starting point in your personalized design before adding further features. The final method showcases how a pre-existing design template can be customized using anthropomorphic data collected from users.
 
-### Generating a Surface from Physical Measurements
+#### Generating a Surface from Physical Measurements
 
 [Shoe Physical Measurements.gh](Shoe_Physical_Measurements.gh)
 
@@ -180,7 +180,7 @@ Let's consider how we can set up a Grasshopper script using a similar scenario t
 
     
 
-### Adaptable Parametric Model to 3D Scan
+#### Adaptable Parametric Model to 3D Scan
 
 [- To do: clean up script to make it more readable](ParametricSunglasses.gh)
 
@@ -212,7 +212,7 @@ The workflow for this script is as follows:
 
 ![glasses_model_2.png](glasses_model_2.png)
 
-### Generating a Surface from 3D Scan (Mesh Slicing)
+#### Generating a Surface from 3D Scan (Mesh Slicing)
 
 [Personalized Design From 3D Scan - Hand Splint Exercise.gh](Personalized_Design_From_3D_Scan_-_Hand_Splint_Exercise.gh)
 
@@ -236,7 +236,7 @@ Additionally, it is important to mention that this method is not only intended f
 
 ![mouse_contours_loft.png](mouse_contours_loft.png)
 
-### Generating a Surface from Complex 3D Scan (Mesh Cavity + Slicing)
+#### Generating a Surface from Complex 3D Scan (Mesh Cavity + Slicing)
 
 [Generating a Mesh from Ear Canal Cavity (Simple).gh](Generating_a_Mesh_from_Ear_Canal_Cavity_%28Simple).gh)
 
@@ -286,7 +286,7 @@ For this case, one approach can be to first isolate the geometry of the ear cavi
 
 This solution is only one of many to obtain the inner cavity of the ear as a surface. For a different type of a approach, refer to the tutorial [Generative Form Finding with Kangaroo Physics](../Generative%20Form%20Finding%20with%20Kangaroo%20Physics/%21index.md) to learn how you can use Kangaroo physics to generate a similar geometry of the inner cavity.
 
-## Relevant Projects
+### Relevant Projects
 
 
 

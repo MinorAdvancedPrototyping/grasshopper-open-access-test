@@ -22,7 +22,7 @@ Review: Currently Working On
 
 💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
 
-# Outline
+## Outline
 
 - introduction into Grasshopper Kangaroo physics
 
@@ -44,13 +44,13 @@ Review: Currently Working On
 
 - Related works
 
-# Introduction
+## Introduction
 
 This tutorial focuses on using Kangaroo physics simulations in Grasshopper to create generative geometry. In this tutorial, we will discuss the basics of physics simulation and how it can be used to create generative geometry. We will go over the necessary components needed to set up a Kangaroo simulation and how to set up constraints and goals for the simulation to achieve the desired outcome.
 
 Learning Kangaroo physics simulations in Grasshopper provides a new computational thinking model for creating generative geometry. This can be useful for a wide range of applications, from architecture and product design to art and sculpture. Kangaroo simulations can be also be used to model complex physical phenomena, such as the behavior of textiles or the growth of natural systems. This can provide insights that might be difficult or impossible to obtain through other means. 
 
-# Basics
+## Basics
 
 In this section, we will learn how to set up Kangaroo in Grasshopper. Kangaroo requires a different way of thinking than the traditional Grasshopper workflow. With Kangaroo, we use what are called “Goals” to define the various forces and constraints acting on the geometry during the Kangaroo simulation. Additionally, the designer must be careful on optimizing the input geometry to ensure the simulation runs effectively as it can be a computationally intensive task.
 
@@ -82,7 +82,7 @@ To set up a Kangaroo simulation in Grasshopper, the general steps are as follows
 
 Take a look at the example showcase where we discuss different potential application cases of generating geometry with Kangaroo to learn how to set up typical Kangaroo scripts.
 
-# Example Showcase
+## Example Showcase
 
 This section demonstrates several examples, including:
 
@@ -94,7 +94,7 @@ This section demonstrates several examples, including:
 
 - Creating a growing pattern on a vase.
 
-# Creating an Organic Cross Structure
+## Creating an Organic Cross Structure
 
 [GenerativeMesh.gh](GenerativeMesh.gh)
 
@@ -118,7 +118,7 @@ It is important to note that these steps provide a general overview of how to se
 
 ![Untitled](Untitled.png)
 
-# Creating a Textile 3D tent
+## Creating a Textile 3D tent
 
 [Generative Tent.gh](Generative_Tent.gh)
 
@@ -126,7 +126,7 @@ It is important to note that these steps provide a general overview of how to se
 
 ![Screenshot 2023-06-02 at 16.35.00.png](Screenshot_2023-06-02_at_16.35.00.png)
 
-# Creating a 4D-printed Shape Changing Textile
+## Creating a 4D-printed Shape Changing Textile
 
 [Programmable Textile.gh](Programmable_Textile.gh)
 
@@ -138,7 +138,7 @@ It is important to note that these steps provide a general overview of how to se
 
 ![Screenshot 2023-06-02 at 17.18.57.png](Screenshot_2023-06-02_at_17.18.57.png)
 
-# Creating a growing pattern on a vase
+## Creating a growing pattern on a vase
 
 [Generative Grow on Vase.gh](Generative_Grow_on_Vase.gh)
 
@@ -146,7 +146,7 @@ It is important to note that these steps provide a general overview of how to se
 
 ![Screenshot 2023-06-02 at 17.43.46.png](Screenshot_2023-06-02_at_17.43.46.png)
 
-# Case Study: Personalized Design from 3D Scan using Kangaroo Physics
+## Case Study: Personalized Design from 3D Scan using Kangaroo Physics
 
 [Generating a Mesh from Ear Canal Cavity (Kangaroo Physics).gh](Generating_a_Mesh_from_Ear_Canal_Cavity_%28Kangaroo_Physics).gh)
 
@@ -188,6 +188,6 @@ If you are new to Grasshopper Kangaroo physics simulation, it is recommended to 
 
 For more details on this implementation, refer to the example file provided: [Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](https://www.notion.so/Generating-a-Mesh-from-Ear-Canal-Cavity-Kangaroo-Physics-1de999d9cccc4b1796ea0c9507b4cba2?pvs=21). In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!
 
-# Related Works
+## Related Works
 
 [Untitled Database](Untitled%20Database.csv)

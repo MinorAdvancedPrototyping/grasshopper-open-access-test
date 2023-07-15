@@ -24,7 +24,7 @@ Review: Ready for Review
 
 This tutorial focuses on data-driven design using Rhino Grasshopper for ergonomic design. The tutorial covers collecting data for ergonomic design, analyzing ergonomic data with Rhino Grasshopper using data to inform design, and additional reading on lattice structures and meta-materials. The tutorial includes a case study on designing a shoe sole based on pressure data collected from a user's foot standing on pressure sensors. It includes step-by-step instructions, Grasshopper scripts, and images to illustrate the concepts covered in the tutorial.
 
-# 1. Introduction
+## 1. Introduction
 
 ![[https://www.core77.com/posts/71778/MakerBot-Design-Series-The-Running-Shoe](https://www.core77.com/posts/71778/MakerBot-Design-Series-The-Running-Shoe)](Data-Driven%20Personalized%20Design%20279521f489bd48acbce3a8f10f2e2eab/makerbot_runninng_shoe.png)
 
@@ -34,11 +34,11 @@ By understanding how users interact with a product and where they experience pai
 
 In this tutorial, we'll explore how designers can collect data to inform their design and provide examples of how Rhino Grasshopper can be used to create parametric designs that respond to the collected data to improve comfort for the end user
 
-# 2. Collecting Data for Ergonomic Design
+## 2. Collecting Data for Ergonomic Design
 
 Collecting user data is a crucial step in the data-driven design process. Gathering data about how users interact with a product can help designers create products tailored to their users' needs and preferences. In this section, we will discuss different types of data that designers can collect for ergonomic design in Grasshopper.
 
-## Pressure Data
+### Pressure Data
 
 Pressure data is a common type of data collected in ergonomic design. Pressure sensors can be used to measure the distribution of pressure on a surface, such as a seat or a shoe sole. This data can be used to create products that distribute pressure more evenly, reducing discomfort and pain for the user.
 
@@ -46,15 +46,15 @@ Pressure data is a common type of data collected in ergonomic design. Pressure s
 
 Designing a shaped seat-pan cushion to improve postural (dis)comfort reducing pressure distribution and increasing contact area at the interface, Iolanda Fiorilloa, Yu Song, Peter Vink, Alessandro Naddeo
 
-## Heat Distribution Data
+### Heat Distribution Data
 
 Heat distribution data can also be collected in ergonomic design. This type of data measures the temperature distribution on a surface. For example, it can be used to create products that regulate temperature by reducing material use around areas of high heat distribution.
 
-## Sensitivity/Pain Data
+### Sensitivity/Pain Data
 
 Sensitivity/Pain data is another type of data that can be collected in ergonomic design. This data is typically collected through user input and can help designers understand where users experience pain and discomfort when using a product. This can be collected in a highly localized approach by focusing on a specific area of the body and applying discomfort to a number of points around this body part. This information can be used to create products that reduce or eliminate pain and discomfort.
 
-# 3. Case Study: Designing a Shoe Sole Based on Pressure Data
+## 3. Case Study: Designing a Shoe Sole Based on Pressure Data
 
 In this tutorial, we will explore a case study of using pressure data collected from a user’s foot while standing on pressure sensors. This example is inspired by a paper from the TU Delft Faculty of Industrial Design Engineering on designing shape seat-pan cushion to improve the comfort of the user (Fiorillo 2021). 
 
@@ -74,11 +74,11 @@ Case study of using foot pressure data to drive the design of a shoe sole
 
 [FootPressure_Data.csv](FootPressure_Data.csv)
 
-# 4. Analyzing Data with Grasshopper
+## 4. Analyzing Data with Grasshopper
 
 In this section, we will discuss how Rhino Grasshopper can be used to analyze, interpret, and visualize ergonomic data, specifically pressure data
 
-## 4.1 Reading the Data
+### 4.1 Reading the Data
 
 ![foot_pressure_data.png](foot_pressure_data.png)
 
@@ -86,7 +86,7 @@ To start, download the files and save it to your computer. Click on the **File I
 
 ![readcsv.png](readcsv.png)
 
-## 4.2 Set Up Rectangular Grid
+### 4.2 Set Up Rectangular Grid
 
 ![setup_rectangular_grid.png](setup_rectangular_grid.png)
 
@@ -96,7 +96,7 @@ Here we use the List Length component once to obtain the (y) and we use the comp
 
 ![rectangular_grid.png](rectangular_grid.png)
 
-## 4.3 Mapping the Data
+### 4.3 Mapping the Data
 
 ![normalizedata.png](normalizedata.png)
 
@@ -106,13 +106,13 @@ The **Remap Numbers** component takes as input three sets of values: the minimum
 
 Finally, we use the **Graph Mapper** and **Multiplication** component to fine tune the final mapping of the data. This can be adjusted manually later in the design process to achieve the desired results. In this particular case, we use the **Multiplication** component to control the maximum depth of the molding of the shoe sole in the next section.
 
-## 4.4 Visualizing the Data
+### 4.4 Visualizing the Data
 
 ![Visualize_data-script.png](Visualize_data-script.png)
 
 We can visualize the pressure data on a surface using text and heat map colors to represent the pressure values at each point on the surface. This allows us to see where pressure is concentrated on the surface and make design decisions based on this information.
 
-### 4.4.1 Visualizing the Data Points as Text
+#### 4.4.1 Visualizing the Data Points as Text
 
 The data points can be visualized as text on the rectangular grid  This provides a more detailed understanding of the pressure values at each point on the surface. To do this, the **Text Tag** component can be used to add the pressure values as text to each point on the surface. This takes as input the points from the **Rectangle Grid** and the data values from the **Read CSV.** This can be useful for providing a more detailed understanding of the pressure values at each point on the surface.
 
@@ -120,7 +120,7 @@ The data points can be visualized as text on the rectangular grid  This provides
 
 ![sole_closeup_data_numbers.png](sole_closeup_data_numbers.png)
 
-### 4.4.2 Visualizing the Data Points as Heat Map Colors
+#### 4.4.2 Visualizing the Data Points as Heat Map Colors
 
 Heat maps are a useful way to visualize pressure data, allowing us to see where pressure is concentrated on a surface. In Grasshopper, we can use the **Gradient** component to map the pressure data to a range of colors. The **Gradient** component takes as input a set of values and maps them to a range of colors based on a user-defined color gradient. We use the remapped values as input for the **Gradient** component in this case generating a color of blue for 0 and red for 1 with the other colors for any values in between.
 
@@ -128,9 +128,9 @@ Finally, The **Custom Preview** component takes as input the custom color gradie
 
 ![sole_heatmap.png](sole_heatmap.png)
 
-# 5. Using Data to Inform Design
+## 5. Using Data to Inform Design
 
-## 5.1 Molding surface to pressure data
+### 5.1 Molding surface to pressure data
 
 Once we have collected and analyzed ergonomic data, we can use this information to drive the design process. One way to use this data is to mold a surface to the pressure data. 
 
@@ -140,7 +140,7 @@ First, we can use and modify the values from  [4.3 Mapping the Data](https://www
 
 ![moulding_surface.png](moulding_surface.png)
 
-### 5.1.1 Create Shape of the Sole
+#### 5.1.1 Create Shape of the Sole
 
 ![shape_foot_sole_script.png](shape_foot_sole_script.png)
 
@@ -152,7 +152,7 @@ We first begin by removing the non-zero points using the **Member Index** and **
 
 ![shape_of_sole_render.png](shape_of_sole_render.png)
 
-### 5.1.2 Loft the Surface of the Sole
+#### 5.1.2 Loft the Surface of the Sole
 
 ![loft_surface_script.png](loft_surface_script.png)
 
@@ -160,7 +160,7 @@ Once we have the shape of the sole, we can use Rhino Grasshopper to loft a surfa
 
 ![sole_loft.png](sole_loft.png)
 
-## 5.2 Variable Density Grid
+### 5.2 Variable Density Grid
 
 <aside>
 
@@ -180,9 +180,9 @@ To close off the shoe sole, we can apply a **Pipe** component to the outline cur
 
 ![shole_sole_outline.png](shole_sole_outline.png)
 
-# 6. Extra Reading
+## 6. Extra Reading
 
-## Lattice Structures
+### Lattice Structures
 
 Another way to use data-driven design is to create lattice structures in response to the collected data. Lattice structures are lightweight and flexible, making them ideal for applications such as shoe soles or other ergonomic products.
 
@@ -192,7 +192,7 @@ In Rhino Grasshopper, we can use plugins such as Crystallon to create lattice st
 
 ![lattice_structures.png](lattice_structures.png)
 
-## Meta-materials and Auxetic Structures
+### Meta-materials and Auxetic Structures
 
 Meta-materials and auxetic structures are another area of interest in data-driven design. These materials have unique properties, such as negative Poisson's ratios or tunable stiffness, that can be useful in ergonomic product design. By using data to inform the design of these materials, we can create products that are not only comfortable but also more durable and efficient. There is a lot of potential for innovation in this area, and it will be exciting to see how data-driven design continues to shape the future of ergonomic product design.
 
@@ -210,13 +210,13 @@ Additionally, you can take a look at the following graduation projects which exp
 
 [**Design of a 3D printed prosthetic socket that accommodates pediatric growth**](../__Design%20of%20a%203D%20printed%20prosthetic%20socket%20that%20accommodates%20pediatric%20growth__.md) 
 
-# Relevant Projects
+## Relevant Projects
 
 [Untitled Database](Untitled%20Database.csv)
 
-# Draft
+## Draft
 
-# Outline
+## Outline
 
 1. Introduction
 

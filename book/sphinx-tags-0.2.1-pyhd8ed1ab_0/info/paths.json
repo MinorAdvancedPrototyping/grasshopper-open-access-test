@@ -1,0 +1,53 @@
+{
+  "paths": [
+    {
+      "_path": "site-packages/sphinx_tags-0.2.1.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+      "size_in_bytes": 5
+    },
+    {
+      "_path": "site-packages/sphinx_tags-0.2.1.dist-info/LICENSE",
+      "path_type": "hardlink",
+      "sha256": "85e9cf15fabf3b1340d510e1289d3399a71bb2cd6aa8e11c5fa08fcc02da33fe",
+      "size_in_bytes": 1080
+    },
+    {
+      "_path": "site-packages/sphinx_tags-0.2.1.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "38dfe1aee2b481ac24e2d1f48f8a4872d938d9a3b5601c118cd996111b46fb15",
+      "size_in_bytes": 2302
+    },
+    {
+      "_path": "site-packages/sphinx_tags-0.2.1.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "876b536a1639f96943fcb94c9b4d6bc753939e8e9ab8c199ad77ea247593562f",
+      "size_in_bytes": 732
+    },
+    {
+      "_path": "site-packages/sphinx_tags-0.2.1.dist-info/REQUESTED",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/sphinx_tags-0.2.1.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "4a0bbae2100c6ba83915dcc7c57bfd5ddb1ef72c6918631e6a056d3cc5a92506",
+      "size_in_bytes": 99
+    },
+    {
+      "_path": "site-packages/sphinx_tags-0.2.1.dist-info/direct_url.json",
+      "path_type": "hardlink",
+      "sha256": "23282c210a85b05d32eee6c7bc34fe48d066d90dfcf7d2a41a2c51c25131ef7d",
+      "size_in_bytes": 107
+    },
+    {
+      "_path": "site-packages/sphinx_tags/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e635fd9c2be3c76432c5f490c73f111af43c330b477b9fdbc9de6b9fd1f87be3",
+      "size_in_bytes": 13045
+    }
+  ],
+  "paths_version": 1
+}

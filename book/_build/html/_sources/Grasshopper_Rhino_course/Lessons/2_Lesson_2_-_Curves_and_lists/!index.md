@@ -16,13 +16,13 @@ Tags: Curves, Lists
 
 💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
 
-# 👩‍🏫 2.1 Introduction (2 min)
+## 👩‍🏫 2.1 Introduction (2 min)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_U0E-HZWIfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
-# 📑 2.2 Points, Planes and Curves (15 min)
+## 📑 2.2 Points, Planes and Curves (15 min)
 
 <aside>
 
@@ -36,7 +36,7 @@ Tags: Curves, Lists
 
 In this section you will work with points, planes, curves and their anatomy. Points, planes and curves form the fundamental geometry you will need for every project. Understanding and using the anatomy of these geometries allows you to build fully parametric and generative models.
 
-## 📑 2.2.1 Points and vectors (2 min)
+### 📑 2.2.1 Points and vectors (2 min)
 
 A point is the most basic form of geometry. Both in Rhino and in Grasshopper, points are described by {x,y,z} coordinates. 
 
@@ -54,7 +54,7 @@ Also notice that the [**Vector XYZ**] component has a Length output. This will t
 
 ![2.2.1b_PointVectorPanel.png](2.2.1b_PointVectorPanel.png)
 
-## 📑 2.2.2 Reference planes (2 min)
+### 📑 2.2.2 Reference planes (2 min)
 
 Planes are flat and go on infinitely in two directions, making a local coordinate system. Planes are not real objects, they are used to create a coordinate system in 3D space. The world coordinate system in Rhino is described by three planes: the world XY (which is the grid that you see in Rhino), the world XZ and the world YZ. These planes can also be referenced in Grasshopper with the [**XY Plane**], [**XZ Plane**] and [**YZ Plane**] components. A custom plane can be created at any point and in any direction. 
 
@@ -68,7 +68,7 @@ Planes are very useful to position objects in Grasshopper. A plane in Grasshoppe
 
 ![2.2.2a_ConstructPlane.png](2.2.2a_ConstructPlane.png)
 
-## 🖱️ 2.2.3 **Exercise (5 min)**
+### 🖱️ 2.2.3 **Exercise (5 min)**
 
 Use Grasshopper to create a plane parallel to the world YZ plane, with an origin point that is located at 5mm in the z direction, 4mm in the x direction and 1mm in the y direction.
 
@@ -80,7 +80,7 @@ Use Grasshopper to create a plane parallel to the world YZ plane, with an origin
 
     
 
-## 📑 2.2.4 Curves (6 min)
+### 📑 2.2.4 Curves (6 min)
 
 A curve is a path between two or more points. You can extract a lot of useful information from just this simple geometry.
 
@@ -126,7 +126,7 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 ---
 
-# 📺 2.3 Curve parameters (40 min)
+## 📺 2.3 Curve parameters (40 min)
 
 <aside>
 
@@ -156,7 +156,7 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 ---
 
-# 👩‍🏫🖱️ 2.4 Lists (30 min)
+## 👩‍🏫🖱️ 2.4 Lists (30 min)
 
 :::{card} 
 📌 *What:*         Introduction to list data structures (video) + Building a list (exercise)
@@ -166,7 +166,7 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 *Time:*          30 min (10 min video + 20 min exercise)
 :::
 
-## 👩‍🏫2.4.1 Lists (10 min)
+### 👩‍🏫2.4.1 Lists (10 min)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0Upvg2w25qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -178,7 +178,7 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 [Lesson 2 video slideshow.pdf](Lesson_2_video_slideshow.pdf)
 
-## 🖱️2.4.2 **Exercise: building a DNA strain (20 min)**
+### 🖱️2.4.2 **Exercise: building a DNA strain (20 min)**
 
 Build a strain of DNA. You can use the script provided here as a starting point.
 
@@ -196,7 +196,7 @@ Build a strain of DNA. You can use the script provided here as a starting point.
 
 ---
 
-# 💻 2.5 Assignment (max 2 hours)
+## 💻 2.5 Assignment (max 2 hours)
 
 ![2.5a_Assignment2.png](2.5a_Assignment2.png)
 

@@ -14,6 +14,6 @@ URL: https://repository.tudelft.nl/islandora/object/uuid%3A33a65390-41bb-4fb2-b2
 
 ![personalized_sunglasses.jpeg](personalized_sunglasses.jpeg)
 
-# Abstract
+## Abstract
 
 In this Thesis a product service combination is designed for custom fitted sunglasses.

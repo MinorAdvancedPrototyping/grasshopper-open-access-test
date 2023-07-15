@@ -16,7 +16,7 @@ In the fourth step, we will concentrate on how to efficiently pack these slices 
 
 By the end of this tutorial, you will have a solid understanding of these essential laser cutting preparation techniques in Rhino Grasshopper. 
 
-# Preparing the Geometry
+## Preparing the Geometry
 
 Welcome to the first section of our laser cutting preparation tutorial. Here, we will introduce the geometry we'll be using for this lesson: a bench. This bench will serve as a practical example throughout our tutorial, allowing us to delve deep into the techniques required for preparing a 3D model for laser cutting.
 
@@ -36,7 +36,7 @@ Finally we will mirror the surface to obtain a symmetric bench for use in the ne
 
 ![bench_3d.png](bench_3d.png)
 
-# Finding Surface Contours
+## Finding Surface Contours
 
 Now that we've created our 3D bench model, it's time to start preparing it for laser cutting. In this section, we'll slice our surface into both vertical and horizontal sections using intersecting planes and generate the back and bottom of the bench by projecting to the respective planes. If your starting geometry is a closed Brep, you can generate the surface contours without finding the back and bottom projections.
 
@@ -70,7 +70,7 @@ The final step is to add the thickness of the material to the slice surfaces we 
 
 ![panels.png](panels.png)
 
-# Find Intersections and Cut the Panels
+## Find Intersections and Cut the Panels
 
 Now that we have both our horizontal and vertical slices, it's time to determine where they intersect. This information will allow us to create notches at the intersections, facilitating the assembly of our laser-cut pieces into a 3D form.
 
@@ -92,7 +92,7 @@ These intersection boxes will serve as the starting point for our notches. We ca
 
 By the end of this section, your slices will be ready for laser cutting, with notches cut out at the intersections. In the next part, we will proceed to orient these slices onto our cutting plane. This will put us one step closer to our final goal of laser cutting and assembling our 3D bench model.
 
-# Orient the Panels Flat
+## Orient the Panels Flat
 
 In this section, we'll introduce the use of a powerful Grasshopper plugin, OpenNest, to orient our slices flat onto the cutting plane. OpenNest is a freely available open-source plugin designed to optimize part arrangement and nesting, making it a great tool for digital fabrication processes. You can download the plugin from this link: **[OpenNest Plugin](https://www.food4rhino.com/en/app/opennest)**.
 
@@ -108,7 +108,7 @@ Once you've set these inputs, OpenNest automatically processes the data, returni
 
 ![orient_panels.png](orient_panels.png)
 
-# Optimally Pack the Panels into the Cutting Piece
+## Optimally Pack the Panels into the Cutting Piece
 
 Now we will leverage the power of the OpenNest plugin to pack our slices optimally onto the cutting plane. This is an important step in the preparation process, aimed at maximizing material usage and minimizing waste.
 
@@ -132,7 +132,7 @@ By the end of this section, you'll have a nested configuration of your slices on
 
 ![packing_panels.png](packing_panels.png)
 
-# Generate the Cutting File
+## Generate the Cutting File
 
 Having optimally packed our slices onto the cutting plane using OpenNest, the next step is to bake these curves in Rhino and export them as a DXF file. DXF (Drawing Exchange Format) is a widely accepted format for CNC operations, including laser cutting.
 

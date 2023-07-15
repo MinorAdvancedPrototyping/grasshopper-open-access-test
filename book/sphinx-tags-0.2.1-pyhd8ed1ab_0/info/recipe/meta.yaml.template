@@ -1,0 +1,44 @@
+{% set name = "sphinx-tags" %}
+{% set version = "0.2.1" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 0265b2883889e878167b0b711d5359734f1d7408cbbd0417859989db8f4e3823
+
+build:
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
+
+requirements:
+  host:
+    - python >=3.6
+    - pip
+    - flit-core >=3.2,<4
+  run:
+    - python >=3.6
+    - sphinx >4
+    - pre-commit
+
+test:
+  imports:
+    - sphinx_tags
+  commands:
+    - pip check
+  requires:
+    - pip
+
+about:
+  home: https://pypi.org/project/sphinx-tags/
+  summary: Sphinx extension to create tags for documentation pages.
+  license: MIT
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - melissawm
+    - ocefpaf
