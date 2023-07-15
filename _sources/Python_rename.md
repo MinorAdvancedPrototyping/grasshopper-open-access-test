@@ -1,3 +1,38 @@
+# Author and Date Block
+
+```python
+import os
+from datetime import date
+
+def add_metadata(file_path, author, date_edited):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+
+    # Find the first heading (starts with '# ') and insert metadata after it
+    for i, line in enumerate(lines):
+        if line.startswith('# '):
+            lines.insert(i+1, f"\n:::{'card'}\n**Authors:** {author}\n\n**Last Edited:** {date_edited}\n:::\n\n")
+            break
+
+    with open(file_path, 'w') as file:
+        file.write(''.join(lines))
+
+def process_directory(root_dir, author, date_edited):
+    for root, dirs, files in os.walk(root_dir):
+        for file in files:
+            if file.endswith('.md'):
+                file_path = os.path.join(root, file)
+                add_metadata(file_path, author, date_edited)
+        dirs.sort()  # process directories in sorted order
+
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/test'
+author = 'Your Name'
+date_edited = date.today().isoformat()
+process_directory(root_dir, author, date_edited)
+
+```
+
+
 # Formatting Tags
 
 ```python

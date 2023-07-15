@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Formatting Tags &#8212; Rhino Grasshopper Open Access Education</title>
+    <title>Author and Date Block &#8212; Rhino Grasshopper Open Access Education</title>
   
   
   
@@ -446,7 +446,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Formatting Tags</h1>
+    <h1>Author and Date Block</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -456,7 +456,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Formatting Tags</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Author and Date Block</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#formatting-tags">Formatting Tags</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-dropdown">Creating Dropdown</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#create-boxes-for-aside">Create boxes for “&lt;aside”</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fix-headers-depth">Fix headers depth</a></li>
@@ -481,7 +482,41 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="formatting-tags">
+  <section class="tex2jax_ignore mathjax_ignore" id="author-and-date-block">
+<h1>Author and Date Block<a class="headerlink" href="#author-and-date-block" title="Permalink to this heading">#</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+
+<span class="k">def</span> <span class="nf">add_metadata</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">author</span><span class="p">,</span> <span class="n">date_edited</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+    <span class="c1"># Find the first heading (starts with &#39;# &#39;) and insert metadata after it</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;# &#39;</span><span class="p">):</span>
+            <span class="n">lines</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">:::</span><span class="si">{</span><span class="s1">&#39;card&#39;</span><span class="si">}</span><span class="se">\n</span><span class="s2">**Authors:** </span><span class="si">{</span><span class="n">author</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">**Last Edited:** </span><span class="si">{</span><span class="n">date_edited</span><span class="si">}</span><span class="se">\n</span><span class="s2">:::</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">break</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">process_directory</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">author</span><span class="p">,</span> <span class="n">date_edited</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">root_dir</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">file</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.md&#39;</span><span class="p">):</span>
+                <span class="n">file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span>
+                <span class="n">add_metadata</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">author</span><span class="p">,</span> <span class="n">date_edited</span><span class="p">)</span>
+        <span class="n">dirs</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>  <span class="c1"># process directories in sorted order</span>
+
+<span class="n">root_dir</span> <span class="o">=</span> <span class="s1">&#39;/Users/localadmin/GitHub/grasshopper-open-access-test/book/test&#39;</span>
+<span class="n">author</span> <span class="o">=</span> <span class="s1">&#39;Your Name&#39;</span>
+<span class="n">date_edited</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">()</span>
+<span class="n">process_directory</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">author</span><span class="p">,</span> <span class="n">date_edited</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="formatting-tags">
 <h1>Formatting Tags<a class="headerlink" href="#formatting-tags" title="Permalink to this heading">#</a></h1>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">re</span>
@@ -1115,7 +1150,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Formatting Tags</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Author and Date Block</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#formatting-tags">Formatting Tags</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-dropdown">Creating Dropdown</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#create-boxes-for-aside">Create boxes for “&lt;aside”</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fix-headers-depth">Fix headers depth</a></li>
