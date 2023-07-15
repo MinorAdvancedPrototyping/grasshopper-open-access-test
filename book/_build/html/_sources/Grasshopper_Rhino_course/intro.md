@@ -6,6 +6,8 @@ Welcome to this course about Computational design using Rhino and Grasshopper. T
 
 The lessons are built up with the following components:
 
+:::{card}
+
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
 
 📑 **Explanation text:** Written explanations with supporting images.
@@ -19,6 +21,7 @@ The lessons are built up with the following components:
 🖱️ **Exercises:** Small practice questions. The solution is provided.
 
 💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
+:::
 
 ### Use instructions
 
@@ -30,10 +33,14 @@ The lessons are built up with the following components:
 
 These lessons were developed as part of the Industrial Design Engineering curriculum, at the TU Delft, for the following courses:
 
-- Prototyping with/for digital fabrication (IO3850), part of the Minor Advanced Prototyping
+:::{dropdown} Prototyping with/for digital fabrication (IO3850), part of the Minor Advanced Prototyping
 
-- Computational Design for Digital Fabrication, elective of Industrial Design Engineering, TU Delft
 
+:::
+:::{dropdown} Computational Design for Digital Fabrication, elective of Industrial Design Engineering, TU Delft
+
+
+:::
 These lessons were created using Rhino 7, Grasshopper build 1.0.0007*.*
 
 ### Creation & contact info

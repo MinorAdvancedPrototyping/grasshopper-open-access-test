@@ -18,12 +18,14 @@
 
 [https://www.notion.so](https://www.notion.so)
 
-- Video transcript
+:::{dropdown} Video transcript
 
-    
 
-    
 
+
+
+
+:::
 ## 📑 4.2 Surface geometry (10 min)
 
 :::{card}

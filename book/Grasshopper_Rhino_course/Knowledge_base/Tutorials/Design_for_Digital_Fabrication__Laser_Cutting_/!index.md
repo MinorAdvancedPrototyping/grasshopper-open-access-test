@@ -2,7 +2,8 @@
 
 Created: April 20, 2023 11:58 PM
 
-Tags: 3D Printing, Advanced Manufacturing
+```{tags}  3D Printing, Advanced Manufacturing
+```
 
 Categories: Lesson
 

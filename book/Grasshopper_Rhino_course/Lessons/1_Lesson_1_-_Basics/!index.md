@@ -1,9 +1,9 @@
 # Lesson 1 - Basics
 
-```{tags} tag1, tag2
+```{tags}  basics
 ```
 
-Tags: basics
+:::{card}
 
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
 
@@ -18,6 +18,7 @@ Tags: basics
 🖱️ **Exercises:** Small practice questions. The solution is provided.
 
 💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
+:::
 
 ## 👩‍🏫1.1 Introduction (4 min)
 
@@ -227,25 +228,18 @@ Try to create a cube in Rhino with the dimensions 10x10x10mm.
 
 💡**Hint:** a cube is called “box” in Rhino.
 
-- Solution
+:::{dropdown} Solution
+:open:
 
-    
+You can either select the **[Box]** tool on the left **OR** type in “Box” in the command line. 
 
-    You can either select the **[Box]** tool on the left **OR** type in “Box” in the command line.
+![1.2.3b_RhinoBoxSolution.png](1.2.3b_RhinoBoxSolution.png)
 
-    
+Now you can select the first corner of the base in the viewport, then the second corner, and finally choose the height of your box. You can also type the exact dimensions into the command line. 
 
-    ![1.2.3b_RhinoBoxSolution.png](1.2.3b_RhinoBoxSolution.png)
+![1.2.3c_RhinoBoxSolution.gif](1.2.3c_RhinoBoxSolution.gif)
 
-    
-
-    Now you can select the first corner of the base in the viewport, then the second corner, and finally choose the height of your box. You can also type the exact dimensions into the command line.
-
-    
-
-    ![1.2.3c_RhinoBoxSolution.gif](1.2.3c_RhinoBoxSolution.gif)
-
-    
+:::
 
 Now see if you can create the same cube in Grasshopper. 
 
@@ -255,31 +249,31 @@ Now see if you can create the same cube in Grasshopper.
 
 ![1.2.3e_GrasshopperBoxHint.png](1.2.3e_GrasshopperBoxHint.png)
 
-- Solution
+:::{dropdown} Solution
 
-    
 
-    Grasshopper always allows for many different approaches to solve a problem. It is perfectly fine if you managed to get the same end result with a different script!
 
-    
 
-    Here we will show one possible approach:
+Grasshopper always allows for many different approaches to solve a problem. It is perfectly fine if you managed to get the same end result with a different script!
 
-    
 
-    ![1.2.3f_GrasshopperBoxSolution.gif](1.2.3f_GrasshopperBoxSolution.gif)
 
-    
+Here we will show one possible approach:
 
+
+
+![1.2.3f_GrasshopperBoxSolution.gif](1.2.3f_GrasshopperBoxSolution.gif)
+
+
+
+:::
 ---
 
 ## 👩‍🏫1.3 Basic geometry (45 min)
 
 :::{card}
 
-📌 *What:*         Introduction to the basic geometries (video explanation)
-
-                  Modelling geometry in Rhino and Grasshopper (video tutorials)
+📌 *What:*         Introduction to the basic geometries (video explanation) + Modelling geometry in Rhino and Grasshopper (video tutorials)
 
 *For Whom:* Beginners in Rhino/Grasshopper
 
@@ -291,14 +285,16 @@ Now see if you can create the same cube in Grasshopper.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TOz-LE0H104" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- Recap
+:::{dropdown} Recap
 
-    
 
-    [1 Basic geometry.pdf](1_Basic_geometry.pdf)
 
-    
 
+[1 Basic geometry.pdf](1_Basic_geometry.pdf)
+
+
+
+:::
 ### 📺1.3.2 **Tutorial - Modelling a teapot in Rhino (20 min)**
 
 In this tutorial, you will learn how to construct basic geometry in Rhino. Watch the video below and follow along. 
@@ -323,14 +319,16 @@ In this exercise, you will learn how to construct basic geometry in Grasshopper.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/svhn73Yvww0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- Solution
+:::{dropdown} Solution
 
-    
 
-    ![1.3.3a_TeacupSolution.png](1.3.3a_TeacupSolution.png)
 
-    
 
+![1.3.3a_TeacupSolution.png](1.3.3a_TeacupSolution.png)
+
+
+
+:::
 ---
 
 ## 📑1.4 Best practice (5 min)

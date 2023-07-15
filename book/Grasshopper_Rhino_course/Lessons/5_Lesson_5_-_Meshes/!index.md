@@ -18,12 +18,14 @@
 
 [https://www.notion.so](https://www.notion.so)
 
-- Video transcript
+:::{dropdown} Video transcript
 
-    
 
-    
 
+
+
+
+:::
 ## 📑 5.2 Mesh geometry (5 min)
 
 :::{card}

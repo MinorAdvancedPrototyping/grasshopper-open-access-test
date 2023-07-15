@@ -2,7 +2,8 @@
 
 Created: April 20, 2023 11:57 PM
 
-Tags: Form Finding, Generative, Simulation
+```{tags}  Form Finding, Generative, Simulation
+```
 
 Categories: Lesson
 
@@ -24,26 +25,38 @@ Review: Currently Working On
 
 ## Outline
 
-- introduction into Grasshopper Kangaroo physics
+:::{dropdown} introduction into Grasshopper Kangaroo physics
 
-- Basics of setting up kangaroo in Grasshopper
 
-- Example show case
+:::
+:::{dropdown} Basics of setting up kangaroo in Grasshopper
 
-    - Creating a textile 3d structure
 
-    - Creating a textile 3d tent
+:::
+:::{dropdown} Example show case
 
-    - Creating a 4d printed textile shape change simulation
 
-    - Creating a growing pattern on a vase
+- Creating a textile 3d structure
 
-- Case study for personalized design
+- Creating a textile 3d tent
 
-- Future work
+- Creating a 4d printed textile shape change simulation
 
-- Related works
+- Creating a growing pattern on a vase
 
+:::
+:::{dropdown} Case study for personalized design
+
+
+:::
+:::{dropdown} Future work
+
+
+:::
+:::{dropdown} Related works
+
+
+:::
 ## Introduction
 
 This tutorial focuses on using Kangaroo physics simulations in Grasshopper to create generative geometry. In this tutorial, we will discuss the basics of physics simulation and how it can be used to create generative geometry. We will go over the necessary components needed to set up a Kangaroo simulation and how to set up constraints and goals for the simulation to achieve the desired outcome.
@@ -86,14 +99,22 @@ Take a look at the example showcase where we discuss different potential applica
 
 This section demonstrates several examples, including:
 
-- Creating a textile 3D structure.
+:::{dropdown} Creating a textile 3D structure.
 
-- Creating a textile 3D tent.
 
-- Creating a 3D printed textile shape change simulation.
+:::
+:::{dropdown} Creating a textile 3D tent.
 
-- Creating a growing pattern on a vase.
 
+:::
+:::{dropdown} Creating a 3D printed textile shape change simulation.
+
+
+:::
+:::{dropdown} Creating a growing pattern on a vase.
+
+
+:::
 ## Creating an Organic Cross Structure
 
 [GenerativeMesh.gh](GenerativeMesh.gh)
@@ -154,14 +175,22 @@ For more complicated 3D scan geometry, the approached mentioned above might not 
 
 One approach we can take is to use Grasshoppers Kangaroo physics simulation to generate the geometry of the earbud. It is important to note that the following approach is for advanced users, only works on Windows PC for now, and requires the following plugins:
 
-- Weaverbird
+:::{dropdown} Weaverbird
 
-- Lunchbox
 
-- Pufferfish
+:::
+:::{dropdown} Lunchbox
 
-- Dendro
 
+:::
+:::{dropdown} Pufferfish
+
+
+:::
+:::{dropdown} Dendro
+
+
+:::
 If you are new to Grasshopper Kangaroo physics simulation, it is recommended to first read the lesson on (Insert link to Form Finding with Kangaroo Physics). This approach is as follows:
 
 1. Simplify the geometry of the ear to speed up the simulation

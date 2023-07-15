@@ -1,3 +1,74 @@
+# Formatting Tags
+
+```python
+import os
+import re
+
+def replace_tags_in_file(md_file):
+    with open(md_file, 'r') as file:
+        lines = file.readlines()
+
+    with open(md_file, 'w') as file:
+        for i in range(len(lines)):
+            if lines[i].strip().startswith("Tags:"):
+                tags = lines[i].strip().lstrip("Tags:")
+                lines[i] = f"```{{tags}} {tags}\n```\n"
+
+        file.write(''.join(lines))
+
+def process_directory(root_dir):
+    for root, dirs, files in os.walk(root_dir):
+        for file in files:
+            if file.endswith('.md'):
+                md_file = os.path.join(root, file)
+                replace_tags_in_file(md_file)
+        dirs.sort()  # process directories in sorted order
+
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/'
+process_directory(root_dir)
+```
+
+
+# Creating Dropdown
+
+```python
+import os
+import re
+
+def replace_dropdown_pattern_in_file(md_file):
+    with open(md_file, 'r') as file:
+        lines = file.readlines()
+
+    with open(md_file, 'w') as file:
+        i = 0
+        while i < len(lines):
+            if re.match("^- .+", lines[i].strip()):
+                title = lines[i].strip().lstrip("- ")
+                content = []
+                while i+1 < len(lines) and (lines[i+1].strip() == "" or re.match("^\s+.+", lines[i+1])):
+                    content.append(lines[i+1].strip())
+                    del lines[i+1]
+
+                content_str = '\n'.join(content)
+                new_block = f":::{{dropdown}} {title}\n\n{content_str}\n:::\n"
+                lines[i] = new_block
+
+            i += 1
+        file.write(''.join(lines))
+
+def process_directory(root_dir):
+    for root, dirs, files in os.walk(root_dir):
+        for file in files:
+            if file.endswith('.md'):
+                md_file = os.path.join(root, file)
+                replace_dropdown_pattern_in_file(md_file)
+        dirs.sort()  # process directories in sorted order
+
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/'
+process_directory(root_dir)
+```
+
+
 # Create boxes for "<aside"
 
 ```python
@@ -21,7 +92,7 @@ def process_directory(root_dir):
 				replace_aside_tags_in_file(md_file)
 		dirs.sort()  # process directories in sorted order
 
-root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics'
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course'
 process_directory(root_dir)
 
 ```

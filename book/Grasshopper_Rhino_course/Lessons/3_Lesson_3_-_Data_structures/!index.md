@@ -106,14 +106,16 @@ Build a grid of points in the XY plane. There are multiple ways to achieve this 
 
 ![3.3.4a_PointGrid.png](3.3.4a_PointGrid.png)
 
-- Possible solution
+:::{dropdown} Possible solution
 
-    
 
-    ![3.3.4b_PointGridSolution.png](3.3.4b_PointGridSolution.png)
 
-    
 
+![3.3.4b_PointGridSolution.png](3.3.4b_PointGridSolution.png)
+
+
+
+:::
 ---
 
 ## 📺 3.4 Designing with grids (25 min)

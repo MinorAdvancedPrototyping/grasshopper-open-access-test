@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
+                "file": "Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md",
                 "mode": "source",
                 "source": false
               }
@@ -41,8 +41,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
+                "file": "Python_rename.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
+                "file": "Python_rename.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md"
+                "file": "Python_rename.md"
               }
             }
           }
@@ -171,53 +170,53 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "284a707687a3c9f1",
+  "active": "a7660a247c53e340",
   "lastOpenFiles": [
-    "Python_rename.md",
-    "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
     "Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md",
+    "Grasshopper_Rhino_course/Lessons/3_Lesson_3_-_Data_structures/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/!index.md",
+    "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
     "Grasshopper_Rhino_course/intro.md",
-    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/git",
-    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/index.json",
-    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/link.json",
-    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/about.json",
-    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/files",
-    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/hash_input.json",
-    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/paths.json",
-    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/recipe/meta.yaml.template",
-    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/recipe/meta.yaml",
-    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/recipe/conda_build_config.yaml",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
-    "_build/html/_downloads/ca31afcb9e4bf0b72a37148742268157/customizable_sunglasses.png",
-    "_build/html/_downloads/f5dfd8afcd44bf5460fd3f151f024c72/key_hand_measurements.png",
-    "_build/html/_downloads/44f512bc03049e1f94967b07e7cb7969/3d_foot_scanner_rhino.png",
-    "_build/html/_downloads/27e0997a2ccd45f87876cfc028f2e279/3d_foot_scanner_diagram.png",
-    "_tags/tagsindex.md",
-    "_tags/tag2.md",
-    "_tags/tag1.md",
+    "_build/html/index.html",
+    "_build/html/_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css",
+    "_build/html/objects.inv",
+    "_build/html/searchindex.js",
+    "_build/html/_static/TUDelft_logo_cmyk.png",
+    "_build/html/_static/design-tabs.js",
+    "_build/html/_static/design-style.4045f2051d55cab465a707391d5b2007.min.css",
+    "_build/html/_static/sphinx-thebe.css",
+    "_build/html/_static/sphinx-thebe.js",
+    "_build/html/_static/copybutton.css",
+    "_build/html/_static/copybutton.js",
+    "_build/html/_static/copy-button.svg",
+    "_build/html/_static/check-solid.svg",
+    "_build/html/_static/images/logo_jupyterhub.svg",
+    "_build/html/_static/images/logo_binder.svg",
+    "_build/html/_static/images/logo_colab.png",
+    "_build/html/_static/images/logo_deepnote.svg",
+    "_build/html/_static/minus.png",
+    "_build/html/_static/plus.png",
+    "_build/html/_static/file.png",
+    "_build/html/_sources/plugins.md",
     "_build/html/_sources/_tags/tagsindex.md",
-    "_build/html/_sources/_tags/tag2.md",
-    "_build/html/_sources/_tags/tag1.md",
+    "_build/html/_sources/_tags/personalized.md",
+    "_build/html/_sources/_tags/data-driven.md",
+    "_build/html/_sources/_tags/basics.md",
+    "_build/html/_sources/_tags/Simulation.md",
+    "_build/html/_sources/_tags/Lists.md",
+    "_build/html/_sources/_tags/Generative.md",
+    "_build/html/_sources/_tags/Form Finding.md",
+    "_build/html/_sources/_tags/Curves.md",
+    "_build/html/_sources/_tags/Advanced Manufacturing.md",
+    "_build/html/_sources/_tags/3d scans.md",
+    "_build/html/_sources/_tags/3D Printing.md",
+    "_build/html/_sources/README.md",
     "_build/html/_sources/Python_rename.md",
     "_build/html/_sources/Grasshopper_Rhino_course/intro.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_4/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_3/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_2/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_1/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/3_Lesson_3_-_Data_structures/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index.md",
-    "_build/html/_images/workflow_overview_grasshopper.png",
-    "_build/html/_images/vertical_panels.png",
-    "_build/html/_images/texalive_overview.webp",
-    "_build/html/_images/texalive_grasshopper.png",
-    "_build/html/_images/surface_from_3d_scan.png",
-    "_build/html/_images/stream_contents.png"
+    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/!index.md"
   ]
 }

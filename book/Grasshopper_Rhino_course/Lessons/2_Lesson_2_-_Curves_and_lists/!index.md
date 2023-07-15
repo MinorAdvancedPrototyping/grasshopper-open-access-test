@@ -1,6 +1,7 @@
 # Lesson 2 - Curves and lists
 
-Tags: Curves, Lists
+```{tags}  Curves, Lists
+```
 
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
 
@@ -72,14 +73,16 @@ Planes are very useful to position objects in Grasshopper. A plane in Grasshoppe
 
 Use Grasshopper to create a plane parallel to the world YZ plane, with an origin point that is located at 5mm in the z direction, 4mm in the x direction and 1mm in the y direction.
 
-- Possible solution
+:::{dropdown} Possible solution
 
-    
 
-    ![2.2.3a_PlaneSolution.png](2.2.3a_PlaneSolution.png)
 
-    
 
+![2.2.3a_PlaneSolution.png](2.2.3a_PlaneSolution.png)
+
+
+
+:::
 ### 📑 2.2.4 Curves (6 min)
 
 A curve is a path between two or more points. You can extract a lot of useful information from just this simple geometry.
@@ -140,14 +143,16 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xEMRruaWmng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- **Download the final file here:**
+:::{dropdown} **Download the final file here:**
 
-    
 
-    [Lesson 2 - Train tutorial.gh](Lesson_2_-_Train_tutorial.gh)
 
-    
 
+[Lesson 2 - Train tutorial.gh](Lesson_2_-_Train_tutorial.gh)
+
+
+
+:::
 :::{card}
 
 💡 **Tip**: In this Grasshopper file, the points that were selected in Rhino are internalized into the Grasshopper script. This way you can open this Grasshopper script without having to re-link the points in Rhino. You can internalize data by right clicking on the component that is linked to Rhino and selecting “internalise data”.
@@ -186,14 +191,16 @@ Build a strain of DNA. You can use the script provided here as a starting point.
 
 ![2.4.2a_DNAStrain.png](2.4.2a_DNAStrain.png)
 
-- Solution
+:::{dropdown} Solution
 
-    
 
-    ![2.4.2b_DNAStrainSolution.png](2.4.2b_DNAStrainSolution.png)
 
-    
 
+![2.4.2b_DNAStrainSolution.png](2.4.2b_DNAStrainSolution.png)
+
+
+
+:::
 ---
 
 ## 💻 2.5 Assignment (max 2 hours)

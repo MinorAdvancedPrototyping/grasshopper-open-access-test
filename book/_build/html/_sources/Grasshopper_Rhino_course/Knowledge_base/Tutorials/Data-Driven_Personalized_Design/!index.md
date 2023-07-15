@@ -2,7 +2,8 @@
 
 Created: February 24, 2023 12:14 PM
 
-Tags: 3d scans, data-driven, personalized
+```{tags}  3d scans, data-driven, personalized
+```
 
 Categories: Lesson
 
@@ -64,11 +65,11 @@ In the end, the goal in this tutorial will be to use this pressure data to drive
 
 Case study of using foot pressure data to drive the design of a shoe sole
 
-<aside>
+:::{card}
 
 💡 To follow along with this tutorial, make sure to download the following grasshopper script and CSV file containing the foot pressure data:
 
-</aside>
+:::
 
 [Data-Driven Design_ShoeSole.gh](Data-Driven_Design_ShoeSole.gh)
 
@@ -162,11 +163,11 @@ Once we have the shape of the sole, we can use Rhino Grasshopper to loft a surfa
 
 ### 5.2 Variable Density Grid
 
-<aside>
+:::{card}
 
 💡 This section requires the Lunchbox plugin for use of the **Grid Structure** component which can be found here (it can still be installed on Mac): [https://www.food4rhino.com/en/app/lunchbox](https://www.food4rhino.com/en/app/lunchbox)
 
-</aside>
+:::
 
 Another way to use pressure data to inform the design process is to create a variable density grid. This can be done using Grasshopper to create a rectangular grid that responds to the pressure data. The grid can then be used to provide additional support in high-pressure areas by locally increasing the density of the grid while maintaining a lower density in low-pressure areas to allow for flexibility and a lightweight design.
 
@@ -220,34 +221,59 @@ Additionally, you can take a look at the following graduation projects which exp
 
 1. Introduction
 
-- Define data-driven design and explain its importance in the design process.
+:::{dropdown} Define data-driven design and explain its importance in the design process.
 
-- Briefly introduce Rhino Grasshopper and its capabilities for data analysis and parametric design.
 
+:::
+:::{dropdown} Briefly introduce Rhino Grasshopper and its capabilities for data analysis and parametric design.
+
+
+:::
 2. Collecting Data for Ergonomic Design
 
-- Discuss the importance of collecting user data for ergonomic design.
+:::{dropdown} Discuss the importance of collecting user data for ergonomic design.
 
-- Outline various methods for collecting ergonomic data
 
+:::
+:::{dropdown} Outline various methods for collecting ergonomic data
+
+
+:::
 3. Analyzing Ergonomic Data with Rhino Grasshopper
 
-- Explain how Rhino Grasshopper can be used to analyze and visualize ergonomic data, such as heat maps and pressure maps.
+:::{dropdown} Explain how Rhino Grasshopper can be used to analyze and visualize ergonomic data, such as heat maps and pressure maps.
 
-- Provide examples of Grasshopper plugins that can assist with data analysis, such as Ladybug Tools for environmental analysis and Kangaroo for physics simulations.
 
+:::
+:::{dropdown} Provide examples of Grasshopper plugins that can assist with data analysis, such as Ladybug Tools for environmental analysis and Kangaroo for physics simulations.
+
+
+:::
 4. Using Data to Inform Design
 
-- Describe how ergonomic data can be used to inform the design process.
+:::{dropdown} Describe how ergonomic data can be used to inform the design process.
 
-- Provide examples of how Rhino Grasshopper can be used to generate parametric designs that respond to the collected data.
 
-- Highlight the benefits of data-driven design, such as improved product performance, user satisfaction, and reduced manufacturing costs.
+:::
+:::{dropdown} Provide examples of how Rhino Grasshopper can be used to generate parametric designs that respond to the collected data.
 
+
+:::
+:::{dropdown} Highlight the benefits of data-driven design, such as improved product performance, user satisfaction, and reduced manufacturing costs.
+
+
+:::
 5. Conclusion
 
-- Summarize the key points of the blog post.
+:::{dropdown} Summarize the key points of the blog post.
 
-- Emphasize the importance of data-driven design in creating products that are tailored to user needs.
 
-- Encourage readers to explore Rhino Grasshopper and its capabilities for data-driven design.
+:::
+:::{dropdown} Emphasize the importance of data-driven design in creating products that are tailored to user needs.
+
+
+:::
+:::{dropdown} Encourage readers to explore Rhino Grasshopper and its capabilities for data-driven design.
+
+
+:::

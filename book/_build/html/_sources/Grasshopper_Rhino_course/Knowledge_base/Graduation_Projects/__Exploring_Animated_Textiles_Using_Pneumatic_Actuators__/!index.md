@@ -2,7 +2,8 @@
 
 Created: April 28, 2023 4:05 PM
 
-Tags: 3D Printing, Simulation
+```{tags}  3D Printing, Simulation
+```
 
 Authors: Martínez Castro, Jose
 
