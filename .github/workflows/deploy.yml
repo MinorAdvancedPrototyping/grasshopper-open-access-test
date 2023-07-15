@@ -22,6 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r book/requirements.txt
+        pip install sphinx-tags
 
     # Build the book
     - name: Build the book
