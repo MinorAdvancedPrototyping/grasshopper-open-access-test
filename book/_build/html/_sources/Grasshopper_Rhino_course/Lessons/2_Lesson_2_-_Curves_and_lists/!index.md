@@ -1,5 +1,12 @@
 # Lesson 2 - Curves and lists
 
+:::{card}
+:width: 75%
+**Authors:** Your Name, Your Name, Your Name, Your Name, Your Name, Your Name, Your Name, Your Name, Your Name, Your Name, 
+
+**Last Edited:** 2023-07-15
+:::
+
 ```{tags} Curves, Lists
 ```
 
