@@ -18,15 +18,17 @@
 
 [https://www.notion.so](https://www.notion.so)
 
-- Video transcript
+:::{dropdown} Video transcript
 
-    
 
-    
 
+
+
+
+:::
 ## 📑 4.2 Surface geometry (10 min)
 
-<aside>
+:::{card}
 
 📌 *What:*         Explanation of surface geometry (reading)
 
@@ -34,7 +36,7 @@
 
 *Time:*          10 minutes
 
-</aside>
+:::
 
 ### 4.2.1 BReps and solid operations
 
@@ -98,7 +100,7 @@ Since a polysurface consists of a collection of joined surfaces, it is no longer
 
 ## 📺 4.3 Designing with surfaces and patterns (50 min)
 
-<aside>
+:::{card}
 
 💡 *What:*         Creating a surface using curves and creating a surface pattern (tutorials)
 
@@ -106,7 +108,7 @@ Since a polysurface consists of a collection of joined surfaces, it is no longer
 
 *Time:*          50 minutes
 
-</aside>
+:::
 
 📺Video Tutorial (30 min): 
 
@@ -122,7 +124,7 @@ Download the starting file here:
 
 ## 📺 4.4 Creating an arm brace (30 min)
 
-<aside>
+:::{card}
 
 💡 *What:*         Creating a surface based on a scan (tutorials)
 
@@ -130,7 +132,7 @@ Download the starting file here:
 
 *Time:*          30 minutes
 
-</aside>
+:::
 
 📺Video Tutorial (20 min): building a brace
 
@@ -146,13 +148,13 @@ Download the loft script here:
 
 ![Assignment 4.png](Assignment_4.png)
 
-<aside>
+:::{card}
 
 💻 Model a product with a pattern on part of it. It can be a your own design or you can use the starting file to model the bike handle shown in the assignment. The pattern can be any shape you want. 
 
 Check out the [Student showcase](../../Student%20showcase/Assignment%204/%21index.md) to see what other students made for this assignment.
 
-</aside>
+:::
 
 Download the starting file here:
 

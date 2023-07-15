@@ -1,4 +1,4 @@
-# My tags: tag1
+# Categories: basics
 
 ```{toctree}
 ---

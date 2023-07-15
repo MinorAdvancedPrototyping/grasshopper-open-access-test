@@ -1,9 +1,9 @@
 # Lesson 1 - Basics
 
-```{tags} tag1, tag2
+```{tags} basics
 ```
 
-Tags: basics
+:::{card}
 
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
 
@@ -18,6 +18,7 @@ Tags: basics
 🖱️ **Exercises:** Small practice questions. The solution is provided.
 
 💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
+:::
 
 ## 👩‍🏫1.1 Introduction (4 min)
 
@@ -27,7 +28,7 @@ Tags: basics
 
 ## 📑1.2 Basic controls (30 min)
 
-<aside>
+:::{card}
 
 📌 *What:*         Introduction to the controls of Rhino and Grasshopper (reading)
 
@@ -37,7 +38,7 @@ Tags: basics
 
 *Time:*          30 min (15 min reading+ 15 min exercise)
 
-</aside>
+:::
 
 If you are new to 3D design software, using Rhino and Grasshopper for the first time can be a bit overwhelming. In the next section, you will first walk through the ins and outs of the user interface, then you will learn the basic controls. Finally ending with a small exercise to get you started with Rhino and Grasshopper.
 
@@ -53,11 +54,11 @@ You will now see the following interface (left for 🪟windows, right for 🍎ma
 
 The central part of the screen is called the viewport, here marked in red. By default Rhino shows 4 different views. The viewport is your workspace, here you can view your 3D model.
 
-<aside>
+:::{card}
 
 💡 **Tip**: To make one of the viewports fill the entire window, 🖱️double click the label **(for example: **[Perspective]**). To return to the view of all four viewports, 🖱️double click the label again.
 
-</aside>
+:::
 
 At the top there are different tabs for different workflows, for example **[Curve Tools]**. By clicking these tabs you gain access to more specialized tools, and the lay-out of bar on the left and top changes. We will mostly be using the **[Standard]** tab, which is selected by default.
 
@@ -127,13 +128,13 @@ This way you can build a script which takes certain inputs to produce the desire
 
 Every component has inputs and outputs. Inputs are on the left side of a block, outputs on the right side.
 
-<aside>
+:::{card}
 
 💡 **Tip**: you can switch between icons and text components in the **[Display]** menu at the top of the interface. You can also switch on **[Draw full names]** to make components easier to understand.
 
 ![1.2.2d_GrasshopperDisplaysettings.png](1.2.2d_GrasshopperDisplaysettings.png)
 
-</aside>
+:::
 
 #### **Placing and connecting components**
 
@@ -143,11 +144,11 @@ To place a component, either 🖱️drag from the toolbar **or 🖱️double cli
 
 ![1.2.2f_SearchingComponents.gif](1.2.2f_SearchingComponents.gif)
 
-<aside>
+:::{card}
 
 💡 **Tip**: To display the speech bubbles with the names of the components as shown in these images, you need to install a plugin called “Bifocals”. More on this in lesson 2.
 
-</aside>
+:::
 
 To connect components, simply 🖱️drag from an output of one component, to the input of the next. **To undo a connection, 🖱️hold CTRL (or Command on Mac) and drag from the output to the input.
 
@@ -165,13 +166,13 @@ By double clicking the slider, a popup appears with settings. Here you can chang
 
 ![Rhino grasshopper lesson 1 intro slider.png](Rhino_grasshopper_lesson_1_intro_slider.png)
 
-<aside>
+:::{card}
 
 💡 **Tip:** For a faster way to create sliders, you type a number in the search bar to create a slider. You can also create a slider with a set range by typing the minimum followed by two dots (..) and the maximum number. The amount of digits you use to type the numbers will determine the accuracy of the slider.
 
 ![1.2.2i_SliderTip.gif](1.2.2i_SliderTip.gif)
 
-</aside>
+:::
 
 You can also use Rhino geometry as an input in Grasshopper. For example if you wanted use a curve as input: 
 
@@ -207,11 +208,11 @@ You should now see your object in Rhino.
 
 ![1.2.2k_BakeToRhino.png](1.2.2k_BakeToRhino.png)
 
-<aside>
+:::{card}
 
 💡 T**ip:** Once an object is baked from Grasshopper to Rhino, you can no longer change it using the Grasshopper script (you can’t unbake an egg!). If you make changes in Grasshopper, you will need to bake it again.
 
-</aside>
+:::
 
 ### 🖱️ 1.2.3 Building shapes in Rhino and Grasshopper (Exercise 15 min)
 
@@ -227,25 +228,18 @@ Try to create a cube in Rhino with the dimensions 10x10x10mm.
 
 💡**Hint:** a cube is called “box” in Rhino.
 
-- Solution
+:::{dropdown} Solution
+:open:
 
-    
+You can either select the **[Box]** tool on the left **OR** type in “Box” in the command line. 
 
-    You can either select the **[Box]** tool on the left **OR** type in “Box” in the command line.
+![1.2.3b_RhinoBoxSolution.png](1.2.3b_RhinoBoxSolution.png)
 
-    
+Now you can select the first corner of the base in the viewport, then the second corner, and finally choose the height of your box. You can also type the exact dimensions into the command line. 
 
-    ![1.2.3b_RhinoBoxSolution.png](1.2.3b_RhinoBoxSolution.png)
+![1.2.3c_RhinoBoxSolution.gif](1.2.3c_RhinoBoxSolution.gif)
 
-    
-
-    Now you can select the first corner of the base in the viewport, then the second corner, and finally choose the height of your box. You can also type the exact dimensions into the command line.
-
-    
-
-    ![1.2.3c_RhinoBoxSolution.gif](1.2.3c_RhinoBoxSolution.gif)
-
-    
+:::
 
 Now see if you can create the same cube in Grasshopper. 
 
@@ -255,59 +249,61 @@ Now see if you can create the same cube in Grasshopper.
 
 ![1.2.3e_GrasshopperBoxHint.png](1.2.3e_GrasshopperBoxHint.png)
 
-- Solution
+:::{dropdown} Solution
 
-    
 
-    Grasshopper always allows for many different approaches to solve a problem. It is perfectly fine if you managed to get the same end result with a different script!
 
-    
 
-    Here we will show one possible approach:
+Grasshopper always allows for many different approaches to solve a problem. It is perfectly fine if you managed to get the same end result with a different script!
 
-    
 
-    ![1.2.3f_GrasshopperBoxSolution.gif](1.2.3f_GrasshopperBoxSolution.gif)
 
-    
+Here we will show one possible approach:
 
+
+
+![1.2.3f_GrasshopperBoxSolution.gif](1.2.3f_GrasshopperBoxSolution.gif)
+
+
+
+:::
 ---
 
 ## 👩‍🏫1.3 Basic geometry (45 min)
 
-<aside>
+:::{card}
 
-📌 *What:*         Introduction to the basic geometries (video explanation)
-
-                  Modelling geometry in Rhino and Grasshopper (video tutorials)
+📌 *What:*         Introduction to the basic geometries (video explanation) + Modelling geometry in Rhino and Grasshopper (video tutorials)
 
 *For Whom:* Beginners in Rhino/Grasshopper
 
 *Time:*          45 min (5 min video+ 40 min tutorials)
 
-</aside>
+:::
 
 ### 👩‍🏫1.3.1 Theory - Basic geometry (5 min)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TOz-LE0H104" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- Recap
+:::{dropdown} Recap
 
-    
 
-    [1 Basic geometry.pdf](1_Basic_geometry.pdf)
 
-    
 
+[1 Basic geometry.pdf](1_Basic_geometry.pdf)
+
+
+
+:::
 ### 📺1.3.2 **Tutorial - Modelling a teapot in Rhino (20 min)**
 
 In this tutorial, you will learn how to construct basic geometry in Rhino. Watch the video below and follow along. 
 
-<aside>
+:::{card}
 
 💡 **Tip:** By default, the viewports in Rhino are set to wireframe mode. This means you only see the outlines of objects. You can switch to shaded mode by clicking on the  🔽 next to a viewport (or right click if you’re working on mac).
 
-</aside>
+:::
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/38Xfl50o2A8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -315,27 +311,29 @@ In this tutorial, you will learn how to construct basic geometry in Rhino. Watch
 
 In this exercise, you will learn how to construct basic geometry in Grasshopper. Watch the video below and follow along. If you get stuck, you can check out the full solution below. 
 
-<aside>
+:::{card}
 
-💡 T**ip:**  In Grasshopper, pay attention where you click. If you right click on the inputs of a component, you will get a different menu compared to when you click in the middle for example. If you want to group object or turn the preview of for multiple object, make sure you right click on a empty space on the canvas.
+💡 **Tip:**  In Grasshopper, pay attention where you click. If you right click on the inputs of a component, you will get a different menu compared to when you click in the middle for example. If you want to group object or turn the preview of for multiple object, make sure you right click on a empty space on the canvas.
 
-</aside>
+:::
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/svhn73Yvww0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- Solution
+:::{dropdown} Solution
 
-    
 
-    ![1.3.3a_TeacupSolution.png](1.3.3a_TeacupSolution.png)
 
-    
 
+![1.3.3a_TeacupSolution.png](1.3.3a_TeacupSolution.png)
+
+
+
+:::
 ---
 
 ## 📑1.4 Best practice (5 min)
 
-<aside>
+:::{card}
 
 📌 *What:*         Some tips and tricks to help you troubleshoot in Rhino/Grasshopper (reading)
 
@@ -343,7 +341,7 @@ In this exercise, you will learn how to construct basic geometry in Grasshopper.
 
 *Time:*          5 minutes
 
-</aside>
+:::
 
 ### 📑1.4.1 Troubleshooting in Rhino
 
@@ -387,20 +385,20 @@ As projects get more complex, it is important to keep your Grasshopper script or
 
 ![1.5a_Assignment1.png](1.5a_Assignment1.png)
 
-<aside>
+:::{card}
 
 💻 Create a creature using Rhino curves, which you import into Grasshopper. It does not have to be an insect, you can create any animal you like. Take a few hours to see what you can create, but do not spend to much time on this assignment. 
 
 Check out the [Student showcase](../../Student%20showcase/Assignment%201/%21index.md) to see what other students made for this assignment.
 
-</aside>
+:::
 
-<aside>
+:::{card}
 
 💡 **Tip**: Use the [Export Hi-Res Image] option in the file menu to create a detailed screenshot of your entire script.
 
 ![1.5b_ExportImageTip.png](1.5b_ExportImageTip.png)
 
-</aside>
+:::
 
 ---

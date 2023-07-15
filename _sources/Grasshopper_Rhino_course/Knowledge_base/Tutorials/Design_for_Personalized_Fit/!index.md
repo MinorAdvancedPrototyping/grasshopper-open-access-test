@@ -1,32 +1,14 @@
 # Design for Personalized Fit
 
-Created: February 24, 2023 12:14 PM
+```{tags} 3d-scans, personalized
+```
 
-Tags: 3d scans, personalized
-
-Categories: Lesson
-
-Review: Ready for Review
-
-📌 **Outlines:** A short description of what you can expect in the upcoming section.
-
-📑 **Explanation text:** Written explanations with supporting images.
-
-👩‍🏫 **Explanation videos:** Explaining the course material in short lecture videos.
-
-📺 **Tutorial videos:** Follow-along tutorials.
-
-💡 T**ips:** Tips and tricks to make working in Rhino/Grasshopper easier.
-
-🖱️ **Exercises:** Small practice questions. The solution is provided.
-
-💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
 
 Special thanks to Dr. Wolf Song and Dr. Toon Huysmans for their contribution in this lesson.
 
 ### Introduction
 
-<aside>
+:::{card}
 
 📑 *What:*         Introduction to the field of personalized design and 3D scanning
 
@@ -34,7 +16,7 @@ Special thanks to Dr. Wolf Song and Dr. Toon Huysmans for their contribution in 
 
 *Time:*          15 minutes
 
-</aside>
+:::
 
 #### Personalized Design
 
@@ -62,7 +44,7 @@ When developing a design for Personalized Fit in Rhino Grasshopper, the goal is 
 
 ### Collecting Anthropomorphic Data
 
-<aside>
+:::{card}
 
 📑 *What:*         Introduction to the field of personalized design and 3D scanning
 
@@ -70,7 +52,7 @@ When developing a design for Personalized Fit in Rhino Grasshopper, the goal is 
 
 *Time:          20* minutes
 
-</aside>
+:::
 
 #### Overview of Collection Methods
 
@@ -78,14 +60,22 @@ To begin designing a product personalized for fit, we first need to collect anth
 
 The input methods we will discuss include:
 
-- Physical measurements
+:::{dropdown} Physical measurements
 
-- 3D Scanning
 
-- Statistical Shape Modeling
+:::
+:::{dropdown} 3D Scanning
 
-- 3D scan database (DINED)
 
+:::
+:::{dropdown} Statistical Shape Modeling
+
+
+:::
+:::{dropdown} 3D scan database (DINED)
+
+
+:::
 #### Physical Measurements
 
 Obtaining physical measurements is the simplest and quickest method to acquire data on human body parts, yet it might not be as accurate as other methods. To obtain physical measurements, the designer can use simple tools such as a caliper, or a custom rig to measure specific points along the body. You might already be familiar with some measurement rigs such as the foot measuring device to find your shoe size.
@@ -184,8 +174,10 @@ Let's consider how we can set up a Grasshopper script using a similar scenario t
 
 [- To do: clean up script to make it more readable](ParametricSunglasses.gh)
 
-- To do: clean up script to make it more readable
+:::{dropdown} To do: clean up script to make it more readable
 
+
+:::
 In this scenario, the designer creates a product in Rhino or in Grasshopper to meet the desired function and form. This design serves as a template that can be customized to meet the size requirements of different users. In the template, certain product variables are parametrized to adjust based on the size requirements. Using Rhino Grasshopper, a script can be written to automatically extract data from a 3D scan that can be used to adjust the product parameters automatically.
 
 An example of this method is the [**Design of customizable sunglasses based on additive manufacturing techniques**](../__Design%20of%20customizable%20sunglasses%20based%20on%20additive%20manufacturing%20techniques__.md). In this project, the student created a main design template of sunglasses with some features of the sunglasses being parametrized e.g. parametric temple (side piece) length and bridge (nose piece) length to accommodate various head and nose sizes. By collecting and analyzing data from user's 3D scans, the parametric glasses are automatically adjusted to fit the user's size requirements. A visual example of these results can be seen in the figure below.

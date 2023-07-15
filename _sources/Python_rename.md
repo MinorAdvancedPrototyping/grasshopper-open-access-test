@@ -1,3 +1,106 @@
+# Formatting Tags
+
+```python
+import os
+import re
+
+def process_file(file_path):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+
+    with open(file_path, 'w') as file:
+        for line in lines:
+            tag_line = re.match(r'Tags: (.*)', line)
+            if tag_line:
+                tags = tag_line.group(1).split(', ')
+                tags = [tag.replace(' ', '-') for tag in tags]
+                new_tag_line = ', '.join(tags)
+                line = f"```{{tags}} {new_tag_line}\n```\n"
+            file.write(line)
+
+def process_directory(root_dir):
+    for root, dirs, files in os.walk(root_dir):
+        for file in files:
+            if file.endswith('.md'):
+                file_path = os.path.join(root, file)
+                process_file(file_path)
+        dirs.sort()  # process directories in sorted order
+
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/test'
+process_directory(root_dir)
+
+```
+
+
+# Creating Dropdown
+
+```python
+import os
+import re
+
+def replace_dropdown_pattern_in_file(md_file):
+    with open(md_file, 'r') as file:
+        lines = file.readlines()
+
+    with open(md_file, 'w') as file:
+        i = 0
+        while i < len(lines):
+            if re.match("^- .+", lines[i].strip()):
+                title = lines[i].strip().lstrip("- ")
+                content = []
+                while i+1 < len(lines) and (lines[i+1].strip() == "" or re.match("^\s+.+", lines[i+1])):
+                    content.append(lines[i+1].strip())
+                    del lines[i+1]
+
+                content_str = '\n'.join(content)
+                new_block = f":::{{dropdown}} {title}\n\n{content_str}\n:::\n"
+                lines[i] = new_block
+
+            i += 1
+        file.write(''.join(lines))
+
+def process_directory(root_dir):
+    for root, dirs, files in os.walk(root_dir):
+        for file in files:
+            if file.endswith('.md'):
+                md_file = os.path.join(root, file)
+                replace_dropdown_pattern_in_file(md_file)
+        dirs.sort()  # process directories in sorted order
+
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/'
+process_directory(root_dir)
+```
+
+
+# Create boxes for "<aside"
+
+```python
+import os
+import re
+
+def replace_aside_tags_in_file(md_file):
+	with open(md_file, 'r') as file:
+		content = file.read()
+
+	with open(md_file, 'w') as file:
+		updated_content = re.sub(r"<aside>", ":::{card}", content)
+		updated_content = re.sub(r"</aside>", ":::", updated_content)
+		file.write(updated_content)
+
+def process_directory(root_dir):
+	for root, dirs, files in os.walk(root_dir):
+		for file in files:
+			if file.endswith('.md'):
+				md_file = os.path.join(root, file)
+				replace_aside_tags_in_file(md_file)
+		dirs.sort()  # process directories in sorted order
+
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course'
+process_directory(root_dir)
+
+```
+
+
 # Fix headers depth
 
 ```python

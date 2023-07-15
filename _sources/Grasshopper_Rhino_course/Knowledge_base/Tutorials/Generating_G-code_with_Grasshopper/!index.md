@@ -2,7 +2,8 @@
 
 Created: February 24, 2023 12:14 PM
 
-Tags: Advanced Manufacturing
+```{tags} Advanced-Manufacturing
+```
 
 Categories: Lesson
 
@@ -24,14 +25,16 @@ Review: Ready for Review
 
 Original content developed by Mehmet Ozdemir and Zjenja Doubrovski
 
-- Exercise Files:
+:::{dropdown} Exercise Files:
 
-    
 
-    [Grasshopper G-code Geneartion Template.gh](template2.gh)
 
-    
 
+[Grasshopper G-code Geneartion Template.gh](template2.gh)
+
+
+
+:::
 ## Basics of G-code
 
 G-code is a common language for CNC (Computer Numerical Control) machine that includes a list of operations. In the case of 3D FDM printers, this includes operations on how to move, how much filament to extrude, what temperature to set, and more. G-code comes in different "flavors" which indicates what commands are accepted and how they are interpreted by the printer. In this lesson, we will focus on the Marlin flavor, although other flavors only have small differences. For a full list of G-code commands, please refer to the resources here: [marlinfw.org/meta/gcode](http://marlinfw.org/meta/gcode) and [reprap.org/wiki/G-code](http://reprap.org/wiki/G-code)
@@ -116,28 +119,30 @@ To test your comprehension of the commands showcase in this section, try for you
 
 Refer to [marlinfw.org/meta/gcode](http://marlinfw.org/meta/gcode) for additional commands where needed.
 
-- Solution
+:::{dropdown} Solution
 
-    
 
-    ```nasm
 
-    M107 ;set the fan off
 
-    G28 ;move to origin
+```nasm
 
-    M109 S215 ;set the nozzle temperature to 215C
+M107 ;set the fan off
 
-    G1 F600 X15 Y20 Z40 ;move to point (X15, Y20, Z40) at 600 mm/m
+G28 ;move to origin
 
-    M117 ;put “printing” message on LCD screen
+M109 S215 ;set the nozzle temperature to 215C
 
-    M300 S440 P200 ;make a beep sound
+G1 F600 X15 Y20 Z40 ;move to point (X15, Y20, Z40) at 600 mm/m
 
-    ```
+M117 ;put “printing” message on LCD screen
 
-    
+M300 S440 P200 ;make a beep sound
 
+```
+
+
+
+:::
 ### G-code Structure
 
 When writing a G-code script, the general structure is as follows:
@@ -284,14 +289,16 @@ G0 F4500 X52.57 Y56.764
 
 What shape would the printer create? Feel free to sketch out the shape on a piece of paper.
 
-- Solution
+:::{dropdown} Solution
 
-    
 
-    ![christmas_tree_gcode.png](christmas_tree_gcode.png)
 
-    
 
+![christmas_tree_gcode.png](christmas_tree_gcode.png)
+
+
+
+:::
 ## Developing a Grasshopper Script to Write G-code
 
 In a traditional 3D printing process, designers often use what is called slicer software to create the G-code given to the printer. The job of the slicer software is to convert your 3D model into the extruder path and G-code operations for the printer to perform. The traditional 3D printing process looks something like this:
@@ -330,10 +337,14 @@ In order to deposit material onto the print bed, we need to specify how much mat
 
 Secondly, we need:
 
-- The ratio between filament and line cross section (the filament diameter and nozzle diameter will most likely not be the same)
+:::{dropdown} The ratio between filament and line cross section (the filament diameter and nozzle diameter will most likely not be the same)
 
-- The length of each line segment (this is dependent on the distance the extruder will travel between points)
 
+:::
+:::{dropdown} The length of each line segment (this is dependent on the distance the extruder will travel between points)
+
+
+:::
 ![flow_rate_setting.png](flow_rate_setting.png)
 
 By inputting this values into the Grasshopper script, we can calculate the extrusion amount (in mm) using the following set-up;
@@ -360,10 +371,14 @@ The merge component takes multiple lists and adds them after each other. This wi
 
 Now that we have brought all the elements together into the final G-code, it is time to save your work and start printing. Here you have two options:
 
-- Right-click on the Panel and select Stream Contents followed by Stream Destination. Save your file as .gcode.
+:::{dropdown} Right-click on the Panel and select Stream Contents followed by Stream Destination. Save your file as .gcode.
 
-- Copy and Paste the contents of the Panel into a text file. Save and then change the file extension to .gcode
 
+:::
+:::{dropdown} Copy and Paste the contents of the Panel into a text file. Save and then change the file extension to .gcode
+
+
+:::
 ![stream_contents.png](stream_contents.png)
 
 Now that you know how to make a simple G-code of a reference geometry, experiment with the given template and see what possibilities you can create by changing up the G-code.
@@ -374,16 +389,26 @@ Now that you know how to make a simple G-code of a reference geometry, experimen
 
 In this lesson, we learned how to create a simple G-code that divides a surface into curves and prints filament along these defined curves. Aside from simple contours of geometry, there are many more 3D printing features you can create by manipulating the G-code which some can be found in your traditional slicers such as:
 
-- travel moves
+:::{dropdown} travel moves
 
-- Infil
 
-- Bed adhesion (brim, skirt,…)
+:::
+:::{dropdown} Infil
 
-- Retraction
 
-- Support
+:::
+:::{dropdown} Bed adhesion (brim, skirt,…)
 
+
+:::
+:::{dropdown} Retraction
+
+
+:::
+:::{dropdown} Support
+
+
+:::
 ![further_explorations.png](further_explorations.png)
 
 There is much to explore when it comes to generating G-code with Grasshopper. By having full, precise control over the geometry generation and the manufacturing process, we can create very unique designs not possible with traditional 3D printing. If you wish to dive deeper into the world of G-code generation with Grasshopper, be sure to read [Advanced 3D Printing with Grasshopper](https://www.food4rhino.com/en/resource/advanced-3d-printing-grasshopper-clay-and-fdm) by Diego Garcia Cuevas & Gianluca Pugliese.
