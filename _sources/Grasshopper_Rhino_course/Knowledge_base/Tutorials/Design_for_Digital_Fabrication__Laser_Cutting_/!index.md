@@ -1,5 +1,12 @@
 # Design for Digital Fabrication (Laser Cutting)
 
+:::{card}
+**Authors:** Your Name
+
+**Last Edited:** 2023-07-15
+:::
+
+
 Created: April 20, 2023 11:58 PM
 
 ```{tags} 3D-Printing, Advanced-Manufacturing

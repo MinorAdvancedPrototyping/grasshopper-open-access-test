@@ -1,5 +1,12 @@
 # A custom fit parametric bra based on 3D body scanning technologies
 
+:::{card}
+**Authors:** Your Name
+
+**Last Edited:** 2023-07-15
+:::
+
+
 Created: April 28, 2023 4:05 PM
 
 ```{tags} 3d-scans, personalized

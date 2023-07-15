@@ -1,5 +1,12 @@
 # Designing a multi-sports helmet based on 3D ergonomic dat
 
+:::{card}
+**Authors:** Your Name
+
+**Last Edited:** 2023-07-15
+:::
+
+
 Created: April 28, 2023 4:05 PM
 
 ```{tags} 3d-scans, personalized

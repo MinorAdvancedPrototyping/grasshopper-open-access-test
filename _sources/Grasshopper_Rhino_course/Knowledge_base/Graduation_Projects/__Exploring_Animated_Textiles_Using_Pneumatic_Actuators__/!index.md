@@ -1,5 +1,12 @@
 # Exploring Animated Textiles Using Pneumatic Actuators
 
+:::{card}
+**Authors:** Your Name
+
+**Last Edited:** 2023-07-15
+:::
+
+
 Created: April 28, 2023 4:05 PM
 
 ```{tags} 3D-Printing, Simulation

@@ -1,5 +1,12 @@
 # Lesson 2 - Curves and lists
 
+:::{card}
+**Authors:** Your Name
+
+**Last Edited:** 2023-07-15
+:::
+
+
 ```{tags} Curves, Lists
 ```
 
