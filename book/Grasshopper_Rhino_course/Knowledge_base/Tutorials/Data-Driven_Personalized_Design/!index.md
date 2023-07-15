@@ -64,11 +64,11 @@ In the end, the goal in this tutorial will be to use this pressure data to drive
 
 Case study of using foot pressure data to drive the design of a shoe sole
 
-<aside>
+:::{card}
 
 💡 To follow along with this tutorial, make sure to download the following grasshopper script and CSV file containing the foot pressure data:
 
-</aside>
+:::
 
 [Data-Driven Design_ShoeSole.gh](Data-Driven_Design_ShoeSole.gh)
 
@@ -162,11 +162,11 @@ Once we have the shape of the sole, we can use Rhino Grasshopper to loft a surfa
 
 ### 5.2 Variable Density Grid
 
-<aside>
+:::{card}
 
 💡 This section requires the Lunchbox plugin for use of the **Grid Structure** component which can be found here (it can still be installed on Mac): [https://www.food4rhino.com/en/app/lunchbox](https://www.food4rhino.com/en/app/lunchbox)
 
-</aside>
+:::
 
 Another way to use pressure data to inform the design process is to create a variable density grid. This can be done using Grasshopper to create a rectangular grid that responds to the pressure data. The grid can then be used to provide additional support in high-pressure areas by locally increasing the density of the grid while maintaining a lower density in low-pressure areas to allow for flexibility and a lightweight design.
 

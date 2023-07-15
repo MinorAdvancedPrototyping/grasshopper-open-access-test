@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Grasshopper_Rhino_course/intro.md",
+                "file": "Python_rename.md",
                 "mode": "source",
                 "source": false
               }
@@ -173,6 +173,10 @@
   },
   "active": "284a707687a3c9f1",
   "lastOpenFiles": [
+    "Python_rename.md",
+    "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
+    "Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md",
+    "Grasshopper_Rhino_course/intro.md",
     "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/git",
     "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/index.json",
     "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/link.json",
@@ -183,9 +187,6 @@
     "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/recipe/meta.yaml.template",
     "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/recipe/meta.yaml",
     "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/recipe/conda_build_config.yaml",
-    "sphinx-tags-0.2.1-pyhd8ed1ab_0/info/recipe/recipe-scripts-license.txt",
-    "Python_rename.md",
-    "Grasshopper_Rhino_course/intro.md",
     "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
     "_build/html/_downloads/ca31afcb9e4bf0b72a37148742268157/customizable_sunglasses.png",
     "_build/html/_downloads/f5dfd8afcd44bf5460fd3f151f024c72/key_hand_measurements.png",
@@ -212,7 +213,6 @@
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
     "_build/html/_images/workflow_overview_grasshopper.png",
     "_build/html/_images/vertical_panels.png",
     "_build/html/_images/texalive_overview.webp",

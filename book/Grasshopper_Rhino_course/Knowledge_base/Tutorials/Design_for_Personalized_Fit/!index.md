@@ -26,7 +26,7 @@ Special thanks to Dr. Wolf Song and Dr. Toon Huysmans for their contribution in 
 
 ### Introduction
 
-<aside>
+:::{card}
 
 📑 *What:*         Introduction to the field of personalized design and 3D scanning
 
@@ -34,7 +34,7 @@ Special thanks to Dr. Wolf Song and Dr. Toon Huysmans for their contribution in 
 
 *Time:*          15 minutes
 
-</aside>
+:::
 
 #### Personalized Design
 
@@ -62,7 +62,7 @@ When developing a design for Personalized Fit in Rhino Grasshopper, the goal is 
 
 ### Collecting Anthropomorphic Data
 
-<aside>
+:::{card}
 
 📑 *What:*         Introduction to the field of personalized design and 3D scanning
 
@@ -70,7 +70,7 @@ When developing a design for Personalized Fit in Rhino Grasshopper, the goal is 
 
 *Time:          20* minutes
 
-</aside>
+:::
 
 #### Overview of Collection Methods
 

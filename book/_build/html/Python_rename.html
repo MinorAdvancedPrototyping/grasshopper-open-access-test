@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fix headers depth &#8212; Rhino Grasshopper Open Access Education</title>
+    <title>Create boxes for “&lt;aside” &#8212; Rhino Grasshopper Open Access Education</title>
   
   
   
@@ -51,7 +51,6 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -249,6 +248,53 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPython_rename.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-download-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
     <i class="fas fa-download"></i>
@@ -339,7 +385,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Fix headers depth</h1>
+    <h1>Create boxes for “<aside”</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -349,7 +395,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Fix headers depth</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Create boxes for “&lt;aside”</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fix-headers-depth">Fix headers depth</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#making-sphinx-cards-overview-pages">Making sphinx cards overview pages</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#removes-icons-parenthesis-and-spaces-also-renames-the-markdown-links">removes icons, parenthesis, and spaces also renames the markdown links</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#youtube-iframes">youtube iframes</a></li>
@@ -371,7 +418,35 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="fix-headers-depth">
+  <div class="tex2jax_ignore mathjax_ignore section" id="create-boxes-for-aside">
+<h1>Create boxes for “&lt;aside”<a class="headerlink" href="#create-boxes-for-aside" title="Permalink to this headline">#</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="k">def</span> <span class="nf">replace_aside_tags_in_file</span><span class="p">(</span><span class="n">md_file</span><span class="p">):</span>
+	<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">md_file</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+		<span class="n">content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+	<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">md_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+		<span class="n">updated_content</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&lt;aside&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;:::</span><span class="si">{card}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+		<span class="n">updated_content</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&lt;/aside&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;:::&quot;</span><span class="p">,</span> <span class="n">updated_content</span><span class="p">)</span>
+		<span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">updated_content</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">process_directory</span><span class="p">(</span><span class="n">root_dir</span><span class="p">):</span>
+	<span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">root_dir</span><span class="p">):</span>
+		<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+			<span class="k">if</span> <span class="n">file</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.md&#39;</span><span class="p">):</span>
+				<span class="n">md_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span>
+				<span class="n">replace_aside_tags_in_file</span><span class="p">(</span><span class="n">md_file</span><span class="p">)</span>
+		<span class="n">dirs</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>  <span class="c1"># process directories in sorted order</span>
+
+<span class="n">root_dir</span> <span class="o">=</span> <span class="s1">&#39;/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics&#39;</span>
+<span class="n">process_directory</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="fix-headers-depth">
 <h1>Fix headers depth<a class="headerlink" href="#fix-headers-depth" title="Permalink to this headline">#</a></h1>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">re</span>
@@ -905,7 +980,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Fix headers depth</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Create boxes for “&lt;aside”</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fix-headers-depth">Fix headers depth</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#making-sphinx-cards-overview-pages">Making sphinx cards overview pages</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#removes-icons-parenthesis-and-spaces-also-renames-the-markdown-links">removes icons, parenthesis, and spaces also renames the markdown links</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#youtube-iframes">youtube iframes</a></li>

@@ -22,7 +22,7 @@
 
 ## 📺 3.2 Combining lists (20 min)
 
-<aside>
+:::{card}
 
 📌 *What:*         Working with lists (tutorial)
 
@@ -30,7 +30,7 @@
 
 *Time:*          20 minutes
 
-</aside>
+:::
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5yriSQdJFyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -42,7 +42,7 @@ You can download the final file of this tutorial here:
 
 ## 📑 3.3 Datatrees and Grids (20 min)
 
-<aside>
+:::{card}
 
 📌 *What:*         Working with lists (reading)
 
@@ -50,7 +50,7 @@ You can download the final file of this tutorial here:
 
 *Time:*          15 minutes
 
-</aside>
+:::
 
 ### 📑 3.3.1 Merging Lists
 
@@ -118,7 +118,7 @@ Build a grid of points in the XY plane. There are multiple ways to achieve this 
 
 ## 📺 3.4 Designing with grids (25 min)
 
-<aside>
+:::{card}
 
 📌 *What:*         Creating a brickwall pattern by using lists and grids (tutorial)
 
@@ -126,7 +126,7 @@ Build a grid of points in the XY plane. There are multiple ways to achieve this 
 
 *Time:*          25 minutes
 
-</aside>
+:::
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LlXmjHG7LXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -140,7 +140,7 @@ Build a grid of points in the XY plane. There are multiple ways to achieve this 
 
 ![3.5a_Assignment3.png](3.5a_Assignment3.png)
 
-<aside>
+:::{card}
 
 💻 Create an attractor scene. The attractor should be a curve in Rhino, that in some way influences the landscape. Use a culling pattern and add some colour. 
 
@@ -148,6 +148,6 @@ Check out the [Student showcase](../../Student%20showcase/Assignment%203/%21inde
 
 Try to keep your script concise and organized.
 
-</aside>
+:::
 
 ---

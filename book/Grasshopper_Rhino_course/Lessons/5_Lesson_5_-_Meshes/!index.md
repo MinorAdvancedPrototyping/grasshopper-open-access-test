@@ -26,7 +26,7 @@
 
 ## 📑 5.2 Mesh geometry (5 min)
 
-<aside>
+:::{card}
 
 📌 *What:*         Explanation mesh geometry (reading) and exploration of mesh tools in Rhino (exercise)
 
@@ -34,7 +34,7 @@
 
 *Time:*          10 minutes
 
-</aside>
+:::
 
 ### 5.2.1 📑Mesh vs. Surface geometry
 
@@ -80,7 +80,7 @@ Mesh files like 3D scans often need some repairing or editing. You can use speci
 
 ## 📺 5.3 Building a custom mesh (x min)
 
-<aside>
+:::{card}
 
 📌 *What:*         Understanding mesh geometry (tutorial)
 
@@ -88,13 +88,13 @@ Mesh files like 3D scans often need some repairing or editing. You can use speci
 
 *Time:*          30 minutes
 
-</aside>
+:::
 
 📺Video Tutorial (20 min): building a mesh, applying to loft (loft file provided)
 
 ## 📺 5.4 Morphing (x min)
 
-<aside>
+:::{card}
 
 📌 *What:*         Building patterns and morphing them (tutorial)
 
@@ -102,7 +102,7 @@ Mesh files like 3D scans often need some repairing or editing. You can use speci
 
 *Time:*          30 minutes
 
-</aside>
+:::
 
 📺Video Tutorial (20 min): building a mesh, applying to loft (loft file provided)
 

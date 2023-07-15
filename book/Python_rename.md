@@ -1,3 +1,33 @@
+# 
+# Create boxes for "<aside"
+
+```python
+import os
+import re
+
+def replace_aside_tags_in_file(md_file):
+	with open(md_file, 'r') as file:
+		content = file.read()
+
+	with open(md_file, 'w') as file:
+		updated_content = re.sub(r"<aside>", ":::{card}", content)
+		updated_content = re.sub(r"</aside>", ":::", updated_content)
+		file.write(updated_content)
+
+def process_directory(root_dir):
+	for root, dirs, files in os.walk(root_dir):
+		for file in files:
+			if file.endswith('.md'):
+				md_file = os.path.join(root, file)
+				replace_aside_tags_in_file(md_file)
+		dirs.sort()  # process directories in sorted order
+
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course'
+process_directory(root_dir)
+
+```
+
+
 # Fix headers depth
 
 ```python
