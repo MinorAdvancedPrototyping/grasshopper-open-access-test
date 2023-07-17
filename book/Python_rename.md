@@ -1,40 +1,3 @@
-# Auto-update existing table of contents
-
-```python
-import os
-import yaml
-
-def get_dirs(content_dir):
-    dir_list = [d for d in os.listdir(content_dir) if os.path.isdir(os.path.join(content_dir, d))]
-    return sorted(dir_list, key=str.casefold)
-
-def process_directory(root_dir, content_dir):
-    toc_filename = os.path.join(root_dir, "_toc.yml")
-
-    with open(toc_filename, 'r') as f:
-        toc_data = yaml.safe_load(f)
-
-    # Get directories in content directory
-    dir_list = get_dirs(content_dir)
-
-    for dir in dir_list:
-        path = os.path.join(content_dir, dir)
-        
-        # Check if directory already exists in _toc.yml
-        if not any(d.get('file') == path for d in toc_data.get('chapters', [])):
-            # Append new entry to _toc.yml
-            toc_data['chapters'].append({'file': path})
-
-    # Write updated data back to _toc.yml
-    with open(toc_filename, 'w') as f:
-        yaml.safe_dump(toc_data, f)
-
-root_dir = "/Users/localadmin/GitHub/grasshopper-open-access-test/book/"
-content_dir = "/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course"
-process_directory(root_dir, content_dir)
-
-```
-
 
 # Auto-generate table of contents from scratch
 
@@ -302,7 +265,7 @@ def create_sphinx_card(root_dir):
 
 					index_file.write(":::\n")
 
-root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects'
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/test/'
 create_sphinx_card(root_dir)
 ```
 
@@ -408,8 +371,19 @@ import os
 import re
 
 def is_inside_code_block(line, is_in_block):
-    if line.strip().startswith('```'):
+    if re.match(r'^(```|~~~)', line.strip()):  # fenced code block
         is_in_block = not is_in_block
+    elif not line.strip().startswith('    ') and not is_in_block:  # not indented code block
+        is_in_block = False
+    elif line.strip().startswith('    ') and not is_in_block:  # indented code block
+        is_in_block = True
+    return is_in_block
+
+def is_inside_table(line, is_in_block):
+    if re.match(r'^\|.*\|$', line.strip()):
+        is_in_block = True
+    elif line.strip() == "":
+        is_in_block = False
     return is_in_block
 
 def double_linebreaks(root_dir):
@@ -421,18 +395,25 @@ def double_linebreaks(root_dir):
                     lines = md_file.readlines()
 
                 new_lines = []
-                is_in_block = False
+                is_in_code_block = False
+                is_in_table_block = False
+                prev_line_empty = False
                 for line in lines:
-                    is_in_block = is_inside_code_block(line, is_in_block)
-                    if not is_in_block and line == "\n":
-                        new_lines.append("\n")
-                    new_lines.append(line)
+                    is_in_code_block = is_inside_code_block(line, is_in_code_block)
+                    is_in_table_block = is_inside_table(line, is_in_table_block)
+                    if not is_in_code_block and not is_in_table_block:
+                        if not prev_line_empty and line.strip() and new_lines:
+                            new_lines.append('\n')
+                        new_lines.append(line)
+                    else:
+                        new_lines.append(line)
+                    prev_line_empty = line.strip() == ""
 
                 with open(filepath, 'w') as md_file:
                     md_file.writelines(new_lines)
-
-root_dir = '/path/to/your/directory'
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/test/tut 1/'
 double_linebreaks(root_dir)
+
 ```
 
 
@@ -459,265 +440,5 @@ def boldify_text(root_dir):
 root_dir = "/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course"
 
 boldify_text(root_dir)
-```
-
-
-# Make sphinx cards
-
-```python
-import os
-
-def create_sphinx_card(root_dir):
-    with open(os.path.join(root_dir, '!index.md'), 'w') as index_file:
-        index_file.write(f"# {root_dir.split('/')[-1].replace('_', ' ')}\n\n")
-        index_file.write(":::::{grid} 1 1 2 3\n")
-        index_file.write(":class-container: text-center\n")
-        index_file.write(":gutter: 3\n\n")
-                
-
-        for item in os.listdir(root_dir):
-            item_path = os.path.join(root_dir, item)
-            if os.path.isdir(item_path):
-                # find the image for the card
-                image = None
-                for sub_item in os.listdir(item_path):
-                    if sub_item.lower().endswith(('.png', '.jpg')):
-                        image = sub_item
-                        if sub_item.lower() == 'cover.png' or sub_item.lower() == 'cover.jpg':
-                            break
-                if image is None:
-                    continue
-
-                index_file.write(":::{grid-item-card}\n")
-                index_file.write(f":link: {item}/!index\n")
-                index_file.write(":link-type: doc\n")
-                index_file.write(f":img-top: {item}/{image}\n")
-                index_file.write(":class-header: bg-light\n\n")
-
-                index_file.write(f"{item.replace('_', ' ')}\n\n^^^\ninsert summary here\n\n")
-                index_file.write(":::\n")
-
-root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects'
-create_sphinx_card(root_dir)
-```
-
-
-# made with chatgpt
-
-```python
-
-import os
-
-def rename_files_and_folders(root_dir):
-
-    for dirpath, dirnames, filenames in os.walk(root_dir):
-
-        # rename folders
-
-        for i in range(len(dirnames)):
-
-            old_dir_name = os.path.join(dirpath, dirnames[i])
-
-            new_dir_name = os.path.join(dirpath, dirnames[i].replace(' ', '_'))
-
-            os.rename(old_dir_name, new_dir_name)
-
-        # rename files
-
-        for i in range(len(filenames)):
-
-            old_file_name = os.path.join(dirpath, filenames[i])
-
-            new_file_name = os.path.join(dirpath, filenames[i].replace(' ', '_'))
-
-            os.rename(old_file_name, new_file_name)
-
-# replace with the root directory you want to start renaming from
-
-root_dir = @vault_path
-
-rename_files_and_folders(root_dir)
-
-```
-
-
-```python
-
-print("Vault path:", @vault_path)
-
-print("Vault url:", @vault_url)
-
-print("Note path:", @note_path)
-
-print("Note url:", @note_url)
-
-print("Note title:", @title)
-
-```
-
-
-
-renames the files properly and updates links
-
-needs to be run multiple times and open up the folders multiple times too
-
-```python 
-
-import os
-
-import re
-
-def rename_files_and_folders(root_dir):
-
-    for dirpath, dirnames, filenames in os.walk(root_dir):
-
-        # rename folders
-
-        for dirname in dirnames:
-
-            old_dir_name = os.path.join(dirpath, dirname)
-
-            new_dir_name = os.path.join(dirpath, dirname.replace(' ', '_'))
-
-            os.rename(old_dir_name, new_dir_name)
-
-        # rename files and update links in markdown files
-
-        for filename in filenames:
-
-            old_file_name = os.path.join(dirpath, filename)
-
-            new_file_name = os.path.join(dirpath, filename.replace(' ', '_'))
-
-            os.rename(old_file_name, new_file_name)
-
-            # check if file is markdown
-
-            if new_file_name.endswith(".md"):
-
-                with open(new_file_name, 'r+') as f:
-
-                    content = f.read()
-
-                    # regex pattern for markdown links
-
-                    pattern = r'\[([^\]]+)\]\(([^\)]+)\)'
-
-                    matches = re.findall(pattern, content)
-
-                    for match in matches:
-
-                        old_link = match[1]
-
-                        new_link = old_link.replace('%20', '_')
-
-                        content = content.replace(old_link, new_link)
-
-                    # write the updated content back to the file
-
-                    f.seek(0)
-
-                    f.write(content)
-
-                    f.truncate()
-
-root_dir = @vault_path
-
-rename_files_and_folders(root_dir)
-
-```
-
-# youtube iframes
-
-```python
-
-import os
-
-import re
-
-def replace_youtube_links(root_dir):
-
-    # Regex pattern to match YouTube URLs
-
-    pattern = r'(https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtu\.be/)([A-Za-z0-9_-]{10}[A-Za-z0-9_-]{1}))'
-
-    for dirpath, _, filenames in os.walk(root_dir):
-
-        # Check only markdown files
-
-        for filename in [f for f in filenames if f.endswith(".md")]:
-
-            file_path = os.path.join(dirpath, filename)
-
-            with open(file_path, 'r+') as f:
-
-                content = f.read()
-
-                # Find YouTube URLs and replace with iframe embed link
-
-                content_new = re.sub(pattern, r'<iframe width="560" height="315" src="https://www.youtube.com/embed/\2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', content)
-
-                # If content has changed, write it back to the file
-
-                if content != content_new:
-
-                    f.seek(0)
-
-                    f.write(content_new)
-
-                    f.truncate()
-
-root_dir = @vault_path
-
-replace_youtube_links(root_dir)
-
-```
-
-# trying to remove emojis
-
-```python
-
-import os
-
-def remove_non_ascii(string):
-
-    return ''.join(i for i in string if ord(i)<128)
-
-def replace_special_chars(string):
-
-    return string.replace(' ', '_').replace('(', '_').replace(')', '_')
-
-def rename_files_and_folders(root_dir):
-
-    for dirpath, dirnames, filenames in os.walk(root_dir):
-
-        # rename folders
-
-        for dirname in dirnames:
-
-            new_dirname = replace_special_chars(remove_non_ascii(dirname))
-
-            old_dir_name = os.path.join(dirpath, dirname)
-
-            new_dir_name = os.path.join(dirpath, new_dirname)
-
-            os.rename(old_dir_name, new_dir_name)
-
-        # rename files
-
-        for filename in filenames:
-
-            new_filename = replace_special_chars(remove_non_ascii(filename))
-
-            old_file_name = os.path.join(dirpath, filename)
-
-            new_file_name = os.path.join(dirpath, new_filename)
-
-            os.rename(old_file_name, new_file_name)
-
-root_dir = @vault_path
-
-rename_files_and_folders(root_dir)
-
 ```
 

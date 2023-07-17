@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a7660a247c53e340",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python_rename.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "741e32ba9295a949",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "test/test.md",
+                "file": "test/tut 1/!index.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/The_making_of_a_smart_pillow/!index.md",
-                "mode": "source",
+                "file": "Python_rename.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -119,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python_rename.md",
+                "file": "test/tut 1/!index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python_rename.md",
+                "file": "test/tut 1/!index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python_rename.md"
+                "file": "test/tut 1/!index.md"
               }
             }
           }
@@ -182,9 +170,8 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a7660a247c53e340",
+  "active": "741e32ba9295a949",
   "lastOpenFiles": [
-    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__/texalive_grasshopper.png",
     "_build/html/index.html",
     "_build/html/_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css",
     "_build/html/objects.inv",
@@ -196,6 +183,7 @@
     "_build/html/_static/sphinx-thebe.js",
     "_build/html/_static/copybutton.css",
     "_build/html/_static/copybutton.js",
+    "_build/html/_static/copybutton_funcs.js",
     "_build/html/_static/copy-button.svg",
     "_build/html/_static/check-solid.svg",
     "_build/html/_static/images/logo_jupyterhub.svg",
@@ -203,8 +191,8 @@
     "_build/html/_static/images/logo_colab.png",
     "_build/html/_static/images/logo_deepnote.svg",
     "_build/html/_static/minus.png",
-    "_build/html/_static/plus.png",
     "_build/html/_static/file.png",
+    "_build/html/_static/plus.png",
     "_build/html/_sources/_tags/tagsindex.md",
     "_build/html/_sources/_tags/personalized.md",
     "_build/html/_sources/_tags/data-driven.md",
