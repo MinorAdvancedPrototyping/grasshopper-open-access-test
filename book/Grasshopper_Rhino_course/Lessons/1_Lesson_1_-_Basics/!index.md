@@ -143,7 +143,7 @@ Every component has inputs and outputs. Inputs are on the left side of a block, 
 
 :::
 
-#### **Placing and connecting components**
+#### Placing and connecting components
 
 To place a component, either 🖱️drag from the toolbar **or 🖱️double click the workspace to search by name. 
 
@@ -161,7 +161,7 @@ To connect components, simply 🖱️drag from an output of one component, to th
 
 ![1.2.2g_ConnectingComponents.gif](1.2.2g_ConnectingComponents.gif)
 
-#### **Inputting and Outputting Data**
+#### Inputting and Outputting Data
 
 When hovering your cursor over an input/output a tool-tip pops up. These tool-tips can help determine what needs to be connected where. Reading out the outputs can help verify the expected outcome and check for errors.
 
@@ -233,7 +233,11 @@ Try to create a cube in Rhino with the dimensions 10x10x10mm.
 
 ![1.2.3a_RhinoBoxRender.png](1.2.3a_RhinoBoxRender.png)
 
+:::{card}
+
 💡**Hint:** a cube is called “box” in Rhino.
+
+:::
 
 :::{dropdown} Solution
 :open:
@@ -258,22 +262,14 @@ Now see if you can create the same cube in Grasshopper.
 
 :::{dropdown} Solution
 
-
-
-
 Grasshopper always allows for many different approaches to solve a problem. It is perfectly fine if you managed to get the same end result with a different script!
-
-
 
 Here we will show one possible approach:
 
-
-
 ![1.2.3f_GrasshopperBoxSolution.gif](1.2.3f_GrasshopperBoxSolution.gif)
 
-
-
 :::
+
 ---
 
 ## 👩‍🏫1.3 Basic geometry (45 min)

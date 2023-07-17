@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python_rename.md",
-                "mode": "preview",
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -41,7 +41,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -107,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "test/tut 1/!index.md",
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "test/tut 1/!index.md",
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "test/tut 1/!index.md"
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md"
               }
             }
           }
@@ -156,8 +157,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,8 +170,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "741e32ba9295a949",
+  "active": "284a707687a3c9f1",
   "lastOpenFiles": [
+    "Python_rename.md",
+    "test/tut 1/!index.md",
     "_build/html/index.html",
     "_build/html/_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css",
     "_build/html/objects.inv",
@@ -183,7 +185,6 @@
     "_build/html/_static/sphinx-thebe.js",
     "_build/html/_static/copybutton.css",
     "_build/html/_static/copybutton.js",
-    "_build/html/_static/copybutton_funcs.js",
     "_build/html/_static/copy-button.svg",
     "_build/html/_static/check-solid.svg",
     "_build/html/_static/images/logo_jupyterhub.svg",
@@ -216,7 +217,6 @@
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/3_Lesson_3_-_Data_structures/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/!index.md"
+    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/!index.md"
   ]
 }
