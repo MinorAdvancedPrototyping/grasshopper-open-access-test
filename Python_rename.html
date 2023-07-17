@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Author and Date Block &#8212; Rhino Grasshopper Open Access Education</title>
+    <title>Auto table of contents &#8212; Rhino Grasshopper Open Access Education</title>
   
   
   
@@ -446,7 +446,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Author and Date Block</h1>
+    <h1>Auto table of contents</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -456,7 +456,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Author and Date Block</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Auto table of contents</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#author-and-date-block">Author and Date Block</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#formatting-tags">Formatting Tags</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-dropdown">Creating Dropdown</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#create-boxes-for-aside">Create boxes for “&lt;aside”</a></li>
@@ -482,7 +483,55 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="author-and-date-block">
+  <section class="tex2jax_ignore mathjax_ignore" id="auto-table-of-contents">
+<h1>Auto table of contents<a class="headerlink" href="#auto-table-of-contents" title="Permalink to this heading">#</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">def</span> <span class="nf">get_dirs</span><span class="p">(</span><span class="n">root_dir</span><span class="p">):</span>
+    <span class="n">dir_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">d</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">d</span><span class="p">))]</span>
+    <span class="k">return</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">dir_list</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="nb">str</span><span class="o">.</span><span class="n">casefold</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">generate_toc</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">root_path</span><span class="p">):</span>
+    <span class="n">toc</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">toc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;# Table of contents&quot;</span><span class="p">)</span>
+    <span class="n">toc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;# Learn more at https://jupyterbook.org/customize/toc.html</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">toc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;format: jb-book&quot;</span><span class="p">)</span>
+    <span class="n">toc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;root: </span><span class="si">{</span><span class="n">root_path</span><span class="si">}</span><span class="s2">/intro.md</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">toc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;chapters:&quot;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">get_dirs</span><span class="p">(</span><span class="n">root_dir</span><span class="p">):</span>
+        <span class="n">toc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- file: </span><span class="si">{</span><span class="n">root_path</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s2">/!index.md&quot;</span><span class="p">)</span>
+        <span class="n">toc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;  sections:&quot;</span><span class="p">)</span>
+
+        <span class="n">sub_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">sub_d</span> <span class="ow">in</span> <span class="n">get_dirs</span><span class="p">(</span><span class="n">sub_dir</span><span class="p">):</span>
+            <span class="n">toc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;    - file: </span><span class="si">{</span><span class="n">root_path</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">sub_d</span><span class="si">}</span><span class="s2">/!index.md&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">get_dirs</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sub_dir</span><span class="p">,</span> <span class="n">sub_d</span><span class="p">)):</span>
+                <span class="n">toc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;      sections:&quot;</span><span class="p">)</span>
+                <span class="n">sub_sub_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sub_dir</span><span class="p">,</span> <span class="n">sub_d</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">sub_sub_d</span> <span class="ow">in</span> <span class="n">get_dirs</span><span class="p">(</span><span class="n">sub_sub_dir</span><span class="p">):</span>
+                    <span class="n">toc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;      - file: </span><span class="si">{</span><span class="n">root_path</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">sub_d</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">sub_sub_d</span><span class="si">}</span><span class="s2">/!index.md&quot;</span><span class="p">)</span>
+    
+    <span class="n">toc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- file: _tags/tagsindex.md&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">toc</span>
+
+<span class="k">def</span> <span class="nf">write_toc_to_file</span><span class="p">(</span><span class="n">toc</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s2">&quot;_toctest.yml&quot;</span><span class="p">):</span>
+    <span class="c1"># Replace &#39;/path/to/directory&#39; with the actual path where you want to save the file</span>
+    <span class="n">full_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">save_path</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">full_path</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">toc</span><span class="p">))</span>
+
+<span class="n">save_path</span> <span class="o">=</span> <span class="s1">&#39;/Users/localadmin/GitHub/grasshopper-open-access-test/book/&#39;</span>
+<span class="n">root_dir</span> <span class="o">=</span> <span class="s1">&#39;/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course&#39;</span>
+<span class="n">root_path</span> <span class="o">=</span> <span class="s2">&quot;Grasshopper_Rhino_course&quot;</span>
+<span class="n">toc</span> <span class="o">=</span> <span class="n">generate_toc</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">root_path</span><span class="p">)</span>
+<span class="n">write_toc_to_file</span><span class="p">(</span><span class="n">toc</span><span class="p">,</span> <span class="s1">&#39;_toctest.yml&#39;</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="author-and-date-block">
 <h1>Author and Date Block<a class="headerlink" href="#author-and-date-block" title="Permalink to this heading">#</a></h1>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
@@ -1150,7 +1199,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Author and Date Block</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Auto table of contents</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#author-and-date-block">Author and Date Block</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#formatting-tags">Formatting Tags</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-dropdown">Creating Dropdown</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#create-boxes-for-aside">Create boxes for “&lt;aside”</a></li>
