@@ -1,3 +1,51 @@
+# Auto table of contents
+
+```python
+import os
+
+def get_dirs(root_dir):
+    dir_list = [d for d in os.listdir(root_dir) if os.path.isdir(os.path.join(root_dir, d))]
+    return sorted(dir_list, key=str.casefold)
+
+def generate_toc(root_dir, root_path):
+    toc = []
+    toc.append("# Table of contents")
+    toc.append("# Learn more at https://jupyterbook.org/customize/toc.html\n")
+    toc.append("format: jb-book")
+    toc.append(f"root: {root_path}/intro.md\n")
+    toc.append("chapters:")
+
+    for d in get_dirs(root_dir):
+        toc.append(f"- file: {root_path}/{d}/!index.md")
+        toc.append("  sections:")
+
+        sub_dir = os.path.join(root_dir, d)
+        for sub_d in get_dirs(sub_dir):
+            toc.append(f"    - file: {root_path}/{d}/{sub_d}/!index.md")
+            if get_dirs(os.path.join(sub_dir, sub_d)):
+                toc.append("      sections:")
+                sub_sub_dir = os.path.join(sub_dir, sub_d)
+                for sub_sub_d in get_dirs(sub_sub_dir):
+                    toc.append(f"      - file: {root_path}/{d}/{sub_d}/{sub_sub_d}/!index.md")
+    
+    toc.append(f"- file: {root_path}/_tags/tagsindex.md")
+
+    return toc
+
+def write_toc_to_file(toc, filename="_toctest.yml"):
+    # Replace '/path/to/directory' with the actual path where you want to save the file
+    full_path = os.path.join(save_path, filename)
+    with open(full_path, 'w') as f:
+        f.write('\n'.join(toc))
+
+save_path = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/'
+root_dir = '/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course'
+root_path = "Grasshopper_Rhino_course"
+toc = generate_toc(root_dir, root_path)
+write_toc_to_file(toc, '_toctest.yml')
+
+```
+
 # Author and Date Block
 
 ```python
