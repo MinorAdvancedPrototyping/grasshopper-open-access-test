@@ -1,4 +1,42 @@
-# Auto table of contents
+# Auto-update existing table of contents
+
+```python
+import os
+import yaml
+
+def get_dirs(content_dir):
+    dir_list = [d for d in os.listdir(content_dir) if os.path.isdir(os.path.join(content_dir, d))]
+    return sorted(dir_list, key=str.casefold)
+
+def process_directory(root_dir, content_dir):
+    toc_filename = os.path.join(root_dir, "_toc.yml")
+
+    with open(toc_filename, 'r') as f:
+        toc_data = yaml.safe_load(f)
+
+    # Get directories in content directory
+    dir_list = get_dirs(content_dir)
+
+    for dir in dir_list:
+        path = os.path.join(content_dir, dir)
+        
+        # Check if directory already exists in _toc.yml
+        if not any(d.get('file') == path for d in toc_data.get('chapters', [])):
+            # Append new entry to _toc.yml
+            toc_data['chapters'].append({'file': path})
+
+    # Write updated data back to _toc.yml
+    with open(toc_filename, 'w') as f:
+        yaml.safe_dump(toc_data, f)
+
+root_dir = "/Users/localadmin/GitHub/grasshopper-open-access-test/book/"
+content_dir = "/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course"
+process_directory(root_dir, content_dir)
+
+```
+
+
+# Auto-generate table of contents from scratch
 
 ```python
 import os
