@@ -5,6 +5,20 @@ format: jb-book
 root: Grasshopper_Rhino_course/intro.md
 
 chapters:
+- file: Grasshopper_Rhino_course/Lessons/!index.md
+  sections:
+    - file: Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md
+    - file: Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md
+    - file: Grasshopper_Rhino_course/Lessons/3_Lesson_3_-_Data_structures/!index.md
+    - file: Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md
+    - file: Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/!index.md
+    - file: Grasshopper_Rhino_course/Lessons/6_Lesson_6_-_Example/!index.md
+    - file: Grasshopper_Rhino_course/Lessons/Student_showcase/!index.md
+      sections:
+      - file: Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_1/!index.md
+      - file: Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_2/!index.md
+      - file: Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_3/!index.md
+      - file: Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_4/!index.md
 - file: Grasshopper_Rhino_course/Knowledge_base/!index.md
   sections:
     - file: Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/!index.md
@@ -25,18 +39,4 @@ chapters:
       - file: Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md
       - file: Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index.md
       - file: Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/!index.md
-- file: Grasshopper_Rhino_course/Lessons/!index.md
-  sections:
-    - file: Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md
-    - file: Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md
-    - file: Grasshopper_Rhino_course/Lessons/3_Lesson_3_-_Data_structures/!index.md
-    - file: Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md
-    - file: Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/!index.md
-    - file: Grasshopper_Rhino_course/Lessons/6_Lesson_6_-_Example/!index.md
-    - file: Grasshopper_Rhino_course/Lessons/Student_showcase/!index.md
-      sections:
-      - file: Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_1/!index.md
-      - file: Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_2/!index.md
-      - file: Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_3/!index.md
-      - file: Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_4/!index.md
 - file: _tags/tagsindex.md

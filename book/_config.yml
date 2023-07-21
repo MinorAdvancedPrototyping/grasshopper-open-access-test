@@ -36,10 +36,6 @@ html:
   use_issues_button: true
   use_repository_button: true
 
-#sphinx:
-  #config:
- #   html_theme: pydata_sphinx_theme
-
 sphinx:
   extra_extensions:
    - sphinx_tags
@@ -51,6 +47,10 @@ sphinx:
     tags_extension: ["md"]
     tags_create_badges: true
     tags_page_title: "Categories"
+  extra_css_files:
+    - _static/style.css
+
+    # html_theme: pydata_sphinx_theme
 
 # html:
 #   comments:

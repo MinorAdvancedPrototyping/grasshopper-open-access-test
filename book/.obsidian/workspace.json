@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/!index.md",
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 405.5
+    "width": 405.5,
+    "collapsed": true
   },
   "right": {
     "id": "eba0d6683893ae37",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/!index.md",
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/!index.md",
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/!index.md"
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md"
               }
             }
           },
@@ -142,7 +143,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,19 +160,18 @@
   },
   "active": "e6e7b5146b3ac284",
   "lastOpenFiles": [
-    "Python_Automation_Code.md",
-    "Grasshopper_Rhino_course/Lessons/!index.md",
     "_build/html/index.html",
     "_build/html/_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css",
     "_build/html/objects.inv",
     "_build/html/searchindex.js",
-    "_build/html/searchindex.js.tmp",
     "_build/html/_static/TUDelft_logo_cmyk.png",
     "_build/html/_static/design-tabs.js",
     "_build/html/_static/design-style.4045f2051d55cab465a707391d5b2007.min.css",
     "_build/html/_static/sphinx-thebe.css",
     "_build/html/_static/sphinx-thebe.js",
     "_build/html/_static/copybutton.css",
+    "_build/html/_static/copybutton.js",
+    "_build/html/_static/copybutton_funcs.js",
     "_build/html/_static/copy-button.svg",
     "_build/html/_static/check-solid.svg",
     "_build/html/_static/images/logo_jupyterhub.svg",
@@ -203,6 +204,7 @@
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/3_Lesson_3_-_Data_structures/!index.md"
+    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/3_Lesson_3_-_Data_structures/!index.md",
+    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md"
   ]
 }
