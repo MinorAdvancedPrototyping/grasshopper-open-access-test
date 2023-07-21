@@ -1,20 +1,16 @@
 # Open Access Rhino Grasshopper Course for Industrial Design Students
 
-:::{card}
-**Authors:** Your Name
 
-**Last Edited:** 2023-07-15
-:::
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RP5PBbT4B1k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+---
 
-### Introduction
 
 Welcome to this course about Computational design using Rhino and Grasshopper. This program is geared towards product design for personalized fit products and design for digital fabrication.
 
 The lessons are built up with the following components:
 
 :::{card}
-
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
 
 📑 **Explanation text:** Written explanations with supporting images.
@@ -40,34 +36,32 @@ The lessons are built up with the following components:
 
 These lessons were developed as part of the Industrial Design Engineering curriculum, at the TU Delft, for the following courses:
 
-:::{dropdown} Prototyping with/for digital fabrication (IO3850), part of the Minor Advanced Prototyping
+:::{card}
+**Prototyping with/for digital fabrication (IO3850), part of the Minor Advanced Prototyping**
 
-
+**Computational Design for Digital Fabrication, elective of Industrial Design Engineering, TU Delft**
 :::
-:::{dropdown} Computational Design for Digital Fabrication, elective of Industrial Design Engineering, TU Delft
 
-
-:::
-These lessons were created using Rhino 7, Grasshopper build 1.0.0007*.*
+These lessons were created using Rhino 7, Grasshopper build 1.0.0007 and higher.
 
 ### Creation & contact info
 
-**Created by**: [Anne van den Dool](https://www.tudelft.nl/io/over-io/personen/dool-ac-van-den), [Jose Martinez Castro](https://www.tudelft.nl/io/over-io/personen/martinez-castro-j-f) and [Niels van Silfhout](../mailto%3AN.vanSilfhout%40student.tudelft.nl)
+**Authors:** [Anne van den Dool](https://www.tudelft.nl/io/over-io/personen/dool-ac-van-den), [Jose Martinez Castro](https://www.tudelft.nl/io/over-io/personen/martinez-castro-j-f), [Niels van Silfhout](mailto:N.vanSilfhout@student.tudelft.nl) and [Willemijn Elkhuizen](https://www.tudelft.nl/io/over-io/personen/elkhuizen-ws) 
 
-**Supervisory and advisory team**: [Sander Minnoye](https://www.tudelft.nl/io/over-io/personen/minnoye-alm), [Willemijn Elkhuizen](https://www.tudelft.nl/io/over-io/personen/elkhuizen-ws) and [Wolf Song](https://www.tudelft.nl/io/over-io/personen/song-y)
+**Supervisory and advisory team:** [Sander Minnoye](https://www.tudelft.nl/io/over-io/personen/minnoye-alm) and [Wolf Song](https://www.tudelft.nl/io/over-io/personen/song-y) 
 
-**Feedback/errors/bugs**: please mail to [prototyping@tudelft.nl](../mailto%3Aprototyping%40tudelft.nl)
+**Feedback/errors/bugs:** please mail to [prototyping@tudelft.nl](mailto:prototyping@tudelft.nl) 
+
+**Acknowledgement:** Wybren ten Cate, Zjenja Doubrovski, Toon Huysmans, Mehmet Ozdemir
 
 ### 🔗 External resources
 
-[Link to Jupyter Book Test Setup](https://josemartinez18.github.io/grasshopper-open-access-test/intro.html#)
+[TU Delft Architecture Grasshopper Course](http://wiki.bk.tudelft.nl/toi-pedia/Grasshopper)
 
-[Rhino tutorial page](https://www.rhino3d.com/learn/?query=kind:%20jump_start&modal=null)
+[Rhino Tutorial Page](https://www.rhino3d.com/learn/?query=kind:%20jump_start&modal=null)
 
 [Medium: intro to Grasshopper](https://medium.com/intro-to-grasshopper)
 
-[Cademy webinars](https://www.cademy.xyz/webinars)
+[Cademy Webinars](https://www.cademy.xyz/webinars)
 
-[http://wiki.bk.tudelft.nl/toi-pedia/Grasshopper](http://wiki.bk.tudelft.nl/toi-pedia/Grasshopper)
-
-[https://parametricbydesign.com/](https://parametricbydesign.com/)
+[Parametric by Design](https://parametricbydesign.com/)

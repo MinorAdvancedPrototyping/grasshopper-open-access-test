@@ -1,19 +1,15 @@
 # Lesson 4 - Surfaces
 
 :::{card}
-**Authors:** Your Name
+**Authors:** Anne van den Dool, Niels van Silfhout, Jose Martinez Castro
 
 **Last Edited:** 2023-07-21
 :::
 
-
 ```{tags} Patterns, Surfaces
 ```
 
-Authors: Anne van den Dool, Niels van Silfhout, Jose Martinez Castro
-
-Review: Ready for export, Ready for review
-
+:::{card}
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
 
 📑 **Explanation text:** Written explanations with supporting images.
@@ -22,15 +18,16 @@ Review: Ready for export, Ready for review
 
 📺 **Tutorial videos:** Follow-along tutorials.
 
-💡 T**ips:** Tips and tricks to make working in Rhino/Grasshopper easier.
+💡 **Tips:** Tips and tricks to make working in Rhino/Grasshopper easier.
 
 🖱️ **Exercises:** Small practice questions. The solution is provided.
 
 💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
+:::
 
 ## 👩‍🏫 4.1 Introduction (2 min)
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/aR36XrEsxMk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/aR36XrEsxMk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aR36XrEsxMk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 📑 4.2 Surface geometry (10 min)
 
@@ -126,11 +123,11 @@ Download the starting file here:
 
 [Lesson 4 - Soapbottle starting file.3dm](Lesson_4_-_Soapbottle_starting_file.3dm)
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/8Rl-SYeyvSM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/8Rl-SYeyvSM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8Rl-SYeyvSM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 📺Video Tutorial (20 min): surface pattern
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/N-ACXptKQMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/N-ACXptKQMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N-ACXptKQMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 📺 4.4 Creating an arm brace (35 min)
 
@@ -152,7 +149,7 @@ Download the loft script here:
 
 [Lesson 4 - Loft troubleshooting.gh](Lesson_4_-_Loft_troubleshooting.gh)
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/53fszj3rYBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/53fszj3rYBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/53fszj3rYBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 💻 4.5 Assignment (max 2 hours)
 

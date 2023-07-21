@@ -1,19 +1,14 @@
 # Lesson 2 - Curves and lists
+```{tags} Curves, Lists
+```
 
 :::{card}
-**Authors:** Your Name
+**Authors:** Anne van den Dool, Niels van Silfhout
 
 **Last Edited:** 2023-07-21
 :::
 
-
-```{tags} Curves, Lists
-```
-
-Authors: Anne van den Dool, Niels van Silfhout
-
-Review: Ready for export
-
+:::{card}
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
 
 📑 **Explanation text:** Written explanations with supporting images.
@@ -22,15 +17,16 @@ Review: Ready for export
 
 📺 **Tutorial videos:** Follow-along tutorials.
 
-💡 T**ips:** Tips and tricks to make working in Rhino/Grasshopper easier.
+💡 **Tips:** Tips and tricks to make working in Rhino/Grasshopper easier.
 
 🖱️ **Exercises:** Small practice questions. The solution is provided.
 
 💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
+:::
 
 ## 👩‍🏫 2.1 Introduction (2 min)
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/_U0E-HZWIfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/_U0E-HZWIfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_U0E-HZWIfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -149,7 +145,7 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 :::
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/xEMRruaWmng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/xEMRruaWmng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xEMRruaWmng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::{dropdown} **Download the final file here:**
 
@@ -182,7 +178,7 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 ### 👩‍🏫2.4.1 Lists (10 min)
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/0Upvg2w25qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/0Upvg2w25qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0Upvg2w25qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Download the example file here:**
 

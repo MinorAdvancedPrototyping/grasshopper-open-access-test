@@ -1,19 +1,15 @@
 # Lesson 3 - Data structures
 
 :::{card}
-**Authors:** Your Name
+**Authors:** Anne van den Dool, Niels van Silfhout, Jose Martinez Castro
 
 **Last Edited:** 2023-07-21
 :::
 
-
 ```{tags} Data-structures, Lists
 ```
 
-Authors: Anne van den Dool, Niels van Silfhout, Jose Martinez Castro
-
-Review: Ready for export
-
+:::{card}
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
 
 📑 **Explanation text:** Written explanations with supporting images.
@@ -22,15 +18,16 @@ Review: Ready for export
 
 📺 **Tutorial videos:** Follow-along tutorials.
 
-💡 T**ips:** Tips and tricks to make working in Rhino/Grasshopper easier.
+💡 **Tips:** Tips and tricks to make working in Rhino/Grasshopper easier.
 
 🖱️ **Exercises:** Small practice questions. The solution is provided.
 
 💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
+:::
 
 ## 👩‍🏫 3.1 Introduction (2 min)
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/n-PLSo47Ay4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/n-PLSo47Ay4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n-PLSo47Ay4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -48,7 +45,7 @@ In this follow along tutorial we explore the basics of lists. We will look at ho
 
 :::
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/5yriSQdJFyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/5yriSQdJFyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5yriSQdJFyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can download the final file of this tutorial here:
 
@@ -143,7 +140,7 @@ Try to build a grid of points in the XY plane. There are multiple ways to achiev
 
 :::
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/LlXmjHG7LXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/LlXmjHG7LXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LlXmjHG7LXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Download the final file here:**
 

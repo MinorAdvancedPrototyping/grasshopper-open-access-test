@@ -1,14 +1,13 @@
 # Lesson 1 - Basics
 
+```{tags} Introduction
+```
+
 :::{card}
 **Authors:** Anne van den Dool, Niels van Silfhout
 
 **Last Edited:** 2023-07-21
 :::
-
-
-```{tags} Introduction
-```
 
 :::{card}
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
@@ -28,22 +27,18 @@
 
 ## 👩‍🏫1.1 Introduction (3 min)
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/YeSgIJmp9OY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/YeSgIJmp9OY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YeSgIJmp9OY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
 ## 📑1.2 Basic controls (30 min)
 
 :::{card}
-
-📌 *What:*         Introduction to the controls of Rhino and Grasshopper (reading)
-
-                  Working in Rhino and Grasshopper (exercise)
+📌 *What:* Introduction to the controls of Rhino and Grasshopper (reading), Working in Rhino and Grasshopper (exercise)
 
 *For Whom:* Beginners in Rhino/Grasshopper
 
-*Time:*          30 min (15 min reading+ 15 min exercise)
-
+*Time:* 30 min (15 min reading+ 15 min exercise)
 :::
 
 If you are new to 3D design software, using Rhino and Grasshopper for the first time can be a bit overwhelming. In the next section, you will first walk through the ins and outs of the user interface, then you will learn the basic controls. Finally ending with a small exercise to get you started with Rhino and Grasshopper.
@@ -61,9 +56,7 @@ You will now see the following interface (left for 🪟windows, right for 🍎ma
 The central part of the screen is called the viewport, here marked in red. By default Rhino shows 4 different views. The viewport is your workspace, here you can view your 3D model.
 
 :::{card}
-
 💡 **Tip**: To make one of the viewports fill the entire window, 🖱️double click the label **(for example: **[Perspective]**). To return to the view of all four viewports, 🖱️double click the label again.
-
 :::
 
 At the top there are different tabs for different workflows, for example **[Curve Tools]**. By clicking these tabs you gain access to more specialized tools, and the lay-out of bar on the left and top changes. We will mostly be using the **[Standard]** tab, which is selected by default.
@@ -80,11 +73,7 @@ All of the different tools in Rhino can be accessed via the bar on the left. By 
 
 2. By clicking the 🔽 next to a viewport (or right click if you’re working on mac), you can adjust how your model looks. Most of the time you will use **[Shaded]**.
 
-3. **[Gumball]** allows you to move objects directly in the viewport using handles.
-
-**[Grid Snap] [Osnap]** causes tools to snap to the grid and to other objects.
-
-**[Record History]** turning this on allows you to undo and redo actions.
+3. **[Gumball]** allows you to move objects directly in the viewport using handles. **[Grid Snap]**  **[Osnap]** causes tools to snap to the grid and to other objects. **[Record History]** turning this on allows you to undo and redo actions.
 
 **Navigation**
 
@@ -93,9 +82,7 @@ All of the different tools in Rhino can be accessed via the bar on the left. By 
 | Pan | Right mouse button + shift |
 | Zoom | Scroll |
 | Select | Left click |
-| Box select | Hold left mouse button and drag
-Drag from right to left to select everything the box touches
-Drag from left to right to select only objects completely inside box |
+| Box select | Hold left mouse button and drag. Drag from right to left to select everything the box touches. Drag from left to right to select only objects completely inside box | 
 | Repeat previous command | Right click |
 
 For more shortcuts check out these webpages:
@@ -249,8 +236,9 @@ Now you can select the first corner of the base in the viewport, then the second
 
 ![1.2.3c_RhinoBoxSolution.gif](1.2.3c_RhinoBoxSolution.gif)
 
-
 :::
+
+:::{card}
 Now see if you can create the same cube in Grasshopper. 
 
 ![1.2.3d_GrasshopperBoxRender.png](1.2.3d_GrasshopperBoxRender.png)
@@ -261,14 +249,12 @@ Now see if you can create the same cube in Grasshopper.
 
 :::{dropdown} Solution
 
-
 Grasshopper always allows for many different approaches to solve a problem. It is perfectly fine if you managed to get the same end result with a different script!
 
 Here we will show one possible approach:
 
 ![1.2.3f_GrasshopperBoxSolution.gif](1.2.3f_GrasshopperBoxSolution.gif)
 
-:::
 :::
 
 ---
@@ -277,27 +263,24 @@ Here we will show one possible approach:
 
 :::{card}
 
-📌 *What:*         Introduction to the basic geometries (video explanation)
-
-                  Modelling geometry in Rhino and Grasshopper (video tutorials)
+📌 *What:*  Introduction to the basic geometries (video explanation), Modelling geometry in Rhino and Grasshopper (video tutorials)
 
 *For Whom:* Beginners in Rhino/Grasshopper
 
-*Time:*          45 min (5 min video+ 40 min tutorials)
+*Time:* 45 min (5 min video+ 40 min tutorials)
 
 :::
 
 ### 👩‍🏫1.3.1 Theory - Basic geometry (5 min)
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/TOz-LE0H104" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/TOz-LE0H104" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TOz-LE0H104" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::{dropdown} Recap
 
-
 [1 Basic geometry.pdf](1_Basic_geometry.pdf)
 
-
 :::
+
 ### 📺1.3.2 **Tutorial - Modelling a teapot in Rhino (20 min)**
 
 In this tutorial, you will learn how to construct basic geometry in Rhino. Watch the video below and follow along. 
@@ -308,7 +291,7 @@ In this tutorial, you will learn how to construct basic geometry in Rhino. Watch
 
 :::
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/38Xfl50o2A8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/38Xfl50o2A8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/38Xfl50o2A8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 📺1.3.3 **Tutorial - Modelling teacups in Grasshopper (20 min)**
 
@@ -320,26 +303,26 @@ In this exercise, you will learn how to construct basic geometry in Grasshopper.
 
 :::
 
-[<iframe width="560" height="315" src="https://www.youtube.com/embed/svhn73Yvww0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/svhn73Yvww0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/svhn73Yvww0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :::{dropdown} Solution
 
 
 ![1.3.3a_TeacupSolution.png](1.3.3a_TeacupSolution.png)
 
-
 :::
+
 ---
 
 ## 📑1.4 Best practice (5 min)
 
 :::{card}
 
-📌 *What:*         Some tips and tricks to help you troubleshoot in Rhino/Grasshopper (reading)
+📌 *What:* Some tips and tricks to help you troubleshoot in Rhino/Grasshopper (reading)
 
 *For Whom:* Beginners in Rhino/Grasshopper
 
-*Time:*          5 minutes
+*Time:* 5 minutes
 
 :::
 
@@ -389,7 +372,7 @@ As projects get more complex, it is important to keep your Grasshopper script or
 
 💻 Create a creature using Rhino curves, which you import into Grasshopper. It does not have to be an insect, you can create any animal you like. Take a few hours to see what you can create, but do not spend to much time on this assignment. 
 
-Check out the [Student showcase](https://www.notion.so/Assignment-1-4c99d935d0db48c49cce1a71c22a3031?pvs=21) to see what other students made for this assignment.
+Check out the [Student Showcase](../Student_showcase/!index.md) to see what other students made for this assignment.
 
 :::
 
