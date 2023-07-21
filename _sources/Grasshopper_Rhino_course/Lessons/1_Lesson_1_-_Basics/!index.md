@@ -1,17 +1,16 @@
 # Lesson 1 - Basics
 
 :::{card}
-**Authors:** Your Name
+**Authors:** Anne van den Dool, Niels van Silfhout
 
-**Last Edited:** 2023-07-15
+**Last Edited:** 2023-07-21
 :::
 
 
-```{tags} basics
+```{tags} Introduction
 ```
 
 :::{card}
-
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
 
 📑 **Explanation text:** Written explanations with supporting images.
@@ -27,9 +26,9 @@
 💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
 :::
 
-## 👩‍🏫1.1 Introduction (4 min)
+## 👩‍🏫1.1 Introduction (3 min)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kxescnDWiwA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/YeSgIJmp9OY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/YeSgIJmp9OY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 ---
 
@@ -57,7 +56,7 @@ In this part you will explore Rhino’s User Interface.
 
 You will now see the following interface (left for 🪟windows, right for 🍎mac):
 
-![1.2.1a_RhinoInterface.png](1.2.1a_RhinoInterface.png)
+![1.2.1a_RhinoInterface_V2.png](1.2.1a_RhinoInterface_V2.png)
 
 The central part of the screen is called the viewport, here marked in red. By default Rhino shows 4 different views. The viewport is your workspace, here you can view your 3D model.
 
@@ -94,7 +93,9 @@ All of the different tools in Rhino can be accessed via the bar on the left. By 
 | Pan | Right mouse button + shift |
 | Zoom | Scroll |
 | Select | Left click |
-| Box select | Hold left mouse button and drag (1. Drag from right to left to select everything the box touches) (2. Drag from left to right to select only objects completely inside box) 
+| Box select | Hold left mouse button and drag
+Drag from right to left to select everything the box touches
+Drag from left to right to select only objects completely inside box |
 | Repeat previous command | Right click |
 
 For more shortcuts check out these webpages:
@@ -143,7 +144,7 @@ Every component has inputs and outputs. Inputs are on the left side of a block, 
 
 :::
 
-#### Placing and connecting components
+#### **Placing and connecting components**
 
 To place a component, either 🖱️drag from the toolbar **or 🖱️double click the workspace to search by name. 
 
@@ -161,7 +162,7 @@ To connect components, simply 🖱️drag from an output of one component, to th
 
 ![1.2.2g_ConnectingComponents.gif](1.2.2g_ConnectingComponents.gif)
 
-#### Inputting and Outputting Data
+#### **Inputting and Outputting Data**
 
 When hovering your cursor over an input/output a tool-tip pops up. These tool-tips can help determine what needs to be connected where. Reading out the outputs can help verify the expected outcome and check for errors.
 
@@ -223,6 +224,8 @@ You should now see your object in Rhino.
 
 ### 🖱️ 1.2.3 Building shapes in Rhino and Grasshopper (Exercise 15 min)
 
+:::{card}
+
 🖱️  **Exercise - Building shapes in Rhino and Grasshopper**
 
 In the first exercise we will be building a simple shape in Rhino and Grasshopper to explore how these two programs work and in what ways they differ.
@@ -233,25 +236,21 @@ Try to create a cube in Rhino with the dimensions 10x10x10mm.
 
 ![1.2.3a_RhinoBoxRender.png](1.2.3a_RhinoBoxRender.png)
 
-:::{card}
-
 💡**Hint:** a cube is called “box” in Rhino.
 
-:::
-
 :::{dropdown} Solution
-:open:
 
-You can either select the **[Box]** tool on the left **OR** type in “Box” in the command line. 
+
+You can either select the **[Box]** tool on the left **OR** type in “Box” in the command line.
 
 ![1.2.3b_RhinoBoxSolution.png](1.2.3b_RhinoBoxSolution.png)
 
-Now you can select the first corner of the base in the viewport, then the second corner, and finally choose the height of your box. You can also type the exact dimensions into the command line. 
+Now you can select the first corner of the base in the viewport, then the second corner, and finally choose the height of your box. You can also type the exact dimensions into the command line.
 
 ![1.2.3c_RhinoBoxSolution.gif](1.2.3c_RhinoBoxSolution.gif)
 
-:::
 
+:::
 Now see if you can create the same cube in Grasshopper. 
 
 ![1.2.3d_GrasshopperBoxRender.png](1.2.3d_GrasshopperBoxRender.png)
@@ -262,12 +261,14 @@ Now see if you can create the same cube in Grasshopper.
 
 :::{dropdown} Solution
 
+
 Grasshopper always allows for many different approaches to solve a problem. It is perfectly fine if you managed to get the same end result with a different script!
 
 Here we will show one possible approach:
 
 ![1.2.3f_GrasshopperBoxSolution.gif](1.2.3f_GrasshopperBoxSolution.gif)
 
+:::
 :::
 
 ---
@@ -276,7 +277,9 @@ Here we will show one possible approach:
 
 :::{card}
 
-📌 *What:*         Introduction to the basic geometries (video explanation) + Modelling geometry in Rhino and Grasshopper (video tutorials)
+📌 *What:*         Introduction to the basic geometries (video explanation)
+
+                  Modelling geometry in Rhino and Grasshopper (video tutorials)
 
 *For Whom:* Beginners in Rhino/Grasshopper
 
@@ -286,15 +289,12 @@ Here we will show one possible approach:
 
 ### 👩‍🏫1.3.1 Theory - Basic geometry (5 min)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TOz-LE0H104" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/TOz-LE0H104" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/TOz-LE0H104" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 :::{dropdown} Recap
 
 
-
-
 [1 Basic geometry.pdf](1_Basic_geometry.pdf)
-
 
 
 :::
@@ -308,7 +308,7 @@ In this tutorial, you will learn how to construct basic geometry in Rhino. Watch
 
 :::
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/38Xfl50o2A8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/38Xfl50o2A8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/38Xfl50o2A8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 ### 📺1.3.3 **Tutorial - Modelling teacups in Grasshopper (20 min)**
 
@@ -316,19 +316,16 @@ In this exercise, you will learn how to construct basic geometry in Grasshopper.
 
 :::{card}
 
-💡 **Tip:**  In Grasshopper, pay attention where you click. If you right click on the inputs of a component, you will get a different menu compared to when you click in the middle for example. If you want to group object or turn the preview of for multiple object, make sure you right click on a empty space on the canvas.
+💡 T**ip:**  In Grasshopper, pay attention where you click. If you right click on the inputs of a component, you will get a different menu compared to when you click in the middle for example. If you want to group object or turn the preview of for multiple object, make sure you right click on a empty space on the canvas.
 
 :::
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/svhn73Yvww0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/svhn73Yvww0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/svhn73Yvww0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 :::{dropdown} Solution
 
 
-
-
 ![1.3.3a_TeacupSolution.png](1.3.3a_TeacupSolution.png)
-
 
 
 :::
@@ -392,7 +389,7 @@ As projects get more complex, it is important to keep your Grasshopper script or
 
 💻 Create a creature using Rhino curves, which you import into Grasshopper. It does not have to be an insect, you can create any animal you like. Take a few hours to see what you can create, but do not spend to much time on this assignment. 
 
-Check out the [Student showcase](../../Student%20showcase/Assignment%201/%21index.md) to see what other students made for this assignment.
+Check out the [Student showcase](https://www.notion.so/Assignment-1-4c99d935d0db48c49cce1a71c22a3031?pvs=21) to see what other students made for this assignment.
 
 :::
 

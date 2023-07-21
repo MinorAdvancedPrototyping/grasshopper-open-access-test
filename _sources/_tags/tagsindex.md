@@ -11,11 +11,14 @@ maxdepth: 1
 3d-scans (9) <3d-scans>
 Advanced-Manufacturing (4) <Advanced-Manufacturing>
 Curves (1) <Curves>
+Data-structures (1) <Data-structures>
 Form-Finding (1) <Form-Finding>
 Generative (1) <Generative>
-Lists (1) <Lists>
+Introduction (1) <Introduction>
+Lists (2) <Lists>
+Patterns (1) <Patterns>
 Simulation (2) <Simulation>
-basics (1) <basics>
+Surfaces (1) <Surfaces>
 data-driven (3) <data-driven>
 personalized (9) <personalized>
 ```

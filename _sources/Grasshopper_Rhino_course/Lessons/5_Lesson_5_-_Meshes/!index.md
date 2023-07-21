@@ -3,7 +3,16 @@
 :::{card}
 **Authors:** Your Name
 
+**Last Edited:** 2023-07-21
+:::
+
+
+:::{card}
+
+**Authors:** Your Name
+
 **Last Edited:** 2023-07-15
+
 :::
 
 
@@ -21,7 +30,7 @@
 
 💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
 
-## 👩‍🏫 5.1 Introduction (x min)
+### 👩‍🏫 5.1 Introduction (x min)
 
 [https://www.notion.so](https://www.notion.so)
 
@@ -33,7 +42,8 @@
 
 
 :::
-## 📑 5.2 Mesh geometry (5 min)
+
+### 📑 5.2 Mesh geometry (5 min)
 
 :::{card}
 
@@ -45,7 +55,7 @@
 
 :::
 
-### 5.2.1 📑Mesh vs. Surface geometry
+#### 5.2.1 📑Mesh vs. Surface geometry
 
 A mesh is a type of geometry that consists of points and faces. It can be used for similar purposes as a BRep geometry, but works in a fundamentally different way. A BRep datatype is a mathematical representation of the object, while a mesh datatype only is a collection of points and its connectivity data. In the image below you can see a comparison between a NURB surface and a mesh. When changing the control point on a curved surface, the surface is recalculated and remains smooth. When you change a point in a mesh, this only affects the face that are directly connected to that point. 
 
@@ -59,7 +69,7 @@ Meshes take less computational power to visualize, but since meshes only consist
 
 ![5.2.1_MeshResolution.png](5.2.1_MeshResolution.png)
 
-### 5.2.2 📑Mesh structure
+#### 5.2.2 📑Mesh structure
 
 There are two common types of meshes: triangle meshes and quad meshes. As the names suggest, a triangle mesh is a mesh with triangular faces (connecting 3 vertices) and a quad mesh is a mesh with rectangular faces (connecting 4 vertices). A combination of triangle faces and quad faces in a mesh is also possible. 
 
@@ -71,7 +81,7 @@ Imagine you want to create a triangle mesh based on 5 points. As you can see in 
 
 ![5.2.2_GrasshopperMeshGeometry.png](5.2.2_GrasshopperMeshGeometry.png)
 
-### 5.2.3 🖱️Mesh tools in Rhino
+#### 5.2.3 🖱️Mesh tools in Rhino
 
 Mesh files like 3D scans often need some repairing or editing. You can use specialized software like Meshmixer, but you can also find some mesh tools in Rhino. 
 
@@ -87,7 +97,7 @@ Mesh files like 3D scans often need some repairing or editing. You can use speci
 
 ![5.2.3_MeshTools.png](5.2.3_MeshTools.png)
 
-## 📺 5.3 Building a custom mesh (x min)
+### 📺 5.3 Building a custom mesh (x min)
 
 :::{card}
 
@@ -101,7 +111,7 @@ Mesh files like 3D scans often need some repairing or editing. You can use speci
 
 📺Video Tutorial (20 min): building a mesh, applying to loft (loft file provided)
 
-## 📺 5.4 Morphing (x min)
+### 📺 5.4 Morphing (x min)
 
 :::{card}
 
@@ -115,7 +125,7 @@ Mesh files like 3D scans often need some repairing or editing. You can use speci
 
 📺Video Tutorial (20 min): building a mesh, applying to loft (loft file provided)
 
-## 💻 5.5 Assignment (max 2 hours)
+### 💻 5.5 Assignment (max 2 hours)
 
 Box morph assignment 
 

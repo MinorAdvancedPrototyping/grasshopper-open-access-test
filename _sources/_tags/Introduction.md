@@ -1,4 +1,4 @@
-# Categories: basics
+# Categories: Introduction
 
 ```{toctree}
 ---

@@ -7,59 +7,61 @@
 :::{grid-item-card}
 :link: 1_Lesson_1_-_Basics/!index
 :link-type: doc
-:img-top: 1_Lesson_1_-_Basics/1.0b_LessonCoverTeapotWide.jpg
+:img-top: 1_Lesson_1_-_Basics/cover.jpg
 :class-header: bg-light
 
-Lesson 1 - Basics 
+Lesson 1 - Basics
+
 ^^^
+insert summary here
 
-Introduction into Rhino and Grasshopper
 :::
-
 :::{grid-item-card}
 :link: 2_Lesson_2_-_Curves_and_lists/!index
 :link-type: doc
-:img-top: 2_Lesson_2_-_Curves_and_lists/2.0b_LessonCoverTrainWide.jpg
+:img-top: 2_Lesson_2_-_Curves_and_lists/cover.jpg
 :class-header: bg-light
 
-Lesson 2 - Curves and Lists
+Lesson 2 - Curves and lists
+
 ^^^
+insert summary here
 
-Include Summary here
 :::
-
 :::{grid-item-card}
 :link: 3_Lesson_3_-_Data_structures/!index
 :link-type: doc
-:img-top: 3_Lesson_3_-_Data_structures/Brick_wall_attractor_wide.jpeg
+:img-top: 3_Lesson_3_-_Data_structures/cover.jpeg
 :class-header: bg-light
 
-Lesson 3 - Data Structures
+Lesson 3 - Data structures
+
 ^^^
+insert summary here
 
-Include Summary here
 :::
-
 :::{grid-item-card}
 :link: 4_Lesson_4_-_Surfaces/!index
 :link-type: doc
-:img-top: 4_Lesson_4_-_Surfaces/Armbrace_wide.jpg
+:img-top: 4_Lesson_4_-_Surfaces/cover.jpg
 :class-header: bg-light
 
-Lesson 4 - Surfaces 
+Lesson 4 - Surfaces
+
 ^^^
+insert summary here
 
-Include Summary here
 :::
-
 :::{grid-item-card}
 :link: 5_Lesson_5_-_Meshes/!index
 :link-type: doc
-:img-top: Lesson1/Assignment_1.png
+:img-top: 5_Lesson_5_-_Meshes/cover.png
 :class-header: bg-light
 
-Lesson 5 - Meshes
-^^^
+5 Lesson 5 - Meshes
 
-Include Summary here
+^^^
+insert summary here
+
 :::
+
