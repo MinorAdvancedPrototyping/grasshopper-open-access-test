@@ -3,9 +3,16 @@
 :::{card}
 **Authors:** Your Name
 
-**Last Edited:** 2023-07-15
+**Last Edited:** 2023-07-21
 :::
 
+
+```{tags} Data-structures, Lists
+```
+
+Authors: Anne van den Dool, Niels van Silfhout, Jose Martinez Castro
+
+Review: Ready for export
 
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
 
@@ -15,7 +22,7 @@
 
 📺 **Tutorial videos:** Follow-along tutorials.
 
-💡 **Tips:** Tips and tricks to make working in Rhino/Grasshopper easier.
+💡 T**ips:** Tips and tricks to make working in Rhino/Grasshopper easier.
 
 🖱️ **Exercises:** Small practice questions. The solution is provided.
 
@@ -23,7 +30,7 @@
 
 ## 👩‍🏫 3.1 Introduction (2 min)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n-PLSo47Ay4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/n-PLSo47Ay4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/n-PLSo47Ay4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 ---
 
@@ -31,15 +38,17 @@
 
 :::{card}
 
-📌 *What:*         Working with lists (tutorial)
+📌 *What:*        Introduction to working with lists (tutorial)
 
 *For Whom:* Beginner level
 
 *Time:*          20 minutes
 
+In this follow along tutorial we explore the basics of lists. We will look at how to use and combine lists to influence the size, location and color of objects.
+
 :::
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5yriSQdJFyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/5yriSQdJFyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/5yriSQdJFyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 You can download the final file of this tutorial here:
 
@@ -109,17 +118,14 @@ The data tree operations shown in the examples above using the Flatten, Graft, a
 
 ### 🖱️ 3.3.4 Exercise: Build a grid
 
-Build a grid of points in the XY plane. There are multiple ways to achieve this result, but try to use a **[Construct point]** component and work with lists. If you get stuck, you can check the solution below. 
+Try to build a grid of points in the XY plane. There are multiple ways to achieve this result, but try to use a **[Construct point]** component and work with lists. If you get stuck, you can check the solution below. 
 
 ![3.3.4a_PointGrid.png](3.3.4a_PointGrid.png)
 
 :::{dropdown} Possible solution
 
 
-
-
 ![3.3.4b_PointGridSolution.png](3.3.4b_PointGridSolution.png)
-
 
 
 :::
@@ -137,7 +143,7 @@ Build a grid of points in the XY plane. There are multiple ways to achieve this 
 
 :::
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LlXmjHG7LXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/LlXmjHG7LXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/LlXmjHG7LXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 **Download the final file here:**
 
@@ -153,7 +159,7 @@ Build a grid of points in the XY plane. There are multiple ways to achieve this 
 
 💻 Create an attractor scene. The attractor should be a curve in Rhino, that in some way influences the landscape. Use a culling pattern and add some colour. 
 
-Check out the [Student showcase](../../Student%20showcase/Assignment%203/%21index.md) to see what other students made for this assignment.
+Check out the [Student showcase](https://www.notion.so/Assignment-3-b5cdddead2a944e381420a7da2e128c8?pvs=21) to see what other students made for this assignment.
 
 Try to keep your script concise and organized.
 

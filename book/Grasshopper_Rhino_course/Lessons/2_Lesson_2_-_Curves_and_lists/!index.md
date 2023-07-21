@@ -3,12 +3,16 @@
 :::{card}
 **Authors:** Your Name
 
-**Last Edited:** 2023-07-15
+**Last Edited:** 2023-07-21
 :::
 
 
 ```{tags} Curves, Lists
 ```
+
+Authors: Anne van den Dool, Niels van Silfhout
+
+Review: Ready for export
 
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
 
@@ -18,7 +22,7 @@
 
 📺 **Tutorial videos:** Follow-along tutorials.
 
-💡 **Tips:** Tips and tricks to make working in Rhino/Grasshopper easier.
+💡 T**ips:** Tips and tricks to make working in Rhino/Grasshopper easier.
 
 🖱️ **Exercises:** Small practice questions. The solution is provided.
 
@@ -26,7 +30,7 @@
 
 ## 👩‍🏫 2.1 Introduction (2 min)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_U0E-HZWIfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/_U0E-HZWIfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/_U0E-HZWIfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 ---
 
@@ -83,10 +87,7 @@ Use Grasshopper to create a plane parallel to the world YZ plane, with an origin
 :::{dropdown} Possible solution
 
 
-
-
 ![2.2.3a_PlaneSolution.png](2.2.3a_PlaneSolution.png)
-
 
 
 :::
@@ -148,15 +149,12 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 :::
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xEMRruaWmng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/xEMRruaWmng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/xEMRruaWmng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 :::{dropdown} **Download the final file here:**
 
 
-
-
 [Lesson 2 - Train tutorial.gh](Lesson_2_-_Train_tutorial.gh)
-
 
 
 :::
@@ -170,17 +168,21 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 ## 👩‍🏫🖱️ 2.4 Lists (30 min)
 
-:::{card} 
-📌 *What:*         Introduction to list data structures (video) + Building a list (exercise)
+:::{card}
+
+📌 *What:*         Introduction to list data structures (video)
+
+                  Building a list (exercise)
 
 *For Whom:* Beginner to intermediate level
 
 *Time:*          30 min (10 min video + 20 min exercise)
+
 :::
 
 ### 👩‍🏫2.4.1 Lists (10 min)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0Upvg2w25qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[<iframe width="560" height="315" src="https://www.youtube.com/embed/0Upvg2w25qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>](<iframe width="560" height="315" src="https://www.youtube.com/embed/0Upvg2w25qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 **Download the example file here:**
 
@@ -201,10 +203,7 @@ Build a strain of DNA. You can use the script provided here as a starting point.
 :::{dropdown} Solution
 
 
-
-
 ![2.4.2b_DNAStrainSolution.png](2.4.2b_DNAStrainSolution.png)
-
 
 
 :::
@@ -218,7 +217,7 @@ Build a strain of DNA. You can use the script provided here as a starting point.
 
 💻 Create a chain with alternating links. The curve should be imported from Rhino, the rest of the assignment is done in Grasshopper. You can use the grasshopper file below as a starting point. Take a few hours to see what you can create, but do not spend to much time on this assignment. 
 
-Check out the [Student showcase](../../Student%20showcase/Assignment%202/%21index.md) to see what other students made for this assignment.
+Check out the [Student showcase](https://www.notion.so/Assignment-2-51a87ff7c9e342da84f3a7b433cbb383?pvs=21) to see what other students made for this assignment.
 
 **Starting file:**
 

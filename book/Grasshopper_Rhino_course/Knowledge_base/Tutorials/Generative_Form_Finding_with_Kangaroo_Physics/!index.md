@@ -202,7 +202,7 @@ If you are new to Grasshopper Kangaroo physics simulation, it is recommended to 
 
 1. Simplify the geometry of the ear to speed up the simulation
 
-![Untitled](Untitled%201.png)
+![Untitled](../../../Lessons/5_Lesson_5_-_Meshes/cover.png)
 
 ![Untitled](Untitled%202.png)
 
