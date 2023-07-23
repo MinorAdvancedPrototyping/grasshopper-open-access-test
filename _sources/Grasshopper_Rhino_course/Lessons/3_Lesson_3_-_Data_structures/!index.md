@@ -1,13 +1,13 @@
 # Lesson 3 - Data structures
 
+```{tags} Data-structures, Lists
+```
+
 :::{card}
 **Authors:** Anne van den Dool, Niels van Silfhout, Jose Martinez Castro
 
 **Last Edited:** 2023-07-21
 :::
-
-```{tags} Data-structures, Lists
-```
 
 :::{card}
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
@@ -35,11 +35,11 @@
 
 :::{card}
 
-📌 *What:*        Introduction to working with lists (tutorial)
+📌 *What:*  Introduction to working with lists (tutorial)
 
 *For Whom:* Beginner level
 
-*Time:*          20 minutes
+*Time:* 20 minutes
 
 In this follow along tutorial we explore the basics of lists. We will look at how to use and combine lists to influence the size, location and color of objects.
 
@@ -47,9 +47,13 @@ In this follow along tutorial we explore the basics of lists. We will look at ho
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5yriSQdJFyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-You can download the final file of this tutorial here:
+---
+
+:::{dropdown} You can download the final file of this tutorial here:
 
 [Lesson 3 - Rainbow stacking rings.gh](Lesson_3_-_Rainbow_stacking_rings.gh)
+
+:::
 
 ---
 
@@ -57,11 +61,11 @@ You can download the final file of this tutorial here:
 
 :::{card}
 
-📌 *What:*         Working with lists (reading)
+📌 *What:* Working with lists (reading)
 
 *For Whom:* Intermediate level
 
-*Time:*          15 minutes
+*Time:* 15 minutes
 
 :::
 
@@ -87,7 +91,7 @@ Additionally, You can notice that the new connection wires between components ar
 
 ### 📑 3.3.3 Manipulating Data Trees
 
-To handle large amounts of data in Grasshopper, you will need to know how to manipulate data trees with basic functions such as flatten, graft, and simplify. First, let’s take a look using the [**Flatten Tree]** component on a data tree.
+To handle large amounts of data in Grasshopper, you will need to know how to manipulate data trees with basic functions such as flatten, graft, and simplify. First, let’s take a look using the **[Flatten Tree]** component on a data tree.
 
 #### Flatten Tree
 
@@ -121,30 +125,33 @@ Try to build a grid of points in the XY plane. There are multiple ways to achiev
 
 :::{dropdown} Possible solution
 
-
 ![3.3.4b_PointGridSolution.png](3.3.4b_PointGridSolution.png)
 
-
 :::
+
 ---
 
 ## 📺 3.4 Designing with grids (25 min)
 
 :::{card}
 
-📌 *What:*         Creating a brickwall pattern by using lists and grids (tutorial)
+📌 *What:*  Creating a brickwall pattern by using lists and grids (tutorial)
 
 *For Whom:* Intermediate level
 
-*Time:*          25 minutes
+*Time:*  25 minutes
 
 :::
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LlXmjHG7LXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Download the final file here:**
+---
+
+:::{dropdown} Download the final file here:
 
 [Lesson 3 - Brick wall.gh](Lesson_3_-_Brick_wall.gh)
+
+:::
 
 ---
 
@@ -156,10 +163,8 @@ Try to build a grid of points in the XY plane. There are multiple ways to achiev
 
 💻 Create an attractor scene. The attractor should be a curve in Rhino, that in some way influences the landscape. Use a culling pattern and add some colour. 
 
-Check out the [Student showcase](https://www.notion.so/Assignment-3-b5cdddead2a944e381420a7da2e128c8?pvs=21) to see what other students made for this assignment.
+Check out the [Student Showcase Assignment 3](../Student_showcase/Assignment_3/!index.md) to see what other students made for this assignment.
 
 Try to keep your script concise and organized.
 
 :::
-
----
