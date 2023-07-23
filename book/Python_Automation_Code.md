@@ -47,16 +47,17 @@ write_toc_to_file(toc, '_toctest.yml')
 
 ```
 
-
 # Making sphinx cards overview pages
 
 ```python
 import os
+import re
 from PIL import Image
 
 def create_sphinx_card(root_dir):
+    title = os.path.basename(root_dir).replace('_', ' ')
     with open(os.path.join(root_dir, '!index.md'), 'w') as index_file:
-        index_file.write(f"# {root_dir.split('/')[-1].replace('_', ' ')}\n\n")
+        index_file.write(f"# {title}\n\n")
         index_file.write(":::::{grid} 1 1 2 3\n")
         index_file.write(":class-container: text-center\n")
         index_file.write(":gutter: 3\n\n")
@@ -66,7 +67,21 @@ def create_sphinx_card(root_dir):
             if os.path.isdir(item_path):
                 print(f"Processing directory: {item}")
 
-                # check for existing cover image
+                # Extract the title from the markdown file
+                md_file_path = os.path.join(item_path, '!index.md')
+                if os.path.isfile(md_file_path):
+                    with open(md_file_path, 'r', encoding='utf-8') as md_file:  # specify the encoding
+                        md_content = md_file.read()
+                    # Search for the first Heading 1
+                    match = re.search(r'^#\s*(.*)$', md_content, re.MULTILINE)
+                    if match:
+                        card_title = match.group(1)
+                    else:
+                        card_title = item.replace('_', ' ')  # Use the folder name as the fallback title
+                else:
+                    continue  # Skip this folder if no markdown file is found
+
+                # Check for existing cover image
                 cover_image = None
                 for sub_item in sorted(os.listdir(item_path)):
                     if 'cover' in sub_item.lower() and sub_item.lower().endswith(('.png', '.jpg', '.jpeg')):
@@ -74,50 +89,46 @@ def create_sphinx_card(root_dir):
 
                 if cover_image:
                     # If cover image exists, open it, check aspect ratio and modify if necessary
-                    img = Image.open(os.path.join(item_path, cover_image))
+                    img = Image.open(os.path.join(item_path, cover_image)).convert('RGB')  # convert image to RGB mode
                     width, height = img.size
-                    if width != height:  # Check if the image has a 1:1 aspect ratio
-                        new_size = min(width, height)
-                        left = (width - new_size) / 2
-                        top = (height - new_size) / 2
-                        right = (width + new_size) / 2
-                        bottom = (height + new_size) / 2
-                        img = img.crop((left, top, right, bottom))
+                    aspect = width / height
+                    if aspect != 16/9:  # Check if the image has a 16:9 aspect ratio
+                        new_width = int(height * (16/9))
+                        left = (width - new_width) / 2
+                        right = (width + new_width) / 2
+                        img = img.crop((left, 0, right, height))
+                        cover_image = "cover_crop" + os.path.splitext(cover_image)[1]  # update cover_image variable
                         img.save(os.path.join(item_path, cover_image))
-                    image = cover_image
                 else:
                     # If no cover image exists, create one from the first image found
                     for sub_item in sorted(os.listdir(item_path)):
                         if sub_item.lower().endswith(('.png', '.jpg', '.jpeg')):
-                            img = Image.open(os.path.join(item_path, sub_item))
+                            img = Image.open(os.path.join(item_path, sub_item)).convert('RGB')  # convert image to RGB mode
                             width, height = img.size
-                            new_size = min(width, height)
-                            left = (width - new_size) / 2
-                            top = (height - new_size) / 2
-                            right = (width + new_size) / 2
-                            bottom = (height - new_size) / 2
-                            img = img.crop((left, top, right, bottom))
-                            image = "cover" + os.path.splitext(sub_item)[1]
-                            img.save(os.path.join(item_path, image))
+                            new_width = int(height * (16/9))
+                            left = (width - new_width) / 2
+                            right = (width + new_width) / 2
+                            img = img.crop((left, 0, right, height))
+                            cover_image = "cover_crop" + os.path.splitext(sub_item)[1]
+                            img.save(os.path.join(item_path, cover_image))
                             break
 
-                if image is not None:
+                if cover_image is not None:
                     index_file.write(":::{grid-item-card}\n")
                     index_file.write(f":link: {item}/!index\n")
                     index_file.write(":link-type: doc\n")
-                    index_file.write(f":img-top: {item}/{image}\n")
+                    index_file.write(f":img-top: {item}/{cover_image}\n")
                     index_file.write(":class-header: bg-light\n\n")
 
-                    index_file.write(f"{item.replace('_', ' ')}\n\n^^^\ninsert summary here\n\n")
+                    index_file.write(f"{card_title}\n\n^^^\ninsert summary here\n\n")
 
                     index_file.write(":::\n")
 
-root_dir = "/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Lessons"
+root_dir = r"C:\Users\Jose\Github\grasshopper-open-access-test\book\Grasshopper_Rhino_course\Lessons"
 create_sphinx_card(root_dir)
 
 
 ```
-
 
 # removes icons, parenthesis, and spaces also renames the markdown links
 
@@ -185,30 +196,26 @@ import os
 import re
 
 def replace_youtube_links(root_dir):
-    # Regex pattern to match YouTube URLs
-    pattern = r'(https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtu\.be/)([A-Za-z0-9_-]{10}[A-Za-z0-9_-]{1}))'
+    # Regex pattern to match YouTube URLs, both standalone and in markdown links
+    pattern = r'\[?(https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtu\.be/)([A-Za-z0-9_-]{10}[A-Za-z0-9_-]{1}))\]?(\(\1\))?'
     
     for dirpath, _, filenames in os.walk(root_dir):
         # Check only markdown files
-
         for filename in [f for f in filenames if f.endswith(".md")]:
             file_path = os.path.join(dirpath, filename)
-            with open(file_path, 'r+') as f:
+            with open(file_path, 'r+', encoding='utf-8') as f:
                 content = f.read()
 
                 # Find YouTube URLs and replace with iframe embed link
-
                 content_new = re.sub(pattern, r'<iframe width="560" height="315" src="https://www.youtube.com/embed/\2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', content)
 
                 # If content has changed, write it back to the file
-
                 if content != content_new:
                     f.seek(0)
                     f.write(content_new)
                     f.truncate()
 
-root_dir = "/Users/localadmin/GitHub/grasshopper-open-access-test/book/Grasshopper_Rhino_course/Lessons"
-
+root_dir = r"C:\Users\Jose\Github\grasshopper-open-access-test\book\test"
 replace_youtube_links(root_dir)
 
 ```

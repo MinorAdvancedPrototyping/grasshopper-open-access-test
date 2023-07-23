@@ -21,7 +21,7 @@
   "csPath": "dotnet-script",
   "csArgs": "",
   "csInject": "",
-  "pythonPath": "/Users/localadmin/anaconda3/bin/python",
+  "pythonPath": "c:/Users/Jose/anaconda3/python.exe",
   "pythonArgs": "",
   "pythonEmbedPlots": false,
   "pythonInject": "",
