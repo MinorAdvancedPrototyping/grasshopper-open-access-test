@@ -372,7 +372,7 @@ As projects get more complex, it is important to keep your Grasshopper script or
 
 💻 Create a creature using Rhino curves, which you import into Grasshopper. It does not have to be an insect, you can create any animal you like. Take a few hours to see what you can create, but do not spend to much time on this assignment. 
 
-Check out the [Student Showcase](../Student_showcase/!index.md) to see what other students made for this assignment.
+Check out the [Student Showcase Assignment 1](../Student_showcase/Assignment_1/!index.md)to see what other students made for this assignment.
 
 :::
 
@@ -383,5 +383,3 @@ Check out the [Student Showcase](../Student_showcase/!index.md) to see what othe
 ![1.5b_ExportImageTip.png](1.5b_ExportImageTip.png)
 
 :::
-
----

@@ -1,13 +1,13 @@
 # Lesson 4 - Surfaces
 
+```{tags} Patterns, Surfaces
+```
+
 :::{card}
 **Authors:** Anne van den Dool, Niels van Silfhout, Jose Martinez Castro
 
 **Last Edited:** 2023-07-21
 :::
-
-```{tags} Patterns, Surfaces
-```
 
 :::{card}
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
@@ -33,11 +33,11 @@
 
 :::{card}
 
-📌 *What:*         Explanation of surface geometry (reading)
+📌 *What:* Explanation of surface geometry (reading)
 
 *For Whom:* Beginners in Rhino/Grasshopper
 
-*Time:*          10 minutes
+*Time:* 10 minutes
 
 :::
 

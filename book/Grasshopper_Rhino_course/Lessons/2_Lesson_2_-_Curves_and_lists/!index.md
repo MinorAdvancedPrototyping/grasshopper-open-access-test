@@ -1,4 +1,5 @@
 # Lesson 2 - Curves and lists
+
 ```{tags} Curves, Lists
 ```
 
@@ -9,6 +10,7 @@
 :::
 
 :::{card}
+
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
 
 📑 **Explanation text:** Written explanations with supporting images.
@@ -48,11 +50,11 @@ In this section you will work with points, planes, curves and their anatomy. Poi
 
 A point is the most basic form of geometry. Both in Rhino and in Grasshopper, points are described by {x,y,z} coordinates. 
 
-🖱️ In Rhino, you can create a point by selecting it from the toolbar, or by typing [**point]** in the command line. You can then select the location of the point, or type in the exact coordinates. A point is displayed as a white dot. 
+🖱️ In Rhino, you can create a point by selecting it from the toolbar, or by typing [**point**] in the command line. You can then select the location of the point, or type in the exact coordinates. A point is displayed as a white dot. 
 
 🖱️ In Grasshopper there are multiple ways you could create a point. You could reference a point in Rhino with a [**point**] component, or you could use a [**Construct Point**] component to specify the coordinates with number sliders. A point is displayed as a small x. 
 
-To move anything in Rhino, you can simply select it and use the Gumball. To move geometry to a new location in Grasshopper, you first need to create a vector. A vector describes the direction and the amount (amplitude) of the movement. Similar to points, vectors consists of an x, y and z value. There a multiple ways to create a vector in Grasshopper, for example with the [**Vector XYZ]** component. Vectors are not visualized in the Rhino viewport by default, but you can add a [**Vector display**] component to visualize them, as shown in the image below. 
+To move anything in Rhino, you can simply select it and use the Gumball. To move geometry to a new location in Grasshopper, you first need to create a vector. A vector describes the direction and the amount (amplitude) of the movement. Similar to points, vectors consists of an x, y and z value. There a multiple ways to create a vector in Grasshopper, for example with the [**Vector XYZ**] component. Vectors are not visualized in the Rhino viewport by default, but you can add a [**Vector display**] component to visualize them, as shown in the image below. 
 
 ![2.2.1a_VectorDisplay.png](2.2.1a_VectorDisplay.png)
 
@@ -76,7 +78,7 @@ Planes are very useful to position objects in Grasshopper. A plane in Grasshoppe
 
 ![2.2.2a_ConstructPlane.png](2.2.2a_ConstructPlane.png)
 
-### 🖱️ 2.2.3 **Exercise (5 min)**
+### 🖱️ 2.2.3 Exercise (5 min)
 
 Use Grasshopper to create a plane parallel to the world YZ plane, with an origin point that is located at 5mm in the z direction, 4mm in the x direction and 1mm in the y direction.
 
@@ -87,6 +89,7 @@ Use Grasshopper to create a plane parallel to the world YZ plane, with an origin
 
 
 :::
+
 ### 📑 2.2.4 Curves (6 min)
 
 A curve is a path between two or more points. You can extract a lot of useful information from just this simple geometry.
@@ -95,15 +98,15 @@ Say we have six points in Rhino and we connect them with straight lines. This is
 
 ![2.2.4a_PolylineRhino.gif](2.2.4a_PolylineRhino.gif)
 
-This polyline has a start and an end point, which you can find with the [**CrvStart]** and [**CrvEnd]** commands in Rhino, or with the [**Endpoints**] component in Grasshopper. 
+This polyline has a start and an end point, which you can find with the [**CrvStart**] and [**CrvEnd**] commands in Rhino, or with the [**Endpoints**] component in Grasshopper. 
 
 ![2.2.4b_Endpoints.png](2.2.4b_Endpoints.png)
 
-A curve also has a direction, moving through the curve from the start to the end point. You can visualize and change the direction of a curve in Rhino with the [**Dir**] ****command. When you select the curve you see the direction moves from start to end, but the angle is different in each section of the polyline. 
+A curve also has a direction, moving through the curve from the start to the end point. You can visualize and change the direction of a curve in Rhino with the [**Dir**] command. When you select the curve you see the direction moves from start to end, but the angle is different in each section of the polyline. 
 
 ![2.2.4c_CurveDirection.png](2.2.4c_CurveDirection.png)
 
-Instead of a polyline with straight segments, we could also use the same points to create a curve with bends. For example with the [**Curve**] ****command. Notice that you can set the curvature **degree** in the command line. In the example below, the degree was set to 3.
+Instead of a polyline with straight segments, we could also use the same points to create a curve with bends. For example with the [**Curve**] command. Notice that you can set the curvature **degree** in the command line. In the example below, the degree was set to 3.
 
 🖱️Create a couple of curves in Rhino with different curvature degrees to see its effect.
 
@@ -119,7 +122,7 @@ The degree of a curve is a whole number, usually between 1 and 5.  A line or pol
 
 **Control points**
 
-The control points are a list of at least the degree+1 points. You can use the control points to manipulate the shape of the curve. To switch on control points, press **F10** or use the [**PointsOn**] ****command in Rhino. You will also see them when you select a curve. 
+The control points are a list of at least the degree+1 points. You can use the control points to manipulate the shape of the curve. To switch on control points, press **F10** or use the [**PointsOn**] command in Rhino. You will also see them when you select a curve. 
 
 **Closed / open curves**
 
@@ -127,7 +130,7 @@ A curve with a start and end point is called an open curve. If the start and end
 
 **Polycurves**
 
-Just like you can combine straight lines into a polyline, you can [**join**] curves into a polycurve. A polycurve is made up out of segments, which you can separate again by using the [**Explode**] **command. In the example below, two curves are created with the [**Control Point Curve**] command, using **Osnap**** to align them to the points.  
+Just like you can combine straight lines into a polyline, you can [**join**] curves into a polycurve. A polycurve is made up out of segments, which you can separate again by using the [**Explode**] command. In the example below, two curves are created with the [**Control Point Curve**] command, using **Osnap** to align them to the points.  
 
 ![2.2.4f_Polycurve.gif](2.2.4f_Polycurve.gif)
 
@@ -147,13 +150,14 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xEMRruaWmng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-:::{dropdown} **Download the final file here:**
+---
 
+:::{dropdown} Download the final file here:
 
 [Lesson 2 - Train tutorial.gh](Lesson_2_-_Train_tutorial.gh)
 
-
 :::
+
 :::{card}
 
 💡 **Tip**: In this Grasshopper file, the points that were selected in Rhino are internalized into the Grasshopper script. This way you can open this Grasshopper script without having to re-link the points in Rhino. You can internalize data by right clicking on the component that is linked to Rhino and selecting “internalise data”.
@@ -166,13 +170,11 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 :::{card}
 
-📌 *What:*         Introduction to list data structures (video)
-
-                  Building a list (exercise)
+📌 *What:* Introduction to list data structures (video), Building a list (exercise)
 
 *For Whom:* Beginner to intermediate level
 
-*Time:*          30 min (10 min video + 20 min exercise)
+*Time:*  30 min (10 min video + 20 min exercise)
 
 :::
 
@@ -180,15 +182,21 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0Upvg2w25qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Download the example file here:**
+---
+
+:::{dropdown} Download the example file here:
 
 [Lesson 2 -Wheel.gh](Lesson_2_-Wheel.gh)
 
-**Slides:**
+:::
+
+:::{dropdown} Slides
 
 [Lesson 2 video slideshow.pdf](Lesson_2_video_slideshow.pdf)
 
-### 🖱️2.4.2 **Exercise: building a DNA strain (20 min)**
+:::
+
+### 🖱️2.4.2 Exercise: building a DNA strain (20 min)
 
 Build a strain of DNA. You can use the script provided here as a starting point.
 
@@ -213,12 +221,10 @@ Build a strain of DNA. You can use the script provided here as a starting point.
 
 💻 Create a chain with alternating links. The curve should be imported from Rhino, the rest of the assignment is done in Grasshopper. You can use the grasshopper file below as a starting point. Take a few hours to see what you can create, but do not spend to much time on this assignment. 
 
-Check out the [Student showcase](https://www.notion.so/Assignment-2-51a87ff7c9e342da84f3a7b433cbb383?pvs=21) to see what other students made for this assignment.
+Check out the [Student Showcase Assignment 2](../Student_showcase/Assignment_2/!index.md) to see what other students made for this assignment.
 
-**Starting file:**
+:::{dropdown} Starting File
 
 [Lesson 2 - assignment starting file.gh](Lesson_2_-_assignment_starting_file.gh)
 
 :::
-
----

@@ -51,11 +51,21 @@
       "name": "Emoji Toolbar: Open emoji picker",
       "hotkeys": [],
       "icon": "remix-EmotionFill"
+    },
+    {
+      "id": "quickadd:choice:9f16c6a3-4dd4-4fc2-b9a3-14af3ad53c9c",
+      "name": "QuickAdd: Add Dropdown",
+      "icon": "down-chevron-glyph"
+    },
+    {
+      "id": "quickadd:choice:2bfb4989-ff84-4c53-ae6f-950809979f87",
+      "name": "QuickAdd: Add Card Block",
+      "icon": "feather-credit-card"
     }
   ],
   "appendMethod": "workspace",
   "shouldShowMenuOnSelect": false,
   "cMenuVisibility": true,
   "cMenuBottomValue": 4.25,
-  "cMenuNumRows": 10
+  "cMenuNumRows": 12
 }
