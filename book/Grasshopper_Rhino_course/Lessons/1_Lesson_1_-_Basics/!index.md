@@ -97,7 +97,7 @@ In this part we will look at the basic controls and interface of Grasshopper. Th
 
 To open Grasshopper:
 
-🖱️Click the ****[Launch Grasshopper]** button as shown **below
+🖱️Click the **[Launch Grasshopper]** button as shown below
 
 **OR**
 
@@ -131,9 +131,9 @@ Every component has inputs and outputs. Inputs are on the left side of a block, 
 
 :::
 
-#### **Placing and connecting components**
+#### Placing and connecting components
 
-To place a component, either 🖱️drag from the toolbar **or 🖱️double click the workspace to search by name. 
+To place a component, either 🖱️drag from the toolbar or 🖱️double click the workspace to search by name. 
 
 ![1.2.2e_DragingComponents.gif](1.2.2e_DragingComponents.gif)
 
@@ -145,11 +145,11 @@ To place a component, either 🖱️drag from the toolbar **or 🖱️double cli
 
 :::
 
-To connect components, simply 🖱️drag from an output of one component, to the input of the next. **To undo a connection, 🖱️hold CTRL (or Command on Mac) and drag from the output to the input.
+To connect components, simply 🖱️drag from an output of one component, to the input of the next. To undo a connection, 🖱️hold CTRL (or Command on Mac) and drag from the output to the input.
 
 ![1.2.2g_ConnectingComponents.gif](1.2.2g_ConnectingComponents.gif)
 
-#### **Inputting and Outputting Data**
+#### Inputting and Outputting Data
 
 When hovering your cursor over an input/output a tool-tip pops up. These tool-tips can help determine what needs to be connected where. Reading out the outputs can help verify the expected outcome and check for errors.
 
@@ -171,15 +171,15 @@ By double clicking the slider, a popup appears with settings. Here you can chang
 
 You can also use Rhino geometry as an input in Grasshopper. For example if you wanted use a curve as input: 
 
-🖱️Draw a curve in Rhino, for example by selecting **[Control Points Curve]** from the toolbar on the left.
+🖱️ Draw a curve in Rhino, for example by selecting **[Control Points Curve]** from the toolbar on the left.
 
-*🖱️*Place a **[Curve]** component on the canvas in Grasshopper. You can do this by dragging it from the Params/Geometry toolbar or by double clicking on the canvas and searching for the **[Curve]** component. 
+*🖱️* Place a **[Curve]** component on the canvas in Grasshopper. You can do this by dragging it from the Params/Geometry toolbar or by double clicking on the canvas and searching for the **[Curve]** component. 
 
-*🖱️*Right click in the middle of the component and select **[set one curve].** ****
+*🖱️* Right click in the middle of the component and select **[set one curve].**
 
-A prompt appears in Rhino, asking you which Curve or Edge to reference*.* On windows this prompt will appear above the command line, in mac you will find it in the menu below the command line. 
+A prompt appears in Rhino, asking you which Curve or Edge to reference. On windows this prompt will appear above the command line, in mac you will find it in the menu below the command line. 
 
-🖱️Select the curve in Rhino by left clicking on it.
+🖱️ Select the curve in Rhino by left clicking on it.
 
 After selecting you curve, the curve component should turn green, indicating that it now contains geometry. 
 
@@ -305,14 +305,14 @@ In this exercise, you will learn how to construct basic geometry in Grasshopper.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/svhn73Yvww0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+---
+
 :::{dropdown} Solution
 
 
 ![1.3.3a_TeacupSolution.png](1.3.3a_TeacupSolution.png)
 
 :::
-
----
 
 ## 📑1.4 Best practice (5 min)
 
@@ -378,7 +378,7 @@ Check out the [Student Showcase Assignment 1](../Student_showcase/Assignment_1/!
 
 :::{card}
 
-💡 **Tip**: Use the [Export Hi-Res Image] option in the file menu to create a detailed screenshot of your entire script.
+💡 **Tip**: Use the **[Export Hi-Res Image]** option in the file menu to create a detailed screenshot of your entire script.
 
 ![1.5b_ExportImageTip.png](1.5b_ExportImageTip.png)
 

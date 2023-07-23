@@ -13,9 +13,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md",
+                "file": "Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/!index.md",
                 "mode": "source",
-                "source": true
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "abf67526abd31a56",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Grasshopper_Rhino_course/Lessons/3_Lesson_3_-_Data_structures/!index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f0be510fd3a9b5f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -85,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md",
+                "file": "Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/!index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md",
+                "file": "Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/!index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md"
+                "file": "Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/!index.md"
               }
             }
           },
@@ -158,9 +182,18 @@
   },
   "active": "e6e7b5146b3ac284",
   "lastOpenFiles": [
-    "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
+    "Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_4/Assignment_4_-_3.png",
+    "Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_4/!index.md",
+    "Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_4/Assignment_4_-1.png",
+    "Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_4/Assignment_4_-_2.png",
+    "Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_3/!index.md",
+    "Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md",
     "Grasshopper_Rhino_course/Lessons/3_Lesson_3_-_Data_structures/!index.md",
+    "Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_2/!index.md",
     "Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md",
+    "Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_1/!index.md",
+    "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
+    "Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/!index.md",
     "_build/html/index.html",
     "_build/html/objects.inv",
     "_build/html/searchindex.js",
@@ -171,16 +204,13 @@
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2",
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.ttf",
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2",
-    "_build/html/_static/images/logo_deepnote.svg",
-    "_build/html/_static/images/logo_jupyterhub.svg",
     "_build/html/_static/images/logo_binder.svg",
+    "_build/html/_static/images/logo_jupyterhub.svg",
+    "_build/html/_static/images/logo_deepnote.svg",
     "_build/html/_static/images/logo_colab.png",
     "_build/html/_static/TUDelft_logo_cmyk.png",
     "_build/html/_static/plus.png",
     "_build/html/_static/minus.png",
-    "_build/html/_static/file.png",
-    "_build/html/_static/copy-button.svg",
-    "_build/html/_static/check-solid.svg",
     "_build/html/_sources/_tags/tagsindex.md",
     "_build/html/_sources/_tags/personalized.md",
     "_build/html/_sources/_tags/data-driven.md",
@@ -196,13 +226,6 @@
     "_build/html/_sources/_tags/Advanced-Manufacturing.md",
     "_build/html/_sources/_tags/3d-scans.md",
     "_build/html/_sources/_tags/3D-Printing.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/intro.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_4/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_3/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_2/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_1/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md"
+    "_build/html/_sources/Grasshopper_Rhino_course/intro.md"
   ]
 }

@@ -72,7 +72,7 @@ Planes are very useful to position objects in Grasshopper. A plane in Grasshoppe
 
 :::{card}
 
-💡 **Tip**: After you add a [**panel**] component, you can double click it to add content or edit the content. To make sure the content is read as data instead of text, right click the panel and click on **“**Multiline Data”. More on this in paragraph 2.4.
+💡 **Tip**: After you add a [**panel**] component, you can double click it to add content or edit the content. To make sure the content is read as data instead of text, right click the panel and click on **“Multiline Data”**. More on this in paragraph 2.4.
 
 :::
 
@@ -114,21 +114,21 @@ Instead of a polyline with straight segments, we could also use the same points 
 
 The type of curve that Rhino uses is called a NURBS curve. This stands for Non-Uniform Rational B-Splines. To work with NURBS curves, you need to understand two properties that define these curves: curvature degree and control points.
 
-**Degree**
+#### Degree
 
 The degree of a curve is a whole number, usually between 1 and 5.  A line or polyline is a first degree curve. The degree of the curve determines the range of influence the control points have on a curve; where the higher the degree, the larger the range. This means that in a first degree curve, the direction of the curve is determined by the starting point and the first point. In a second degree curve, the direction is determined by the start, the first and the second point. In a third degree curve, the direction is determined by the start, the first, second and third point. And so on. The curvature degree can never be lower than the number of control points, this will result in an error. To change the curvature degree after creating a curve, use the [**Rebuild**] command. 
 
 ![2.2.4e_DegreeCurves.png](2.2.4e_DegreeCurves.png)
 
-**Control points**
+#### Control points
 
 The control points are a list of at least the degree+1 points. You can use the control points to manipulate the shape of the curve. To switch on control points, press **F10** or use the [**PointsOn**] command in Rhino. You will also see them when you select a curve. 
 
-**Closed / open curves**
+#### Closed / open curves
 
 A curve with a start and end point is called an open curve. If the start and end are the same point, we call this a closed curve (Rhino) or a periodic curve (Grasshopper). For example, circles and ellipses are closed curves. The start point on a closed curve is called the **seam point**. 
 
-**Polycurves**
+#### Polycurves
 
 Just like you can combine straight lines into a polyline, you can [**join**] curves into a polycurve. A polycurve is made up out of segments, which you can separate again by using the [**Explode**] command. In the example below, two curves are created with the [**Control Point Curve**] command, using **Osnap** to align them to the points.  
 
@@ -164,8 +164,6 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 :::
 
----
-
 ## 👩‍🏫🖱️ 2.4 Lists (30 min)
 
 :::{card}
@@ -198,9 +196,11 @@ Just like you can combine straight lines into a polyline, you can [**join**] cur
 
 ### 🖱️2.4.2 Exercise: building a DNA strain (20 min)
 
-Build a strain of DNA. You can use the script provided here as a starting point.
+:::{dropdown} Build a strain of DNA. You can use the script provided here as a starting point.
 
 [Lesson 2 - DNA strain starting file.gh](Lesson_2_-_DNA_strain_starting_file.gh)
+
+:::
 
 ![2.4.2a_DNAStrain.png](2.4.2a_DNAStrain.png)
 
@@ -209,8 +209,8 @@ Build a strain of DNA. You can use the script provided here as a starting point.
 
 ![2.4.2b_DNAStrainSolution.png](2.4.2b_DNAStrainSolution.png)
 
-
 :::
+
 ---
 
 ## 💻 2.5 Assignment (max 2 hours)
@@ -223,7 +223,7 @@ Build a strain of DNA. You can use the script provided here as a starting point.
 
 Check out the [Student Showcase Assignment 2](../Student_showcase/Assignment_2/!index.md) to see what other students made for this assignment.
 
-:::{dropdown} Starting File
+:::{dropdown} Download the starting file here:
 
 [Lesson 2 - assignment starting file.gh](Lesson_2_-_assignment_starting_file.gh)
 

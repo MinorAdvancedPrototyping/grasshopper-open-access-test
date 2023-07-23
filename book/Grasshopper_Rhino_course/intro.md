@@ -1,5 +1,7 @@
 # Open Access Rhino Grasshopper Course for Industrial Design Students
 
+---
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RP5PBbT4B1k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -37,9 +39,15 @@ The lessons are built up with the following components:
 These lessons were developed as part of the Industrial Design Engineering curriculum, at the TU Delft, for the following courses:
 
 :::{card}
+
 **Prototyping with/for digital fabrication (IO3850), part of the Minor Advanced Prototyping**
 
+:::
+
+:::{card}
+
 **Computational Design for Digital Fabrication, elective of Industrial Design Engineering, TU Delft**
+
 :::
 
 These lessons were created using Rhino 7, Grasshopper build 1.0.0007 and higher.

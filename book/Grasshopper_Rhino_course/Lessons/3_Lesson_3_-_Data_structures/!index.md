@@ -41,9 +41,9 @@
 
 *Time:* 20 minutes
 
-In this follow along tutorial we explore the basics of lists. We will look at how to use and combine lists to influence the size, location and color of objects.
-
 :::
+
+In this follow along tutorial we explore the basics of lists. We will look at how to use and combine lists to influence the size, location and color of objects.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5yriSQdJFyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -55,9 +55,7 @@ In this follow along tutorial we explore the basics of lists. We will look at ho
 
 :::
 
----
-
-## 📑 3.3 Datatrees and Grids (20 min)
+## 📑 3.3 Data Trees and Grids (20 min)
 
 :::{card}
 
@@ -152,8 +150,6 @@ Try to build a grid of points in the XY plane. There are multiple ways to achiev
 [Lesson 3 - Brick wall.gh](Lesson_3_-_Brick_wall.gh)
 
 :::
-
----
 
 ## 💻 3.5 Assignment (max 3 hours)
 

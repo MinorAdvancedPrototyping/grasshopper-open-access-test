@@ -1,20 +1,18 @@
 # Lesson 5 - Meshes
 
-:::{card}
-**Authors:** Your Name
-
-**Last Edited:** 2023-07-21
-:::
-
+```{tags} Meshes
+```
 
 :::{card}
 
-**Authors:** Your Name
+**Authors:** Anne van den Dool, Niels van Silfhout
 
 **Last Edited:** 2023-07-15
 
 :::
 
+
+:::{card}
 
 📌 **Outlines:** A short description of what you can expect in the upcoming section.
 
@@ -29,6 +27,8 @@
 🖱️ **Exercises:** Small practice questions. The solution is provided.
 
 💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
+
+:::
 
 ### 👩‍🏫 5.1 Introduction (x min)
 
