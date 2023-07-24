@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python_Automation_Code.md",
-                "mode": "preview",
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python_Automation_Code.md",
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python_Automation_Code.md",
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python_Automation_Code.md"
+                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md"
               }
             }
           },
@@ -170,8 +170,8 @@
   },
   "active": "e6e7b5146b3ac284",
   "lastOpenFiles": [
-    "test/test.md",
     "Python_Automation_Code.md",
+    "test/test.md",
     "Grasshopper_Rhino_course/Lessons/3_Lesson_3_-_Data_structures/cover_crop.jpg",
     "_build/html/index.html",
     "_build/html/objects.inv",
