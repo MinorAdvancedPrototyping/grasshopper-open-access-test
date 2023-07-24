@@ -275,13 +275,15 @@ Here we will show one possible approach:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TOz-LE0H104" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+---
+
 :::{dropdown} Recap
 
 [1 Basic geometry.pdf](1_Basic_geometry.pdf)
 
 :::
 
-### 📺1.3.2 **Tutorial - Modelling a teapot in Rhino (20 min)**
+### 📺1.3.2 Tutorial - Modelling a teapot in Rhino (20 min)
 
 In this tutorial, you will learn how to construct basic geometry in Rhino. Watch the video below and follow along. 
 
@@ -293,7 +295,7 @@ In this tutorial, you will learn how to construct basic geometry in Rhino. Watch
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/38Xfl50o2A8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### 📺1.3.3 **Tutorial - Modelling teacups in Grasshopper (20 min)**
+### 📺1.3.3 Tutorial - Modelling teacups in Grasshopper (20 min)
 
 In this exercise, you will learn how to construct basic geometry in Grasshopper. Watch the video below and follow along. If you get stuck, you can check out the full solution below. 
 
