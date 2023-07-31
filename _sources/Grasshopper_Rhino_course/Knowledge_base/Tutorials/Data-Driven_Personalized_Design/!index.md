@@ -1,34 +1,13 @@
 # Data-Driven Personalized Design
 
 :::{card}
-**Authors:** Your Name
+**Authors:** Jose Martinez Castro, Wolf Song
 
 **Last Edited:** 2023-07-15
 :::
 
-
-Created: February 24, 2023 12:14 PM
-
 ```{tags} 3d-scans, data-driven, personalized
 ```
-
-Categories: Lesson
-
-Review: Ready for Review
-
-📌 **Outlines:** A short description of what you can expect in the upcoming section.
-
-📑 **Explanation text:** Written explanations with supporting images.
-
-👩‍🏫 **Explanation videos:** Explaining the course material in short lecture videos.
-
-📺 **Tutorial videos:** Follow-along tutorials.
-
-💡 T**ips:** Tips and tricks to make working in Rhino/Grasshopper easier.
-
-🖱️ **Exercises:** Small practice questions. The solution is provided.
-
-💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
 
 This tutorial focuses on data-driven design using Rhino Grasshopper for ergonomic design. The tutorial covers collecting data for ergonomic design, analyzing ergonomic data with Rhino Grasshopper using data to inform design, and additional reading on lattice structures and meta-materials. The tutorial includes a case study on designing a shoe sole based on pressure data collected from a user's foot standing on pressure sensors. It includes step-by-step instructions, Grasshopper scripts, and images to illustrate the concepts covered in the tutorial.
 
@@ -38,7 +17,7 @@ This tutorial focuses on data-driven design using Rhino Grasshopper for ergonomi
 
 [https://www.core77.com/posts/71778/MakerBot-Design-Series-The-Running-Shoe](https://www.core77.com/posts/71778/MakerBot-Design-Series-The-Running-Shoe)
 
-By understanding how users interact with a product and where they experience pain or discomfort, designers can create products tailored to their users' needs and preferences [Design for Personalized Fit](../Design%20for%20Personalized%20Fit/%21index.md), we explored how we can create the basis for our product geometry from the user’s 3D scanned data to ensure a personalized fit. In this lesson, we will explore how we can expand on personalized products by adding additional functionality and ergonomic comfort to the design.
+By understanding how users interact with a product and where they experience pain or discomfort, designers can create products tailored to their users' needs and preferences [Design for Personalized Fit](../Design_for_Personalized_Fit/!index.md) , we explored how we can create the basis for our product geometry from the user’s 3D scanned data to ensure a personalized fit. In this lesson, we will explore how we can expand on personalized products by adding additional functionality and ergonomic comfort to the design.
 
 In this tutorial, we'll explore how designers can collect data to inform their design and provide examples of how Rhino Grasshopper can be used to create parametric designs that respond to the collected data to improve comfort for the end user
 
@@ -76,11 +55,13 @@ Case study of using foot pressure data to drive the design of a shoe sole
 
 💡 To follow along with this tutorial, make sure to download the following grasshopper script and CSV file containing the foot pressure data:
 
-:::
 
-[Data-Driven Design_ShoeSole.gh](Data-Driven_Design_ShoeSole.gh)
+
+![Data Driven Design - Shoe Sole Example](Data-Driven_Design_ShoeSole.gh)
 
 [FootPressure_Data.csv](FootPressure_Data.csv)
+
+:::
 
 ## 4. Analyzing Data with Grasshopper
 
@@ -170,23 +151,37 @@ Once we have the shape of the sole, we can use Rhino Grasshopper to loft a surfa
 
 ### 5.2 Variable Density Grid
 
-:::{card}
+Another way to use pressure data to inform the design process is to create a variable density grid. This can be done using Grasshopper to create a rectangular grid that responds to the pressure data. Here, we will show a simple example using rectangular grids. The grid can then be used to provide additional support in high-pressure areas by locally increasing the local thickness of the grid while maintaining a lower thickness in low-pressure areas to allow for flexibility and a lightweight design.
 
-💡 This section requires the Lunchbox plugin for use of the **Grid Structure** component which can be found here (it can still be installed on Mac): [https://www.food4rhino.com/en/app/lunchbox](https://www.food4rhino.com/en/app/lunchbox)
+![Generate Rectangular Cells](Generate_rectangular_cells_density.png)
 
-:::
+The concept to generate the variable density grid is similar to the attractor concept discussed in [Lesson 3 - Data Structures](../../../Lessons/3_Lesson_3_-_Data_structures/!index.md). Here we take the remapped pressure values and we use the **Graph Mapper** to map the values to the respective number of rectangular cells per pressure point. Next, we will add the Rectangular Grid component. For the Plane input, we will use the the points of the grid structure before creating the Convex Hull sole shape (we will project the cells back to the sole surface later on). For the Extent input, we will use the Graph Mapper values to determine the number of rectangular cells. For the Size input, we must make sure to make the size in relation to the number of cells to avoid overlapping rectangles by dividing a constant size value by the cell number. We will finish by adding the Offset Curve component to create an inner offset to the cells and add some thickness to each of the cells. The resulting Rectangular Cells are shown in the image below. 
 
-Another way to use pressure data to inform the design process is to create a variable density grid. This can be done using Grasshopper to create a rectangular grid that responds to the pressure data. The grid can then be used to provide additional support in high-pressure areas by locally increasing the density of the grid while maintaining a lower density in low-pressure areas to allow for flexibility and a lightweight design.
+![rectangular_cells_foot](rectangular_cells_foot.png)
 
-![rectangle_grid_script.png](rectangle_grid_script.png)
+#### 5.2.1 Projecting Grid on Sole Surface
+![projecting_grid](projecting_grid.png)
 
-The concept to generate the variable density grid is similar to the attractor concept discussed in [Lesson 3 - Data structures](../../Lessons/3%EF%B8%8F%E2%83%A3%20Lesson%203%20-%20Data%20structures/%21index.md). Here we take the remapped pressure values and we use the **Graph Mapper** to map the values from 1 to 3. Next, we use the **Grid Structure** component from the **Lunchbox Plugin** which takes an input surface (here we use the **Rectangle Grid** cells) and the U and V inputs determines the density of the grid per rectangle cell (therefore we use the remapped values from 0 to 1 here). Next we project the grid structure generate onto the molded shoe sole top surface. Finally, we add thickness to the grid by using the **MultiPipe** component. 
+Next we will project the rectangular cells created above onto a FLAT shape of the sole (Convex Hull). As we will see in the next section, we will first extrude a flat sole with the variable density grid, and later use the shape of the sole with depth to make a cut onto the sole. This is done to make the process easier as projecting the grid onto a complex surface initially does not yield the correct results. 
 
-![shoe_sole_pipe.png](shoe_sole_pipe.png)
+![projecting_grid_sole](projecting_grid_sole.png)
 
-To close off the shoe sole, we can apply a **Pipe** component to the outline curve to create a thicker outline to the shoe sole.
+After projecting the grid onto the sole surface, we will create a boundary surface between the outer edge of the sole and the grid. Finally, we can extrude the modified sole in the Z-direction to give the sole some thickness.
 
-![shole_sole_outline.png](shole_sole_outline.png)
+![boundary_surface_sole](boundary_surface_sole.png)
+![grid_sole_extrude](grid_sole_extrude.png)
+
+#### 5.2.4 Adding Depth to the Final Sole
+![](cutting_solid_gh.png)
+
+The final step is to use the mould of the foot created from the pressure data to add depth to the top of the shoe sole with the variable grid. We will do this by performing a Solid Difference operation. We will create a solid surface of the moulded foot on a rectangle and extrude it to the desire thickness for cutting the sole. We then use the Solid Difference component to cut the shoe sole by the moulded foot surface.
+
+![depth mould](depth_mould.png)
+![depth mould side](depth_mould_side.png)
+
+The final result is a custom shoe sole adapted to the user's foot that includes a variable density grid and custom moulded top surface based on the user's pressure data.
+
+![final_custom_sole](final_custom_sole.png)
 
 ## 6. Extra Reading
 
@@ -220,67 +215,3 @@ Additionally, you can take a look at the following graduation projects which exp
 
 ## Relevant Projects
 
-[Untitled Database](Untitled%20Database.csv)
-
-## Draft
-
-## Outline
-
-1. Introduction
-
-:::{dropdown} Define data-driven design and explain its importance in the design process.
-
-
-:::
-:::{dropdown} Briefly introduce Rhino Grasshopper and its capabilities for data analysis and parametric design.
-
-
-:::
-2. Collecting Data for Ergonomic Design
-
-:::{dropdown} Discuss the importance of collecting user data for ergonomic design.
-
-
-:::
-:::{dropdown} Outline various methods for collecting ergonomic data
-
-
-:::
-3. Analyzing Ergonomic Data with Rhino Grasshopper
-
-:::{dropdown} Explain how Rhino Grasshopper can be used to analyze and visualize ergonomic data, such as heat maps and pressure maps.
-
-
-:::
-:::{dropdown} Provide examples of Grasshopper plugins that can assist with data analysis, such as Ladybug Tools for environmental analysis and Kangaroo for physics simulations.
-
-
-:::
-4. Using Data to Inform Design
-
-:::{dropdown} Describe how ergonomic data can be used to inform the design process.
-
-
-:::
-:::{dropdown} Provide examples of how Rhino Grasshopper can be used to generate parametric designs that respond to the collected data.
-
-
-:::
-:::{dropdown} Highlight the benefits of data-driven design, such as improved product performance, user satisfaction, and reduced manufacturing costs.
-
-
-:::
-5. Conclusion
-
-:::{dropdown} Summarize the key points of the blog post.
-
-
-:::
-:::{dropdown} Emphasize the importance of data-driven design in creating products that are tailored to user needs.
-
-
-:::
-:::{dropdown} Encourage readers to explore Rhino Grasshopper and its capabilities for data-driven design.
-
-
-:::
