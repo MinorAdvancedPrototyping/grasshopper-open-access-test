@@ -13,9 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/!index.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "fdc3c3d0a304a1d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Grasshopper_Rhino_course/intro.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "30865587867cf6c4",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/Generating_Rectangular_Cells.png"
               }
             }
           },
@@ -97,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/!index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/!index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md"
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/!index.md"
               }
             }
           },
@@ -170,9 +192,23 @@
   },
   "active": "e6e7b5146b3ac284",
   "lastOpenFiles": [
+    "Grasshopper_Rhino_course/intro.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/Data-Driven_Design_ShoeSole.gh",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/final_custom_sole.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/cutting_solid_gh.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/depth_mould_side.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/depth mould side view.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/depth_mould.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/grid_sole_extrude.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/boundary_surface_sole.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/projecting_grid_sole.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/projecting_grid.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/rectangular_cells_foot.png",
+    "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
     "Python_Automation_Code.md",
     "test/test.md",
-    "Grasshopper_Rhino_course/Lessons/3_Lesson_3_-_Data_structures/cover_crop.jpg",
     "_build/html/index.html",
     "_build/html/objects.inv",
     "_build/html/searchindex.js",
@@ -182,16 +218,6 @@
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.ttf",
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2",
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.ttf",
-    "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2",
-    "_build/html/_static/images/logo_jupyterhub.svg",
-    "_build/html/_static/images/logo_deepnote.svg",
-    "_build/html/_static/images/logo_colab.png",
-    "_build/html/_static/images/logo_binder.svg",
-    "_build/html/_static/TUDelft_logo_cmyk.png",
-    "_build/html/_static/plus.png",
-    "_build/html/_static/minus.png",
-    "_build/html/_static/file.png",
-    "_build/html/_static/copy-button.svg",
     "_build/html/_sources/_tags/tagsindex.md",
     "_build/html/_sources/_tags/personalized.md",
     "_build/html/_sources/_tags/data-driven.md",
@@ -211,10 +237,6 @@
     "_build/html/_sources/Grasshopper_Rhino_course/intro.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_4/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_3/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_2/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_1/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md"
+    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_2/!index.md"
   ]
 }
