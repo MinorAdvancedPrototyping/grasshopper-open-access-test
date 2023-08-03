@@ -3,7 +3,7 @@
 :::{card}
 **Authors:** Jose Martinez Castro, Wolf Song
 
-**Last Edited:** 2023-07-15
+**Last Edited:** 2023-08-03
 :::
 
 ```{tags} Form-Finding, Generative, Simulation
@@ -22,13 +22,13 @@ To set up a Kangaroo simulation in Grasshopper, the general steps are as follows
 
 1. Prepare the input geometry
 
-    1. We need to use meshes, where the resolution of the mesh defines the resolution of the simulation
+    a. We need to use meshes, where the resolution of the mesh defines the resolution of the simulation
 
 2. Decide on the physical constraints that will be applied to the system
 
-    1. Deciding which parts of the geometry will be fixed, which will be flexible, where the forces will be applied, etc
+    a. Deciding which parts of the geometry will be fixed, which will be flexible, where the forces will be applied, etc
 
-    2. Based on this, we need to isolate the different parts of the geometry such as the main mesh, edges of the mesh, points where the forces will applied, etc
+    b. Based on this, we need to isolate the different parts of the geometry such as the main mesh, edges of the mesh, points where the forces will applied, etc
 
 3. Apply Kangaroo Goals components to the parts of the geometry to assign the constraints
 
@@ -36,9 +36,9 @@ To set up a Kangaroo simulation in Grasshopper, the general steps are as follows
 
 5. Set up Kangaroo solver
 
-    1. Merge all the Goal components
+    a. Merge all the Goal components
 
-    2. Make sure to add reset and toggle on/off button add controls for simulation
+    b. Make sure to add reset and toggle on/off button add controls for simulation
 
 6. Run the simulation 
 
@@ -190,17 +190,24 @@ Explanation coming soon (Wolf)
 
 :::
 
-For more complicated 3D scan geometry, the approached mentioned above might not be sufficient to generate good results. In this cases, a more creative approach is necessary. Let's take for example, the geometry of an ear canal. in this scenario, we would like to create an earbud that is personalized for the user's 3D scan and perfectly fits the cavity of the ear canal.
+![earbud_kangaroo_physics](earbud_kangaroo_physics.png)
 
-One approach we can take is to use Grasshoppers Kangaroo physics simulation to generate the geometry of the earbud. It is important to note that the following approach is for advanced users, only works on Windows PC for now, and requires the following plugins:
+In [Design for Personalized Fit](../Design_for_Personalized_Fit/!index.md), we discussed various examples of how to generate personalized products using a variety of approaches, including working with 3D scanned geometry. Although unconventional, we can use Kangaroo Physics to generate such personalized geometry when dealing with complex 3D prints. Let's take for example, the geometry of an ear canal. In this scenario, we would like to create an earbud that is personalized for the user's 3D scan and perfectly fits the cavity of the ear canal. We have already shown in the original lesson how we can create a negative of the inner ear canal to obtain the perfect fit earbud. 
+
+Another approach we can take is to use Grasshoppers Kangaroo physics simulation to generate the geometry of the earbud instead. This involves a physics collision simulation where we fill the ear canal with small spheres that occupy the inside volume of the ear canal. By finding the overall volume taken up by the spheres in the ear canal, we can generate the perfect fit earbud for the 3D scan.
+
+It is important to note that the following approach is for advanced users, only works on Windows PC for now, and requires the following plugins:
+
+:::{card} Plugins to download:
 
 - [Weaverbird](https://www.giuliopiacentino.com/weaverbird/)
-- Lunchbox
-- Pufferfish
-- Dendro
+- [Lunchbox](https://www.food4rhino.com/en/app/lunchbox)
+- [Pufferfish](https://www.food4rhino.com/en/app/pufferfish)
+- [Dendro](https://www.food4rhino.com/en/app/dendro)
 
 :::
-If you are new to Grasshopper Kangaroo physics simulation, it is recommended to first read the lesson on (Insert link to Form Finding with Kangaroo Physics). This approach is as follows:
+
+A summary of the approach taken is shown below. For further details on the implementation, please take a look at the grasshopper script included:
 
 1. Simplify the geometry of the ear to speed up the simulation
 
@@ -208,20 +215,20 @@ If you are new to Grasshopper Kangaroo physics simulation, it is recommended to 
 
 ![ear_3d_simplified](ear_3d_simplified.png)
 
-1. Prepare a distribution of small spheres to collide with the ear canal and set up the simulation with Kangaroo
+2.  Prepare a distribution of small spheres to collide with the ear canal and set up the simulation with Kangaroo
 
 ![ear_small_spheres](ear_small_spheres.png)
 
-1. Run the simulation allowing the spheres to collide with the ear and fill up the ear canal cavity
+3. Run the simulation allowing the spheres to collide with the ear and fill up the ear canal cavity
 
 ![ear_run_simulation](ear_run_simulation.png)
 
 ![ear_simulation_finish](ear_simulation_finish.png)
 
-1. Create a volume from the collection of spheres and convert into a mesh
+4. Create a volume from the collection of spheres and convert into a mesh
 
 ![ear_volume_from_spheres](ear_volume_from_spheres.png)
 
 ![earbud_mesh](earbud_mesh.png)
 
-For more details on this implementation, refer to the example file provided: [Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](https://www.notion.so/Generating-a-Mesh-from-Ear-Canal-Cavity-Kangaroo-Physics-1de999d9cccc4b1796ea0c9507b4cba2?pvs=21). In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!
+In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!

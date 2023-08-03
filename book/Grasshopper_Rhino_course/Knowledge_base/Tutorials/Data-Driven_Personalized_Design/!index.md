@@ -3,15 +3,30 @@
 :::{card}
 **Authors:** Jose Martinez Castro, Wolf Song
 
-**Last Edited:** 2023-07-15
+**Last Edited:** 2023-08-03
 :::
 
 ```{tags} 3d-scans, data-driven, personalized
 ```
 
-This tutorial focuses on data-driven design using Rhino Grasshopper for ergonomic design. The tutorial covers collecting data for ergonomic design, analyzing ergonomic data with Rhino Grasshopper using data to inform design, and additional reading on lattice structures and meta-materials. The tutorial includes a case study on designing a shoe sole based on pressure data collected from a user's foot standing on pressure sensors. It includes step-by-step instructions, Grasshopper scripts, and images to illustrate the concepts covered in the tutorial.
+:::{dropdown} To follow along with this tutorial, make sure to download the following grasshopper script and CSV file containing the foot pressure data:
+
+[Data-Driven_Design_ShoeSole.gh](Data-Driven_Design_ShoeSole.gh)
+
+[FootPressure_Data.csv](FootPressure_Data.csv)
+
+:::
+
+:::{card} Plugins to download:
+
+[Pufferfish](https://www.food4rhino.com/en/app/pufferfish)
+[Lunchbox](https://www.food4rhino.com/en/app/lunchbox)
+
+:::
 
 ## 1. Introduction
+
+This tutorial focuses on data-driven design using Rhino Grasshopper for ergonomic design. The tutorial covers collecting data for ergonomic design, analyzing ergonomic data with Rhino Grasshopper using data to inform design, and additional reading on lattice structures and meta-materials. The tutorial includes a case study on designing a shoe sole based on pressure data collected from a user's foot standing on pressure sensors. It includes step-by-step instructions, Grasshopper scripts, and images to illustrate the concepts covered in the tutorial.
 
 ![[https://www.core77.com/posts/71778/MakerBot-Design-Series-The-Running-Shoe](https://www.core77.com/posts/71778/MakerBot-Design-Series-The-Running-Shoe)](Data-Driven%20Personalized%20Design%20279521f489bd48acbce3a8f10f2e2eab/makerbot_runninng_shoe.png)
 
@@ -50,16 +65,6 @@ In the end, the goal in this tutorial will be to use this pressure data to drive
 ![Case study of using foot pressure data to drive the design of a shoe sole](foot_pressure_drives_design.png)
 
 Case study of using foot pressure data to drive the design of a shoe sole
-
-:::{card}
-
-💡 To follow along with this tutorial, make sure to download the following grasshopper script and CSV file containing the foot pressure data:
-
-[Data-Driven_Design_ShoeSole.gh](Data-Driven_Design_ShoeSole.gh)
-
-[FootPressure_Data.csv](FootPressure_Data.csv)
-
-:::
 
 ## 4. Analyzing Data with Grasshopper
 
