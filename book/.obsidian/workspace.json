@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
                 "mode": "source",
                 "source": false
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index.md"
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md"
               }
             }
           },
@@ -218,50 +218,50 @@
   },
   "active": "e6e7b5146b3ac284",
   "lastOpenFiles": [
+    "_build/html/searchindex.js.tmp",
+    "_tags/tagsindex.md",
+    "_tags/Meshes.md",
+    "_tags/Surfaces.md",
+    "_tags/Patterns.md",
+    "_tags/Data-structures.md",
+    "_tags/Lists.md",
+    "_tags/Curves.md",
+    "_tags/Introduction.md",
+    "_tags/Generative.md",
+    "_tags/Form-Finding.md",
+    "_tags/Simulation.md",
+    "_tags/3D-Printing.md",
+    "_tags/Advanced-Manufacturing.md",
+    "_tags/data-driven.md",
+    "_tags/personalized.md",
+    "_tags/3d-scans.md",
+    "_tags",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/Development_of_a_low-cost_3D_foot_scanner/!index.md",
     "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/!index.md",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/2644b6be99.gh",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/!index.md",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Digital_Fabrication__Laser_Cutting_/!index.md",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Digital_Fabrication__Laser_Cutting_/Digital_Fabrication_Laser_Cutting.gh",
+    "_build/html/_images/growing_vase_video.gif",
+    "_build/html/_images/Generative_tent_video.gif",
+    "_build/html/_images/ear_small_spheres.png",
+    "_build/html/_images/ear_3d_simplified.png",
+    "_build/html/_images/ear_3d_scan.png",
+    "_build/html/_images/growing_vase.png",
+    "_build/html/_images/earbud_kangaroo_physics.png",
+    "_build/html/_images/3d_print_potato_chip_close.png",
+    "_build/html/_images/3d_print_textile_constrain.png",
+    "_build/html/_images/cross_kangaroo_simulation.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/!index.md",
+    "_build/html/_downloads/4a86903be57e3b5b5a42b9fa8d775472/ParametricSunglasses.gh",
+    "_build/html/_downloads/4a86903be57e3b5b5a42b9fa8d775472",
+    "_build/html/_downloads/f5dfd8afcd44bf5460fd3f151f024c72",
+    "_build/html/_downloads/44f512bc03049e1f94967b07e7cb7969",
+    "_build/html/_downloads/27e0997a2ccd45f87876cfc028f2e279",
+    "_build/html/_downloads/eb3cfde68fd3cae67e8ae41dc286057c/Shoe_Physical_Measurements.gh",
+    "_build/html/_downloads/eb3cfde68fd3cae67e8ae41dc286057c",
     "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index.md",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/earbud_kangaroo_physics.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/3d_print_preview.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/3d_print_textile_constrain.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/ce9ba513b4.gh",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/Generative_Tent.gh",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/constrains_tent.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/move_anchor_points_gh.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/tent_input_mesh.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/textile_tent_input_mesh.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/cross_kangaroo_simulation.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/boundary_conditions_cross.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/cylinder_quad_remesh.png",
-    "Grasshopper_Rhino_course/intro.md",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/Data-Driven_Design_ShoeSole.gh",
-    "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
-    "Python_Automation_Code.md",
-    "test/test.md",
     "_build/html/index.html",
-    "_build/html/objects.inv",
-    "_build/html/searchindex.js",
-    "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-v4compatibility.ttf",
-    "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-v4compatibility.woff2",
     "_build/html/_sources/_tags/tagsindex.md",
     "_build/html/_sources/_tags/personalized.md",
     "_build/html/_sources/_tags/data-driven.md",
     "_build/html/_sources/_tags/Surfaces.md",
-    "_build/html/_sources/_tags/Simulation.md",
-    "_build/html/_sources/_tags/Patterns.md",
-    "_build/html/_sources/_tags/Meshes.md",
-    "_build/html/_sources/_tags/Lists.md",
-    "_build/html/_sources/_tags/Introduction.md",
-    "_build/html/_sources/_tags/Generative.md",
-    "_build/html/_sources/_tags/Form-Finding.md",
-    "_build/html/_sources/_tags/Data-structures.md",
-    "_build/html/_sources/_tags/Curves.md",
-    "_build/html/_sources/_tags/Advanced-Manufacturing.md",
-    "_build/html/_sources/_tags/3d-scans.md",
-    "_build/html/_sources/_tags/3D-Printing.md"
+    "_build/html/_sources/_tags/Simulation.md"
   ]
 }

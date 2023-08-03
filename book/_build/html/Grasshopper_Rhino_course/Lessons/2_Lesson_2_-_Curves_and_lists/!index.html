@@ -1,0 +1,865 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Lesson 2 - Curves and lists &#8212; Rhino Grasshopper Open Access Education</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Lesson 3 - Data structures" href="../3_Lesson_3_-_Data_structures/%21index.html" />
+    <link rel="prev" title="Lesson 1 - Basics" href="../1_Lesson_1_-_Basics/%21index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/TUDelft_logo_cmyk.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../_static/TUDelft_logo_cmyk.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    Open Access Rhino Grasshopper Course for Industrial Design Students
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../%21index.html">Lessons</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../1_Lesson_1_-_Basics/%21index.html">Lesson 1 - Basics</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Lesson 2 - Curves and lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_Lesson_3_-_Data_structures/%21index.html">Lesson 3 - Data structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../4_Lesson_4_-_Surfaces/%21index.html">Lesson 4 - Surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_Lesson_5_-_Meshes/%21index.html">Lesson 5 - Meshes</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Student_showcase/%21index.html">Student showcase</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Student_showcase/Assignment_1/%21index.html">Assignment 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Student_showcase/Assignment_2/%21index.html">Assignment 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Student_showcase/Assignment_3/%21index.html">Assignment 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Student_showcase/Assignment_4/%21index.html">Assignment 4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Knowledge_base/%21index.html">Knowledge Base</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Knowledge_base/Tutorials/%21index.html">Knowledge Base Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Design_for_Personalized_Fit/%21index.html">Design for Personalized Fit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Data-Driven_Personalized_Design/%21index.html">Data-Driven Personalized Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Design_for_Digital_Fabrication__Laser_Cutting_/%21index.html">Design for Digital Fabrication (Laser Cutting)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/%21index.html">Generating G-code with Grasshopper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/%21index.html">Generative Form Finding with Kangaroo Physics</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/%21index.html">Graduation Projects</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric%2C_3D_printed_ankle_foot_orthosis__/%21index.html">Application of mechanical metamaterials in a parametric, 3D printed ankle foot orthosis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__/%21index.html">Design of a 3D printed prosthetic socket that accommodates pediatric growth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/%21index.html">Design of customizable sunglasses based on additive manufacturing techniques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__/%21index.html">Exploring Animated Textiles Using Pneumatic Actuators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/A_medical_jewel%2C_the_hand_splint/%21index.html">A medical jewel, the hand splint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/Designing_a_multi-sports_helmet_based_on_3D_ergonomic_dat/%21index.html">Designing a multi-sports helmet based on 3D ergonomic dat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/%21index.html">A custom fit parametric bra based on 3D body scanning technologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/Development_of_a_low-cost_3D_foot_scanner/%21index.html">Development of a low-cost 3D foot scanner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/The_making_of_a_smart_pillow/%21index.html">The making of a smart pillow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../../_tags/tagsindex.html">Tags overview</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../_tags/3D-Printing.html">3D-Printing (4)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/%21index.html">Generating G-code with Grasshopper</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../_tags/3d-scans.html">3d-scans (18)</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/A_medical_jewel%2C_the_hand_splint/%21index.html">A medical jewel, the hand splint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/Designing_a_multi-sports_helmet_based_on_3D_ergonomic_dat/%21index.html">Designing a multi-sports helmet based on 3D ergonomic dat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/Development_of_a_low-cost_3D_foot_scanner/%21index.html">Development of a low-cost 3D foot scanner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric%2C_3D_printed_ankle_foot_orthosis__/%21index.html">Application of mechanical metamaterials in a parametric, 3D printed ankle foot orthosis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/%21index.html">A custom fit parametric bra based on 3D body scanning technologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__/%21index.html">Design of a 3D printed prosthetic socket that accommodates pediatric growth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/%21index.html">Design of customizable sunglasses based on additive manufacturing techniques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Data-Driven_Personalized_Design/%21index.html">Data-Driven Personalized Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Design_for_Personalized_Fit/%21index.html">Design for Personalized Fit</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../_tags/Advanced-Manufacturing.html">Advanced-Manufacturing (8)</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric%2C_3D_printed_ankle_foot_orthosis__/%21index.html">Application of mechanical metamaterials in a parametric, 3D printed ankle foot orthosis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__/%21index.html">Design of a 3D printed prosthetic socket that accommodates pediatric growth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Design_for_Digital_Fabrication__Laser_Cutting_/%21index.html">Design for Digital Fabrication (Laser Cutting)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/%21index.html">Generating G-code with Grasshopper</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../../../_tags/Curves.html">Curves (4)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Lesson 2 - Curves and lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Student_showcase/Assignment_2/%21index.html">Assignment 2</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../_tags/Data-structures.html">Data-structures (4)</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_Lesson_3_-_Data_structures/%21index.html">Lesson 3 - Data structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Student_showcase/Assignment_3/%21index.html">Assignment 3</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../_tags/Form-Finding.html">Form-Finding (2)</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/%21index.html">Generative Form Finding with Kangaroo Physics</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../_tags/Generative.html">Generative (2)</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/%21index.html">Generative Form Finding with Kangaroo Physics</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../_tags/Introduction.html">Introduction (4)</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../1_Lesson_1_-_Basics/%21index.html">Lesson 1 - Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Student_showcase/Assignment_1/%21index.html">Assignment 1</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../../../_tags/Lists.html">Lists (8)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Lesson 2 - Curves and lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../3_Lesson_3_-_Data_structures/%21index.html">Lesson 3 - Data structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Student_showcase/Assignment_2/%21index.html">Assignment 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Student_showcase/Assignment_3/%21index.html">Assignment 3</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../_tags/Meshes.html">Meshes (2)</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../5_Lesson_5_-_Meshes/%21index.html">Lesson 5 - Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../_tags/Patterns.html">Patterns (4)</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../4_Lesson_4_-_Surfaces/%21index.html">Lesson 4 - Surfaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Student_showcase/Assignment_4/%21index.html">Assignment 4</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../_tags/Simulation.html">Simulation (4)</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__/%21index.html">Exploring Animated Textiles Using Pneumatic Actuators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/%21index.html">Generative Form Finding with Kangaroo Physics</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../_tags/Surfaces.html">Surfaces (4)</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../4_Lesson_4_-_Surfaces/%21index.html">Lesson 4 - Surfaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Student_showcase/Assignment_4/%21index.html">Assignment 4</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../_tags/data-driven.html">data-driven (6)</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/The_making_of_a_smart_pillow/%21index.html">The making of a smart pillow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric%2C_3D_printed_ankle_foot_orthosis__/%21index.html">Application of mechanical metamaterials in a parametric, 3D printed ankle foot orthosis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Data-Driven_Personalized_Design/%21index.html">Data-Driven Personalized Design</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../_tags/personalized.html">personalized (18)</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/A_medical_jewel%2C_the_hand_splint/%21index.html">A medical jewel, the hand splint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/Designing_a_multi-sports_helmet_based_on_3D_ergonomic_dat/%21index.html">Designing a multi-sports helmet based on 3D ergonomic dat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/Development_of_a_low-cost_3D_foot_scanner/%21index.html">Development of a low-cost 3D foot scanner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric%2C_3D_printed_ankle_foot_orthosis__/%21index.html">Application of mechanical metamaterials in a parametric, 3D printed ankle foot orthosis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/%21index.html">A custom fit parametric bra based on 3D body scanning technologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__/%21index.html">Design of a 3D printed prosthetic socket that accommodates pediatric growth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/%21index.html">Design of customizable sunglasses based on additive manufacturing techniques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Data-Driven_Personalized_Design/%21index.html">Data-Driven Personalized Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Knowledge_base/Tutorials/Design_for_Personalized_Fit/%21index.html">Design for Personalized Fit</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/MinorAdvancedPrototyping/grasshopper-open-access-test" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/MinorAdvancedPrototyping/grasshopper-open-access-test/issues/new?title=Issue%20on%20page%20%2FGrasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/Grasshopper_Rhino_course/Lessons/2_Lesson_2_-_Curves_and_lists/!index.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Lesson 2 - Curves and lists</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-2-min">👩‍🏫 2.1 Introduction (2 min)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#points-planes-and-curves-15-min">📑 2.2 Points, Planes and Curves (15 min)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#points-and-vectors-2-min">📑 2.2.1 Points and vectors (2 min)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-planes-2-min">📑 2.2.2 Reference planes (2 min)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-min">🖱️ 2.2.3 Exercise (5 min)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#curves-6-min">📑 2.2.4 Curves (6 min)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#degree">Degree</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#control-points">Control points</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#closed-open-curves">Closed / open curves</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#polycurves">Polycurves</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#curve-parameters-40-min">📺 2.3 Curve parameters (40 min)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists-30-min">👩‍🏫🖱️ 2.4 Lists (30 min)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists-10-min">👩‍🏫2.4.1 Lists (10 min)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-building-a-dna-strain-20-min">🖱️2.4.2 Exercise: building a DNA strain (20 min)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-max-2-hours">💻 2.5 Assignment (max 2 hours)</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="lesson-2-curves-and-lists">
+<h1>Lesson 2 - Curves and lists<a class="headerlink" href="#lesson-2-curves-and-lists" title="Permalink to this heading">#</a></h1>
+<p class="tags"><span>Tags: </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../../../_tags/Curves.html"><span class="doc">Curves</span></a><span> </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../../../_tags/Lists.html"><span class="doc">Lists</span></a></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Authors:</strong> Anne van den Dool, Niels van Silfhout</p>
+<p class="sd-card-text"><strong>Last Edited:</strong> 2023-07-21</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">📌 <strong>Outlines:</strong> A short description of what you can expect in the upcoming section.</p>
+<p class="sd-card-text">📑 <strong>Explanation text:</strong> Written explanations with supporting images.</p>
+<p class="sd-card-text">👩‍🏫 <strong>Explanation videos:</strong> Explaining the course material in short lecture videos.</p>
+<p class="sd-card-text">📺 <strong>Tutorial videos:</strong> Follow-along tutorials.</p>
+<p class="sd-card-text">💡 <strong>Tips:</strong> Tips and tricks to make working in Rhino/Grasshopper easier.</p>
+<p class="sd-card-text">🖱️ <strong>Exercises:</strong> Small practice questions. The solution is provided.</p>
+<p class="sd-card-text">💻 <strong>Assignments:</strong> Open-ended assignments, to practice further with the course materials.</p>
+</div>
+</div>
+<section id="introduction-2-min">
+<h2>👩‍🏫 2.1 Introduction (2 min)<a class="headerlink" href="#introduction-2-min" title="Permalink to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_U0E-HZWIfw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<hr class="docutils" />
+<section id="points-planes-and-curves-15-min">
+<h2>📑 2.2 Points, Planes and Curves (15 min)<a class="headerlink" href="#points-planes-and-curves-15-min" title="Permalink to this heading">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">📌 <em>What:</em>         Explanation of points, planes and curves (reading and exercise)</p>
+<p class="sd-card-text"><em>For Whom:</em> Beginners in Rhino/Grasshopper</p>
+<p class="sd-card-text"><em>Time:</em>          15 minutes</p>
+</div>
+</div>
+<p>In this section you will work with points, planes, curves and their anatomy. Points, planes and curves form the fundamental geometry you will need for every project. Understanding and using the anatomy of these geometries allows you to build fully parametric and generative models.</p>
+<section id="points-and-vectors-2-min">
+<h3>📑 2.2.1 Points and vectors (2 min)<a class="headerlink" href="#points-and-vectors-2-min" title="Permalink to this heading">#</a></h3>
+<p>A point is the most basic form of geometry. Both in Rhino and in Grasshopper, points are described by {x,y,z} coordinates.</p>
+<p>🖱️ In Rhino, you can create a point by selecting it from the toolbar, or by typing [<strong>point</strong>] in the command line. You can then select the location of the point, or type in the exact coordinates. A point is displayed as a white dot.</p>
+<p>🖱️ In Grasshopper there are multiple ways you could create a point. You could reference a point in Rhino with a [<strong>point</strong>] component, or you could use a [<strong>Construct Point</strong>] component to specify the coordinates with number sliders. A point is displayed as a small x.</p>
+<p>To move anything in Rhino, you can simply select it and use the Gumball. To move geometry to a new location in Grasshopper, you first need to create a vector. A vector describes the direction and the amount (amplitude) of the movement. Similar to points, vectors consists of an x, y and z value. There a multiple ways to create a vector in Grasshopper, for example with the [<strong>Vector XYZ</strong>] component. Vectors are not visualized in the Rhino viewport by default, but you can add a [<strong>Vector display</strong>] component to visualize them, as shown in the image below.</p>
+<p><img alt="2.2.1a_VectorDisplay.png" src="../../../_images/2.2.1a_VectorDisplay.png" /></p>
+<p>You can also read out the result of you vector component by adding a [<strong>Panel</strong>] component. As you can see in the example below, the data for a point and a vector look the same in Grasshopper. This makes it easy to convert a point to a vector and vice versa.</p>
+<p>Also notice that the [<strong>Vector XYZ</strong>] component has a Length output. This will tell you the amount of movement, or amplitude of the vector. You can change the amplitude of any vector with the [<strong>Amplitude</strong>] component</p>
+<p><img alt="2.2.1b_PointVectorPanel.png" src="../../../_images/2.2.1b_PointVectorPanel.png" /></p>
+</section>
+<section id="reference-planes-2-min">
+<h3>📑 2.2.2 Reference planes (2 min)<a class="headerlink" href="#reference-planes-2-min" title="Permalink to this heading">#</a></h3>
+<p>Planes are flat and go on infinitely in two directions, making a local coordinate system. Planes are not real objects, they are used to create a coordinate system in 3D space. The world coordinate system in Rhino is described by three planes: the world XY (which is the grid that you see in Rhino), the world XZ and the world YZ. These planes can also be referenced in Grasshopper with the [<strong>XY Plane</strong>], [<strong>XZ Plane</strong>] and [<strong>YZ Plane</strong>] components. A custom plane can be created at any point and in any direction.</p>
+<p>Planes are very useful to position objects in Grasshopper. A plane in Grasshopper is described with a origin point and a normal direction. The normal direction is a vector that is perpendicular to the plane. The normal vector will tell you which side of the plane is up and which side is down. In the example below, you see a plane created with a [<strong>construct plane</strong>] component and a [<strong>panel</strong>] component. In the output panel, you can see that the origin point (O) of the plane is at {5,5,5} and the normal direction (Z) of the plane is {0,0,1}.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">💡 <strong>Tip</strong>: After you add a [<strong>panel</strong>] component, you can double click it to add content or edit the content. To make sure the content is read as data instead of text, right click the panel and click on <strong>“Multiline Data”</strong>. More on this in paragraph 2.4.</p>
+</div>
+</div>
+<p><img alt="2.2.2a_ConstructPlane.png" src="../../../_images/2.2.2a_ConstructPlane.png" /></p>
+</section>
+<section id="exercise-5-min">
+<h3>🖱️ 2.2.3 Exercise (5 min)<a class="headerlink" href="#exercise-5-min" title="Permalink to this heading">#</a></h3>
+<p>Use Grasshopper to create a plane parallel to the world YZ plane, with an origin point that is located at 5mm in the z direction, 4mm in the x direction and 1mm in the y direction.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Possible solution<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><img alt="2.2.3a_PlaneSolution.png" src="../../../_images/2.2.3a_PlaneSolution.png" /></p>
+</div>
+</details></section>
+<section id="curves-6-min">
+<h3>📑 2.2.4 Curves (6 min)<a class="headerlink" href="#curves-6-min" title="Permalink to this heading">#</a></h3>
+<p>A curve is a path between two or more points. You can extract a lot of useful information from just this simple geometry.</p>
+<p>Say we have six points in Rhino and we connect them with straight lines. This is called a <strong>Polyline</strong>. A polyline has straight segments that are joined together. 🖱️Create a polyline in Rhino by selecting it from the toolbar on the left or by typing [<strong>Polyline</strong>] in the command line.</p>
+<p><img alt="2.2.4a_PolylineRhino.gif" src="../../../_images/2.2.4a_PolylineRhino.gif" /></p>
+<p>This polyline has a start and an end point, which you can find with the [<strong>CrvStart</strong>] and [<strong>CrvEnd</strong>] commands in Rhino, or with the [<strong>Endpoints</strong>] component in Grasshopper.</p>
+<p><img alt="2.2.4b_Endpoints.png" src="../../../_images/2.2.4b_Endpoints.png" /></p>
+<p>A curve also has a direction, moving through the curve from the start to the end point. You can visualize and change the direction of a curve in Rhino with the [<strong>Dir</strong>] command. When you select the curve you see the direction moves from start to end, but the angle is different in each section of the polyline.</p>
+<p><img alt="2.2.4c_CurveDirection.png" src="../../../_images/2.2.4c_CurveDirection.png" /></p>
+<p>Instead of a polyline with straight segments, we could also use the same points to create a curve with bends. For example with the [<strong>Curve</strong>] command. Notice that you can set the curvature <strong>degree</strong> in the command line. In the example below, the degree was set to 3.</p>
+<p>🖱️Create a couple of curves in Rhino with different curvature degrees to see its effect.</p>
+<p><img alt="2.2.4d_CurvatureDegree.gif" src="../../../_images/2.2.4d_CurvatureDegree.gif" /></p>
+<p>The type of curve that Rhino uses is called a NURBS curve. This stands for Non-Uniform Rational B-Splines. To work with NURBS curves, you need to understand two properties that define these curves: curvature degree and control points.</p>
+<section id="degree">
+<h4>Degree<a class="headerlink" href="#degree" title="Permalink to this heading">#</a></h4>
+<p>The degree of a curve is a whole number, usually between 1 and 5.  A line or polyline is a first degree curve. The degree of the curve determines the range of influence the control points have on a curve; where the higher the degree, the larger the range. This means that in a first degree curve, the direction of the curve is determined by the starting point and the first point. In a second degree curve, the direction is determined by the start, the first and the second point. In a third degree curve, the direction is determined by the start, the first, second and third point. And so on. The curvature degree can never be lower than the number of control points, this will result in an error. To change the curvature degree after creating a curve, use the [<strong>Rebuild</strong>] command.</p>
+<p><img alt="2.2.4e_DegreeCurves.png" src="../../../_images/2.2.4e_DegreeCurves.png" /></p>
+</section>
+<section id="control-points">
+<h4>Control points<a class="headerlink" href="#control-points" title="Permalink to this heading">#</a></h4>
+<p>The control points are a list of at least the degree+1 points. You can use the control points to manipulate the shape of the curve. To switch on control points, press <strong>F10</strong> or use the [<strong>PointsOn</strong>] command in Rhino. You will also see them when you select a curve.</p>
+</section>
+<section id="closed-open-curves">
+<h4>Closed / open curves<a class="headerlink" href="#closed-open-curves" title="Permalink to this heading">#</a></h4>
+<p>A curve with a start and end point is called an open curve. If the start and end are the same point, we call this a closed curve (Rhino) or a periodic curve (Grasshopper). For example, circles and ellipses are closed curves. The start point on a closed curve is called the <strong>seam point</strong>.</p>
+</section>
+<section id="polycurves">
+<h4>Polycurves<a class="headerlink" href="#polycurves" title="Permalink to this heading">#</a></h4>
+<p>Just like you can combine straight lines into a polyline, you can [<strong>join</strong>] curves into a polycurve. A polycurve is made up out of segments, which you can separate again by using the [<strong>Explode</strong>] command. In the example below, two curves are created with the [<strong>Control Point Curve</strong>] command, using <strong>Osnap</strong> to align them to the points.</p>
+<p><img alt="2.2.4f_Polycurve.gif" src="../../../_images/2.2.4f_Polycurve.gif" /></p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="curve-parameters-40-min">
+<h2>📺 2.3 Curve parameters (40 min)<a class="headerlink" href="#curve-parameters-40-min" title="Permalink to this heading">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">📌 <em>What:</em>         Working with curve parameters (tutorial)</p>
+<p class="sd-card-text"><em>For Whom:</em> Beginners in Rhino/Grasshopper</p>
+<p class="sd-card-text"><em>Time:</em>          40 minutes</p>
+</div>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xEMRruaWmng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr class="docutils" />
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Download the final file here:<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><a class="reference download internal" download="" href="../../../_downloads/f2310e5d94b66604a6adc52e35471901/Lesson_2_-_Train_tutorial.gh"><span class="xref download myst">Lesson 2 - Train tutorial.gh</span></a></p>
+</div>
+</details><div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">💡 <strong>Tip</strong>: In this Grasshopper file, the points that were selected in Rhino are internalized into the Grasshopper script. This way you can open this Grasshopper script without having to re-link the points in Rhino. You can internalize data by right clicking on the component that is linked to Rhino and selecting “internalise data”.</p>
+</div>
+</div>
+</section>
+<section id="lists-30-min">
+<h2>👩‍🏫🖱️ 2.4 Lists (30 min)<a class="headerlink" href="#lists-30-min" title="Permalink to this heading">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">📌 <em>What:</em> Introduction to list data structures (video), Building a list (exercise)</p>
+<p class="sd-card-text"><em>For Whom:</em> Beginner to intermediate level</p>
+<p class="sd-card-text"><em>Time:</em>  30 min (10 min video + 20 min exercise)</p>
+</div>
+</div>
+<section id="lists-10-min">
+<h3>👩‍🏫2.4.1 Lists (10 min)<a class="headerlink" href="#lists-10-min" title="Permalink to this heading">#</a></h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0Upvg2w25qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr class="docutils" />
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Download the example file here:<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><a class="reference download internal" download="" href="../../../_downloads/b34a3c999c3828973e3feadb91b1a312/Lesson_2_-Wheel.gh"><span class="xref download myst">Lesson 2 -Wheel.gh</span></a></p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Slides<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><a class="reference download internal" download="" href="../../../_downloads/69e7bd57c4bc16670545967942efa274/Lesson_2_video_slideshow.pdf"><span class="xref download myst">Lesson 2 video slideshow.pdf</span></a></p>
+</div>
+</details></section>
+<section id="exercise-building-a-dna-strain-20-min">
+<h3>🖱️2.4.2 Exercise: building a DNA strain (20 min)<a class="headerlink" href="#exercise-building-a-dna-strain-20-min" title="Permalink to this heading">#</a></h3>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Build a strain of DNA. You can use the script provided here as a starting point.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><a class="reference download internal" download="" href="../../../_downloads/98b8b95594d855c79d787a606f3cc91f/Lesson_2_-_DNA_strain_starting_file.gh"><span class="xref download myst">Lesson 2 - DNA strain starting file.gh</span></a></p>
+</div>
+</details><p><img alt="2.4.2a_DNAStrain.png" src="../../../_images/2.4.2a_DNAStrain.png" /></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Solution<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><img alt="2.4.2b_DNAStrainSolution.png" src="../../../_images/2.4.2b_DNAStrainSolution.png" /></p>
+</div>
+</details></section>
+</section>
+<hr class="docutils" />
+<section id="assignment-max-2-hours">
+<h2>💻 2.5 Assignment (max 2 hours)<a class="headerlink" href="#assignment-max-2-hours" title="Permalink to this heading">#</a></h2>
+<p><img alt="2.5a_Assignment2.png" src="../../../_images/2.5a_Assignment2.png" /></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">💻 Create a chain with alternating links. The curve should be imported from Rhino, the rest of the assignment is done in Grasshopper. You can use the grasshopper file below as a starting point. Take a few hours to see what you can create, but do not spend to much time on this assignment.</p>
+<p class="sd-card-text">Check out the <a class="reference internal" href="../Student_showcase/Assignment_2/%21index.html"><span class="doc std std-doc">Student Showcase Assignment 2</span></a> to see what other students made for this assignment.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Download the starting file here:<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><a class="reference download internal" download="" href="../../../_downloads/ef9f100c94c89118442f2bc96ca3bc62/Lesson_2_-_assignment_starting_file.gh"><span class="xref download myst">Lesson 2 - assignment starting file.gh</span></a></p>
+</div>
+</details></div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Grasshopper_Rhino_course\Lessons\2_Lesson_2_-_Curves_and_lists"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../1_Lesson_1_-_Basics/%21index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Lesson 1 - Basics</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../3_Lesson_3_-_Data_structures/%21index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Lesson 3 - Data structures</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-2-min">👩‍🏫 2.1 Introduction (2 min)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#points-planes-and-curves-15-min">📑 2.2 Points, Planes and Curves (15 min)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#points-and-vectors-2-min">📑 2.2.1 Points and vectors (2 min)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-planes-2-min">📑 2.2.2 Reference planes (2 min)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-min">🖱️ 2.2.3 Exercise (5 min)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#curves-6-min">📑 2.2.4 Curves (6 min)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#degree">Degree</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#control-points">Control points</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#closed-open-curves">Closed / open curves</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#polycurves">Polycurves</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#curve-parameters-40-min">📺 2.3 Curve parameters (40 min)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists-30-min">👩‍🏫🖱️ 2.4 Lists (30 min)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lists-10-min">👩‍🏫2.4.1 Lists (10 min)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-building-a-dna-strain-20-min">🖱️2.4.2 Exercise: building a DNA strain (20 min)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-max-2-hours">💻 2.5 Assignment (max 2 hours)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Faculty of Industrial Design Engineering
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
