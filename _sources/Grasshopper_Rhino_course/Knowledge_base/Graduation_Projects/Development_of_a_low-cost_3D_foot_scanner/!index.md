@@ -1,24 +1,19 @@
 # Development of a low-cost 3D foot scanner
 
 :::{card}
-**Authors:** Your Name
+**Authors:** Hoeksema, J.
 
-**Last Edited:** 2023-07-15
+**Supervisors:** Molenbroek, J.F.M. (mentor), Song, Y. (mentor)
+
+**Last Edited:** 2023-08-03
+
+**URL:** https://repository.tudelft.nl/islandora/object/uuid%3A0ee880fb-7063-42cd-aa82-b67f7c84d1e9
+
+**Publication URL:** https://research.tudelft.nl/en/publications/a-landmark-based-3d-parametric-foot-model-for-footwear-customisat
 :::
-
-
-Created: April 28, 2023 4:05 PM
 
 ```{tags} 3d-scans, personalized
 ```
-
-Authors: Hoeksema, J.
-
-Categories: Graduation Project
-
-Supervisors: Molenbroek, J.F.M. (mentor), Song, Y. (mentor)
-
-URL: https://repository.tudelft.nl/islandora/object/uuid%3A0ee880fb-7063-42cd-aa82-b67f7c84d1e9
 
 ![3d_foot_scanner.jpg](3d_foot_scanner.jpg)
 

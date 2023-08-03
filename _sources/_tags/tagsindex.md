@@ -8,7 +8,6 @@ caption: Tags
 maxdepth: 1
 ---
 3D-Printing (2) <3D-Printing>
-3d-printing (1) <3d-printing>
 3d-scans (9) <3d-scans>
 Advanced-Manufacturing (4) <Advanced-Manufacturing>
 Curves (2) <Curves>

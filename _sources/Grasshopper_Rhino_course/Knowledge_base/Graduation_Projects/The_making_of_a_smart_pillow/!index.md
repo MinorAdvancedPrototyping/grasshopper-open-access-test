@@ -5,11 +5,10 @@
 
 **Supervisors:** Bourgeois, Jacky (graduation committee), Rozendaal, Marco (mentor)
 
-**Last Edited:** 2023-07-15
+**Last Edited:** 2023-08-03
 
 **URL:** https://repository.tudelft.nl/islandora/object/uuid%3A204a945a-17d6-4ed0-af40-6d6959953dba?collection=education
 :::
-
 
 ```{tags} data-driven
 ```

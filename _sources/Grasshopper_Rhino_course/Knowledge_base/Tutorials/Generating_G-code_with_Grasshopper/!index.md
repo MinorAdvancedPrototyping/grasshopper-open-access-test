@@ -6,7 +6,7 @@
 **Last Edited:** 2023-08-03
 :::
 
-```{tags} Advanced-Manufacturing, 3d-printing
+```{tags} Advanced-Manufacturing, 3D-Printing
 ```
 
 :::{dropdown} Download the Grasshopper Script Here:
@@ -24,19 +24,11 @@ G-code is a common language for CNC (Computer Numerical Control) machine that in
 ### Common Commands
 
 | Command | Description |
-
 | --- | --- |
-
-| ; | Text after semicolon makes no effect
-
-(for comments and explanations) |
-
+| ; | Text after semicolon makes no effect (for comments and explanations) |
 | G0 & G1 | To initiate movement (G0 for non-extrusion movement and G1 for extrusion movement) |
-
 | F | Feed rate (speed) in mm/min |
-
 | X Y Z | Coordinates in mm |
-
 | E | Extrusion amount in mm |
 
 Some common commands can be found on the table above. For many commands in G-code, we add a number next to the command to indicate a value e.g. F600 represents a feed rate of 600 mm/min. When writing G-code, a line in our code might look something like this:
@@ -45,34 +37,25 @@ Some common commands can be found on the table above. For many commands in G-cod
 
 Other common commands include:
 
-**Extruder Temperature**
+#### Extruder Temperature
 
 | Command | Description |
-
 | --- | --- |
-
 | M104 | start heating |
-
 | M109 | wait until the target temperature |
 
-**Build Plate Temperature**
+#### Build Plate Temperature
 
 | Command | Description |
-
 | --- | --- |
-
 | M140 | start heating |
-
 | M190 | wait until the target temperature |
 
-**Cooling Fan**
+#### Cooling Fan
 
 | Command | Description |
-
 | --- | --- |
-
 | M106 | set fan ON |
-
 | M107 | set fan OFF |
 
 For these commands, the value of the temperature or the fan speed can be set by adding the letter “S” followed by a number value. Some examples of how these commands can be used can be seen in the figure below: 
@@ -281,8 +264,6 @@ Now that we understand the basics of G-code, we are able to use an alternative w
 
 ![Grasshopper G-code workflow](workflow_overview_grasshopper.png)
 
-Grasshopper G-code workflow
-
 The main concept here is to convert our solid/surface into contour curves, divide these curves into smaller segments, and obtain the X Y Z coordinates from the collection of sequential points. Using this collection of points, we can write the G-code to instruct the printer to move to these locations while extruding in sequential order. As the order of operations is critical for the G-code, it is important to keep the geometry data organized. For resource on working with data structures in Grasshopper, see [Lesson 3 - Data Structures](../../../Lessons/3_Lesson_3_-_Data_structures/!index.md)
 
 Let’s take the example of creating the G-code for a simple cylinder as shown above. Once we have the collection of points, how exactly do we translate these points into G-code operations and ensure to add all other necessary G-code calculations? First, let’s look at some basic concepts which will be key in creating this script. To follow along, download the exercise file at the beginning of the lesson.
@@ -292,13 +273,9 @@ Let’s take the example of creating the G-code for a simple cylinder as shown a
 In order to deposit material onto the print bed, we need to specify how much material to deposit on each movement in the Core Instructions. First, we must consider what type of extrusion we will use, Absolute vs Relative, as seen in the figure below. The type of extrusion can be set at the Start Protocol in the G-code.
 
 | Command | Description |
-
 | --- | --- |
-
 | M82 | absolute extrusion |
-
 | M83 | relative extrusion |
-
 | G92 E0 | set extruded length to zero |
 
 ![absolute_vs_relative.png](absolute_vs_relative.png)
@@ -320,13 +297,17 @@ To manage all the data and generate the correct G-code text, we will need to com
 
 ![concatenate.png](concatenate.png)
 
-Concatenate takes in multiple streams of data and adds them to one element. This will be important to combine the G-code instructions into a single line of text. As can be seen in the template file, for each line of the G-code, we use the Concatenate component to combine multiple streams of data both text and numbers.
+#### Concatenate
+
+**Concatenate** takes in multiple streams of data and adds them to one element. This will be important to combine the G-code instructions into a single line of text. As can be seen in the template file, for each line of the G-code, we use the Concatenate component to combine multiple streams of data both text and numbers.
 
 ![print_command_gcode.png](print_command_gcode.png)
 
+#### Merge 
+
 ![merge_component.png](merge_component.png)
 
-The merge component takes multiple lists and adds them after each other. This will be important to combine multiple parts of the G-code process one after the other. As seen in the template file, the Start Protocol, Core Instructions, and End Protocol are merged together into one final G-code. 
+The **Merge** component takes multiple lists and adds them after each other. This will be important to combine multiple parts of the G-code process one after the other. As seen in the template file, the Start Protocol, Core Instructions, and End Protocol are merged together into one final G-code. 
 
 ![combining_all_gcode.png](combining_all_gcode.png)
 

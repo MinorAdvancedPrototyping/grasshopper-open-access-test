@@ -1,26 +1,19 @@
 # Exploring Animated Textiles Using Pneumatic Actuators
 
 :::{card}
-**Authors:** Your Name
+**Authors:** Martínez Castro, Jose
 
-**Last Edited:** 2023-07-15
+**Supervisors:** Karana, E. (mentor), Wu, J. (graduation committee), Buso, A. (graduation committee)
+
+**Last Edited:** 2023-08-03
+
+**URL:** https://repository.tudelft.nl/islandora/object/uuid:de1fe683-02fd-4482-a554-4fbe5d2d70a2?collection=education
 :::
-
 
 Created: April 28, 2023 4:05 PM
 
 ```{tags} 3D-Printing, Simulation
 ```
-
-Authors: Martínez Castro, Jose
-
-Categories: Graduation Project
-
-Supervisors: Karana, E. (mentor), Wu, J. (graduation committee), 
-
-Buso, A. (graduation committee)
-
-URL: https://repository.tudelft.nl/islandora/object/uuid:de1fe683-02fd-4482-a554-4fbe5d2d70a2?collection=education
 
 ![texalive_overview.webp](texalive_overview.webp)
 

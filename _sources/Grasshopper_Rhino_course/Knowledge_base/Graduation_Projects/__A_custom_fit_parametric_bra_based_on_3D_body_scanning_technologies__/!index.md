@@ -1,24 +1,18 @@
 # A custom fit parametric bra based on 3D body scanning technologies
 
 :::{card}
-**Authors:** Your Name
+**Authors:** Van Twillert, L.V.A.
 
-**Last Edited:** 2023-07-15
+**Supervisors:** Molenbroek, J.F.M. (mentor), Goto, L. (mentor)
+
+**Last Edited:** 2023-08-03
+
+**URL:** https://repository.tudelft.nl/islandora/object/uuid%3Ad7528f9a-1c24-45d9-bbac-d9dff4e080b9?collection=education
 :::
-
-
-Created: April 28, 2023 4:05 PM
 
 ```{tags} 3d-scans, personalized
 ```
 
-Authors: Van Twillert, L.V.A.
-
-Categories: Graduation Project
-
-Supervisors: Molenbroek, J.F.M. (mentor), Goto, L. (mentor)
-
-URL: https://repository.tudelft.nl/islandora/object/uuid%3Ad7528f9a-1c24-45d9-bbac-d9dff4e080b9?collection=education
 
 ![parametric_bra.png](parametric_bra.png)
 

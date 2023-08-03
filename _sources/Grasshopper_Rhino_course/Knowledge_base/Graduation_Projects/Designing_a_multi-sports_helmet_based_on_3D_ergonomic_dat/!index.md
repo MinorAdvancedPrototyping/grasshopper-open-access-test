@@ -1,24 +1,17 @@
 # Designing a multi-sports helmet based on 3D ergonomic dat
 
 :::{card}
-**Authors:** Your Name
+**Authors:** Van Seggelen, S.W.H.
 
-**Last Edited:** 2023-07-15
+**Supervisors:** Molenbroek, J.F.M. (mentor), De Smit, A. (mentor), Dekker, L. (mentor), Heusschen, C. (mentor)
+
+**Last Edited:** 2023-08-03
+
+**URL:** https://repository.tudelft.nl/islandora/object/uuid%3A4eb016fa-9e4a-4fc5-a128-99f762cfbff3?collection=education
 :::
-
-
-Created: April 28, 2023 4:05 PM
 
 ```{tags} 3d-scans, personalized
 ```
-
-Authors: Van Seggelen, S.W.H.
-
-Categories: Graduation Project
-
-Supervisors: Molenbroek, J.F.M. (mentor), De Smit, A. (mentor), Dekker, L. (mentor), Heusschen, C. (mentor)
-
-URL: https://repository.tudelft.nl/islandora/object/uuid%3A4eb016fa-9e4a-4fc5-a128-99f762cfbff3?collection=education
 
 ![3d_print_helmet.png](3d_print_helmet.png)
 

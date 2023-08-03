@@ -1,24 +1,17 @@
 # A medical jewel, the hand splint
 
 :::{card}
-**Authors:** Your Name
+**Authors:** Keijser, Lies
 
-**Last Edited:** 2023-07-15
+**Supervisors:** Huysmans, T. (mentor), Minnoye, A.L.M. (mentor)
+
+**Last Edited:** 2023-08-03
+
+**URL:** https://repository.tudelft.nl/islandora/object/uuid%3A8689a874-2460-4a80-b39a-70010d6562c9?collection=education
 :::
-
-
-Created: April 28, 2023 4:05 PM
 
 ```{tags} 3d-scans, personalized
 ```
-
-Authors: Keijser, Lies
-
-Categories: Graduation Project
-
-Supervisors: Huysmans, T. (mentor), Minnoye, A.L.M. (mentor)
-
-URL: https://repository.tudelft.nl/islandora/object/uuid%3A8689a874-2460-4a80-b39a-70010d6562c9?collection=education
 
 ![medical_jewel.jpeg](medical_jewel.jpeg)
 
