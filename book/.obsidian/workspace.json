@@ -20,36 +20,62 @@
             }
           },
           {
-            "id": "fdc3c3d0a304a1d4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Grasshopper_Rhino_course/intro.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "30865587867cf6c4",
+            "id": "9ad97fa3e642ada6",
             "type": "leaf",
             "state": {
               "type": "image",
               "state": {
-                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/Generating_Rectangular_Cells.png"
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/textile_tent_input_mesh.png"
               }
             }
           },
           {
-            "id": "b2bd1006202b5c35",
+            "id": "ba45ee1fffeaa143",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "test/test.md",
-                "mode": "preview",
-                "source": true
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/Organic_Cross_Structure_Video.gif"
+              }
+            }
+          },
+          {
+            "id": "0bf544d13b663364",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/growing_vase.png"
+              }
+            }
+          },
+          {
+            "id": "bb2cc33dd0052d2f",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/3d_print_potato_chip_close.png"
+              }
+            }
+          },
+          {
+            "id": "0421d6d0abef1c66",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/3d_print_textile_edge.png"
+              }
+            }
+          },
+          {
+            "id": "2bc72b28732eafae",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/3d_printed_potato_chip.gif"
               }
             }
           }
@@ -192,21 +218,24 @@
   },
   "active": "e6e7b5146b3ac284",
   "lastOpenFiles": [
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/Generating_Rectangular_Cells.png",
-    "Grasshopper_Rhino_course/intro.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/3d_print_preview.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/3d_print_textile_constrain.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/ce9ba513b4.gh",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/Generative_Tent.gh",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/constrains_tent.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/move_anchor_points_gh.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/tent_input_mesh.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/textile_tent_input_mesh.png",
     "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/cross_kangaroo_simulation.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/boundary_conditions_cross.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/cylinder_quad_remesh.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/initial_mesh.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/creating_mesh_gh.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
+    "Grasshopper_Rhino_course/intro.md",
     "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/!index.md",
     "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/Data-Driven_Design_ShoeSole.gh",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/final_custom_sole.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/cutting_solid_gh.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/depth_mould_side.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/depth mould side view.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/depth_mould.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/grid_sole_extrude.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/boundary_surface_sole.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/projecting_grid_sole.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Data-Driven_Personalized_Design/projecting_grid.png",
     "Grasshopper_Rhino_course/Lessons/1_Lesson_1_-_Basics/!index.md",
     "Python_Automation_Code.md",
     "test/test.md",
@@ -217,8 +246,6 @@
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-v4compatibility.woff2",
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2",
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.ttf",
-    "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2",
-    "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.ttf",
     "_build/html/_sources/_tags/tagsindex.md",
     "_build/html/_sources/_tags/personalized.md",
     "_build/html/_sources/_tags/data-driven.md",
