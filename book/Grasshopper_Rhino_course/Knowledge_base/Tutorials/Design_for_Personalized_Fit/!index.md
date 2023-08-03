@@ -1,7 +1,7 @@
 # Design for Personalized Fit
 
 :::{card}
-**Authors:** Your Name
+**Authors:** Jose Martinez Castro, Wolf Song, Toon Huysmans
 
 **Last Edited:** 2023-07-15
 :::
@@ -10,20 +10,7 @@
 ```{tags} 3d-scans, personalized
 ```
 
-
-Special thanks to Dr. Wolf Song and Dr. Toon Huysmans for their contribution in this lesson.
-
 ### Introduction
-
-:::{card}
-
-📑 *What:*         Introduction to the field of personalized design and 3D scanning
-
-*For Whom:* Intermediates in Rhino/Grasshopper
-
-*Time:*          15 minutes
-
-:::
 
 #### Personalized Design
 

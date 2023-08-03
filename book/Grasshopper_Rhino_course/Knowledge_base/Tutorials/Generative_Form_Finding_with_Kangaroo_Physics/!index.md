@@ -1,74 +1,18 @@
 # Generative Form Finding with Kangaroo Physics
 
 :::{card}
-**Authors:** Your Name
+**Authors:** Jose Martinez Castro, Wolf Song
 
 **Last Edited:** 2023-07-15
 :::
 
-
-Created: April 20, 2023 11:57 PM
-
 ```{tags} Form-Finding, Generative, Simulation
 ```
-
-Categories: Lesson
-
-Review: Currently Working On
-
-📌 **Outlines:** A short description of what you can expect in the upcoming section.
-
-📑 **Explanation text:** Written explanations with supporting images.
-
-👩‍🏫 **Explanation videos:** Explaining the course material in short lecture videos.
-
-📺 **Tutorial videos:** Follow-along tutorials.
-
-💡 T**ips:** Tips and tricks to make working in Rhino/Grasshopper easier.
-
-🖱️ **Exercises:** Small practice questions. The solution is provided.
-
-💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
-
-## Outline
-
-:::{dropdown} introduction into Grasshopper Kangaroo physics
-
-
-:::
-:::{dropdown} Basics of setting up kangaroo in Grasshopper
-
-
-:::
-:::{dropdown} Example show case
-
-
-- Creating a textile 3d structure
-
-- Creating a textile 3d tent
-
-- Creating a 4d printed textile shape change simulation
-
-- Creating a growing pattern on a vase
-
-:::
-:::{dropdown} Case study for personalized design
-
-
-:::
-:::{dropdown} Future work
-
-
-:::
-:::{dropdown} Related works
-
-
-:::
 ## Introduction
 
 This tutorial focuses on using Kangaroo physics simulations in Grasshopper to create generative geometry. In this tutorial, we will discuss the basics of physics simulation and how it can be used to create generative geometry. We will go over the necessary components needed to set up a Kangaroo simulation and how to set up constraints and goals for the simulation to achieve the desired outcome.
 
-Learning Kangaroo physics simulations in Grasshopper provides a new computational thinking model for creating generative geometry. This can be useful for a wide range of applications, from architecture and product design to art and sculpture. Kangaroo simulations can be also be used to model complex physical phenomena, such as the behavior of textiles or the growth of natural systems. This can provide insights that might be difficult or impossible to obtain through other means. 
+Learning Kangaroo physics simulations in Grasshopper provides a new computational thinking model for creating generative geometry. This can be useful for a wide range of applications, from architecture and product design. Kangaroo simulations can be also be used to model complex physical phenomena, such as the behavior of textiles or the growth of natural systems. This can provide insights that might be difficult or impossible to obtain through other means. 
 
 ## Basics
 
@@ -84,9 +28,9 @@ To set up a Kangaroo simulation in Grasshopper, the general steps are as follows
 
     1. Deciding which parts of the geometry will be fixed, which will be flexible, where the forces will be applied, etc
 
-    2. Based on this, we need to isolate the different parts of the geometry such as the main mesh, edges of the mesh,etc
+    2. Based on this, we need to isolate the different parts of the geometry such as the main mesh, edges of the mesh, points where the forces will applied, etc
 
-3. Apply Kangaroo Goals components to the parts of the geometry to assign constraints
+3. Apply Kangaroo Goals components to the parts of the geometry to assign the constraints
 
 4. Use the Show component to select which geometry to show in the output
 
@@ -94,45 +38,37 @@ To set up a Kangaroo simulation in Grasshopper, the general steps are as follows
 
     1. Merge all the Goal components
 
-    2. Make sure to add reset and toggle on/off button to the simulation
+    2. Make sure to add reset and toggle on/off button add controls for simulation
 
 6. Run the simulation 
 
 7. Adjust Goal parameters or resolution of components to obtain desired results
 
-Take a look at the example showcase where we discuss different potential application cases of generating geometry with Kangaroo to learn how to set up typical Kangaroo scripts.
+Take a look at the example showcase where we discuss different potential application cases of generating geometry with Kangaroo to learn how to set up typical Kangaroo scripts. We will walk through the steps discussed above to set up the Kangaroo Physics examples and create the simulation.
 
 ## Example Showcase
 
 This section demonstrates several examples, including:
 
-:::{dropdown} Creating a textile 3D structure.
+- Creating an Organic Textile Cross Structure
+- Creating a Textile 3D Tent
+- Creating a 4D-printed Shape Changing Textile
+- Creating a Growing Pattern on a Vase
 
+Additionally, one advanced example is also included showing how Kangaroo Physics can be applied to generate a personalized earbud using an ear 3D scan using the 3D scan from [Design for Personalized Fit](../Design_for_Personalized_Fit/!index.md)
+### Creating an Organic Textile Cross Structure
 
-:::
-:::{dropdown} Creating a textile 3D tent.
-
-
-:::
-:::{dropdown} Creating a 3D printed textile shape change simulation.
-
-
-:::
-:::{dropdown} Creating a growing pattern on a vase.
-
-
-:::
-## Creating an Organic Cross Structure
+:::{dropdown} Download the Grasshopper Script Here:
 
 [GenerativeMesh.gh](GenerativeMesh.gh)
 
-![Untitled](Untitled.gif)
+:::
 
-To create a an Organic Cross Structure using Grasshopper Kangaroo physics simulations, the following steps should be followed.
+![Organic_Cross_Structure_Video](Organic_Cross_Structure_Video.gif)
 
-Firstly, open the [GenerativeMesh.gh](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2dfd458e-61ab-40f4-b814-59f92c887dcb/GenerativeMesh.gh) file. This file contains the Grasshopper definition that demonstrates how to create the structure.
+In this example, we will showcase how to create an organic cross structure with textile-like behavior with fixed outer edges. By adjusting the parameters of the simulation, we can shrink/expand the structure and even generate wrinkles on the surface of the geometry.
 
-Secondly, to create the mesh used for the simulation, we need to convert our surface into a mesh and decide on the necessary mesh resolution to optimally run the simulation. This mesh will be used in the simulation.
+The grasshopper script file contains the Grasshopper definition that demonstrates how to create the structure. To create the mesh used for the simulation, we need to convert our surface into a mesh and decide on the necessary mesh resolution to optimally run the simulation. This mesh will be used in the simulation.
 
 Thirdly, create flexible edges of the mesh using the "Edge Length" component. This component is used to create a force that can keep the edges of the mesh within a certain length, allowing it to bend and fold while still maintaining its shape.
 
@@ -144,19 +80,27 @@ The next step is to load the mesh onto the Kangaroo solver. This is done by conn
 
 It is important to note that these steps provide a general overview of how to set up a Kangaroo simulation in Grasshopper. Additionally, the simulation parameters can be adjusted to achieve different results. For example, the strength of the forces, the number of iterations, or other simulation parameters can be adjusted to achieve the desired outcome.
 
-![Untitled](Untitled.png)
+![Organic_Cross_Structure_Edges](Organic_Cross_Structure_Edges.png)
 
-## Creating a Textile 3D tent
+### Creating a Textile 3D Tent
+
+:::{dropdown} Download the Grasshopper Script Here:
 
 [Generative Tent.gh](Generative_Tent.gh)
+
+:::
 
 ![Screen-Recording-2023-06-02-at-16.44.21.gif](Screen-Recording-2023-06-02-at-16.44.21.gif)
 
 ![Screenshot 2023-06-02 at 16.35.00.png](Screenshot_2023-06-02_at_16.35.00.png)
 
-## Creating a 4D-printed Shape Changing Textile
+### Creating a 4D-printed Shape Changing Textile
+
+:::{dropdown} Download the Grasshopper Script Here:
 
 [Programmable Textile.gh](Programmable_Textile.gh)
+
+:::
 
 ![textile1374-1480.gif](textile1374-1480.gif)
 
@@ -166,9 +110,13 @@ It is important to note that these steps provide a general overview of how to se
 
 ![Screenshot 2023-06-02 at 17.18.57.png](Screenshot_2023-06-02_at_17.18.57.png)
 
-## Creating a growing pattern on a vase
+### Creating a Growing Pattern on a Vase
+
+:::{dropdown} Download the Grasshopper Script Here:
 
 [Generative Grow on Vase.gh](Generative_Grow_on_Vase.gh)
+
+:::
 
 ![Screen Recording 2023-06-02 at 17.51.50 (4).gif](Screen_Recording_2023-06-02_at_17.51.50_%284).gif)
 
@@ -176,7 +124,11 @@ It is important to note that these steps provide a general overview of how to se
 
 ## Case Study: Personalized Design from 3D Scan using Kangaroo Physics
 
-[Generating a Mesh from Ear Canal Cavity (Kangaroo Physics).gh](Generating_a_Mesh_from_Ear_Canal_Cavity_%28Kangaroo_Physics).gh)
+:::{dropdown} Download the Grasshopper Script Here:
+
+[Generating_a_Mesh_from_Ear_Canal_Cavity__Kangaroo_Physics.gh](Generating_a_Mesh_from_Ear_Canal_Cavity__Kangaroo_Physics.gh)
+
+:::
 
 For more complicated 3D scan geometry, the approached mentioned above might not be sufficient to generate good results. In this cases, a more creative approach is necessary. Let's take for example, the geometry of an ear canal. in this scenario, we would like to create an earbud that is personalized for the user's 3D scan and perfectly fits the cavity of the ear canal.
 
@@ -223,7 +175,3 @@ If you are new to Grasshopper Kangaroo physics simulation, it is recommended to 
 ![Untitled](Untitled%207.png)
 
 For more details on this implementation, refer to the example file provided: [Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](https://www.notion.so/Generating-a-Mesh-from-Ear-Canal-Cavity-Kangaroo-Physics-1de999d9cccc4b1796ea0c9507b4cba2?pvs=21). In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!
-
-## Related Works
-
-[Untitled Database](Untitled%20Database.csv)
