@@ -3,18 +3,26 @@
 :::{card}
 **Authors:** Your Name
 
-**Last Edited:** 2023-07-15
+**Last Edited:** 2023-08-03
 :::
-
-
-Created: April 20, 2023 11:58 PM
 
 ```{tags} 3D-Printing, Advanced-Manufacturing
 ```
 
-Categories: Lesson
+:::{dropdown} Download the Grasshopper Script Here:
 
-Review: Ready for Review
+[Digital_Fabrication_Laser_Cutting.gh](Digital_Fabrication_Laser_Cutting.gh)
+
+:::
+
+:::{card} Plugins to download:
+
+[Pufferfish](https://www.food4rhino.com/en/app/pufferfish)
+[OpenNest](https://www.food4rhino.com/en/app/opennest)
+
+:::
+
+## Introduction 
 
 This tutorial will teach you the workflow on how to prepare your Rhino geometry for digital fabrication, specifically laser cutting. The workflow includes techniques such as creating contour slices of the geometry, creating intersecting joints between the slices, orienting the slices onto the cutting plane, optimizing the packing layout with OpenNest plugin, and exporting the curves for laser cutting.
 

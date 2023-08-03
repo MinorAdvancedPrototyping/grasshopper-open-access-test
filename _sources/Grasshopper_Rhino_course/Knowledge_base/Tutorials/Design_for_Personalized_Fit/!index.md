@@ -3,7 +3,7 @@
 :::{card}
 **Authors:** Jose Martinez Castro, Wolf Song, Toon Huysmans
 
-**Last Edited:** 2023-07-15
+**Last Edited:** 2023-08-03
 :::
 
 
@@ -38,36 +38,16 @@ When developing a design for Personalized Fit in Rhino Grasshopper, the goal is 
 
 ### Collecting Anthropomorphic Data
 
-:::{card}
-
-📑 *What:*         Introduction to the field of personalized design and 3D scanning
-
-*For Whom:* Intermediates in Rhino/Grasshopper
-
-*Time:          20* minutes
-
-:::
-
 #### Overview of Collection Methods
 
 To begin designing a product personalized for fit, we first need to collect anthropomorphic data (data of the human body geometry) before we create the Grasshopper script to generate the Rhino geometry. Depending on the requirements of the design, there are various collection methods varying in accuracy and complexity. The decision on the collection method will also influence how the Grasshopper script will be set up as we will see in the following section.
 
 The input methods we will discuss include:
 
-:::{dropdown} Physical measurements
-
-
-:::
-:::{dropdown} 3D Scanning
-
-
-:::
-:::{dropdown} Statistical Shape Modeling
-
-
-:::
-:::{dropdown} 3D scan database (DINED)
-
+- Physical measurements
+- 3D Scanning
+- Statistical Shape Modeling
+- 3D scan database (DINED)
 
 :::
 #### Physical Measurements
@@ -76,7 +56,7 @@ Obtaining physical measurements is the simplest and quickest method to acquire d
 
 ![foot_measurement_device.png](foot_measurement_device.png)
 
-In the Master's graduation project [**Development of a low-cost 3D foot scanner**](../Development%20of%20a%20low-cost%203D%20foot%20scanner.md) , graduation student [Hoeksema, J.](https://repository.tudelft.nl/islandora/search/author%3A%22Hoeksema%2C%20J.%22) developed a rig to digitally measure specific points along a person's foot as seen in the figure below.
+In the Master's graduation project [Design of customizable sunglasses based on additive manufacturing techniques](../../Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/!index.md), graduation student J. Hoeksema developed a rig to digitally measure specific points along a person's foot as seen in the figure below.
 
 ![3d_foot_scanner.png](3d_foot_scanner.png)
 
@@ -92,15 +72,11 @@ Depending on the accuracy of the 3D scanned used, the 3D mesh may require some p
 
 ![Credits: Dr. Toon Huysmans](mesh_correspondence.png)
 
-Credits: Dr. Toon Huysmans
-
 #### Statistical Shape Modeling
 
 Statistical Shape Modeling are used to describe a collection of similar 3D data in a simplified way. SSMs represent an average of the geometry of the 3D data including any variation. For example, if you have collected various 3D scanned data of ear geometry from a certain population, using SSM you could create an average 3D mesh model of your collected data. This approach can be useful when the goal of your design is for Personalized Fit of an individual, but Personalized Fit for a particular population. To explore the creation of SSM, refer to the software [Paraview](https://www.paraview.org/) for more information.
 
 ![Credits: Dr. Toon Huysmans](statistical_shape_modeling.png)
-
-Credits: Dr. Toon Huysmans
 
 #### 3D Scan Database (DINED)
 
@@ -108,9 +84,7 @@ If your design project requires Personalization in Fit for a specific human popu
 
 ![Credits: Dr. Toon Huysmans](dined_database.png)
 
-Credits: Dr. Toon Huysmans
-
-Additionally, there is a Grasshopper plugin for DINED developed at TU Delft - Industrial Design Engineering by Dr. Toon Huysmans. This plugin allows the user to directly select the population and import the 3D STL model directly from Grasshopper. More information on the DINED Grasshopper plugin can be found in the following resource: [DINED Plugin](../DINED%20Plugin.md) 
+Additionally, there is a Grasshopper plugin for DINED developed at TU Delft - Industrial Design Engineering by Dr. Toon Huysmans. This plugin allows the user to directly select the population and import the 3D STL model directly from Grasshopper. More information on the DINED Grasshopper plugin can be found in the following resource:  
 
 ### Generating Personalized Designs from Anthropomorphic Data
 
@@ -122,7 +96,7 @@ Depending on your data collection method and the requirements of your design, yo
 
 In this scenario, the designer generates a surface from physical measurements taken of users’ anthropomorphic data, whether measured with simple tools like a caliper or a custom rig. For this, the designer creates a Grasshopper script with a template surface. The template surface is created from curves, from which the control points represent the locations at which the measurements are taken.
 
-An example of this scenario can be seen in [**Development of a low-cost 3D foot scanner**](../Development%20of%20a%20low-cost%203D%20foot%20scanner.md). In this graduation project, the student developed a custom contact 3D scanning rig to measure the feet of users. The measured location points are then inputted into a Grasshopper script that modifies the surface template to match the measured values.
+An example of this scenario can be seen in[Development of a Low-Cost 3D Foot Scanner](../../Graduation_Projects/Development_of_a_low-cost_3D_foot_scanner/!index.md). In this graduation project, the student developed a custom contact 3D scanning rig to measure the feet of users. The measured location points are then inputted into a Grasshopper script that modifies the surface template to match the measured values.
 
 ![[https://repository.tudelft.nl/islandora/object/uuid%3A0ee880fb-7063-42cd-aa82-b67f7c84d1e9](3d_foot_scanner_diagram.png)
 
@@ -132,9 +106,9 @@ An example of this scenario can be seen in [**Development of a low-cost 3D foot 
 
 [https://repository.tudelft.nl/islandora/object/uuid%3A0ee880fb-7063-42cd-aa82-b67f7c84d1e9](https://repository.tudelft.nl/islandora/object/uuid%3A0ee880fb-7063-42cd-aa82-b67f7c84d1e9)
 
-Let's consider how we can set up a Grasshopper script using a similar scenario to generate a surface of foot based on foot measurements. You can refer to the Grasshopper script [Shoe Physical Measurements.gh](%21index.md) to see the detailed implementation in Grasshopper. In our case, we do not have access to a custom measuring rig, but we can rely on simple tools such as a caliper or a ruler to obtain similar measurements around the foot. We can take the following steps to create a script for this purpose:
+Let's consider how we can set up a Grasshopper script using a similar scenario to generate a surface of foot based on foot measurements. You can refer to the Grasshopper script to see the detailed implementation in Grasshopper. In our case, we do not have access to a custom measuring rig, but we can rely on simple tools such as a caliper or a ruler to obtain similar measurements around the foot. We can take the following steps to create a script for this purpose:
 
-1. Decide on the key measurement locations around the foot that properly define the general geometry. You can refer to the paper [*Identify dominant dimensions of 3D hand shapes using statistical shape model and deep neural network](https://www.sciencedirect.com/science/article/pii/S0003687021001095#fig2)* for an example of an approach to identify key dimensions of the hand.
+1. Decide on the key measurement locations around the foot that properly define the general geometry. You can refer to the paper [Identify dominant dimensions of 3D hand shapes using statistical shape model and deep neural network](https://www.sciencedirect.com/science/article/pii/S0003687021001095#fig2) for an example of an approach to identify key dimensions of the hand.
 
 ![*[Identify dominant dimensions of 3D hand shapes using statistical shape model and deep neural network](key_hand_measurements.png)
 
@@ -166,21 +140,21 @@ Let's consider how we can set up a Grasshopper script using a similar scenario t
 
 #### Adaptable Parametric Model to 3D Scan
 
-[- To do: clean up script to make it more readable](ParametricSunglasses.gh)
+:::{dropdown} Download the Grasshopper Script Here:
 
-:::{dropdown} To do: clean up script to make it more readable
-
+[ParametricSunglasses.gh](ParametricSunglasses.gh)
 
 :::
+
 In this scenario, the designer creates a product in Rhino or in Grasshopper to meet the desired function and form. This design serves as a template that can be customized to meet the size requirements of different users. In the template, certain product variables are parametrized to adjust based on the size requirements. Using Rhino Grasshopper, a script can be written to automatically extract data from a 3D scan that can be used to adjust the product parameters automatically.
 
-An example of this method is the [**Design of customizable sunglasses based on additive manufacturing techniques**](../__Design%20of%20customizable%20sunglasses%20based%20on%20additive%20manufacturing%20techniques__.md). In this project, the student created a main design template of sunglasses with some features of the sunglasses being parametrized e.g. parametric temple (side piece) length and bridge (nose piece) length to accommodate various head and nose sizes. By collecting and analyzing data from user's 3D scans, the parametric glasses are automatically adjusted to fit the user's size requirements. A visual example of these results can be seen in the figure below.
+An example of this method is the [Design of customizable sunglasses based on additive manufacturing techniques](../../Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/!index.md). In this project, the student created a main design template of sunglasses with some features of the sunglasses being parametrized e.g. parametric temple (side piece) length and bridge (nose piece) length to accommodate various head and nose sizes. By collecting and analyzing data from user's 3D scans, the parametric glasses are automatically adjusted to fit the user's size requirements. A visual example of these results can be seen in the figure below.
 
 ![[https://repository.tudelft.nl/islandora/object/uuid%3A33a65390-41bb-4fb2-b2ac-7166fca7e87a](customizable_sunglasses.png)
 
 [https://repository.tudelft.nl/islandora/object/uuid%3A33a65390-41bb-4fb2-b2ac-7166fca7e87a](https://repository.tudelft.nl/islandora/object/uuid%3A33a65390-41bb-4fb2-b2ac-7166fca7e87a)
 
-To implement this approach in a Grasshopper script, let's consider the example mentioned above. Here we will show the workflow of a script that adjusts the frame of the glasses based on certain landmarks from a 3D scan. Some advanced 3D scanners come with built-in functionality to automatically detect certain landmarks based on body parts, which can be used in such design cases. In our example script [ParametricSunglasses.gh](%21index.md), the user is prompted to manually select 2 landmarks from the desired 3D head scan to generate the parametric glasses: The top of the ear and the bridge of the nose. 
+To implement this approach in a Grasshopper script, let's consider the example mentioned above. Here we will show the workflow of a script that adjusts the frame of the glasses based on certain landmarks from a 3D scan. Some advanced 3D scanners come with built-in functionality to automatically detect certain landmarks based on body parts, which can be used in such design cases. In our example script, the user is prompted to manually select 2 landmarks from the desired 3D head scan to generate the parametric glasses: The top of the ear and the bridge of the nose. 
 
 ![personalized_sunglasses_grasshopper.gif](personalized_sunglasses_grasshopper.gif)
 
@@ -200,8 +174,6 @@ The workflow for this script is as follows:
 
 #### Generating a Surface from 3D Scan (Mesh Slicing)
 
-[Personalized Design From 3D Scan - Hand Splint Exercise.gh](Personalized_Design_From_3D_Scan_-_Hand_Splint_Exercise.gh)
-
 In this scenario, the goal is to create a surface from a 3D scan of a body part with relatively simple geometry e.g. an arm or leg. Imagine that you would like to create a design for an arm brace using the 3D scan mesh of your user's arm. We can approach this problem in Grasshopper with the following steps:
 
 1. Create a series of planes across the arm
@@ -210,7 +182,7 @@ In this scenario, the goal is to create a surface from a 3D scan of a body part 
 
 3. Create a loft between the curves to generate a surface
 
-For further instructions on how to set up the Grasshopper script, refer to [Lesson 4 - Surfaces](../../Lessons/4%EF%B8%8F%E2%83%A3%20Lesson%204%20-%20Surfaces/%21index.md) 
+For further instructions on how to set up the Grasshopper script, refer to [Lesson 4 - Surfaces](../../../Lessons/4_Lesson_4_-_Surfaces/!index.md)
 
 ![surface_from_3d_scan.png](surface_from_3d_scan.png)
 
@@ -224,11 +196,15 @@ Additionally, it is important to mention that this method is not only intended f
 
 #### Generating a Surface from Complex 3D Scan (Mesh Cavity + Slicing)
 
-[Generating a Mesh from Ear Canal Cavity (Simple).gh](Generating_a_Mesh_from_Ear_Canal_Cavity_%28Simple).gh)
+:::{dropdown} Download the Grasshopper Script Here:
+
+[Generating_a_Mesh_from_Ear_Canal_Cavity__Simple_.gh](Generating_a_Mesh_from_Ear_Canal_Cavity__Simple_.gh)
+
+:::
 
 For complex 3D scans, such as that of the ear, it can be more complicated to generate a surface geometry. Imagine that we would like to create an ear bud that perfectly matches the inner cavity of the ear. If we try to apply the Mesh Slicing method to an ear 3D scan, we soon run into issues with multiple curve slices on the same planes and other complications.
 
-For this case, one approach can be to first isolate the geometry of the ear cavity and then generate the surface using mesh slicing. Take a look at the example Grasshopper script to see the full workflow [Generating a Mesh from Ear Canal Cavity (Simple).gh](%21index.md). We can use the following steps to generate the surface of the ear cavity:
+For this case, one approach can be to first isolate the geometry of the ear cavity and then generate the surface using mesh slicing. Take a look at the example Grasshopper script to see the full workflow. We can use the following steps to generate the surface of the ear cavity:
 
 1. Generate a “Cutting” mesh to isolate the cavity of the ear. In this case, a sphere mesh was created. As the ear 3D scans used in this example contained a naked edge on the ear cavity, the center point of this naked edge was used as the center position of the sphere.
 
@@ -258,7 +234,7 @@ For this case, one approach can be to first isolate the geometry of the ear cavi
 
     
 
-4. Generate the surface loft and troubleshoot the loft curves as learned in [Lesson 4 - Surfaces](../../Lessons/4%EF%B8%8F%E2%83%A3%20Lesson%204%20-%20Surfaces/%21index.md)  to generate a clean surface geometry.
+4. Generate the surface loft and troubleshoot the loft curves as learned in [Lesson 4 - Surfaces](../../../Lessons/4_Lesson_4_-_Surfaces/!index.md) to generate a clean surface geometry.
 
     
 
@@ -270,9 +246,7 @@ For this case, one approach can be to first isolate the geometry of the ear cavi
 
     
 
-This solution is only one of many to obtain the inner cavity of the ear as a surface. For a different type of a approach, refer to the tutorial [Generative Form Finding with Kangaroo Physics](../Generative%20Form%20Finding%20with%20Kangaroo%20Physics/%21index.md) to learn how you can use Kangaroo physics to generate a similar geometry of the inner cavity.
-
-### Relevant Projects
+This solution is only one of many to obtain the inner cavity of the ear as a surface. For a different type of a approach, refer to the tutorial [Generative Form Finding with Kangaroo Physics](../Generative_Form_Finding_with_Kangaroo_Physics/!index.md) to learn how you can use Kangaroo physics to generate a similar geometry of the inner cavity.
 
 
 

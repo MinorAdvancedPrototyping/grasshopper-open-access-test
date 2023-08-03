@@ -1,54 +1,25 @@
 # Generating G-code with Grasshopper
 
 :::{card}
-**Authors:** Your Name
+**Authors:** Mehmet Ozdemir, Zjenja Doubrovski, Jose Martinez Castro
 
-**Last Edited:** 2023-07-15
+**Last Edited:** 2023-08-03
 :::
 
-
-Created: February 24, 2023 12:14 PM
-
-```{tags} Advanced-Manufacturing
+```{tags} Advanced-Manufacturing, 3d-printing
 ```
 
-Categories: Lesson
+:::{dropdown} Download the Grasshopper Script Here:
 
-Review: Ready for Review
-
-📌 **Outlines:** A short description of what you can expect in the upcoming section.
-
-📑 **Explanation text:** Written explanations with supporting images.
-
-👩‍🏫 **Explanation videos:** Explaining the course material in short lecture videos.
-
-📺 **Tutorial videos:** Follow-along tutorials.
-
-💡 T**ips:** Tips and tricks to make working in Rhino/Grasshopper easier.
-
-🖱️ **Exercises:** Small practice questions. The solution is provided.
-
-💻 **Assignments:** Open-ended assignments, to practice further with the course materials.
-
-Original content developed by Mehmet Ozdemir and Zjenja Doubrovski
-
-:::{dropdown} Exercise Files:
-
-
-
-
-[Grasshopper G-code Geneartion Template.gh](template2.gh)
-
-
+[Grasshopper_gcode_generation_template.gh](Grasshopper_gcode_generation_template.gh)
 
 :::
+
 ## Basics of G-code
 
 G-code is a common language for CNC (Computer Numerical Control) machine that includes a list of operations. In the case of 3D FDM printers, this includes operations on how to move, how much filament to extrude, what temperature to set, and more. G-code comes in different "flavors" which indicates what commands are accepted and how they are interpreted by the printer. In this lesson, we will focus on the Marlin flavor, although other flavors only have small differences. For a full list of G-code commands, please refer to the resources here: [marlinfw.org/meta/gcode](http://marlinfw.org/meta/gcode) and [reprap.org/wiki/G-code](http://reprap.org/wiki/G-code)
 
 ![Example of a G-code script](g_code_example.png)
-
-Example of a G-code script
 
 ### Common Commands
 
@@ -128,9 +99,6 @@ Refer to [marlinfw.org/meta/gcode](http://marlinfw.org/meta/gcode) for additiona
 
 :::{dropdown} Solution
 
-
-
-
 ```nasm
 
 M107 ;set the fan off
@@ -147,9 +115,8 @@ M300 S440 P200 ;make a beep sound
 
 ```
 
-
-
 :::
+
 ### G-code Structure
 
 When writing a G-code script, the general structure is as follows:
@@ -298,14 +265,10 @@ What shape would the printer create? Feel free to sketch out the shape on a piec
 
 :::{dropdown} Solution
 
-
-
-
 ![christmas_tree_gcode.png](christmas_tree_gcode.png)
 
-
-
 :::
+
 ## Developing a Grasshopper Script to Write G-code
 
 In a traditional 3D printing process, designers often use what is called slicer software to create the G-code given to the printer. The job of the slicer software is to convert your 3D model into the extruder path and G-code operations for the printer to perform. The traditional 3D printing process looks something like this:
@@ -320,11 +283,9 @@ Now that we understand the basics of G-code, we are able to use an alternative w
 
 Grasshopper G-code workflow
 
-The main concept here is to convert our solid/surface into contour curves, divide these curves into smaller segments, and obtain the X Y Z coordinates from the collection of sequential points. Using this collection of points, we can write the G-code to instruct the printer to move to these locations while extruding in sequential order. As the order of operations is critical for the G-code, it is important to keep the geometry data organized. For resource on working with data structures in Grasshopper, see [Lesson 3 - Data structures](../../Lessons/3%EF%B8%8F%E2%83%A3%20Lesson%203%20-%20Data%20structures/%21index.md) 
+The main concept here is to convert our solid/surface into contour curves, divide these curves into smaller segments, and obtain the X Y Z coordinates from the collection of sequential points. Using this collection of points, we can write the G-code to instruct the printer to move to these locations while extruding in sequential order. As the order of operations is critical for the G-code, it is important to keep the geometry data organized. For resource on working with data structures in Grasshopper, see [Lesson 3 - Data Structures](../../../Lessons/3_Lesson_3_-_Data_structures/!index.md)
 
-Let’s take the example of creating the G-code for a simple cylinder as shown above. Once we have the collection of points, how exactly do we translate these points into G-code operations and ensure to add all other necessary G-code calculations? First, let’s look at some basic concepts which will be key in creating this script. To follow along, feel free to download the exercise file here:
-
-[Grasshopper G-code Generation Template.gh](template2.gh)
+Let’s take the example of creating the G-code for a simple cylinder as shown above. Once we have the collection of points, how exactly do we translate these points into G-code operations and ensure to add all other necessary G-code calculations? First, let’s look at some basic concepts which will be key in creating this script. To follow along, download the exercise file at the beginning of the lesson.
 
 ### Extrusion Amount
 
@@ -344,14 +305,9 @@ In order to deposit material onto the print bed, we need to specify how much mat
 
 Secondly, we need:
 
-:::{dropdown} The ratio between filament and line cross section (the filament diameter and nozzle diameter will most likely not be the same)
+- The ratio between filament and line cross section (the filament diameter and nozzle diameter will most likely not be the same)
+- The length of each line segment (this is dependent on the distance the extruder will travel between points)
 
-
-:::
-:::{dropdown} The length of each line segment (this is dependent on the distance the extruder will travel between points)
-
-
-:::
 ![flow_rate_setting.png](flow_rate_setting.png)
 
 By inputting this values into the Grasshopper script, we can calculate the extrusion amount (in mm) using the following set-up;
@@ -378,14 +334,9 @@ The merge component takes multiple lists and adds them after each other. This wi
 
 Now that we have brought all the elements together into the final G-code, it is time to save your work and start printing. Here you have two options:
 
-:::{dropdown} Right-click on the Panel and select Stream Contents followed by Stream Destination. Save your file as .gcode.
+1. Right-click on the Panel and select Stream Contents followed by Stream Destination. Save your file as .gcode.
+2. Copy and Paste the contents of the Panel into a text file. Save and then change the file extension to .gcode
 
-
-:::
-:::{dropdown} Copy and Paste the contents of the Panel into a text file. Save and then change the file extension to .gcode
-
-
-:::
 ![stream_contents.png](stream_contents.png)
 
 Now that you know how to make a simple G-code of a reference geometry, experiment with the given template and see what possibilities you can create by changing up the G-code.
@@ -396,38 +347,12 @@ Now that you know how to make a simple G-code of a reference geometry, experimen
 
 In this lesson, we learned how to create a simple G-code that divides a surface into curves and prints filament along these defined curves. Aside from simple contours of geometry, there are many more 3D printing features you can create by manipulating the G-code which some can be found in your traditional slicers such as:
 
-:::{dropdown} travel moves
+- Travel moves
+- Infill
+- Bed adhesion (brim, skirt,…)
+- Retraction
+- Support
 
-
-:::
-:::{dropdown} Infil
-
-
-:::
-:::{dropdown} Bed adhesion (brim, skirt,…)
-
-
-:::
-:::{dropdown} Retraction
-
-
-:::
-:::{dropdown} Support
-
-
-:::
 ![further_explorations.png](further_explorations.png)
 
 There is much to explore when it comes to generating G-code with Grasshopper. By having full, precise control over the geometry generation and the manufacturing process, we can create very unique designs not possible with traditional 3D printing. If you wish to dive deeper into the world of G-code generation with Grasshopper, be sure to read [Advanced 3D Printing with Grasshopper](https://www.food4rhino.com/en/resource/advanced-3d-printing-grasshopper-clay-and-fdm) by Diego Garcia Cuevas & Gianluca Pugliese.
-
-![[http://emergingobjects.com/project/gcode-clay/](http://emergingobjects.com/project/gcode-clay/)](Generating%20G-code%20with%20Grasshopper%20733bed9ccdf24d61be7e635444058a33/emergingobjects_gcode_clay.png)
-
-[http://emergingobjects.com/project/gcode-clay/](http://emergingobjects.com/project/gcode-clay/)
-
-![ [Advanced 3D Printing with Grasshopper](https://www.food4rhino.com/en/resource/advanced-3d-printing-grasshopper-clay-and-fdm) by Diego Garcia Cuevas & Gianluca Pugliese](Generating%20G-code%20with%20Grasshopper%20733bed9ccdf24d61be7e635444058a33/advanced_3d_printing_with_grasshopper.png)
-
- [Advanced 3D Printing with Grasshopper](https://www.food4rhino.com/en/resource/advanced-3d-printing-grasshopper-clay-and-fdm) by Diego Garcia Cuevas & Gianluca Pugliese
-
-## Relevant Projects
-
-[Untitled Database](Untitled%20Database.csv)
