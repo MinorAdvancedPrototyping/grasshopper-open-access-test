@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/!index.md",
                 "mode": "source",
                 "source": false
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/!index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/!index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md"
+                "file": "Grasshopper_Rhino_course/Knowledge_base/!index.md"
               }
             }
           },
@@ -218,17 +218,20 @@
   },
   "active": "e6e7b5146b3ac284",
   "lastOpenFiles": [
-    "_build/html/_images/set_nozzle_temp.png",
-    "_build/html/_images/set_bed_temp.png",
-    "_build/html/_images/printing_command.png",
-    "_build/html/_images/g_code_example.png",
-    "_build/html/_images/3.5a_Assignment3.png",
-    "_build/html/_images/2.2.1a_VectorDisplay.png",
-    "_build/html/_images/1.5b_ExportImageTip.png",
-    "_build/html/_images/1.5a_Assignment1.png",
-    "_build/html/_images/1.4.2b_DataConversionFailed.png",
-    "_build/html/_images/1.4.2a_FailedToCollectData.png",
-    "_build/html/_images/1.4.1a_ObjectDescription.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric,_3D_printed_ankle_foot_orthosis__/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/Designing_a_multi-sports_helmet_based_on_3D_ergonomic_dat/cover.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/Designing_a_multi-sports_helmet_based_on_3D_ergonomic_dat/3d_print_helmet.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/personalized_sunglasses.jpeg",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/cover.jpeg",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/Development_of_a_low-cost_3D_foot_scanner/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/A_medical_jewel,_the_hand_splint/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/Designing_a_multi-sports_helmet_based_on_3D_ergonomic_dat/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/The_making_of_a_smart_pillow/!index.md",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Digital_Fabrication__Laser_Cutting_/!index.md",
     "_build/html/searchindex.js.tmp",
     "_tags/tagsindex.md",
     "_tags/Meshes.md",
@@ -247,22 +250,19 @@
     "_tags/personalized.md",
     "_tags/3d-scans.md",
     "_tags",
-    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/Development_of_a_low-cost_3D_foot_scanner/!index.md",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Design_for_Personalized_Fit/!index.md",
-    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/!index.md",
-    "_build/html/_downloads/4a86903be57e3b5b5a42b9fa8d775472/ParametricSunglasses.gh",
-    "_build/html/_downloads/4a86903be57e3b5b5a42b9fa8d775472",
-    "_build/html/_downloads/f5dfd8afcd44bf5460fd3f151f024c72",
-    "_build/html/_downloads/44f512bc03049e1f94967b07e7cb7969",
-    "_build/html/_downloads/27e0997a2ccd45f87876cfc028f2e279",
-    "_build/html/_downloads/eb3cfde68fd3cae67e8ae41dc286057c/Shoe_Physical_Measurements.gh",
-    "_build/html/_downloads/eb3cfde68fd3cae67e8ae41dc286057c",
-    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index.md",
     "_build/html/index.html",
-    "_build/html/_sources/_tags/tagsindex.md",
-    "_build/html/_sources/_tags/personalized.md",
-    "_build/html/_sources/_tags/data-driven.md",
-    "_build/html/_sources/_tags/Surfaces.md",
-    "_build/html/_sources/_tags/Simulation.md"
+    "_build/html/objects.inv",
+    "_build/html/searchindex.js",
+    "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-v4compatibility.woff2",
+    "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-v4compatibility.ttf",
+    "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2",
+    "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.ttf",
+    "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2",
+    "_build/html/_static/images/logo_jupyterhub.svg",
+    "_build/html/_static/images/logo_deepnote.svg",
+    "_build/html/_static/images/logo_colab.png",
+    "_build/html/_static/images/logo_binder.svg",
+    "_build/html/_static/TUDelft_logo_cmyk.png",
+    "_build/html/_static/plus.png"
   ]
 }

@@ -1,24 +1,18 @@
 # Application of mechanical metamaterials in a parametric, 3D printed ankle foot orthosis
 
 :::{card}
-**Authors:** Your Name
+**Authors:** van Leijsen, P.M.
 
-**Last Edited:** 2023-07-15
+**Supervisors:** Doubrovski, E.L. (mentor), Wu, J. (graduation committee)
+
+**Last Edited:** 2023-08-03
+
+**URL:** https://repository.tudelft.nl/islandora/object/uuid%3A656fd81e-98fd-460f-8a14-e90483c78b1c
 :::
-
-
-Created: April 28, 2023 4:05 PM
 
 ```{tags} 3d-scans, Advanced-Manufacturing, data-driven, personalized
 ```
 
-Authors: van Leijsen, P.M.
-
-Categories: Graduation Project
-
-Supervisors: Doubrovski, E.L. (mentor), Wu, J. (graduation committee)
-
-URL: https://repository.tudelft.nl/islandora/object/uuid%3A656fd81e-98fd-460f-8a14-e90483c78b1c
 
 ![metamaterial_orthosis.png](metamaterial_orthosis.png)
 

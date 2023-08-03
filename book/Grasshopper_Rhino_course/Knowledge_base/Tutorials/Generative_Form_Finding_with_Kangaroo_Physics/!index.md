@@ -30,13 +30,13 @@ To set up a Kangaroo simulation in Grasshopper, the general steps are as follows
 
     b. Based on this, we need to isolate the different parts of the geometry such as the main mesh, edges of the mesh, points where the forces will applied, etc
 
-3. Apply Kangaroo Goals components to the parts of the geometry to assign the constraints
+3. Apply **Kangaroo Goals** components to the parts of the geometry to assign the constraints
 
-4. Use the Show component to select which geometry to show in the output
+4. Use the **Show** component to select which geometry to show in the output
 
 5. Set up Kangaroo solver
 
-    a. Merge all the Goal components
+    a. Merge all the **Goal** components
 
     b. Make sure to add reset and toggle on/off button add controls for simulation
 
@@ -68,16 +68,26 @@ Additionally, one advanced example is also included showing how Kangaroo Physics
 
 In this example, we will showcase how to create an organic cross structure with textile-like behavior with fixed outer edges. By adjusting the parameters of the simulation, we can shrink/expand the structure and even generate wrinkles on the surface of the geometry.
 
-The grasshopper script file contains the Grasshopper definition that demonstrates how to create the structure. First, we will create the surface of the cross structure by joining two cylinders together. The Mesh Brep component is used convert the surface Brep into a mesh.
+The grasshopper script file contains the Grasshopper definition that demonstrates how to create the structure. First, we will create the surface of the cross structure by joining two cylinders together. The **Mesh Brep** component is used convert the surface Brep into a mesh.
 
 ![creating_mesh_gh](creating_mesh_gh.png)
 
 ![cross_surface](cross_surface.png)
 
-Next, we need to improve the quality of the mesh to run the simulation smoothly. When preparing a mesh for use with Kangaroo Physics, we want to avoid having mesh faces of different sizes and mixing triangle and quad faces in the same mesh. For this, we will use the Quad Remesh component to transform our original mesh into a cleaner mesh with all Quad faces of the same size. We can additionally use the Quad Remesh Settings components to further adjust the resolution new quad mesh.
+Next, we need to improve the quality of the mesh to run the simulation smoothly. When preparing a mesh for use with Kangaroo Physics, we want to avoid having mesh faces of different sizes and mixing triangle and quad faces in the same mesh. For this, we will use the **Quad Remesh** component to transform our original mesh into a cleaner mesh with all Quad faces of the same size. We can additionally use the **Quad Remesh Settings** components to further adjust the resolution new quad mesh.
 
+::::{grid}
+
+:::{grid-item}
+:child-align: center
 ![initial_mesh](initial_mesh.png)
+:::
+:::{grid-item}
+:child-align: center
 ![cylinder_quad_remesh](cylinder_quad_remesh.png)
+:::
+
+:::: 
 
 Next, we will apply the physical constrains or boundary conditions for the simulation. For this example, our goal is the following (refer to the image below):
 
@@ -90,11 +100,11 @@ To achieve the desired result, we will use the following Kangaroo Physics compon
 - Anchor: Fixes the specified points in space to their original location, or the location of a target point
 - EdgeLengths: sets the edge length of the specified mesh thus allowing the mesh to shrink or expand based on the value of the LengthFactor input (<1 shrink, >1 expand)
 
-Finally, we connect the mesh geometry to the Show component. This ensures that when we run the simulation, the final simulated preview displays the shape change of the mesh. Similarly, we could choose to input the edges or points of the mesh into the Show component if we desired a different preview.
+Finally, we connect the mesh geometry to the **Show** component. This ensures that when we run the simulation, the final simulated preview displays the shape change of the mesh. Similarly, we could choose to input the edges or points of the mesh into the **Show** component if we desired a different preview.
 
 ![boundary_conditions_cross](boundary_conditions_cross.png)
 
-The next step is to load the Kangaroo Goal components onto the Kangaroo Solver. This is done by connecting the Kangaroo components to the "Kangaroo Solver" component. In this case, we will use the BouncySolver to run the simulation. By following these steps, the organic textile structure is simulated in real-time. The simulation can be stopped at any time using the Boolean Toggle and the generated geometry can be baked and used for further processing.
+The next step is to load the **Kangaroo Goal** components onto the Kangaroo Solver. This is done by connecting the Kangaroo components to the **Kangaroo Solver** component. In this case, we will use the **BouncySolver** to run the simulation. By following these steps, the organic textile structure is simulated in real-time. The simulation can be stopped at any time using the Boolean Toggle and the generated geometry can be baked and used for further processing.
 
 ![cross_kangaroo_simulation](cross_kangaroo_simulation.png)
 
@@ -110,20 +120,20 @@ It is important to note that these steps provide a general overview of how to se
 
 ![Generative_tent_video.gif](Generative_tent_video.gif)
 
-The first step to begin the simulation is to create the input mesh geometry. We can simply create a Plane Surface and convert it into a mesh using the Mesh Surface component. Here, the U and V count will determine the number of quad faces of the surface (or the resolution of the mesh).
+The first step to begin the simulation is to create the input mesh geometry. We can simply create a Plane Surface and convert it into a mesh using the **Mesh Surface** component. Here, the U and V count will determine the number of quad faces of the surface (or the resolution of the mesh).
 
 ![textile_tent_input_mesh](textile_tent_input_mesh.png)
 
 ![tent_input_mesh](tent_input_mesh.png)
 
-Next, we will use the corner points of the surface plane and move them individually in the Z-direction to create the target location for the simulation. Here we can use the Gene Pool component to easily adjust the target location of each of the 4 points.
+Next, we will use the corner points of the surface plane and move them individually in the Z-direction to create the target location for the simulation. Here we can use the **Gene Pool** component to easily adjust the target location of each of the 4 points.
 
 ![move_anchor_points_gh](move_anchor_points_gh.png)
 
-Next, we will add our physical constraints to the system. We will add the mesh to the EdgeLengths component ensuring that we have a LengthFactor below 1 to create a shrinking/tension on the textile. For the Anchor component, we will connect the original location of the 4 corner points to the Point input and the moved target locations to the Target. This will allow us to move the tent in the z-direction during the simulation. Finally, we will connect the Mesh to the Show component for the simulation preview.
+Next, we will add our physical constraints to the system. We will add the mesh to the **EdgeLengths** component ensuring that we have a LengthFactor below 1 to create a shrinking/tension on the textile. For the **Anchor** component, we will connect the original location of the 4 corner points to the Point input and the moved target locations to the Target. This will allow us to move the tent in the z-direction during the simulation. Finally, we will connect the Mesh to the **Show** component for the simulation preview.
 ![constrains_tent](constrains_tent.png)
 
-Once we have connected all the Goal components to the Kangaroo solver, we will have a result similar to the image below. Here our original flat plane is now transformed to a textile in tension connected at the 4 corner points. By simply moving the 4 corner points in space, we can generate different shapes for the final geometry. As an additional exercise, try to add more anchor points to the simulation (e.g. the center point of the plane) with a moveable target location to see if you can create even more complex shapes with this simulation.
+Once we have connected all the **Goal** components to the Kangaroo solver, we will have a result similar to the image below. Here our original flat plane is now transformed to a textile in tension connected at the 4 corner points. By simply moving the 4 corner points in space, we can generate different shapes for the final geometry. As an additional exercise, try to add more anchor points to the simulation (e.g. the center point of the plane) with a moveable target location to see if you can create even more complex shapes with this simulation.
 
 ![generative_tent_setup](generative_tent_setup.png)
 
@@ -158,10 +168,10 @@ As seen in the image below, we will select two points on the outer edge of the c
 ![3d_print_textile_edge](3d_print_textile_edge.png)
 
 We can now start building our physical constraints on the system as described above in Grasshopper:
-- Load: connect one of the points on the outer edge of the mesh to the Point input and add a force vector in the Z-direction to apply a load at that point
-- Anchor: connect the other point on the outer edge to the Anchor component to fix it in space
-- Rod: this component takes a polyline curve and convers it to semi-flexible rod with variable stiffness. By adjusting the parameters such as the Length Factor, we can simulate the tension forces that the 3D print pattern is applying on the textile.
-- EdgeLenghts: connect the mesh to this component to make the mesh behave like a textile.
+- **Load**: connect one of the points on the outer edge of the mesh to the Point input and add a force vector in the Z-direction to apply a load at that point
+- **Anchor**: connect the other point on the outer edge to the **Anchor** component to fix it in space
+- **Rod**: this component takes a polyline curve and convers it to semi-flexible rod with variable stiffness. By adjusting the parameters such as the Length Factor, we can simulate the tension forces that the 3D print pattern is applying on the textile.
+- **EdgeLenghts**: connect the mesh to this component to make the mesh behave like a textile.
 
 ![3d_print_textile_constrain](3d_print_textile_constrain.png)
 
@@ -211,9 +221,18 @@ A summary of the approach taken is shown below. For further details on the imple
 
 1. Simplify the geometry of the ear to speed up the simulation
 
-![ear_3d_scan](ear_3d_scan.png)
+::::{grid}
 
+:::{grid-item}
+:child-align: center
+![ear_3d_scan](ear_3d_scan.png)
+:::
+:::{grid-item}
+:child-align: center
 ![ear_3d_simplified](ear_3d_simplified.png)
+:::
+
+:::: 
 
 2.  Prepare a distribution of small spheres to collide with the ear canal and set up the simulation with Kangaroo
 
@@ -221,14 +240,32 @@ A summary of the approach taken is shown below. For further details on the imple
 
 3. Run the simulation allowing the spheres to collide with the ear and fill up the ear canal cavity
 
-![ear_run_simulation](ear_run_simulation.png)
+::::{grid}
 
+:::{grid-item}
+:child-align: center
+![ear_run_simulation](ear_run_simulation.png)
+:::
+:::{grid-item}
+:child-align: center
 ![ear_simulation_finish](ear_simulation_finish.png)
+:::
+
+:::: 
 
 4. Create a volume from the collection of spheres and convert into a mesh
 
-![ear_volume_from_spheres](ear_volume_from_spheres.png)
+::::{grid}
 
+:::{grid-item}
+:child-align: center
+![ear_volume_from_spheres](ear_volume_from_spheres.png)
+:::
+:::{grid-item}
+:child-align: center
 ![earbud_mesh](earbud_mesh.png)
+:::
+
+:::: 
 
 In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!

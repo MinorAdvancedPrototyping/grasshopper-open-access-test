@@ -162,18 +162,18 @@ For further instructions on how to set up the Grasshopper script, refer to [Less
 
 Additionally, it is important to mention that this method is not only intended for 3d scan anthropomorphic data. In fact, we can apply this method to any 3D scan mesh data we collect. One common use case as a designer is to develop rapid physical prototypes out of a mouldable materials such as clay using the body part of the user as a guide. We can then 3D scan the prototype and generate the surface in Rhino Grasshopper with this approach. The figure below showcases how this method can be applied to create an ergonomic mouse going from a clay prototype to 3D scan mesh to Rhino surface.
 
-::::{grid} 1 2 3
+::::{grid}
 
 :::{grid-item}
-
+:child-align: center
 ![mouse_clay_model.png](mouse_clay_model.png)
 :::
 :::{grid-item}
-
+:child-align: center
 ![mouse_3d_scan_mesh.png](mouse_3d_scan_mesh.png)
 :::
 :::{grid-item}
-
+:child-align: center
 ![mouse_contours_loft.png](mouse_contours_loft.png)
 :::
 
@@ -194,16 +194,16 @@ For this case, one approach can be to first isolate the geometry of the ear cavi
 
 ![ear_boolena_two_surfaces.png](ear_boolena_two_surfaces.png)
 
-2. Using a “Mesh Difference” component, we then obtain the isolated mesh of the ear cavity.
+2. Using a **Mesh Difference** component, we then obtain the isolated mesh of the ear cavity.
 
-::::{grid} 1 2
+::::{grid}
 
 :::{grid-item}
-child-align: center
+:child-align: center
 ![ear_boolean.png](ear_boolean.png)
 :::
 :::{grid-item}
-child-align: center
+:child-align: center
 ![ear_boolean_alone.png](ear_boolean_alone.png)
 :::
 
@@ -214,14 +214,14 @@ child-align: center
 
 4. Generate the surface loft and troubleshoot the loft curves as learned in [Lesson 4 - Surfaces](../../../Lessons/4_Lesson_4_-_Surfaces/!index.md) to generate a clean surface geometry.
 
-::::{grid} 1 2
+::::{grid}
 
 :::{grid-item}
-child-align: center
+:child-align: center
 ![ear_contours_loft.png](ear_contours_loft.png)
 :::
 :::{grid-item}
-child-align: center 
+:child-align: center 
 ![earbud_loft_in_ear.png](earbud_loft_in_ear.png)
 :::
 

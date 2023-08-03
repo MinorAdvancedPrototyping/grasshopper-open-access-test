@@ -61,11 +61,16 @@
       "id": "quickadd:choice:2bfb4989-ff84-4c53-ae6f-950809979f87",
       "name": "QuickAdd: Add Card Block",
       "icon": "feather-credit-card"
+    },
+    {
+      "id": "quickadd:choice:fc2e99f0-916d-4ee0-ae22-46859f8efae2",
+      "name": "QuickAdd: Add Grid Column",
+      "icon": "feather-grid"
     }
   ],
   "appendMethod": "workspace",
   "shouldShowMenuOnSelect": false,
   "cMenuVisibility": true,
   "cMenuBottomValue": 4.25,
-  "cMenuNumRows": 12
+  "cMenuNumRows": 13
 }
