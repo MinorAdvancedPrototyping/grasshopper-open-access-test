@@ -488,7 +488,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-showcase">Example Showcase</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-an-organic-textile-cross-structure">Creating an Organic Textile Cross Structure</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-textile-3d-tent">Creating a Textile 3D Tent</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-4d-printed-shape-changing-textile">Creating a 4D-printed Shape Changing Textile</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-3d-printed-shape-changing-textile">Creating a 3D-printed Shape Changing Textile</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-growing-pattern-on-a-vase">Creating a Growing Pattern on a Vase</a></li>
 </ul>
 </li>
@@ -553,7 +553,7 @@ document.write(`
 <ul class="simple">
 <li><p>Creating an Organic Textile Cross Structure</p></li>
 <li><p>Creating a Textile 3D Tent</p></li>
-<li><p>Creating a 4D-printed Shape Changing Textile</p></li>
+<li><p>Creating a 3D-printed Shape Changing Textile</p></li>
 <li><p>Creating a Growing Pattern on a Vase</p></li>
 </ul>
 <p>Additionally, one advanced example is also included showing how Kangaroo Physics can be applied to generate a personalized earbud using an ear 3D scan using the 3D scan from <a class="reference internal" href="../Design_for_Personalized_Fit/%21index.html"><span class="doc std std-doc">Design for Personalized Fit</span></a></p>
@@ -570,13 +570,28 @@ Download the Grasshopper Script Here:<div class="sd-summary-down docutils">
 </div>
 </details><p><img alt="Organic_Cross_Structure_Video" src="../../../../_images/Organic_Cross_Structure_Video.gif" /></p>
 <p>In this example, we will showcase how to create an organic cross structure with textile-like behavior with fixed outer edges. By adjusting the parameters of the simulation, we can shrink/expand the structure and even generate wrinkles on the surface of the geometry.</p>
-<p>The grasshopper script file contains the Grasshopper definition that demonstrates how to create the structure. To create the mesh used for the simulation, we need to convert our surface into a mesh and decide on the necessary mesh resolution to optimally run the simulation. This mesh will be used in the simulation.</p>
-<p>Thirdly, create flexible edges of the mesh using the “Edge Length” component. This component is used to create a force that can keep the edges of the mesh within a certain length, allowing it to bend and fold while still maintaining its shape.</p>
-<p>Fourthly, fix the edges of the mesh using an “Anchor” component. This component is used to fix the edges of the mesh to certain points, ensuring that they do not move during the simulation.</p>
-<p>Fifthly, use a “Show” component to output the mesh. This component is used to display the mesh during the simulation.</p>
-<p>The next step is to load the mesh onto the Kangaroo solver. This is done by connecting the Kangaroo components to the “Kangaroo Solver” component. The “Kangaroo Solver” component is used to run the simulation and update the geometry in real-time. By following these steps, a textile 3D structure as shown in the example image can be created.</p>
-<p>It is important to note that these steps provide a general overview of how to set up a Kangaroo simulation in Grasshopper. Additionally, the simulation parameters can be adjusted to achieve different results. For example, the strength of the forces, the number of iterations, or other simulation parameters can be adjusted to achieve the desired outcome.</p>
+<p>The grasshopper script file contains the Grasshopper definition that demonstrates how to create the structure. First, we will create the surface of the cross structure by joining two cylinders together. The Mesh Brep component is used convert the surface Brep into a mesh.</p>
+<p><img alt="creating_mesh_gh" src="../../../../_images/creating_mesh_gh.png" /></p>
+<p><img alt="cross_surface" src="../../../../_images/cross_surface.png" /></p>
+<p>Next, we need to improve the quality of the mesh to run the simulation smoothly. When preparing a mesh for use with Kangaroo Physics, we want to avoid having mesh faces of different sizes and mixing triangle and quad faces in the same mesh. For this, we will use the Quad Remesh component to transform our original mesh into a cleaner mesh with all Quad faces of the same size. We can additionally use the Quad Remesh Settings components to further adjust the resolution new quad mesh.</p>
+<p><img alt="initial_mesh" src="../../../../_images/initial_mesh.png" />
+<img alt="cylinder_quad_remesh" src="../../../../_images/cylinder_quad_remesh.png" /></p>
+<p>Next, we will apply the physical constrains or boundary conditions for the simulation. For this example, our goal is the following (refer to the image below):</p>
+<ul class="simple">
+<li><p>To have a flexible inner mesh that behaves similar to a textile (blue mesh)</p></li>
+<li><p>To fix the points of the outer edges of the cylinders to be fixed in space and rigid (green points)</p></li>
+</ul>
 <p><img alt="Organic_Cross_Structure_Edges" src="../../../../_images/Organic_Cross_Structure_Edges.png" /></p>
+<p>To achieve the desired result, we will use the following Kangaroo Physics components:</p>
+<ul class="simple">
+<li><p>Anchor: Fixes the specified points in space to their original location, or the location of a target point</p></li>
+<li><p>EdgeLengths: sets the edge length of the specified mesh thus allowing the mesh to shrink or expand based on the value of the LengthFactor input (&lt;1 shrink, &gt;1 expand)</p></li>
+</ul>
+<p>Finally, we connect the mesh geometry to the Show component. This ensures that when we run the simulation, the final simulated preview displays the shape change of the mesh. Similarly, we could choose to input the edges or points of the mesh into the Show component if we desired a different preview.</p>
+<p><img alt="boundary_conditions_cross" src="../../../../_images/boundary_conditions_cross.png" /></p>
+<p>The next step is to load the Kangaroo Goal components onto the Kangaroo Solver. This is done by connecting the Kangaroo components to the “Kangaroo Solver” component. In this case, we will use the BouncySolver to run the simulation. By following these steps, the organic textile structure is simulated in real-time. The simulation can be stopped at any time using the Boolean Toggle and the generated geometry can be baked and used for further processing.</p>
+<p><img alt="cross_kangaroo_simulation" src="../../../../_images/cross_kangaroo_simulation.png" /></p>
+<p>It is important to note that these steps provide a general overview of how to set up a Kangaroo simulation in Grasshopper. Additionally, the simulation parameters can be adjusted to achieve different results. For example, the strength of the forces, the number of iterations, or other simulation parameters can be adjusted to achieve the multiple variations</p>
 </section>
 <section id="creating-a-textile-3d-tent">
 <h3>Creating a Textile 3D Tent<a class="headerlink" href="#creating-a-textile-3d-tent" title="Permalink to this heading">#</a></h3>
@@ -587,13 +602,21 @@ Download the Grasshopper Script Here:<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><a class="reference download internal" download="" href="../../../../_downloads/2db67dabac8341d75f5264d290c30c74/Generative_Tent.gh"><span class="xref download myst">Generative Tent.gh</span></a></p>
+<p class="sd-card-text"><a class="reference download internal" download="" href="../../../../_downloads/2db67dabac8341d75f5264d290c30c74/Generative_Tent.gh"><span class="xref download myst">Generative_Tent.gh</span></a></p>
 </div>
-</details><p><img alt="Screen-Recording-2023-06-02-at-16.44.21.gif" src="../../../../_images/Screen-Recording-2023-06-02-at-16.44.21.gif" /></p>
-<p><img alt="Screenshot 2023-06-02 at 16.35.00.png" src="../../../../_images/Screenshot_2023-06-02_at_16.35.00.png" /></p>
+</details><p><img alt="Generative_tent_video.gif" src="../../../../_images/Generative_tent_video.gif" /></p>
+<p>The first step to begin the simulation is to create the input mesh geometry. We can simply create a Plane Surface and convert it into a mesh using the Mesh Surface component. Here, the U and V count will determine the number of quad faces of the surface (or the resolution of the mesh).</p>
+<p><img alt="textile_tent_input_mesh" src="../../../../_images/textile_tent_input_mesh.png" /></p>
+<p><img alt="tent_input_mesh" src="../../../../_images/tent_input_mesh.png" /></p>
+<p>Next, we will use the corner points of the surface plane and move them individually in the Z-direction to create the target location for the simulation. Here we can use the Gene Pool component to easily adjust the target location of each of the 4 points.</p>
+<p><img alt="move_anchor_points_gh" src="../../../../_images/move_anchor_points_gh.png" /></p>
+<p>Next, we will add our physical constraints to the system. We will add the mesh to the EdgeLengths component ensuring that we have a LengthFactor below 1 to create a shrinking/tension on the textile. For the Anchor component, we will connect the original location of the 4 corner points to the Point input and the moved target locations to the Target. This will allow us to move the tent in the z-direction during the simulation. Finally, we will connect the Mesh to the Show component for the simulation preview.
+<img alt="constrains_tent" src="../../../../_images/constrains_tent.png" /></p>
+<p>Once we have connected all the Goal components to the Kangaroo solver, we will have a result similar to the image below. Here our original flat plane is now transformed to a textile in tension connected at the 4 corner points. By simply moving the 4 corner points in space, we can generate different shapes for the final geometry. As an additional exercise, try to add more anchor points to the simulation (e.g. the center point of the plane) with a moveable target location to see if you can create even more complex shapes with this simulation.</p>
+<p><img alt="generative_tent_setup" src="../../../../_images/generative_tent_setup.png" /></p>
 </section>
-<section id="creating-a-4d-printed-shape-changing-textile">
-<h3>Creating a 4D-printed Shape Changing Textile<a class="headerlink" href="#creating-a-4d-printed-shape-changing-textile" title="Permalink to this heading">#</a></h3>
+<section id="creating-a-3d-printed-shape-changing-textile">
+<h3>Creating a 3D-printed Shape Changing Textile<a class="headerlink" href="#creating-a-3d-printed-shape-changing-textile" title="Permalink to this heading">#</a></h3>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Download the Grasshopper Script Here:<div class="sd-summary-down docutils">
@@ -601,12 +624,34 @@ Download the Grasshopper Script Here:<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text"><a class="reference download internal" download="" href="../../../../_downloads/198ff0a3cb98437129530e9431c85ddb/Programmable_Textile.gh"><span class="xref download myst">Programmable Textile.gh</span></a></p>
+<p class="sd-card-text"><a class="reference download internal" download="" href="../../../../_downloads/bf8f4e93c9f390e4a2d99fa2b5dc2faa/Shape_Changing_Textile.gh"><span class="xref download myst">Shape_Changing_Textile.gh</span></a></p>
 </div>
-</details><p><img alt="textile1374-1480.gif" src="../../../../_images/textile1374-1480.gif" /></p>
-<p><img alt="ezgif.com-optimize.gif" src="../../../../_images/ezgif.com-optimize.gif" /></p>
-<p><img alt="Screenshot 2023-06-02 at 17.22.59.png" src="../../../../_images/Screenshot_2023-06-02_at_17.22.59.png" /></p>
-<p><img alt="Screenshot 2023-06-02 at 17.18.57.png" src="../../../../_images/Screenshot_2023-06-02_at_17.18.57.png" /></p>
+</details><p><img alt="3d_printed_potato_chip.gif" src="../../../../_images/3d_printed_potato_chip.gif" /></p>
+<p>In this example, we will take a look at simulating 3D printed shape changing textiles. This shape changing phenomenon occurs when you 3D print on top of a stretchy fabric such as Lycra while the fabric is under tension in the printing bed. Due to the tension forces on the fabric, once it is released from the print bed, the fabric will deform to a pre-determined shape based on the 3D printed pattern, the thickness of the print, printing material, and many other affecting parameters. An example of such shape changing behaviour can be shown in the experiments conducted by Master’s student Naomi  Atmopawiro below.</p>
+<p><img alt="3d_printed_pattern_fabric" src="../../../../_images/3d_printed_pattern_fabric.png" />
+Resulting Shapes of 3D Printed Patterns on Stretched Fabric from TU Delft Master’s thesis “<br />
+Designing a locomotive device driven by a shape memory alloy composite” by Naomi  Atmopawiro.</p>
+<p>Simulating the complex behaviour of shape changing textiles after 3D printing is a difficult task with many parameters to consider. In this example, we will simulate a simple example that can be use as the base for simulating more complex 3D printed patterns. The example consists of a circular pattern (blue) 3D printed on the fabric (yellow) as represented in the image below.</p>
+<p><img alt="3d_print_preview" src="../../../../_images/3d_print_preview.png" /></p>
+<p>We will begin similarly to the previous examples by generating the mesh circle that will represent our input geometry. In this example, we will need a slightly different approach than before and will introduce some new Kangaroo Physics components. Our goal here is as follows:</p>
+<ul class="simple">
+<li><p>To have a flexible inner mesh geometry that behaves like a textile</p></li>
+<li><p>To have semi-flexible outer edges that will deform the textile based on their tension</p></li>
+<li><p>To have a fixed point in space to keep the mesh in place</p></li>
+<li><p>To apply a small localized force on a point of the mesh to get the mesh to deform in the out-of-plane direction (z axis)</p></li>
+</ul>
+<p>As seen in the image below, we will select two points on the outer edge of the circle, one will be fixed and the other we will apply the force on.
+<img alt="3d_print_textile_edge" src="../../../../_images/3d_print_textile_edge.png" /></p>
+<p>We can now start building our physical constraints on the system as described above in Grasshopper:</p>
+<ul class="simple">
+<li><p>Load: connect one of the points on the outer edge of the mesh to the Point input and add a force vector in the Z-direction to apply a load at that point</p></li>
+<li><p>Anchor: connect the other point on the outer edge to the Anchor component to fix it in space</p></li>
+<li><p>Rod: this component takes a polyline curve and convers it to semi-flexible rod with variable stiffness. By adjusting the parameters such as the Length Factor, we can simulate the tension forces that the 3D print pattern is applying on the textile.</p></li>
+<li><p>EdgeLenghts: connect the mesh to this component to make the mesh behave like a textile.</p></li>
+</ul>
+<p><img alt="3d_print_textile_constrain" src="../../../../_images/3d_print_textile_constrain.png" /></p>
+<p>With all the Kangaroo components set up, you can start the simulation and see that the circular textile deforms into a potato chip like shape. Test out a similar implementation with different shapes and patterns to see the various types of geometry you can generate with this simulation.</p>
+<p><img alt="3d_print_potato_chip_close" src="../../../../_images/3d_print_potato_chip_close.png" /></p>
 </section>
 <section id="creating-a-growing-pattern-on-a-vase">
 <h3>Creating a Growing Pattern on a Vase<a class="headerlink" href="#creating-a-growing-pattern-on-a-vase" title="Permalink to this heading">#</a></h3>
@@ -619,8 +664,9 @@ Download the Grasshopper Script Here:<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><a class="reference download internal" download="" href="../../../../_downloads/c793d0ba2ae894fa4436f8ead435f8bf/Generative_Grow_on_Vase.gh"><span class="xref download myst">Generative Grow on Vase.gh</span></a></p>
 </div>
-</details><p><img alt="Screen Recording 2023-06-02 at 17.51.50 (4).gif" src="Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/Screen_Recording_2023-06-02_at_17.51.50_%284" />.gif)</p>
-<p><img alt="Screenshot 2023-06-02 at 17.43.46.png" src="../../../../_images/Screenshot_2023-06-02_at_17.43.46.png" /></p>
+</details><p>Explanation coming soon (Wolf)</p>
+<p><img alt="growing_vase_video" src="../../../../_images/growing_vase_video.gif" /></p>
+<p><img alt="growing_vase" src="../../../../_images/growing_vase.png" /></p>
 </section>
 </section>
 <section id="case-study-personalized-design-from-3d-scan-using-kangaroo-physics">
@@ -636,59 +682,39 @@ Download the Grasshopper Script Here:<div class="sd-summary-down docutils">
 </div>
 </details><p>For more complicated 3D scan geometry, the approached mentioned above might not be sufficient to generate good results. In this cases, a more creative approach is necessary. Let’s take for example, the geometry of an ear canal. in this scenario, we would like to create an earbud that is personalized for the user’s 3D scan and perfectly fits the cavity of the ear canal.</p>
 <p>One approach we can take is to use Grasshoppers Kangaroo physics simulation to generate the geometry of the earbud. It is important to note that the following approach is for advanced users, only works on Windows PC for now, and requires the following plugins:</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Weaverbird<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.giuliopiacentino.com/weaverbird/">Weaverbird</a></p></li>
+<li><p>Lunchbox</p></li>
+<li><p>Pufferfish</p></li>
+<li><p>Dendro</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>If you are new to Grasshopper Kangaroo physics simulation, it is recommended to first read the lesson on (Insert link to Form Finding with Kangaroo Physics). This approach is as follows:
+
+1. Simplify the geometry of the ear to speed up the simulation
+
+![ear_3d_scan](ear_3d_scan.png)
+
+![ear_3d_simplified](ear_3d_simplified.png)
+
+1. Prepare a distribution of small spheres to collide with the ear canal and set up the simulation with Kangaroo
+
+![ear_small_spheres](ear_small_spheres.png)
+
+1. Run the simulation allowing the spheres to collide with the ear and fill up the ear canal cavity
+
+![ear_run_simulation](ear_run_simulation.png)
+
+![ear_simulation_finish](ear_simulation_finish.png)
+
+1. Create a volume from the collection of spheres and convert into a mesh
+
+![ear_volume_from_spheres](ear_volume_from_spheres.png)
+
+![earbud_mesh](earbud_mesh.png)
+
+For more details on this implementation, refer to the example file provided: [Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)](https://www.notion.so/Generating-a-Mesh-from-Ear-Canal-Cavity-Kangaroo-Physics-1de999d9cccc4b1796ea0c9507b4cba2?pvs=21). In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!
+</pre></div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Lunchbox<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Pufferfish<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Dendro<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><p>If you are new to Grasshopper Kangaroo physics simulation, it is recommended to first read the lesson on (Insert link to Form Finding with Kangaroo Physics). This approach is as follows:</p>
-<ol class="arabic simple">
-<li><p>Simplify the geometry of the ear to speed up the simulation</p></li>
-</ol>
-<p><img alt="Untitled" src="Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/cover.png" /></p>
-<p><img alt="Untitled" src="Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/Untitled%202.png" /></p>
-<ol class="arabic simple">
-<li><p>Prepare a distribution of small spheres to collide with the ear canal and set up the simulation with Kangaroo</p></li>
-</ol>
-<p><img alt="Untitled" src="Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/Untitled%203.png" /></p>
-<ol class="arabic simple">
-<li><p>Run the simulation allowing the spheres to collide with the ear and fill up the ear canal cavity</p></li>
-</ol>
-<p><img alt="Untitled" src="Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/Untitled%204.png" /></p>
-<p><img alt="Untitled" src="Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/Untitled%205.png" /></p>
-<ol class="arabic simple">
-<li><p>Create a volume from the collection of spheres and convert into mesh</p></li>
-</ol>
-<p><img alt="Untitled" src="Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/Untitled%206.png" /></p>
-<p><img alt="Untitled" src="Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generative_Form_Finding_with_Kangaroo_Physics/Untitled%207.png" /></p>
-<p>For more details on this implementation, refer to the example file provided: <a class="reference external" href="https://www.notion.so/Generating-a-Mesh-from-Ear-Canal-Cavity-Kangaroo-Physics-1de999d9cccc4b1796ea0c9507b4cba2?pvs=21">Generating a Mesh from Ear Canal Cavity (Kangaroo Physics)</a>. In this approach, we can adjust the size and shape of the final mesh by adjusting the simulation parameters. For example, if we want the earbud to cover a larger area of the ear, then we can add more balls to the simulation to increase the total area covered by the balls. Experiment with the example file and test it out for yourself!</p>
 </section>
 </section>
 
@@ -764,7 +790,7 @@ Dendro<div class="sd-summary-down docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-showcase">Example Showcase</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-an-organic-textile-cross-structure">Creating an Organic Textile Cross Structure</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-textile-3d-tent">Creating a Textile 3D Tent</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-4d-printed-shape-changing-textile">Creating a 4D-printed Shape Changing Textile</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-3d-printed-shape-changing-textile">Creating a 3D-printed Shape Changing Textile</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-growing-pattern-on-a-vase">Creating a Growing Pattern on a Vase</a></li>
 </ul>
 </li>
