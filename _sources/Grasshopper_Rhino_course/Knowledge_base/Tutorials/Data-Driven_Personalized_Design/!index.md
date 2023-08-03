@@ -55,9 +55,7 @@ Case study of using foot pressure data to drive the design of a shoe sole
 
 💡 To follow along with this tutorial, make sure to download the following grasshopper script and CSV file containing the foot pressure data:
 
-
-
-![Data Driven Design - Shoe Sole Example](Data-Driven_Design_ShoeSole.gh)
+[Data-Driven_Design_ShoeSole.gh](Data-Driven_Design_ShoeSole.gh)
 
 [FootPressure_Data.csv](FootPressure_Data.csv)
 
