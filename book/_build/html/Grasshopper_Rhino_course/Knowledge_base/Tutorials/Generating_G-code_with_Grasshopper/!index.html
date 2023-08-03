@@ -1,0 +1,1030 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Generating G-code with Grasshopper &#8212; Rhino Grasshopper Open Access Education</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../_static/copybutton.js"></script>
+    <script src="../../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index';</script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Generative Form Finding with Kangaroo Physics" href="../Generative_Form_Finding_with_Kangaroo_Physics/%21index.html" />
+    <link rel="prev" title="Design for Digital Fabrication (Laser Cutting)" href="../Design_for_Digital_Fabrication__Laser_Cutting_/%21index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../../_static/TUDelft_logo_cmyk.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../../_static/TUDelft_logo_cmyk.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../intro.html">
+                    Open Access Rhino Grasshopper Course for Industrial Design Students
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Lessons/%21index.html">Lessons</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Lessons/1_Lesson_1_-_Basics/%21index.html">Lesson 1 - Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Lessons/2_Lesson_2_-_Curves_and_lists/%21index.html">Lesson 2 - Curves and lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Lessons/3_Lesson_3_-_Data_structures/%21index.html">Lesson 3 - Data structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Lessons/4_Lesson_4_-_Surfaces/%21index.html">Lesson 4 - Surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Lessons/5_Lesson_5_-_Meshes/%21index.html">Lesson 5 - Meshes</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Lessons/Student_showcase/%21index.html">Student showcase</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/Student_showcase/Assignment_1/%21index.html">Assignment 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/Student_showcase/Assignment_2/%21index.html">Assignment 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/Student_showcase/Assignment_3/%21index.html">Assignment 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/Student_showcase/Assignment_4/%21index.html">Assignment 4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../%21index.html">Knowledge Base</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../%21index.html">Knowledge Base Tutorials</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Design_for_Personalized_Fit/%21index.html">Design for Personalized Fit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data-Driven_Personalized_Design/%21index.html">Data-Driven Personalized Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Design_for_Digital_Fabrication__Laser_Cutting_/%21index.html">Design for Digital Fabrication (Laser Cutting)</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Generating G-code with Grasshopper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Generative_Form_Finding_with_Kangaroo_Physics/%21index.html">Generative Form Finding with Kangaroo Physics</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Graduation_Projects/%21index.html">Graduation Projects</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric%2C_3D_printed_ankle_foot_orthosis__/%21index.html">Application of mechanical metamaterials in a parametric, 3D printed ankle foot orthosis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__/%21index.html">Design of a 3D printed prosthetic socket that accommodates pediatric growth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/%21index.html">Design of customizable sunglasses based on additive manufacturing techniques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__/%21index.html">Exploring Animated Textiles Using Pneumatic Actuators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/A_medical_jewel%2C_the_hand_splint/%21index.html">A medical jewel, the hand splint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/Designing_a_multi-sports_helmet_based_on_3D_ergonomic_dat/%21index.html">Designing a multi-sports helmet based on 3D ergonomic dat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/%21index.html">A custom fit parametric bra based on 3D body scanning technologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/Development_of_a_low-cost_3D_foot_scanner/%21index.html">Development of a low-cost 3D foot scanner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/The_making_of_a_smart_pillow/%21index.html">The making of a smart pillow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../../../_tags/tagsindex.html">Tags overview</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../../../../_tags/3D-Printing.html">3D-Printing (2)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__/%21index.html">Exploring Animated Textiles Using Pneumatic Actuators</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Generating G-code with Grasshopper</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../_tags/3d-scans.html">3d-scans (9)</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/A_medical_jewel%2C_the_hand_splint/%21index.html">A medical jewel, the hand splint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/Designing_a_multi-sports_helmet_based_on_3D_ergonomic_dat/%21index.html">Designing a multi-sports helmet based on 3D ergonomic dat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/Development_of_a_low-cost_3D_foot_scanner/%21index.html">Development of a low-cost 3D foot scanner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric%2C_3D_printed_ankle_foot_orthosis__/%21index.html">Application of mechanical metamaterials in a parametric, 3D printed ankle foot orthosis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/%21index.html">A custom fit parametric bra based on 3D body scanning technologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__/%21index.html">Design of a 3D printed prosthetic socket that accommodates pediatric growth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/%21index.html">Design of customizable sunglasses based on additive manufacturing techniques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data-Driven_Personalized_Design/%21index.html">Data-Driven Personalized Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Design_for_Personalized_Fit/%21index.html">Design for Personalized Fit</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../../../../_tags/Advanced-Manufacturing.html">Advanced-Manufacturing (4)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric%2C_3D_printed_ankle_foot_orthosis__/%21index.html">Application of mechanical metamaterials in a parametric, 3D printed ankle foot orthosis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__/%21index.html">Design of a 3D printed prosthetic socket that accommodates pediatric growth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Design_for_Digital_Fabrication__Laser_Cutting_/%21index.html">Design for Digital Fabrication (Laser Cutting)</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Generating G-code with Grasshopper</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../_tags/Curves.html">Curves (2)</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/2_Lesson_2_-_Curves_and_lists/%21index.html">Lesson 2 - Curves and lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/Student_showcase/Assignment_2/%21index.html">Assignment 2</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../_tags/Data-structures.html">Data-structures (2)</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/3_Lesson_3_-_Data_structures/%21index.html">Lesson 3 - Data structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/Student_showcase/Assignment_3/%21index.html">Assignment 3</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../_tags/Form-Finding.html">Form-Finding (1)</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Generative_Form_Finding_with_Kangaroo_Physics/%21index.html">Generative Form Finding with Kangaroo Physics</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../_tags/Generative.html">Generative (1)</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Generative_Form_Finding_with_Kangaroo_Physics/%21index.html">Generative Form Finding with Kangaroo Physics</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../_tags/Introduction.html">Introduction (2)</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/1_Lesson_1_-_Basics/%21index.html">Lesson 1 - Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/Student_showcase/Assignment_1/%21index.html">Assignment 1</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../_tags/Lists.html">Lists (4)</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/2_Lesson_2_-_Curves_and_lists/%21index.html">Lesson 2 - Curves and lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/3_Lesson_3_-_Data_structures/%21index.html">Lesson 3 - Data structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/Student_showcase/Assignment_2/%21index.html">Assignment 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/Student_showcase/Assignment_3/%21index.html">Assignment 3</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../_tags/Meshes.html">Meshes (1)</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/5_Lesson_5_-_Meshes/%21index.html">Lesson 5 - Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../_tags/Patterns.html">Patterns (2)</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/4_Lesson_4_-_Surfaces/%21index.html">Lesson 4 - Surfaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/Student_showcase/Assignment_4/%21index.html">Assignment 4</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../_tags/Simulation.html">Simulation (2)</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__/%21index.html">Exploring Animated Textiles Using Pneumatic Actuators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Generative_Form_Finding_with_Kangaroo_Physics/%21index.html">Generative Form Finding with Kangaroo Physics</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../_tags/Surfaces.html">Surfaces (2)</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/4_Lesson_4_-_Surfaces/%21index.html">Lesson 4 - Surfaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Lessons/Student_showcase/Assignment_4/%21index.html">Assignment 4</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../_tags/data-driven.html">data-driven (3)</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/The_making_of_a_smart_pillow/%21index.html">The making of a smart pillow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric%2C_3D_printed_ankle_foot_orthosis__/%21index.html">Application of mechanical metamaterials in a parametric, 3D printed ankle foot orthosis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data-Driven_Personalized_Design/%21index.html">Data-Driven Personalized Design</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../_tags/personalized.html">personalized (9)</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/A_medical_jewel%2C_the_hand_splint/%21index.html">A medical jewel, the hand splint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/Designing_a_multi-sports_helmet_based_on_3D_ergonomic_dat/%21index.html">Designing a multi-sports helmet based on 3D ergonomic dat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/Development_of_a_low-cost_3D_foot_scanner/%21index.html">Development of a low-cost 3D foot scanner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Application_of_mechanical_metamaterials_in_a_parametric%2C_3D_printed_ankle_foot_orthosis__/%21index.html">Application of mechanical metamaterials in a parametric, 3D printed ankle foot orthosis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/%21index.html">A custom fit parametric bra based on 3D body scanning technologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Design_of_a_3D_printed_prosthetic_socket_that_accommodates_pediatric_growth__/%21index.html">Design of a 3D printed prosthetic socket that accommodates pediatric growth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Graduation_Projects/__Design_of_customizable_sunglasses_based_on_additive_manufacturing_techniques__/%21index.html">Design of customizable sunglasses based on additive manufacturing techniques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Data-Driven_Personalized_Design/%21index.html">Data-Driven Personalized Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Design_for_Personalized_Fit/%21index.html">Design for Personalized Fit</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/MinorAdvancedPrototyping/grasshopper-open-access-test" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/MinorAdvancedPrototyping/grasshopper-open-access-test/issues/new?title=Issue%20on%20page%20%2FGrasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../../_sources/Grasshopper_Rhino_course/Knowledge_base/Tutorials/Generating_G-code_with_Grasshopper/!index.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Generating G-code with Grasshopper</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basics-of-g-code">Basics of G-code</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-commands">Common Commands</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extruder-temperature">Extruder Temperature</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#build-plate-temperature">Build Plate Temperature</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cooling-fan">Cooling Fan</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#g-code-structure">G-code Structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#start-protocol">Start Protocol</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#end-protocol">End Protocol</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#core-instructions">Core Instructions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#developing-a-grasshopper-script-to-write-g-code">Developing a Grasshopper Script to Write G-code</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extrusion-amount">Extrusion Amount</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-data">Combining Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#concatenate">Concatenate</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#merge">Merge</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizing-the-g-code-script">Finalizing the G-code Script</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#further-explorations-with-g-code">Further Explorations with G-code</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="generating-g-code-with-grasshopper">
+<h1>Generating G-code with Grasshopper<a class="headerlink" href="#generating-g-code-with-grasshopper" title="Permalink to this heading">#</a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Authors:</strong> Mehmet Ozdemir, Zjenja Doubrovski, Jose Martinez Castro</p>
+<p class="sd-card-text"><strong>Last Edited:</strong> 2023-08-03</p>
+</div>
+</div>
+<p class="tags"><span>Tags: </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../../../../_tags/Advanced-Manufacturing.html"><span class="doc">Advanced-Manufacturing</span></a><span> </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../../../../_tags/3D-Printing.html"><span class="doc">3D-Printing</span></a></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Download the Grasshopper Script Here:<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><a class="reference download internal" download="" href="../../../../_downloads/b73a1693882c2c0498548f9bc7ad714e/Grasshopper_gcode_generation_template.gh"><span class="xref download myst">Grasshopper_gcode_generation_template.gh</span></a></p>
+</div>
+</details><section id="basics-of-g-code">
+<h2>Basics of G-code<a class="headerlink" href="#basics-of-g-code" title="Permalink to this heading">#</a></h2>
+<p>G-code is a common language for CNC (Computer Numerical Control) machine that includes a list of operations. In the case of 3D FDM printers, this includes operations on how to move, how much filament to extrude, what temperature to set, and more. G-code comes in different “flavors” which indicates what commands are accepted and how they are interpreted by the printer. In this lesson, we will focus on the Marlin flavor, although other flavors only have small differences. For a full list of G-code commands, please refer to the resources here: <a class="reference external" href="http://marlinfw.org/meta/gcode">marlinfw.org/meta/gcode</a> and <a class="reference external" href="http://reprap.org/wiki/G-code">reprap.org/wiki/G-code</a></p>
+<p><img alt="Example of a G-code script" src="../../../../_images/g_code_example.png" /></p>
+<section id="common-commands">
+<h3>Common Commands<a class="headerlink" href="#common-commands" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>;</p></td>
+<td><p>Text after semicolon makes no effect (for comments and explanations)</p></td>
+</tr>
+<tr class="row-odd"><td><p>G0 &amp; G1</p></td>
+<td><p>To initiate movement (G0 for non-extrusion movement and G1 for extrusion movement)</p></td>
+</tr>
+<tr class="row-even"><td><p>F</p></td>
+<td><p>Feed rate (speed) in mm/min</p></td>
+</tr>
+<tr class="row-odd"><td><p>X Y Z</p></td>
+<td><p>Coordinates in mm</p></td>
+</tr>
+<tr class="row-even"><td><p>E</p></td>
+<td><p>Extrusion amount in mm</p></td>
+</tr>
+</tbody>
+</table>
+<p>Some common commands can be found on the table above. For many commands in G-code, we add a number next to the command to indicate a value e.g. F600 represents a feed rate of 600 mm/min. When writing G-code, a line in our code might look something like this:</p>
+<p><img alt="printing_command.png" src="../../../../_images/printing_command.png" /></p>
+<p>Other common commands include:</p>
+<section id="extruder-temperature">
+<h4>Extruder Temperature<a class="headerlink" href="#extruder-temperature" title="Permalink to this heading">#</a></h4>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>M104</p></td>
+<td><p>start heating</p></td>
+</tr>
+<tr class="row-odd"><td><p>M109</p></td>
+<td><p>wait until the target temperature</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="build-plate-temperature">
+<h4>Build Plate Temperature<a class="headerlink" href="#build-plate-temperature" title="Permalink to this heading">#</a></h4>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>M140</p></td>
+<td><p>start heating</p></td>
+</tr>
+<tr class="row-odd"><td><p>M190</p></td>
+<td><p>wait until the target temperature</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cooling-fan">
+<h4>Cooling Fan<a class="headerlink" href="#cooling-fan" title="Permalink to this heading">#</a></h4>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>M106</p></td>
+<td><p>set fan ON</p></td>
+</tr>
+<tr class="row-odd"><td><p>M107</p></td>
+<td><p>set fan OFF</p></td>
+</tr>
+</tbody>
+</table>
+<p>For these commands, the value of the temperature or the fan speed can be set by adding the letter “S” followed by a number value. Some examples of how these commands can be used can be seen in the figure below:</p>
+<p><img alt="set_nozzle_temp.png" src="../../../../_images/set_nozzle_temp.png" /></p>
+<p><img alt="set_bed_temp.png" src="../../../../_images/set_bed_temp.png" /></p>
+<p>To test your comprehension of the commands showcase in this section, try for yourself if you can write down the G-code for the following operations:</p>
+<p>• set the fan off</p>
+<p>• move to origin</p>
+<p>• set the nozzle temperature to 215C</p>
+<p>• move to point (X15, Y20, Z40) at 600 mm/m</p>
+<p>• put “printing” message on LCD screen</p>
+<p>• make a beep sound</p>
+<p>Refer to <a class="reference external" href="http://marlinfw.org/meta/gcode">marlinfw.org/meta/gcode</a> for additional commands where needed.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Solution<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-nasm notranslate"><div class="highlight"><pre><span></span><span class="nf">M107</span><span class="w"> </span><span class="c1">;set the fan off</span>
+
+<span class="nf">G28</span><span class="w"> </span><span class="c1">;move to origin</span>
+
+<span class="nf">M109</span><span class="w"> </span><span class="nv">S215</span><span class="w"> </span><span class="c1">;set the nozzle temperature to 215C</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">F600</span><span class="w"> </span><span class="nv">X15</span><span class="w"> </span><span class="nv">Y20</span><span class="w"> </span><span class="nv">Z40</span><span class="w"> </span><span class="c1">;move to point (X15, Y20, Z40) at 600 mm/m</span>
+
+<span class="nf">M117</span><span class="w"> </span><span class="c1">;put “printing” message on LCD screen</span>
+
+<span class="nf">M300</span><span class="w"> </span><span class="nv">S440</span><span class="w"> </span><span class="nv">P200</span><span class="w"> </span><span class="c1">;make a beep sound</span>
+</pre></div>
+</div>
+</div>
+</details></section>
+</section>
+<section id="g-code-structure">
+<h3>G-code Structure<a class="headerlink" href="#g-code-structure" title="Permalink to this heading">#</a></h3>
+<p>When writing a G-code script, the general structure is as follows:</p>
+<p><img alt="g_code_structure.png" src="../../../../_images/g_code_structure.png" /></p>
+<p>For many cases, the Start and End protocol will stay consistent throughout your design for the same printer. The main part that will change is the Core Instructions where we can tell the printer the movements and extrusions to make. In most cases, we can use the following Start and End Protocols when using Ultimaker 2+ (Marlin flavor). Some adjustment might be needed for different printers.</p>
+<section id="start-protocol">
+<h4>Start Protocol<a class="headerlink" href="#start-protocol" title="Permalink to this heading">#</a></h4>
+<div class="highlight-nasm notranslate"><div class="highlight"><pre><span></span><span class="nf">G21</span><span class="w"> </span><span class="c1">;metric values</span>
+
+<span class="nf">G90</span><span class="w"> </span><span class="c1">;absolute positioning</span>
+
+<span class="nf">M82</span><span class="w"> </span><span class="c1">;set extruder to absolute mode</span>
+
+<span class="nf">M107</span><span class="w"> </span><span class="c1">;start with the fan off</span>
+
+<span class="nf">G28</span><span class="w"> </span><span class="nv">Z0</span><span class="w"> </span><span class="c1">;move Z to bottom endstops</span>
+
+<span class="nf">G28</span><span class="w"> </span><span class="nv">X0</span><span class="w"> </span><span class="nv">Y0</span><span class="w"> </span><span class="c1">;move X/Y to endstops</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">X15</span><span class="w"> </span><span class="nv">Y0</span><span class="w"> </span><span class="nv">F4000</span><span class="w"> </span><span class="c1">;move X/Y to front ofprinter</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">Z15.0</span><span class="w"> </span><span class="nv">F9000</span><span class="w"> </span><span class="c1">;move the platform to 15mm</span>
+
+<span class="nf">G92</span><span class="w"> </span><span class="nv">E0</span><span class="w"> </span><span class="c1">;zero the extruded length</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">F200</span><span class="w"> </span><span class="nv">E10</span><span class="w"> </span><span class="c1">;extrude 10 mm of feed stock</span>
+
+<span class="nf">G92</span><span class="w"> </span><span class="nv">E0</span><span class="w"> </span><span class="c1">;zero the extruded length again</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">Y50</span><span class="w"> </span><span class="nv">F9000</span><span class="c1">;Put printing message on LCD screen</span>
+
+<span class="nf">M117</span><span class="w"> </span><span class="nv">Printing...</span>
+</pre></div>
+</div>
+</section>
+<section id="end-protocol">
+<h4>End Protocol<a class="headerlink" href="#end-protocol" title="Permalink to this heading">#</a></h4>
+<div class="highlight-nasm notranslate"><div class="highlight"><pre><span></span><span class="nf">M104</span><span class="w"> </span><span class="nv">S0</span><span class="w"> </span><span class="c1">;extruder heater off</span>
+
+<span class="nf">M140</span><span class="w"> </span><span class="nv">S0</span><span class="w"> </span><span class="c1">;heated bed heater off (if you</span>
+
+<span class="nf">have</span><span class="w"> </span><span class="nv">it</span><span class="p">)</span>
+
+<span class="nf">G91</span><span class="w"> </span><span class="c1">;relative positioning</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">E</span><span class="o">-</span><span class="mi">1</span><span class="w"> </span><span class="nv">F300</span><span class="w"> </span><span class="c1">;retract the filament a bit</span>
+
+<span class="nf">before</span><span class="w"> </span><span class="nv">lifting</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">nozzle</span><span class="p">,</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="ow">rel</span><span class="nv">ease</span><span class="w"> </span><span class="nv">some</span>
+
+<span class="nf">of</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">pressure</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">Z</span><span class="o">+</span><span class="mf">0.5</span><span class="w"> </span><span class="nv">E</span><span class="o">-</span><span class="mi">5</span><span class="w"> </span><span class="nv">X</span><span class="o">-</span><span class="mi">20</span><span class="w"> </span><span class="nv">Y</span><span class="o">-</span><span class="mi">20</span><span class="w"> </span><span class="nv">F9000</span><span class="w"> </span><span class="c1">;move Z up a</span>
+
+<span class="nf">bit</span><span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="nv">retract</span><span class="w"> </span><span class="nv">filament</span><span class="w"> </span><span class="nv">even</span><span class="w"> </span><span class="nv">more</span>
+
+<span class="nf">G28</span><span class="w"> </span><span class="nv">X0</span><span class="w"> </span><span class="nv">Y0</span><span class="w"> </span><span class="c1">;move X/Y to min endstops, so</span>
+
+<span class="nf">the</span><span class="w"> </span><span class="nv">head</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">out</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">way</span>
+
+<span class="nf">M84</span><span class="w"> </span><span class="c1">;steppers off</span>
+
+<span class="nf">G90</span><span class="w"> </span><span class="c1">;absolute positioning</span>
+</pre></div>
+</div>
+</section>
+<section id="core-instructions">
+<h4>Core Instructions<a class="headerlink" href="#core-instructions" title="Permalink to this heading">#</a></h4>
+<p>In the core instructions, we can instruct the printer on where to move and extrude filament. For example, if we wanted to draw a square of filament on the printer bed, the G-code might look something like this:</p>
+<div class="highlight-nasm notranslate"><div class="highlight"><pre><span></span><span class="nf">G0</span><span class="w"> </span><span class="nv">F4500</span><span class="w"> </span><span class="nv">X61.715</span><span class="w"> </span><span class="nv">Y61.715</span><span class="w"> </span><span class="nv">Z0.27</span>
+
+<span class="c1">;TYPE:WALL-OUTER</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">F1500</span><span class="w"> </span><span class="nv">E0</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">F1800</span><span class="w"> </span><span class="nv">X61.715</span><span class="w"> </span><span class="nv">Y161.285</span><span class="w"> </span><span class="nv">E1.68567</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">X161.285</span><span class="w"> </span><span class="nv">Y161.285</span><span class="w"> </span><span class="nv">E3.37134</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">X161.285</span><span class="w"> </span><span class="nv">Y61.715</span><span class="w"> </span><span class="nv">E5.05701</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">X61.715</span><span class="w"> </span><span class="nv">Y61.715</span><span class="w"> </span><span class="nv">E6.74268</span>
+
+<span class="nf">G0</span><span class="w"> </span><span class="nv">F4500</span><span class="w"> </span><span class="nv">X61.715</span><span class="w"> </span><span class="nv">Y61.915</span>
+
+<span class="nf">G0</span><span class="w"> </span><span class="nv">X62.715</span><span class="w"> </span><span class="nv">Y62.597</span>
+
+<span class="c1">;MESH:NONMESH</span>
+
+<span class="nf">G0</span><span class="w"> </span><span class="nv">F600</span><span class="w"> </span><span class="nv">X62.715</span><span class="w"> </span><span class="nv">Y62.597</span><span class="w"> </span><span class="nv">Z0.42</span>
+</pre></div>
+</div>
+<p>The G-code above would generate the following results:</p>
+<p><img alt="rectangle_print_gcode.png" src="../../../../_images/rectangle_print_gcode.png" /></p>
+<p>As another example, let’s consider the following G-code:</p>
+<div class="highlight-nasm notranslate"><div class="highlight"><pre><span></span><span class="c1">;LAYER:0</span>
+
+<span class="nf">M107</span>
+
+<span class="nf">G0</span><span class="w"> </span><span class="nv">F4500</span><span class="w"> </span><span class="nv">X52.57</span><span class="w"> </span><span class="nv">Y56.764</span><span class="w"> </span><span class="nv">Z0.27</span>
+
+<span class="c1">;TYPE:WALL-OUTER</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">F1500</span><span class="w"> </span><span class="nv">E0</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">F1800</span><span class="w"> </span><span class="nv">X170.43</span><span class="w"> </span><span class="nv">Y56.764</span><span class="w"> </span><span class="nv">E1.99531</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">X118.842</span><span class="w"> </span><span class="nv">Y115.722</span><span class="w"> </span><span class="nv">E3.32159</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">X140.653</span><span class="w"> </span><span class="nv">Y115.727</span><span class="w"> </span><span class="nv">E3.69084</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">X111.5</span><span class="w"> </span><span class="nv">Y166.22</span><span class="w"> </span><span class="nv">E4.67791</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">X82.347</span><span class="w"> </span><span class="nv">Y115.727</span><span class="w"> </span><span class="nv">E5.66498</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">X104.156</span><span class="w"> </span><span class="nv">Y115.727</span><span class="w"> </span><span class="nv">E6.0342</span>
+
+<span class="nf">G1</span><span class="w"> </span><span class="nv">X52.57</span><span class="w"> </span><span class="nv">Y56.764</span><span class="w"> </span><span class="nv">E7.36052</span>
+
+<span class="nf">G0</span><span class="w"> </span><span class="nv">F4500</span><span class="w"> </span><span class="nv">X52.77</span><span class="w"> </span><span class="nv">Y56.764</span>
+
+<span class="nf">G0</span><span class="w"> </span><span class="nv">F600</span><span class="w"> </span><span class="nv">X52.77</span><span class="w"> </span><span class="nv">Y56.764</span><span class="w"> </span><span class="nv">Z0.42</span>
+
+<span class="nf">G0</span><span class="w"> </span><span class="nv">F4500</span><span class="w"> </span><span class="nv">X52.57</span><span class="w"> </span><span class="nv">Y56.764</span>
+
+<span class="c1">;TIME_ELAPSED:17.712690</span>
+</pre></div>
+</div>
+<p>What shape would the printer create? Feel free to sketch out the shape on a piece of paper.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Solution<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><img alt="christmas_tree_gcode.png" src="../../../../_images/christmas_tree_gcode.png" /></p>
+</div>
+</details></section>
+</section>
+</section>
+<section id="developing-a-grasshopper-script-to-write-g-code">
+<h2>Developing a Grasshopper Script to Write G-code<a class="headerlink" href="#developing-a-grasshopper-script-to-write-g-code" title="Permalink to this heading">#</a></h2>
+<p>In a traditional 3D printing process, designers often use what is called slicer software to create the G-code given to the printer. The job of the slicer software is to convert your 3D model into the extruder path and G-code operations for the printer to perform. The traditional 3D printing process looks something like this:</p>
+<p><img alt="Traditional 3D printing process. As an alternative, G-code can be generated straight from Grasshopper" src="../../../../_images/grasshopper_gcode_workflow.png" /></p>
+<p>Traditional 3D printing process. As an alternative, G-code can be generated straight from Grasshopper</p>
+<p>Now that we understand the basics of G-code, we are able to use an alternative workflow where we generate the G-code within our Grasshopper script. By generating the G-code within Grasshopper, we can have more control over the 3D printing parameters and start to experiment with creative 3D printing processes. The simple workflow to generate G-code in Grasshopper looks something like this:</p>
+<p><img alt="Grasshopper G-code workflow" src="../../../../_images/workflow_overview_grasshopper.png" /></p>
+<p>The main concept here is to convert our solid/surface into contour curves, divide these curves into smaller segments, and obtain the X Y Z coordinates from the collection of sequential points. Using this collection of points, we can write the G-code to instruct the printer to move to these locations while extruding in sequential order. As the order of operations is critical for the G-code, it is important to keep the geometry data organized. For resource on working with data structures in Grasshopper, see <a class="reference internal" href="../../../Lessons/3_Lesson_3_-_Data_structures/%21index.html"><span class="doc std std-doc">Lesson 3 - Data Structures</span></a></p>
+<p>Let’s take the example of creating the G-code for a simple cylinder as shown above. Once we have the collection of points, how exactly do we translate these points into G-code operations and ensure to add all other necessary G-code calculations? First, let’s look at some basic concepts which will be key in creating this script. To follow along, download the exercise file at the beginning of the lesson.</p>
+<section id="extrusion-amount">
+<h3>Extrusion Amount<a class="headerlink" href="#extrusion-amount" title="Permalink to this heading">#</a></h3>
+<p>In order to deposit material onto the print bed, we need to specify how much material to deposit on each movement in the Core Instructions. First, we must consider what type of extrusion we will use, Absolute vs Relative, as seen in the figure below. The type of extrusion can be set at the Start Protocol in the G-code.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>M82</p></td>
+<td><p>absolute extrusion</p></td>
+</tr>
+<tr class="row-odd"><td><p>M83</p></td>
+<td><p>relative extrusion</p></td>
+</tr>
+<tr class="row-even"><td><p>G92 E0</p></td>
+<td><p>set extruded length to zero</p></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="absolute_vs_relative.png" src="../../../../_images/absolute_vs_relative.png" /></p>
+<p>Secondly, we need:</p>
+<ul class="simple">
+<li><p>The ratio between filament and line cross section (the filament diameter and nozzle diameter will most likely not be the same)</p></li>
+<li><p>The length of each line segment (this is dependent on the distance the extruder will travel between points)</p></li>
+</ul>
+<p><img alt="flow_rate_setting.png" src="../../../../_images/flow_rate_setting.png" /></p>
+<p>By inputting this values into the Grasshopper script, we can calculate the extrusion amount (in mm) using the following set-up;</p>
+<p><img alt="flow_rate_in_grasshopper.png" src="../../../../_images/flow_rate_in_grasshopper.png" /></p>
+</section>
+<section id="combining-data">
+<h3>Combining Data<a class="headerlink" href="#combining-data" title="Permalink to this heading">#</a></h3>
+<p>To manage all the data and generate the correct G-code text, we will need to combine certain streams of data together. There are two Grasshopper components that will help use with this:</p>
+<p><img alt="concatenate.png" src="../../../../_images/concatenate.png" /></p>
+<section id="concatenate">
+<h4>Concatenate<a class="headerlink" href="#concatenate" title="Permalink to this heading">#</a></h4>
+<p><strong>Concatenate</strong> takes in multiple streams of data and adds them to one element. This will be important to combine the G-code instructions into a single line of text. As can be seen in the template file, for each line of the G-code, we use the Concatenate component to combine multiple streams of data both text and numbers.</p>
+<p><img alt="print_command_gcode.png" src="../../../../_images/print_command_gcode.png" /></p>
+</section>
+<section id="merge">
+<h4>Merge<a class="headerlink" href="#merge" title="Permalink to this heading">#</a></h4>
+<p><img alt="merge_component.png" src="../../../../_images/merge_component.png" /></p>
+<p>The <strong>Merge</strong> component takes multiple lists and adds them after each other. This will be important to combine multiple parts of the G-code process one after the other. As seen in the template file, the Start Protocol, Core Instructions, and End Protocol are merged together into one final G-code.</p>
+<p><img alt="combining_all_gcode.png" src="../../../../_images/combining_all_gcode.png" /></p>
+</section>
+</section>
+<section id="finalizing-the-g-code-script">
+<h3>Finalizing the G-code Script<a class="headerlink" href="#finalizing-the-g-code-script" title="Permalink to this heading">#</a></h3>
+<p>Now that we have brought all the elements together into the final G-code, it is time to save your work and start printing. Here you have two options:</p>
+<ol class="arabic simple">
+<li><p>Right-click on the Panel and select Stream Contents followed by Stream Destination. Save your file as .gcode.</p></li>
+<li><p>Copy and Paste the contents of the Panel into a text file. Save and then change the file extension to .gcode</p></li>
+</ol>
+<p><img alt="stream_contents.png" src="../../../../_images/stream_contents.png" /></p>
+<p>Now that you know how to make a simple G-code of a reference geometry, experiment with the given template and see what possibilities you can create by changing up the G-code.</p>
+<p><img alt="gcode_possibilities.png" src="../../../../_images/gcode_possibilities.png" /></p>
+</section>
+<section id="further-explorations-with-g-code">
+<h3>Further Explorations with G-code<a class="headerlink" href="#further-explorations-with-g-code" title="Permalink to this heading">#</a></h3>
+<p>In this lesson, we learned how to create a simple G-code that divides a surface into curves and prints filament along these defined curves. Aside from simple contours of geometry, there are many more 3D printing features you can create by manipulating the G-code which some can be found in your traditional slicers such as:</p>
+<ul class="simple">
+<li><p>Travel moves</p></li>
+<li><p>Infill</p></li>
+<li><p>Bed adhesion (brim, skirt,…)</p></li>
+<li><p>Retraction</p></li>
+<li><p>Support</p></li>
+</ul>
+<p><img alt="further_explorations.png" src="../../../../_images/further_explorations.png" /></p>
+<p>There is much to explore when it comes to generating G-code with Grasshopper. By having full, precise control over the geometry generation and the manufacturing process, we can create very unique designs not possible with traditional 3D printing. If you wish to dive deeper into the world of G-code generation with Grasshopper, be sure to read <a class="reference external" href="https://www.food4rhino.com/en/resource/advanced-3d-printing-grasshopper-clay-and-fdm">Advanced 3D Printing with Grasshopper</a> by Diego Garcia Cuevas &amp; Gianluca Pugliese.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Grasshopper_Rhino_course\Knowledge_base\Tutorials\Generating_G-code_with_Grasshopper"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../Design_for_Digital_Fabrication__Laser_Cutting_/%21index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Design for Digital Fabrication (Laser Cutting)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../Generative_Form_Finding_with_Kangaroo_Physics/%21index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Generative Form Finding with Kangaroo Physics</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basics-of-g-code">Basics of G-code</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-commands">Common Commands</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extruder-temperature">Extruder Temperature</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#build-plate-temperature">Build Plate Temperature</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cooling-fan">Cooling Fan</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#g-code-structure">G-code Structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#start-protocol">Start Protocol</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#end-protocol">End Protocol</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#core-instructions">Core Instructions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#developing-a-grasshopper-script-to-write-g-code">Developing a Grasshopper Script to Write G-code</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extrusion-amount">Extrusion Amount</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-data">Combining Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#concatenate">Concatenate</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#merge">Merge</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizing-the-g-code-script">Finalizing the G-code Script</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#further-explorations-with-g-code">Further Explorations with G-code</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Faculty of Industrial Design Engineering
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
