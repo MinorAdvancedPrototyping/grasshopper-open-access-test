@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Grasshopper_Rhino_course/Knowledge_base/!index.md",
-                "mode": "source",
+                "file": "Python_Automation_Code.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Grasshopper_Rhino_course/Knowledge_base/!index.md",
+                "file": "Python_Automation_Code.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Grasshopper_Rhino_course/Knowledge_base/!index.md",
+                "file": "Python_Automation_Code.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Grasshopper_Rhino_course/Knowledge_base/!index.md"
+                "file": "Python_Automation_Code.md"
               }
             }
           },
@@ -218,27 +218,27 @@
   },
   "active": "e6e7b5146b3ac284",
   "lastOpenFiles": [
-    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__/cover.png",
-    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/parametric_bra.jpg",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__/cover_crop.png",
     "_build/html/index.html",
+    "_build/html/objects.inv",
+    "_build/html/searchindex.js",
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-v4compatibility.woff2",
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-v4compatibility.ttf",
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2",
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.ttf",
-    "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.ttf",
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2",
+    "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.ttf",
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2",
-    "_build/html/_static/vendor/fontawesome/6.1.2/css/all.min.css",
-    "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.ttf",
     "_build/html/_static/images/logo_jupyterhub.svg",
-    "_build/html/_static/images/logo_binder.svg",
     "_build/html/_static/images/logo_deepnote.svg",
+    "_build/html/_static/images/logo_binder.svg",
     "_build/html/_static/images/logo_colab.png",
     "_build/html/_static/TUDelft_logo_cmyk.png",
     "_build/html/_static/plus.png",
     "_build/html/_static/minus.png",
     "_build/html/_static/file.png",
     "_build/html/_static/copy-button.svg",
+    "_build/html/_static/check-solid.svg",
     "_build/html/_sources/_tags/tagsindex.md",
     "_build/html/_sources/_tags/personalized.md",
     "_build/html/_sources/_tags/data-driven.md",

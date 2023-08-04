@@ -87,28 +87,54 @@ def create_sphinx_card(root_dir):
                     if 'cover' in sub_item.lower() and sub_item.lower().endswith(('.png', '.jpg', '.jpeg')):
                         cover_image = sub_item
 
+                target_aspect = 16/9
                 if cover_image:
                     # If cover image exists, open it, check aspect ratio and modify if necessary
                     img = Image.open(os.path.join(item_path, cover_image)).convert('RGB')  # convert image to RGB mode
                     width, height = img.size
                     aspect = width / height
                     if aspect != 16/9:  # Check if the image has a 16:9 aspect ratio
-                        new_width = int(height * (16/9))
-                        left = (width - new_width) / 2
-                        right = (width + new_width) / 2
-                        img = img.crop((left, 0, right, height))
+                        # Get the current aspect ratio
+                        if aspect > target_aspect:
+                            # If the original aspect ratio is greater than 16:9, crop the image
+                            new_width = int(height * target_aspect)
+                            left = (width - new_width) / 2
+                            right = (width + new_width) / 2
+                            img = img.crop((left, 0, right, height))
+                        elif aspect < target_aspect:
+                            # If the original aspect ratio is less than 16:9, pad the image
+                            new_height = int(width / target_aspect)
+                            top = (height - new_height) / 2
+                            bottom = (height + new_height) / 2
+                            img = img.crop((0, top, width, bottom))
+
                         cover_image = "cover_crop" + os.path.splitext(cover_image)[1]  # update cover_image variable
                         img.save(os.path.join(item_path, cover_image))
+
+                # ... (rest of the code)
+                # I've omitted the rest of the code to keep this response concise, but the indentation should remain consistent.
+
                 else:
                     # If no cover image exists, create one from the first image found
                     for sub_item in sorted(os.listdir(item_path)):
                         if sub_item.lower().endswith(('.png', '.jpg', '.jpeg')):
                             img = Image.open(os.path.join(item_path, sub_item)).convert('RGB')  # convert image to RGB mode
                             width, height = img.size
-                            new_width = int(height * (16/9))
-                            left = (width - new_width) / 2
-                            right = (width + new_width) / 2
-                            img = img.crop((left, 0, right, height))
+                            # Get the current aspect ratio
+                            aspect = width / height
+                            if aspect > target_aspect:
+                                # If the original aspect ratio is greater than 16:9, crop the image
+                                new_width = int(height * target_aspect)
+                                left = (width - new_width) / 2
+                                right = (width + new_width) / 2
+                                img = img.crop((left, 0, right, height))
+                            elif aspect < target_aspect:
+                                # If the original aspect ratio is less than 16:9, pad the image
+                                new_height = int(width / target_aspect)
+                                top = (height - new_height) / 2 
+                                bottom = (height + new_height) / 2 
+                                img = img.crop((0, top, width, bottom))
+	                            
                             cover_image = "cover_crop" + os.path.splitext(sub_item)[1]
                             img.save(os.path.join(item_path, cover_image))
                             break
@@ -121,11 +147,11 @@ def create_sphinx_card(root_dir):
                     index_file.write(":class-header: bg-light\n\n")
 
                     index_file.write(f"{card_title}\n\n^^^\ninsert summary here\n\n")
-
                     index_file.write(":::\n")
 
-root_dir = r"C:\Users\Jose\Github\grasshopper-open-access-test\book\Grasshopper_Rhino_course\Lessons"
+root_dir = r"C:\Users\Jose\Github\grasshopper-open-access-test\book\Grasshopper_Rhino_course\Knowledge_base\Graduation_Projects"
 create_sphinx_card(root_dir)
+
 
 
 ```
