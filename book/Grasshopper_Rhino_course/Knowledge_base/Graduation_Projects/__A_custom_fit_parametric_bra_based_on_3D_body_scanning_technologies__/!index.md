@@ -14,7 +14,7 @@
 ```
 
 
-![parametric_bra.png](parametric_bra.png)
+![parametric_bra.png](parametric_bra.jpg)
 
 ## **Abstract**
 

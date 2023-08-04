@@ -12,8 +12,6 @@
 
 A medical jewel, the hand splint
 
-^^^
-insert summary here
 
 :::
 :::{grid-item-card}
@@ -24,8 +22,6 @@ insert summary here
 
 Designing a multi-sports helmet based on 3D ergonomic dat
 
-^^^
-insert summary here
 
 :::
 :::{grid-item-card}
@@ -36,8 +32,6 @@ insert summary here
 
 Development of a low-cost 3D foot scanner
 
-^^^
-insert summary here
 
 :::
 :::{grid-item-card}
@@ -48,8 +42,6 @@ insert summary here
 
 The making of a smart pillow
 
-^^^
-insert summary here
 
 :::
 :::{grid-item-card}
@@ -60,8 +52,6 @@ insert summary here
 
 A custom fit parametric bra based on 3D body scanning technologies
 
-^^^
-insert summary here
 
 :::
 :::{grid-item-card}
@@ -72,8 +62,6 @@ insert summary here
 
 Application of mechanical metamaterials in a parametric, 3D printed ankle foot orthosis
 
-^^^
-insert summary here
 
 :::
 :::{grid-item-card}
@@ -84,8 +72,6 @@ insert summary here
 
 Design of a 3D printed prosthetic socket that accommodates pediatric growth
 
-^^^
-insert summary here
 
 :::
 :::{grid-item-card}
@@ -96,8 +82,6 @@ insert summary here
 
 Design of customizable sunglasses based on additive manufacturing techniques
 
-^^^
-insert summary here
 
 :::
 :::{grid-item-card}
@@ -108,7 +92,5 @@ insert summary here
 
 Exploring Animated Textiles Using Pneumatic Actuators
 
-^^^
-insert summary here
 
 :::

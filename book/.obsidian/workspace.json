@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python_Automation_Code.md",
-                "mode": "preview",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/!index.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python_Automation_Code.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/!index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python_Automation_Code.md",
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/!index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python_Automation_Code.md"
+                "file": "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/!index.md"
               }
             }
           },
@@ -218,7 +218,8 @@
   },
   "active": "e6e7b5146b3ac284",
   "lastOpenFiles": [
-    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__Exploring_Animated_Textiles_Using_Pneumatic_Actuators__/cover_crop.png",
+    "Grasshopper_Rhino_course/Knowledge_base/Graduation_Projects/__A_custom_fit_parametric_bra_based_on_3D_body_scanning_technologies__/parametric_bra.jpg",
+    "Grasshopper_Rhino_course/Knowledge_base/Tutorials/!index.md",
     "_build/html/index.html",
     "_build/html/objects.inv",
     "_build/html/searchindex.js",
@@ -231,8 +232,8 @@
     "_build/html/_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2",
     "_build/html/_static/images/logo_jupyterhub.svg",
     "_build/html/_static/images/logo_deepnote.svg",
-    "_build/html/_static/images/logo_binder.svg",
     "_build/html/_static/images/logo_colab.png",
+    "_build/html/_static/images/logo_binder.svg",
     "_build/html/_static/TUDelft_logo_cmyk.png",
     "_build/html/_static/plus.png",
     "_build/html/_static/minus.png",
@@ -262,7 +263,6 @@
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/Assignment_1/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/Student_showcase/!index.md",
     "_build/html/_sources/Grasshopper_Rhino_course/Lessons/5_Lesson_5_-_Meshes/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md",
-    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/3_Lesson_3_-_Data_structures/!index.md"
+    "_build/html/_sources/Grasshopper_Rhino_course/Lessons/4_Lesson_4_-_Surfaces/!index.md"
   ]
 }

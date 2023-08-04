@@ -149,7 +149,7 @@ def create_sphinx_card(root_dir):
                     index_file.write(f"{card_title}\n\n^^^\ninsert summary here\n\n")
                     index_file.write(":::\n")
 
-root_dir = r"C:\Users\Jose\Github\grasshopper-open-access-test\book\Grasshopper_Rhino_course\Knowledge_base\Graduation_Projects"
+root_dir = r"C:\Users\Jose\Github\grasshopper-open-access-test\book\Grasshopper_Rhino_course\Knowledge_base\Tutorials"
 create_sphinx_card(root_dir)
 
 
